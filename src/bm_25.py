@@ -1,5 +1,6 @@
 from rank_bm25 import BM25Okapi
 from src.preprocessing import preprocess_text
+import json
 import sqlite3
 import numpy as np
 import config
@@ -47,22 +48,27 @@ def build_bm25_corpus_sqlite(conn):
     cur.execute("SELECT doc_id, preprocessed_combined FROM episodes")
     rows = cur.fetchall()
     
-    texts = [row[1].split() for row in rows]
+    # preprocessed_combined was saved as a JSON array (e.g. ["token1", "token2"]).
+    # Parse the JSON to get token lists for BM25.
+    texts = [json.loads(row[1]) if row[1] else [] for row in rows]
     doc_ids = [row[0] for row in rows]
     
     return texts, doc_ids
 
 
-def bm25_search_sqlite(query: str, conn, top_n=5):
+def bm25_search_sqlite(query: str, conn, top_n=5, k1: float = 0.4, b: float = 1.0):
     """
     Performs BM25 search based on a query using the SQLite database.
     Caches the BM25 model for efficiency.
+    Optimized parameters: k1=0.4, b=1.0 (from parameter sweep).
     """
-    if conn not in _bm25_cache:
+    cache_key = (id(conn), float(k1), float(b))
+    if cache_key not in _bm25_cache:
         texts, doc_ids = build_bm25_corpus_sqlite(conn)
-        _bm25_cache[conn] = (BM25Okapi(texts), doc_ids)
-    
-    bm25, doc_ids = _bm25_cache[conn]
+        # Pass BM25 parameters to the model
+        _bm25_cache[cache_key] = (BM25Okapi(texts, k1=k1, b=b), doc_ids)
+
+    bm25, doc_ids = _bm25_cache[cache_key]
     
     query_tokens = preprocess_text(query)
     if not query_tokens:

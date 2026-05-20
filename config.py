@@ -20,7 +20,7 @@ FAISS_INDEX_PATH = DATA_DIR / "faiss.index"
 FAISS_MAPPING_PATH = DATA_DIR / "faiss_mapping.json"
 MERGED_DATASET_PATH = DATA_DIR / "merged_dataset.csv"
 RESULTS_CSV_PATH = DATA_DIR / "search_results_summary.csv"
-QUERIES_PATH = DATA_DIR / "second_example_17_queries.json"
+QUERIES_PATH = DATA_DIR / "second_example_20_queries.json"
 
 # Input data files
 EPISODES_CSV = DATA_DIR / "all-detailsepisodes.csv"

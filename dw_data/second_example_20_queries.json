@@ -16,7 +16,10 @@
     "cat nuns",
     "Doctor regenerates",
     "Doctor encounters Silence",
-    "Doctor in Italy"
+    "Doctor in Italy",
+    "Daleks and Davros",
+    "Something on Donna's back",
+    "Wedding"
   ],
   "answers": [
     [
@@ -137,6 +140,27 @@
       "10x6",
       "5x12",
       "5x13"
+    ],
+    [
+      "9x1",
+      "9x2",
+      "4x12",
+      "4x13",
+      "1x6"
+    ],
+    [
+      "4x11",
+      "4x10",
+      "4x1",
+      "4x11",
+      "4x12"
+    ],
+    [
+      "6x13",
+      "5x7",
+      "7x5",
+      "8x12",
+      "3x0"
     ]
   ]
 }
