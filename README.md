@@ -21,6 +21,7 @@ This project implements an information retrieval system for the **Doctor Who** T
   * Extracts entities and relations using GliNER2
   * Builds a graph from text documents
   * Supports entity linking and graph querying
+  * Supports KG-only search and per-query KG result summaries
 * **Storage Options**
   * JSON files (`document_corpus_dw.json`, `inverted_index.json`, `knowledge_graph.json`)
   * SQLite database (`doctor_who.db`) with episodes, inverted index, and embeddings
@@ -110,31 +111,33 @@ uv run python src/creating_corpus.py
 uv run python main.py
 ```
 
-If `dw_data/knowledge_graph.json` exists, evaluation also includes a separate `Knowledge Graph Search` method and saves a per-query KG search summary to `dw_data/kg_search_summary.json`.
+If `knowledge_graph.json` exists in `dw_data`, evaluation also includes a separate Knowledge Graph Search step and saves a per-query KG search summary to `dw_data/kg_search_summary.json`.
 
-3. Run KG-only search:
-
-```bash
-uv run python main.py --kg-search --kg-output knowledge_graph.json --kg-results-output kg_search_results_summary.csv
-```
-
-4. Run BM25 parameter sweep:
-
-```bash
-uv run python main.py --sweep-bm25 --k1-values 0.3 0.4 0.5 0.6 0.7 --b-values 0.7 0.75 0.8 0.85 0.9 1.0 --output bm25_testing.csv
-```
-
-4. Build a knowledge graph from the episode corpus:
+3. Build a knowledge graph from the episode corpus:
 
 ```bash
 uv run python main.py --build-kg --kg-model gliner2/gliner2-base --kg-output knowledge_graph.json
 ```
 
-5. Query the saved knowledge graph:
+4. Run KG-only search:
+
+```bash
+uv run python main.py --kg-search --kg-output knowledge_graph.json --kg-results-output kg_search_results_summary.csv
+```
+
+5. Query the saved knowledge graph by triple pattern:
 
 ```bash
 uv run python main.py --kg-output knowledge_graph.json --kg-query-subject "Doctor Who"
 ```
+
+6. Run BM25 parameter sweep:
+
+```bash
+uv run python main.py --sweep-bm25 --k1-values 0.3 0.4 0.5 0.6 0.7 --b-values 0.7 0.75 0.8 0.85 0.9 1.0 --output bm25_testing.csv
+```
+
+> Note: `--kg-output` and `--kg-results-output` are file names relative to `dw_data/` because the script prefixes them with the data directory.
 
 ## Notes
 

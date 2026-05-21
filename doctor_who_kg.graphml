@@ -1,0 +1,1567 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d2" for="edge" attr.name="episode" attr.type="string"/>
+<key id="d1" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d0" for="node" attr.name="labels" attr.type="string"/>
+<graph edgedefault="directed"><node id="rose tyler">
+  <data key="d0">PERSON</data>
+</node>
+<node id="doctor">
+  <data key="d0">PERSON</data>
+</node>
+<node id="world">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="earth">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="year 5 billion">
+  <data key="d0">DATE</data>
+</node>
+<node id="the unquiet dead">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="charles dickens">
+  <data key="d0">PERSON</data>
+</node>
+<node id="zombies">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="london">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="prime minister">
+  <data key="d0">PERSON</data>
+</node>
+<node id="world war three">
+  <data key="d0">EVENT</data>
+</node>
+<node id="parliament">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="slitheen">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="dalek">
+  <data key="d0">PERSON</data>
+</node>
+<node id="tardis">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="utah">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="billionaire">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the year">
+  <data key="d0">DATE</data>
+</node>
+<node id="200,000">
+  <data key="d0">CARDINAL,DATE</data>
+</node>
+<node id="the long game">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="satellite">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="humanity">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="pete tyler">
+  <data key="d0">PERSON</data>
+</node>
+<node id="father's day">
+  <data key="d0">DATE</data>
+</node>
+<node id="the london blitz">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="jack harkness">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the empty child">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="london blitz">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="captain jack harkness">
+  <data key="d0">PERSON</data>
+</node>
+<node id="little boy">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the doctor dances">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="gas mask zombies">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="present-day">
+  <data key="d0">DATE</data>
+</node>
+<node id="boom town">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="cardiff">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="bad wolf">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the game station">
+  <data key="d0">FAC</data>
+</node>
+<node id="tardis team">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="game station">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="dalek fleet">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="the christmas invasion">
+  <data key="d0">EVENT</data>
+</node>
+<node id="christmas eve">
+  <data key="d0">DATE</data>
+</node>
+<node id="jackie tyler">
+  <data key="d0">PERSON</data>
+</node>
+<node id="sycorax">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="new earth">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="hospital">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="claw">
+  <data key="d0">PERSON</data>
+</node>
+<node id="scotland">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="queen victoria">
+  <data key="d0">PERSON</data>
+</node>
+<node id="tooth and claw">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="19th century">
+  <data key="d0">DATE,TIME</data>
+</node>
+<node id="werewolf">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="krillitanes">
+  <data key="d0">ALIEN,NORP</data>
+</node>
+<node id="sarah jane smith">
+  <data key="d0">PERSON</data>
+</node>
+<node id="k9">
+  <data key="d0">LOCATION,PERSON</data>
+</node>
+<node id="school reunion">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="time">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="space">
+  <data key="d0">TIME</data>
+</node>
+<node id="fireplace">
+  <data key="d0">PRODUCT</data>
+</node>
+<node id="mickey smith">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the 51st century">
+  <data key="d0">DATE</data>
+</node>
+<node id="18th century">
+  <data key="d0">DATE,TIME</data>
+</node>
+<node id="madame de pompadour">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="versailles">
+  <data key="d0">LOCATION,PERSON</data>
+</node>
+<node id="madame de popmpadour">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the girl in the fireplace">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="51st century">
+  <data key="d0">TIME</data>
+</node>
+<node id="cybermen">
+  <data key="d0">LOCATION,ALIEN</data>
+</node>
+<node id="friends">
+  <data key="d0">PERSON</data>
+</node>
+<node id="elizabeth ii">
+  <data key="d0">FAC,PERSON</data>
+</node>
+<node id="the idiot's lantern">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="night">
+  <data key="d0">TIME</data>
+</node>
+<node id="devil">
+  <data key="d0">ORGANIZATION,ALIEN</data>
+</node>
+<node id="the impossible planet">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="planet">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="black hole">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="human expedition crew">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="ood">
+  <data key="d0">ORGANIZATION,ALIEN</data>
+</node>
+<node id="the legion of the beast">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="the satan pit">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="legion of the beast">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="love &amp; monsters">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="elton pope">
+  <data key="d0">PERSON</data>
+</node>
+<node id="victor kennedy">
+  <data key="d0">PERSON</data>
+</node>
+<node id="l.i.n.d.a.">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="2012">
+  <data key="d0">DATE</data>
+</node>
+<node id="girl">
+  <data key="d0">PRODUCT,PERSON</data>
+</node>
+<node id="army of ghosts">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="the torchwood tower">
+  <data key="d0">FAC</data>
+</node>
+<node id="torchwood tower">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="the genesis ark">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="daleks">
+  <data key="d0">ORGANIZATION,ALIEN</data>
+</node>
+<node id="genesis ark">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="the runaway bride">
+  <data key="d0">FAC,PERSON</data>
+</node>
+<node id="young woman">
+  <data key="d0">PERSON</data>
+</node>
+<node id="wedding day">
+  <data key="d0">DATE</data>
+</node>
+<node id="alien">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="smith and jones">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="martha jones">
+  <data key="d0">PERSON</data>
+</node>
+<node id="moon">
+  <data key="d0">LOCATION,PERSON</data>
+</node>
+<node id="the shakespeare code">
+  <data key="d0">ORGANIZATION,WORK_OF_ART</data>
+</node>
+<node id="1599">
+  <data key="d0">DATE</data>
+</node>
+<node id="william shakespeare's">
+  <data key="d0">PERSON</data>
+</node>
+<node id="three">
+  <data key="d0">CARDINAL</data>
+</node>
+<node id="william shakespeare">
+  <data key="d0">PERSON</data>
+</node>
+<node id="witches">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="motorway">
+  <data key="d0">ORGANIZATION,LOCATION</data>
+</node>
+<node id="manhattan">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="new york">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="1930">
+  <data key="d0">DATE</data>
+</node>
+<node id="1930s">
+  <data key="d0">DATE</data>
+</node>
+<node id="cyborgs">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="lazarus">
+  <data key="d0">PERSON</data>
+</node>
+<node id="dr lazarus">
+  <data key="d0">PERSON</data>
+</node>
+<node id="eternal youth">
+  <data key="d0">TIME</data>
+</node>
+<node id="42">
+  <data key="d0">CARDINAL</data>
+</node>
+<node id="42 minutes">
+  <data key="d0">TIME</data>
+</node>
+<node id="spaceship">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="sun">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="1913">
+  <data key="d0">DATE</data>
+</node>
+<node id="joan redfern">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the family of blood">
+  <data key="d0">ORGANIZATION,WORK_OF_ART</data>
+</node>
+<node id="sally sparrow">
+  <data key="d0">PERSON</data>
+</node>
+<node id="enemy species">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="malcassairo">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="utopia">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="professor">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the 21st century">
+  <data key="d0">DATE</data>
+</node>
+<node id="eighteen months">
+  <data key="d0">DATE</data>
+</node>
+<node id="harold saxon">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the sound of drums">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="21st century">
+  <data key="d0">TIME</data>
+</node>
+<node id="a year">
+  <data key="d0">DATE</data>
+</node>
+<node id="master">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="toclafane">
+  <data key="d0">ORGANIZATION,ALIEN</data>
+</node>
+<node id="time lords">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="damned">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="2007">
+  <data key="d0">DATE</data>
+</node>
+<node id="christmas">
+  <data key="d0">DATE</data>
+</node>
+<node id="kylie minogue">
+  <data key="d0">PERSON</data>
+</node>
+<node id="voyage of the damned">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="2007 christmas">
+  <data key="d0">DATE</data>
+</node>
+<node id="crime">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="adipose industries">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="donna noble">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the fires of pompeii">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="rome">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="ad 79">
+  <data key="d0">DATE</data>
+</node>
+<node id="mount vesuvius">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="pompeii">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="the ood-sphere">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="the 42nd century">
+  <data key="d0">DATE</data>
+</node>
+<node id="ood-sphere">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="42nd century">
+  <data key="d0">TIME</data>
+</node>
+<node id="sontaran stratagem">
+  <data key="d0">PERSON</data>
+</node>
+<node id="unit">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="luke rattigan">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the sontaran stratagem">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="atmos">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="the poison sky">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="sontarans">
+  <data key="d0">ALIEN,NORP</data>
+</node>
+<node id="humans">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="hath">
+  <data key="d0">ALIEN,PERSON</data>
+</node>
+<node id="messaline">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="unicorn">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="1926">
+  <data key="d0">DATE</data>
+</node>
+<node id="agatha christie">
+  <data key="d0">PERSON</data>
+</node>
+<node id="9-days">
+  <data key="d0">DATE,TIME</data>
+</node>
+<node id="a 51st century">
+  <data key="d0">DATE</data>
+</node>
+<node id="library">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="archaeologists">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="nodes">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="little girl">
+  <data key="d0">PERSON</data>
+</node>
+<node id="shadows">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="river song">
+  <data key="d0">PERSON</data>
+</node>
+<node id="forest of the dead">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="vashta nerada">
+  <data key="d0">PERSON</data>
+</node>
+<node id="future">
+  <data key="d0">TIME</data>
+</node>
+<node id="dr. moon">
+  <data key="d0">PERSON</data>
+</node>
+<node id="midnight">
+  <data key="d0">WORK_OF_ART,TIME</data>
+</node>
+<node id="passengers">
+  <data key="d0">PERSON</data>
+</node>
+<node id="racnoss">
+  <data key="d0">ORGANIZATION,ALIEN</data>
+</node>
+<node id="titanic">
+  <data key="d0">FAC,ORGANIZATION</data>
+</node>
+<node id="alternate time line">
+  <data key="d0">TIME</data>
+</node>
+<node id="26">
+  <data key="d0">CARDINAL</data>
+</node>
+<node id="dalek empire">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="journey's end">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="davros">
+  <data key="d0">PERSON</data>
+</node>
+<node id="universe">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="the eleventh hour">
+  <data key="d0">LAW,TIME</data>
+</node>
+<node id="amy pond">
+  <data key="d0">PERSON</data>
+</node>
+<node id="less than twenty minutes">
+  <data key="d0">TIME</data>
+</node>
+<node id="atraxi">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="twenty minutes">
+  <data key="d0">TIME</data>
+</node>
+<node id="starship uk">
+  <data key="d0">LOCATION,PERSON</data>
+</node>
+<node id="british">
+  <data key="d0">NORP</data>
+</node>
+<node id="smilers">
+  <data key="d0">LOCATION,ALIEN</data>
+</node>
+<node id="the beast below">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="british explorers">
+  <data key="d0">PERSON</data>
+</node>
+<node id="britain">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="world war two">
+  <data key="d0">EVENT,TIME</data>
+</node>
+<node id="winston churchill">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="the time of angels">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="byzantium">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="weeping angels">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="stone">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="song">
+  <data key="d0">PERSON</data>
+</node>
+<node id="first">
+  <data key="d0">ORDINAL</data>
+</node>
+<node id="10 minutes">
+  <data key="d0">TIME</data>
+</node>
+<node id="dr. song">
+  <data key="d0">PERSON</data>
+</node>
+<node id="forest">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="vampires">
+  <data key="d0">PERSON</data>
+</node>
+<node id="venice">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="16th century">
+  <data key="d0">DATE</data>
+</node>
+<node id="five years">
+  <data key="d0">DATE,TIME</data>
+</node>
+<node id="rory williams">
+  <data key="d0">PERSON</data>
+</node>
+<node id="leadworth">
+  <data key="d0">LOCATION,NORP</data>
+</node>
+<node id="rio">
+  <data key="d0">ORGANIZATION,LOCATION</data>
+</node>
+<node id="21 kilometers">
+  <data key="d0">QUANTITY</data>
+</node>
+<node id="reptilian">
+  <data key="d0">NORP</data>
+</node>
+<node id="thousands upon thousands">
+  <data key="d0">CARDINAL</data>
+</node>
+<node id="the hungry earth">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="welsh village">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="reptilian race">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="thousands upon thousands of years">
+  <data key="d0">TIME</data>
+</node>
+<node id="nasreen chaudry">
+  <data key="d0">WORK_OF_ART,PERSON</data>
+</node>
+<node id="restac">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="calmer">
+  <data key="d0">PERSON</data>
+</node>
+<node id="alaya">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="cold blood">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="reptilians">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="vincent van gogh">
+  <data key="d0">PERSON</data>
+</node>
+<node id="monster">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="painter">
+  <data key="d0">PERSON</data>
+</node>
+<node id="craig owens">
+  <data key="d0">PERSON</data>
+</node>
+<node id="craig">
+  <data key="d0">PERSON</data>
+</node>
+<node id="sophie">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="the lodger">
+  <data key="d0">PERSON</data>
+</node>
+<node id="pandorica">
+  <data key="d0">LOCATION,PERSON</data>
+</node>
+<node id="the big bang">
+  <data key="d0">PERSON</data>
+</node>
+<node id="big bang">
+  <data key="d0">TIME</data>
+</node>
+<node id="scrooge">
+  <data key="d0">EVENT</data>
+</node>
+<node id="kazran sardick">
+  <data key="d0">FAC,PERSON</data>
+</node>
+<node id="spacecraft">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="space liner">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="honeymoon suite">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="the impossible astronaut">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="day of the moon">
+  <data key="d0">DATE</data>
+</node>
+<node id="invaders">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="the black spot">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="pirate ship">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="siren">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="asteroid">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="time lord">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the rebel flesh">
+  <data key="d0">ORGANIZATION,WORK_OF_ART</data>
+</node>
+<node id="the 22nd century">
+  <data key="d0">DATE</data>
+</node>
+<node id="acid mining factory">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="22nd century">
+  <data key="d0">TIME</data>
+</node>
+<node id="workers">
+  <data key="d0">PERSON</data>
+</node>
+<node id="doppelgangers">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="the almost people">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="gangers">
+  <data key="d0">PERSON</data>
+</node>
+<node id="factory">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="island">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="the doctor's team">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="kill hitler">
+  <data key="d0">PERSON</data>
+</node>
+<node id="melody pond">
+  <data key="d0">WORK_OF_ART,PERSON</data>
+</node>
+<node id="berlin">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="1938">
+  <data key="d0">DATE</data>
+</node>
+<node id="adolf hitler">
+  <data key="d0">PERSON</data>
+</node>
+<node id="hitler">
+  <data key="d0">PERSON</data>
+</node>
+<node id="robot">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="monsters">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="cupboard">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="quarantine facility">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="wife">
+  <data key="d0">PERSON</data>
+</node>
+<node id="complex">
+  <data key="d0">NORP</data>
+</node>
+<node id="the god complex">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="hotel of horrors">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="closing time">
+  <data key="d0">TIME</data>
+</node>
+<node id="silver rat">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="metal men">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="the wedding of river song">
+  <data key="d0">WORK_OF_ART</data>
+</node>
+<node id="april 22nd, 2011">
+  <data key="d0">DATE</data>
+</node>
+<node id="5:02pm">
+  <data key="d0">CARDINAL,TIME</data>
+</node>
+<node id="lake silencio">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="woman">
+  <data key="d0">PERSON</data>
+</node>
+<node id="widow and the wardrobe">
+  <data key="d0">WORK_OF_ART</data>
+</node>
+<node id="madge arwell">
+  <data key="d0">PERSON</data>
+</node>
+<node id="spaceman angel">
+  <data key="d0">ALIEN,PERSON</data>
+</node>
+<node id="three years later">
+  <data key="d0">DATE</data>
+</node>
+<node id="madge">
+  <data key="d0">FAC</data>
+</node>
+<node id="dorset">
+  <data key="d0">ORGANIZATION,LOCATION</data>
+</node>
+<node id="lily">
+  <data key="d0">PERSON</data>
+</node>
+<node id="cyril">
+  <data key="d0">PERSON</data>
+</node>
+<node id="arwells">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the doctor, the widow and the wardrobe">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="wintry">
+  <data key="d0">TIME</data>
+</node>
+<node id="the dalek parliament">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="their days">
+  <data key="d0">DATE</data>
+</node>
+<node id="clara oswald">
+  <data key="d0">PERSON</data>
+</node>
+<node id="asylum">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="dalek parliament">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="year">
+  <data key="d0">TIME</data>
+</node>
+<node id="brian williams">
+  <data key="d0">PERSON</data>
+</node>
+<node id="queen nefertiti">
+  <data key="d0">PERSON</data>
+</node>
+<node id="john riddell">
+  <data key="d0">PERSON</data>
+</node>
+<node id="stetson">
+  <data key="d0">PERSON</data>
+</node>
+<node id="western">
+  <data key="d0">LOCATION,NORP</data>
+</node>
+<node id="gunslinger">
+  <data key="d0">PRODUCT</data>
+</node>
+<node id="sheriff">
+  <data key="d0">PERSON</data>
+</node>
+<node id="cyborg">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="the gunslinger">
+  <data key="d0">PERSON</data>
+</node>
+<node id="millions">
+  <data key="d0">CARDINAL</data>
+</node>
+<node id="brian">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the power of three">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="the angels">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="1892">
+  <data key="d0">DATE</data>
+</node>
+<node id="the day">
+  <data key="d0">DATE</data>
+</node>
+<node id="the snowmen">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="snow">
+  <data key="d0">PERSON</data>
+</node>
+<node id="governess">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the bells of saint john">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="the present day">
+  <data key="d0">DATE</data>
+</node>
+<node id="kizlet">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="wifi">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="present day">
+  <data key="d0">TIME</data>
+</node>
+<node id="miss kizlet">
+  <data key="d0">PERSON</data>
+</node>
+<node id="spoonheads">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="the festival of offering">
+  <data key="d0">EVENT</data>
+</node>
+<node id="merry">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the rings of akhaten">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="rings of akhaten">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="pyramid">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="7 planets">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="old god">
+  <data key="d0">PERSON</data>
+</node>
+<node id="cold war">
+  <data key="d0">LOCATION,EVENT</data>
+</node>
+<node id="soviet">
+  <data key="d0">ORGANIZATION,NORP</data>
+</node>
+<node id="grisenko">
+  <data key="d0">PERSON</data>
+</node>
+<node id="5000 years">
+  <data key="d0">DATE,TIME</data>
+</node>
+<node id="grand marshal skaldak">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="professor grisenko">
+  <data key="d0">PERSON</data>
+</node>
+<node id="mammoth">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="ice warrior">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="1974">
+  <data key="d0">DATE</data>
+</node>
+<node id="alec palmer">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="emma grayling">
+  <data key="d0">PERSON</data>
+</node>
+<node id="emma">
+  <data key="d0">PERSON</data>
+</node>
+<node id="hundreds of years">
+  <data key="d0">DATE,TIME</data>
+</node>
+<node id="manor house">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="ghost">
+  <data key="d0">PERSON</data>
+</node>
+<node id="paranormal beings">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="the centre of the tardis">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="30 minutes">
+  <data key="d0">TIME</data>
+</node>
+<node id="space freighter">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="creatures">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="recent history">
+  <data key="d0">TIME</data>
+</node>
+<node id="the crimson horror">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="yorkshire">
+  <data key="d0">LOCATION,PERSON</data>
+</node>
+<node id="mrs gillyflower">
+  <data key="d0">PERSON</data>
+</node>
+<node id="ada">
+  <data key="d0">PERSON</data>
+</node>
+<node id="madame vastra">
+  <data key="d0">PERSON</data>
+</node>
+<node id="silver">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="hedgewick's world of wonders">
+  <data key="d0">ORGANIZATION,LOCATION</data>
+</node>
+<node id="artie">
+  <data key="d0">PERSON</data>
+</node>
+<node id="angie">
+  <data key="d0">PERSON</data>
+</node>
+<node id="nightmare in silver">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="dwarf">
+  <data key="d0">PERSON</data>
+</node>
+<node id="trenzalore">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="deep breath">
+  <data key="d0">PERSON</data>
+</node>
+<node id="victorian london">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="thames">
+  <data key="d0">ORGANIZATION,LOCATION</data>
+</node>
+<node id="dinosaur">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="sherwood">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="sherwood forest">
+  <data key="d0">ORGANIZATION,LOCATION</data>
+</node>
+<node id="robin hood">
+  <data key="d0">PERSON</data>
+</node>
+<node id="nottingham">
+  <data key="d0">LOCATION,PERSON</data>
+</node>
+<node id="time heist">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="caretaker">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="skovox blitzer">
+  <data key="d0">PERSON</data>
+</node>
+<node id="second">
+  <data key="d0">ORDINAL</data>
+</node>
+<node id="danny pink">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the caretaker">
+  <data key="d0">PERSON</data>
+</node>
+<node id="near future">
+  <data key="d0">TIME</data>
+</node>
+<node id="space shuttle">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="lunar surface">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="mummy">
+  <data key="d0">ALIEN,PERSON</data>
+</node>
+<node id="the orient express">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="orient express">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="flatline">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="two dimensional enemy">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="the forest of the night">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="one morning">
+  <data key="d0">TIME</data>
+</node>
+<node id="city">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="town">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="human race">
+  <data key="d0">PERSON</data>
+</node>
+<node id="land">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="dark water">
+  <data key="d0">LOCATION,PERSON</data>
+</node>
+<node id="nethersphere">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="heaven">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="day">
+  <data key="d0">TIME</data>
+</node>
+<node id="last christmas">
+  <data key="d0">DATE</data>
+</node>
+<node id="arctic">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="santa claus">
+  <data key="d0">PERSON</data>
+</node>
+<node id="arctic base">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="terrifying creatures">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="the magician's apprentice">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="witch">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="dalek city">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="empire">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="sonic">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="lake">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="base crew">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="base">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="flood">
+  <data key="d0">PRODUCT</data>
+</node>
+<node id="fisher king">
+  <data key="d0">PERSON</data>
+</node>
+<node id="beethoven">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="5th">
+  <data key="d0">ORDINAL</data>
+</node>
+<node id="past">
+  <data key="d0">TIME</data>
+</node>
+<node id="ashildr">
+  <data key="d0">LOCATION,PERSON</data>
+</node>
+<node id="12 hours">
+  <data key="d0">TIME</data>
+</node>
+<node id="viking village">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="mire">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="galaxy">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="the woman who lived">
+  <data key="d0">WORK_OF_ART</data>
+</node>
+<node id="england">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="1651">
+  <data key="d0">DATE</data>
+</node>
+<node id="knightmare">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="the knightmare">
+  <data key="d0">PERSON</data>
+</node>
+<node id="gallows">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="the zygon invasion">
+  <data key="d0">LAW</data>
+</node>
+<node id="zygons">
+  <data key="d0">ALIEN,ORGANIZATION,NORP</data>
+</node>
+<node id="zygon">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="osgood">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the zygon inversion">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="le verrier space station">
+  <data key="d0">ORGANIZATION,LOCATION</data>
+</node>
+<node id="zero">
+  <data key="d0">CARDINAL</data>
+</node>
+<node id="rigsy">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="raven">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="heaven sent">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="gallifrey">
+  <data key="d0">LOCATION,PERSON</data>
+</node>
+<node id="the time lords">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="hybrid">
+  <data key="d0">ALIEN,PERSON</data>
+</node>
+<node id="hell bent">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="river song's">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="squad">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="mysterio">
+  <data key="d0">PERSON</data>
+</node>
+<node id="nardole">
+  <data key="d0">ORGANIZATION,PERSON</data>
+</node>
+<node id="doctor mysterio">
+  <data key="d0">PERSON</data>
+</node>
+<node id="investigative reporter">
+  <data key="d0">PERSON</data>
+</node>
+<node id="the pilot">
+  <data key="d0">PERSON</data>
+</node>
+<node id="university student">
+  <data key="d0">PERSON</data>
+</node>
+<node id="life-mimicking alien">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="bill potts">
+  <data key="d0">PERSON</data>
+</node>
+<node id="far future">
+  <data key="d0">TIME</data>
+</node>
+<node id="human settlement">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="emojibots">
+  <data key="d0">ALIEN</data>
+</node>
+<node id="thin ice">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="february 1814">
+  <data key="d0">DATE</data>
+</node>
+<node id="river thames">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="knock knock">
+  <data key="d0">PERSON</data>
+</node>
+<node id="house">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="landlord">
+  <data key="d0">PERSON</data>
+</node>
+<node id="oxygen">
+  <data key="d0">PERSON</data>
+</node>
+<node id="space station">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="extremis">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="haereticum">
+  <data key="d0">ORGANIZATION,LOCATION</data>
+</node>
+<node id="vatican">
+  <data key="d0">FAC,ORGANIZATION</data>
+</node>
+<node id="veritas">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="history">
+  <data key="d0">TIME</data>
+</node>
+<node id="5,000-year-old">
+  <data key="d0">DATE</data>
+</node>
+<node id="overnight">
+  <data key="d0">TIME</data>
+</node>
+<node id="end of the world">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="the lie of the land">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="resistance">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="regime">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="mars">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="the queen of the ice warriors on">
+  <data key="d0">WORK_OF_ART</data>
+</node>
+<node id="1881">
+  <data key="d0">DATE</data>
+</node>
+<node id="queen of the ice warriors">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="the eaters of light">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="roman">
+  <data key="d0">NORP</data>
+</node>
+<node id="ninth">
+  <data key="d0">ORDINAL</data>
+</node>
+<node id="aberdeenshire">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="roman legion">
+  <data key="d0">ORGANIZATION</data>
+</node>
+<node id="cairn">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="hillside">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="world enough">
+  <data key="d0">ORGANIZATION,LOCATION</data>
+</node>
+<node id="event horizon">
+  <data key="d0">LOCATION</data>
+</node>
+<node id="falls">
+  <data key="d0">PERSON</data>
+</node>
+<edge source="rose tyler" target="doctor" id="0">
+  <data key="d1">ask</data>
+  <data key="d2">1x8</data>
+</edge>
+<edge source="doctor" target="rose tyler" id="0">
+  <data key="d1">take</data>
+  <data key="d2">1x2</data>
+</edge>
+<edge source="doctor" target="rose tyler" id="1">
+  <data key="d1">return</data>
+  <data key="d2">1x4</data>
+</edge>
+<edge source="doctor" target="versailles" id="0">
+  <data key="d1">find</data>
+  <data key="d2">2x4</data>
+</edge>
+<edge source="doctor" target="martha jones" id="0">
+  <data key="d1">take</data>
+  <data key="d2">3x2</data>
+</edge>
+<edge source="doctor" target="martha jones" id="1">
+  <data key="d1">take</data>
+  <data key="d2">3x3</data>
+</edge>
+<edge source="doctor" target="world" id="0">
+  <data key="d1">save</data>
+  <data key="d2">5x1</data>
+</edge>
+<edge source="doctor" target="amy pond" id="0">
+  <data key="d1">take</data>
+  <data key="d2">5x2</data>
+</edge>
+<edge source="doctor" target="amy pond" id="1">
+  <data key="d1">take</data>
+  <data key="d2">7x5</data>
+</edge>
+<edge source="doctor" target="scrooge" id="0">
+  <data key="d1">meet</data>
+  <data key="d2">6x0</data>
+</edge>
+<edge source="doctor" target="manhattan" id="0">
+  <data key="d1">save</data>
+  <data key="d2">10x0</data>
+</edge>
+<edge source="earth" target="racnoss" id="0">
+  <data key="d1">handle</data>
+  <data key="d2">4x11</data>
+</edge>
+<edge source="earth" target="titanic" id="0">
+  <data key="d1">handle</data>
+  <data key="d2">4x11</data>
+</edge>
+<edge source="slitheen" target="parliament" id="0">
+  <data key="d1">infiltrate</data>
+  <data key="d2">1x5</data>
+</edge>
+<edge source="tardis" target="doctor" id="0">
+  <data key="d1">take</data>
+  <data key="d2">5x3</data>
+</edge>
+<edge source="satellite" target="humanity" id="0">
+  <data key="d1">control</data>
+  <data key="d2">1x7</data>
+</edge>
+<edge source="master" target="toclafane" id="0">
+  <data key="d1">unleash</data>
+  <data key="d2">3x13</data>
+</edge>
+<edge source="donna noble" target="doctor" id="0">
+  <data key="d1">meet</data>
+  <data key="d2">4x11</data>
+</edge>
+<edge source="amy pond" target="doctor" id="0">
+  <data key="d1">call</data>
+  <data key="d2">6x0</data>
+</edge>
+<edge source="weeping angels" target="manhattan" id="0">
+  <data key="d1">take</data>
+  <data key="d2">7x5</data>
+</edge>
+<edge source="rory williams" target="wife" id="0">
+  <data key="d1">save</data>
+  <data key="d2">6x10</data>
+</edge>
+<edge source="madge" target="london" id="0">
+  <data key="d1">escape</data>
+  <data key="d2">7x0</data>
+</edge>
+<edge source="zygons" target="england" id="0">
+  <data key="d1">invade</data>
+  <data key="d2">9x8</data>
+</edge>
+</graph></graphml>

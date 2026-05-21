@@ -1,0 +1,21 @@
+query_id,query,found_docs,matched_edge_count,top_edges
+1,Doctor fights with Weeping Angels and wants to save Amy,1x4;3x4;3x9;3x12;5x4,8,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor;TEXT:The Time/related_to/TEXT:Angels The Doctor
+2,Doctor and Clara in nineteenth century,1x4;3x4;3x9;3x12;5x4,8,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor;TEXT:The Time/related_to/TEXT:Angels The Doctor
+3,Doctor meets River Song for the first time,1x4;3x4;3x9;3x12;5x4,10,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor;TEXT:The Time/related_to/TEXT:Angels The Doctor
+4,Doctor and Donna encounter Daleks and Davros,1x4;3x4;3x5;3x9;3x12,9,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor
+5,Doctor and Rose end up in a parallel universe,1x4;3x4;3x9;3x12;5x4,8,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor;TEXT:The Time/related_to/TEXT:Angels The Doctor
+6,Doctor meets van Gogh,1x4;3x4;3x9;3x12;5x4,8,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor;TEXT:The Time/related_to/TEXT:Angels The Doctor
+7,Doctor and Martha face time paradox creatures or similar threats,1x4;3x4;3x9;3x12;5x4,8,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor;TEXT:The Time/related_to/TEXT:Angels The Doctor
+8,Doctor and Bill encounter Cybermen,1x4;2x6;3x4;3x9;3x12,10,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:The Age/related_to/TEXT:Steel The Cybermen;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor
+9,Paternoster Gang and Doctor and Vastra and Strax,1x4;3x4;3x9;3x12;5x4,8,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor;TEXT:The Time/related_to/TEXT:Angels The Doctor
+10,Doctor and Rose meets her father Pete Tyler,1x4;3x4;3x9;3x12;5x4,8,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor;TEXT:The Time/related_to/TEXT:Angels The Doctor
+11,Rory dies,,0,
+12,Rose manequins aliens,,0,
+13,neighbor upstairs Amy not there,,0,
+14,cat nuns,,0,
+15,Doctor regenerates,1x4;3x4;3x9;3x12;5x4,8,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor;TEXT:The Time/related_to/TEXT:Angels The Doctor
+16,Doctor encounters Silence,1x4;3x4;3x9;3x12;5x4,8,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor;TEXT:The Time/related_to/TEXT:Angels The Doctor
+17,Doctor in Italy,1x4;3x4;3x9;3x12;5x4,8,TEXT:Aliens/related_to/TEXT:London The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:The Family/related_to/TEXT:Blood The Doctor;TEXT:The Sound/related_to/TEXT:Drums The Doctor;TEXT:The Time/related_to/TEXT:Angels The Doctor
+18,Daleks and Davros,3x4;3x5,2,TEXT:Daleks/related_to/TEXT:Manhattan The Doctor;TEXT:Daleks/related_to/TEXT:Manhattan
+19,Something on Donna's back,,0,
+20,Wedding,6x13,1,TEXT:The Wedding/related_to/TEXT:River Song April

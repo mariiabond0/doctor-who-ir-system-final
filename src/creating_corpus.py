@@ -21,11 +21,33 @@ MODEL_NAME = config.MODEL_NAME
 
 
 def load_episode_data() -> pd.DataFrame:
-    """Load episode metadata and IMDb details from CSV files."""
-    df_details = pd.read_csv(config.EPISODES_CSV)
-    df_imdb = pd.read_csv(config.IMDB_CSV)
-    df_guide = pd.read_csv(config.DW_GUIDE_CSV)
-    merged = pd.merge(df_imdb[["number", "title", "description", "season"]], df_details[["title", "description"]], df_guide[["title", "summary"]], on="title", how="left")
+    """Load episode metadata.
+
+    Prefer a pre-merged CSV at `config.MERGED_DATASET_PATH`. If it doesn't exist,
+    attempt to read the individual source CSVs and create the merged file. If
+    required source files are missing, raise a clear error.
+    """
+    # If a pre-merged dataset is available, use it (this is the common case).
+    if config.MERGED_DATASET_PATH.exists():
+        return pd.read_csv(config.MERGED_DATASET_PATH)
+
+    # Fallback: try to build the merged dataset from source files.
+    try:
+        df_details = pd.read_csv(config.EPISODES_CSV)
+        df_imdb = pd.read_csv(config.IMDB_CSV)
+        df_guide = pd.read_csv(config.DW_GUIDE_CSV)
+    except FileNotFoundError as exc:
+        raise FileNotFoundError(
+            f"Missing required CSV file: {exc.filename}.\nEither provide {config.MERGED_DATASET_PATH} or ensure {config.EPISODES_CSV}, {config.IMDB_CSV}, and {config.DW_GUIDE_CSV} exist."
+        ) from exc
+
+    merged = pd.merge(
+        df_imdb[["number", "title", "description", "season"]],
+        df_details[["title", "description"]],
+        df_guide[["title", "summary"]],
+        on="title",
+        how="left",
+    )
     merged.to_csv(config.MERGED_DATASET_PATH, index=False)
     return merged
 

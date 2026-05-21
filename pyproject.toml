@@ -27,6 +27,13 @@ dependencies = [
     "torch>=1.10.0",
     "faiss-cpu>=1.7.0",
     "numpy>=1.21.0",
+    "spacy>=3.7.5",
+    "gliner>=0.2.22",
+    "transformers>=4.46.3",
+    "tokenizers>=0.20.3",
+    "huggingface-hub>=0.36.2",
+    "pyvis>=0.3.2",
+    "lxml>=6.1.1",
 ]
 
 [project.optional-dependencies]

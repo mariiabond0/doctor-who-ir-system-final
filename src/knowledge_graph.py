@@ -104,7 +104,7 @@ def load_gliner2_model(model_name: str, device: str = "cpu", quantize: bool = Fa
 
 def extract_entities(model: Any, text: str, entity_types: Optional[Sequence[str]] = None, threshold: float = 0.5) -> List[EntityMention]:
     if entity_types is None:
-        entity_types = ["PER", "ORG", "LOC", "GPE", "DATE", "EVENT", "WORK_OF_ART", "PRODUCT"]
+        entity_types = ["PERSON", "ALIEN", "LOCATION", "ORGANIZATION", "DATE", "EVENT", "TIME"]
 
     response = model.extract_entities(text, entity_types, threshold=threshold, format_results=True, include_confidence=True, include_spans=True)
     entities = response.get("entities", []) if isinstance(response, dict) else []

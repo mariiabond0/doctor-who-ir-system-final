@@ -1,0 +1,716 @@
+[
+  {
+    "query": "Doctor fights with Weeping Angels and wants to save Amy",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x9",
+      "3x12",
+      "5x4"
+    ],
+    "matched_edge_count": 8,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      },
+      {
+        "subject": "TEXT:The Time",
+        "relation": "related_to",
+        "object": "TEXT:Angels The Doctor",
+        "confidence": 0.8,
+        "source_id": "5x4"
+      }
+    ],
+    "query_id": 1
+  },
+  {
+    "query": "Doctor and Clara in nineteenth century",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x9",
+      "3x12",
+      "5x4"
+    ],
+    "matched_edge_count": 8,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      },
+      {
+        "subject": "TEXT:The Time",
+        "relation": "related_to",
+        "object": "TEXT:Angels The Doctor",
+        "confidence": 0.8,
+        "source_id": "5x4"
+      }
+    ],
+    "query_id": 2
+  },
+  {
+    "query": "Doctor meets River Song for the first time",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x9",
+      "3x12",
+      "5x4"
+    ],
+    "matched_edge_count": 10,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      },
+      {
+        "subject": "TEXT:The Time",
+        "relation": "related_to",
+        "object": "TEXT:Angels The Doctor",
+        "confidence": 0.8,
+        "source_id": "5x4"
+      }
+    ],
+    "query_id": 3
+  },
+  {
+    "query": "Doctor and Donna encounter Daleks and Davros",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x5",
+      "3x9",
+      "3x12"
+    ],
+    "matched_edge_count": 9,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan",
+        "confidence": 0.8,
+        "source_id": "3x5"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      }
+    ],
+    "query_id": 4
+  },
+  {
+    "query": "Doctor and Rose end up in a parallel universe",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x9",
+      "3x12",
+      "5x4"
+    ],
+    "matched_edge_count": 8,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      },
+      {
+        "subject": "TEXT:The Time",
+        "relation": "related_to",
+        "object": "TEXT:Angels The Doctor",
+        "confidence": 0.8,
+        "source_id": "5x4"
+      }
+    ],
+    "query_id": 5
+  },
+  {
+    "query": "Doctor meets van Gogh",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x9",
+      "3x12",
+      "5x4"
+    ],
+    "matched_edge_count": 8,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      },
+      {
+        "subject": "TEXT:The Time",
+        "relation": "related_to",
+        "object": "TEXT:Angels The Doctor",
+        "confidence": 0.8,
+        "source_id": "5x4"
+      }
+    ],
+    "query_id": 6
+  },
+  {
+    "query": "Doctor and Martha face time paradox creatures or similar threats",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x9",
+      "3x12",
+      "5x4"
+    ],
+    "matched_edge_count": 8,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      },
+      {
+        "subject": "TEXT:The Time",
+        "relation": "related_to",
+        "object": "TEXT:Angels The Doctor",
+        "confidence": 0.8,
+        "source_id": "5x4"
+      }
+    ],
+    "query_id": 7
+  },
+  {
+    "query": "Doctor and Bill encounter Cybermen",
+    "found_docs": [
+      "1x4",
+      "2x6",
+      "3x4",
+      "3x9",
+      "3x12"
+    ],
+    "matched_edge_count": 10,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:The Age",
+        "relation": "related_to",
+        "object": "TEXT:Steel The Cybermen",
+        "confidence": 0.8,
+        "source_id": "2x6"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      }
+    ],
+    "query_id": 8
+  },
+  {
+    "query": "Paternoster Gang and Doctor and Vastra and Strax",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x9",
+      "3x12",
+      "5x4"
+    ],
+    "matched_edge_count": 8,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      },
+      {
+        "subject": "TEXT:The Time",
+        "relation": "related_to",
+        "object": "TEXT:Angels The Doctor",
+        "confidence": 0.8,
+        "source_id": "5x4"
+      }
+    ],
+    "query_id": 9
+  },
+  {
+    "query": "Doctor and Rose meets her father Pete Tyler",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x9",
+      "3x12",
+      "5x4"
+    ],
+    "matched_edge_count": 8,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      },
+      {
+        "subject": "TEXT:The Time",
+        "relation": "related_to",
+        "object": "TEXT:Angels The Doctor",
+        "confidence": 0.8,
+        "source_id": "5x4"
+      }
+    ],
+    "query_id": 10
+  },
+  {
+    "query": "Rory dies",
+    "found_docs": [],
+    "matched_edge_count": 0,
+    "top_edges": [],
+    "query_id": 11
+  },
+  {
+    "query": "Rose manequins aliens",
+    "found_docs": [],
+    "matched_edge_count": 0,
+    "top_edges": [],
+    "query_id": 12
+  },
+  {
+    "query": "neighbor upstairs Amy not there",
+    "found_docs": [],
+    "matched_edge_count": 0,
+    "top_edges": [],
+    "query_id": 13
+  },
+  {
+    "query": "cat nuns",
+    "found_docs": [],
+    "matched_edge_count": 0,
+    "top_edges": [],
+    "query_id": 14
+  },
+  {
+    "query": "Doctor regenerates",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x9",
+      "3x12",
+      "5x4"
+    ],
+    "matched_edge_count": 8,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      },
+      {
+        "subject": "TEXT:The Time",
+        "relation": "related_to",
+        "object": "TEXT:Angels The Doctor",
+        "confidence": 0.8,
+        "source_id": "5x4"
+      }
+    ],
+    "query_id": 15
+  },
+  {
+    "query": "Doctor encounters Silence",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x9",
+      "3x12",
+      "5x4"
+    ],
+    "matched_edge_count": 8,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      },
+      {
+        "subject": "TEXT:The Time",
+        "relation": "related_to",
+        "object": "TEXT:Angels The Doctor",
+        "confidence": 0.8,
+        "source_id": "5x4"
+      }
+    ],
+    "query_id": 16
+  },
+  {
+    "query": "Doctor in Italy",
+    "found_docs": [
+      "1x4",
+      "3x4",
+      "3x9",
+      "3x12",
+      "5x4"
+    ],
+    "matched_edge_count": 8,
+    "top_edges": [
+      {
+        "subject": "TEXT:Aliens",
+        "relation": "related_to",
+        "object": "TEXT:London The Doctor",
+        "confidence": 0.8,
+        "source_id": "1x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:The Family",
+        "relation": "related_to",
+        "object": "TEXT:Blood The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x9"
+      },
+      {
+        "subject": "TEXT:The Sound",
+        "relation": "related_to",
+        "object": "TEXT:Drums The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x12"
+      },
+      {
+        "subject": "TEXT:The Time",
+        "relation": "related_to",
+        "object": "TEXT:Angels The Doctor",
+        "confidence": 0.8,
+        "source_id": "5x4"
+      }
+    ],
+    "query_id": 17
+  },
+  {
+    "query": "Daleks and Davros",
+    "found_docs": [
+      "3x4",
+      "3x5"
+    ],
+    "matched_edge_count": 2,
+    "top_edges": [
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan The Doctor",
+        "confidence": 0.8,
+        "source_id": "3x4"
+      },
+      {
+        "subject": "TEXT:Daleks",
+        "relation": "related_to",
+        "object": "TEXT:Manhattan",
+        "confidence": 0.8,
+        "source_id": "3x5"
+      }
+    ],
+    "query_id": 18
+  },
+  {
+    "query": "Something on Donna's back",
+    "found_docs": [],
+    "matched_edge_count": 0,
+    "top_edges": [],
+    "query_id": 19
+  },
+  {
+    "query": "Wedding",
+    "found_docs": [
+      "6x13"
+    ],
+    "matched_edge_count": 1,
+    "top_edges": [
+      {
+        "subject": "TEXT:The Wedding",
+        "relation": "related_to",
+        "object": "TEXT:River Song April",
+        "confidence": 0.8,
+        "source_id": "6x13"
+      }
+    ],
+    "query_id": 20
+  }
+]

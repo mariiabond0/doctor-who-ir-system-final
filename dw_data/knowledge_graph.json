@@ -1,0 +1,5422 @@
+{
+  "nodes": {
+    "PER:Rose When": {
+      "id": "PER:Rose When",
+      "label": "PER",
+      "aliases": [
+        "Rose When"
+      ],
+      "metadata": {
+        "source_id": "1x1"
+      }
+    },
+    "PER:Rose Tyler": {
+      "id": "PER:Rose Tyler",
+      "label": "PER",
+      "aliases": [
+        "Rose Tyler"
+      ],
+      "metadata": {
+        "source_id": "1x1"
+      }
+    },
+    "PER:Doctor": {
+      "id": "PER:Doctor",
+      "label": "PER",
+      "aliases": [
+        "Doctor"
+      ],
+      "metadata": {
+        "source_id": "10x10"
+      }
+    },
+    "PER:The End": {
+      "id": "PER:The End",
+      "label": "PER",
+      "aliases": [
+        "The End"
+      ],
+      "metadata": {
+        "source_id": "1x2"
+      }
+    },
+    "PER:World The Doctor": {
+      "id": "PER:World The Doctor",
+      "label": "PER",
+      "aliases": [
+        "World The Doctor"
+      ],
+      "metadata": {
+        "source_id": "1x2"
+      }
+    },
+    "PER:Rose": {
+      "id": "PER:Rose",
+      "label": "PER",
+      "aliases": [
+        "Rose"
+      ],
+      "metadata": {
+        "source_id": "2x11"
+      }
+    },
+    "PER:Earth": {
+      "id": "PER:Earth",
+      "label": "PER",
+      "aliases": [
+        "Earth"
+      ],
+      "metadata": {
+        "source_id": "9x7"
+      }
+    },
+    "PER:The Unquiet Dead The Doctor": {
+      "id": "PER:The Unquiet Dead The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Unquiet Dead The Doctor"
+      ],
+      "metadata": {
+        "source_id": "1x3"
+      }
+    },
+    "PER:Charles Dickens": {
+      "id": "PER:Charles Dickens",
+      "label": "PER",
+      "aliases": [
+        "Charles Dickens"
+      ],
+      "metadata": {
+        "source_id": "1x3"
+      }
+    },
+    "PER:Aliens": {
+      "id": "PER:Aliens",
+      "label": "PER",
+      "aliases": [
+        "Aliens"
+      ],
+      "metadata": {
+        "source_id": "1x4"
+      }
+    },
+    "PER:London The Doctor": {
+      "id": "PER:London The Doctor",
+      "label": "PER",
+      "aliases": [
+        "London The Doctor"
+      ],
+      "metadata": {
+        "source_id": "1x4"
+      }
+    },
+    "PER:London": {
+      "id": "PER:London",
+      "label": "PER",
+      "aliases": [
+        "London"
+      ],
+      "metadata": {
+        "source_id": "10x3"
+      }
+    },
+    "PER:What": {
+      "id": "PER:What",
+      "label": "PER",
+      "aliases": [
+        "What"
+      ],
+      "metadata": {
+        "source_id": "4x8"
+      }
+    },
+    "PER:Prime Minister": {
+      "id": "PER:Prime Minister",
+      "label": "PER",
+      "aliases": [
+        "Prime Minister"
+      ],
+      "metadata": {
+        "source_id": "3x12"
+      }
+    },
+    "TEXT:Aliens": {
+      "id": "TEXT:Aliens",
+      "label": "ENTITY",
+      "aliases": [
+        "Aliens"
+      ],
+      "metadata": {
+        "source_id": "1x4"
+      }
+    },
+    "TEXT:London The Doctor": {
+      "id": "TEXT:London The Doctor",
+      "label": "ENTITY",
+      "aliases": [
+        "London The Doctor"
+      ],
+      "metadata": {
+        "source_id": "1x4"
+      }
+    },
+    "PER:World War Three The Slitheen": {
+      "id": "PER:World War Three The Slitheen",
+      "label": "PER",
+      "aliases": [
+        "World War Three The Slitheen"
+      ],
+      "metadata": {
+        "source_id": "1x5"
+      }
+    },
+    "PER:Parliament": {
+      "id": "PER:Parliament",
+      "label": "PER",
+      "aliases": [
+        "Parliament"
+      ],
+      "metadata": {
+        "source_id": "1x5"
+      }
+    },
+    "PER:World War Three": {
+      "id": "PER:World War Three",
+      "label": "PER",
+      "aliases": [
+        "World War Three"
+      ],
+      "metadata": {
+        "source_id": "1x5"
+      }
+    },
+    "PER:Dalek The": {
+      "id": "PER:Dalek The",
+      "label": "PER",
+      "aliases": [
+        "Dalek The"
+      ],
+      "metadata": {
+        "source_id": "1x6"
+      }
+    },
+    "PER:Utah": {
+      "id": "PER:Utah",
+      "label": "PER",
+      "aliases": [
+        "Utah"
+      ],
+      "metadata": {
+        "source_id": "6x1"
+      }
+    },
+    "PER:The Long Game In": {
+      "id": "PER:The Long Game In",
+      "label": "PER",
+      "aliases": [
+        "The Long Game In"
+      ],
+      "metadata": {
+        "source_id": "1x7"
+      }
+    },
+    "PER:Father": {
+      "id": "PER:Father",
+      "label": "PER",
+      "aliases": [
+        "Father"
+      ],
+      "metadata": {
+        "source_id": "1x8"
+      }
+    },
+    "PER:Day All": {
+      "id": "PER:Day All",
+      "label": "PER",
+      "aliases": [
+        "Day All"
+      ],
+      "metadata": {
+        "source_id": "1x8"
+      }
+    },
+    "PER:Pete": {
+      "id": "PER:Pete",
+      "label": "PER",
+      "aliases": [
+        "Pete"
+      ],
+      "metadata": {
+        "source_id": "1x8"
+      }
+    },
+    "PER:He": {
+      "id": "PER:He",
+      "label": "PER",
+      "aliases": [
+        "He"
+      ],
+      "metadata": {
+        "source_id": "7x9"
+      }
+    },
+    "PER:Rather": {
+      "id": "PER:Rather",
+      "label": "PER",
+      "aliases": [
+        "Rather"
+      ],
+      "metadata": {
+        "source_id": "1x8"
+      }
+    },
+    "PER:She": {
+      "id": "PER:She",
+      "label": "PER",
+      "aliases": [
+        "She"
+      ],
+      "metadata": {
+        "source_id": "7x12"
+      }
+    },
+    "PER:Far": {
+      "id": "PER:Far",
+      "label": "PER",
+      "aliases": [
+        "Far"
+      ],
+      "metadata": {
+        "source_id": "1x8"
+      }
+    },
+    "PER:The Empty Child When": {
+      "id": "PER:The Empty Child When",
+      "label": "PER",
+      "aliases": [
+        "The Empty Child When"
+      ],
+      "metadata": {
+        "source_id": "1x9"
+      }
+    },
+    "PER:London Blitz": {
+      "id": "PER:London Blitz",
+      "label": "PER",
+      "aliases": [
+        "London Blitz"
+      ],
+      "metadata": {
+        "source_id": "1x9"
+      }
+    },
+    "PER:Captain Jack Harkness": {
+      "id": "PER:Captain Jack Harkness",
+      "label": "PER",
+      "aliases": [
+        "Captain Jack Harkness"
+      ],
+      "metadata": {
+        "source_id": "1x9"
+      }
+    },
+    "PER:The Doctor Dances The": {
+      "id": "PER:The Doctor Dances The",
+      "label": "PER",
+      "aliases": [
+        "The Doctor Dances The"
+      ],
+      "metadata": {
+        "source_id": "1x10"
+      }
+    },
+    "PER:Boom Town Stopping": {
+      "id": "PER:Boom Town Stopping",
+      "label": "PER",
+      "aliases": [
+        "Boom Town Stopping"
+      ],
+      "metadata": {
+        "source_id": "1x11"
+      }
+    },
+    "PER:Cardiff": {
+      "id": "PER:Cardiff",
+      "label": "PER",
+      "aliases": [
+        "Cardiff"
+      ],
+      "metadata": {
+        "source_id": "1x11"
+      }
+    },
+    "PER:The Doctor": {
+      "id": "PER:The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Doctor"
+      ],
+      "metadata": {
+        "source_id": "10x8"
+      }
+    },
+    "PER:Jack": {
+      "id": "PER:Jack",
+      "label": "PER",
+      "aliases": [
+        "Jack"
+      ],
+      "metadata": {
+        "source_id": "3x12"
+      }
+    },
+    "PER:Bad Wolf The": {
+      "id": "PER:Bad Wolf The",
+      "label": "PER",
+      "aliases": [
+        "Bad Wolf The"
+      ],
+      "metadata": {
+        "source_id": "1x12"
+      }
+    },
+    "PER:Game Station": {
+      "id": "PER:Game Station",
+      "label": "PER",
+      "aliases": [
+        "Game Station"
+      ],
+      "metadata": {
+        "source_id": "1x12"
+      }
+    },
+    "PER:The Parting": {
+      "id": "PER:The Parting",
+      "label": "PER",
+      "aliases": [
+        "The Parting"
+      ],
+      "metadata": {
+        "source_id": "1x13"
+      }
+    },
+    "PER:Ways As": {
+      "id": "PER:Ways As",
+      "label": "PER",
+      "aliases": [
+        "Ways As"
+      ],
+      "metadata": {
+        "source_id": "1x13"
+      }
+    },
+    "PER:Dalek": {
+      "id": "PER:Dalek",
+      "label": "PER",
+      "aliases": [
+        "Dalek"
+      ],
+      "metadata": {
+        "source_id": "9x2"
+      }
+    },
+    "PER:The Christmas Invasion It": {
+      "id": "PER:The Christmas Invasion It",
+      "label": "PER",
+      "aliases": [
+        "The Christmas Invasion It"
+      ],
+      "metadata": {
+        "source_id": "2x0"
+      }
+    },
+    "PER:Christmas Eve": {
+      "id": "PER:Christmas Eve",
+      "label": "PER",
+      "aliases": [
+        "Christmas Eve"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:Sycorax": {
+      "id": "PER:Sycorax",
+      "label": "PER",
+      "aliases": [
+        "Sycorax"
+      ],
+      "metadata": {
+        "source_id": "2x0"
+      }
+    },
+    "PER:Unfortunately": {
+      "id": "PER:Unfortunately",
+      "label": "PER",
+      "aliases": [
+        "Unfortunately"
+      ],
+      "metadata": {
+        "source_id": "2x0"
+      }
+    },
+    "PER:Jackie": {
+      "id": "PER:Jackie",
+      "label": "PER",
+      "aliases": [
+        "Jackie"
+      ],
+      "metadata": {
+        "source_id": "2x0"
+      }
+    },
+    "PER:New Earth The Doctor": {
+      "id": "PER:New Earth The Doctor",
+      "label": "PER",
+      "aliases": [
+        "New Earth The Doctor"
+      ],
+      "metadata": {
+        "source_id": "2x1"
+      }
+    },
+    "PER:New Earth": {
+      "id": "PER:New Earth",
+      "label": "PER",
+      "aliases": [
+        "New Earth"
+      ],
+      "metadata": {
+        "source_id": "3x3"
+      }
+    },
+    "PER:But": {
+      "id": "PER:But",
+      "label": "PER",
+      "aliases": [
+        "But"
+      ],
+      "metadata": {
+        "source_id": "10x10"
+      }
+    },
+    "PER:Tooth": {
+      "id": "PER:Tooth",
+      "label": "PER",
+      "aliases": [
+        "Tooth"
+      ],
+      "metadata": {
+        "source_id": "2x2"
+      }
+    },
+    "PER:Claw The Doctor": {
+      "id": "PER:Claw The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Claw The Doctor"
+      ],
+      "metadata": {
+        "source_id": "2x2"
+      }
+    },
+    "PER:Century Scotland": {
+      "id": "PER:Century Scotland",
+      "label": "PER",
+      "aliases": [
+        "Century Scotland"
+      ],
+      "metadata": {
+        "source_id": "2x2"
+      }
+    },
+    "PER:Queen Victoria": {
+      "id": "PER:Queen Victoria",
+      "label": "PER",
+      "aliases": [
+        "Queen Victoria"
+      ],
+      "metadata": {
+        "source_id": "2x2"
+      }
+    },
+    "PER:School Reunion The Krillitanes": {
+      "id": "PER:School Reunion The Krillitanes",
+      "label": "PER",
+      "aliases": [
+        "School Reunion The Krillitanes"
+      ],
+      "metadata": {
+        "source_id": "2x3"
+      }
+    },
+    "PER:God": {
+      "id": "PER:God",
+      "label": "PER",
+      "aliases": [
+        "God"
+      ],
+      "metadata": {
+        "source_id": "2x3"
+      }
+    },
+    "PER:Maker": {
+      "id": "PER:Maker",
+      "label": "PER",
+      "aliases": [
+        "Maker"
+      ],
+      "metadata": {
+        "source_id": "2x3"
+      }
+    },
+    "PER:They": {
+      "id": "PER:They",
+      "label": "PER",
+      "aliases": [
+        "They"
+      ],
+      "metadata": {
+        "source_id": "10x3"
+      }
+    },
+    "PER:Sarah Jane Smith": {
+      "id": "PER:Sarah Jane Smith",
+      "label": "PER",
+      "aliases": [
+        "Sarah Jane Smith"
+      ],
+      "metadata": {
+        "source_id": "2x3"
+      }
+    },
+    "PER:The Girl": {
+      "id": "PER:The Girl",
+      "label": "PER",
+      "aliases": [
+        "The Girl"
+      ],
+      "metadata": {
+        "source_id": "2x4"
+      }
+    },
+    "PER:Fireplace The Doctor": {
+      "id": "PER:Fireplace The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Fireplace The Doctor"
+      ],
+      "metadata": {
+        "source_id": "2x4"
+      }
+    },
+    "PER:Mickey": {
+      "id": "PER:Mickey",
+      "label": "PER",
+      "aliases": [
+        "Mickey"
+      ],
+      "metadata": {
+        "source_id": "2x4"
+      }
+    },
+    "PER:Versailles": {
+      "id": "PER:Versailles",
+      "label": "PER",
+      "aliases": [
+        "Versailles"
+      ],
+      "metadata": {
+        "source_id": "2x4"
+      }
+    },
+    "PER:Madame De Pompadour": {
+      "id": "PER:Madame De Pompadour",
+      "label": "PER",
+      "aliases": [
+        "Madame De Pompadour"
+      ],
+      "metadata": {
+        "source_id": "2x4"
+      }
+    },
+    "PER:To": {
+      "id": "PER:To",
+      "label": "PER",
+      "aliases": [
+        "To"
+      ],
+      "metadata": {
+        "source_id": "2x4"
+      }
+    },
+    "PER:Madame De Popmpadour": {
+      "id": "PER:Madame De Popmpadour",
+      "label": "PER",
+      "aliases": [
+        "Madame De Popmpadour"
+      ],
+      "metadata": {
+        "source_id": "2x4"
+      }
+    },
+    "PER:Rise": {
+      "id": "PER:Rise",
+      "label": "PER",
+      "aliases": [
+        "Rise"
+      ],
+      "metadata": {
+        "source_id": "2x5"
+      }
+    },
+    "PER:Cybermen The": {
+      "id": "PER:Cybermen The",
+      "label": "PER",
+      "aliases": [
+        "Cybermen The"
+      ],
+      "metadata": {
+        "source_id": "2x5"
+      }
+    },
+    "PER:The Age": {
+      "id": "PER:The Age",
+      "label": "PER",
+      "aliases": [
+        "The Age"
+      ],
+      "metadata": {
+        "source_id": "2x6"
+      }
+    },
+    "PER:Steel The Cybermen": {
+      "id": "PER:Steel The Cybermen",
+      "label": "PER",
+      "aliases": [
+        "Steel The Cybermen"
+      ],
+      "metadata": {
+        "source_id": "2x6"
+      }
+    },
+    "TEXT:The Age": {
+      "id": "TEXT:The Age",
+      "label": "ENTITY",
+      "aliases": [
+        "The Age"
+      ],
+      "metadata": {
+        "source_id": "2x6"
+      }
+    },
+    "TEXT:Steel The Cybermen": {
+      "id": "TEXT:Steel The Cybermen",
+      "label": "ENTITY",
+      "aliases": [
+        "Steel The Cybermen"
+      ],
+      "metadata": {
+        "source_id": "2x6"
+      }
+    },
+    "PER:The Idiot": {
+      "id": "PER:The Idiot",
+      "label": "PER",
+      "aliases": [
+        "The Idiot"
+      ],
+      "metadata": {
+        "source_id": "2x7"
+      }
+    },
+    "PER:Lantern As": {
+      "id": "PER:Lantern As",
+      "label": "PER",
+      "aliases": [
+        "Lantern As"
+      ],
+      "metadata": {
+        "source_id": "2x7"
+      }
+    },
+    "PER:Elizabeth": {
+      "id": "PER:Elizabeth",
+      "label": "PER",
+      "aliases": [
+        "Elizabeth"
+      ],
+      "metadata": {
+        "source_id": "2x7"
+      }
+    },
+    "PER:Faceless": {
+      "id": "PER:Faceless",
+      "label": "PER",
+      "aliases": [
+        "Faceless"
+      ],
+      "metadata": {
+        "source_id": "2x7"
+      }
+    },
+    "PER:The Impossible Planet When": {
+      "id": "PER:The Impossible Planet When",
+      "label": "PER",
+      "aliases": [
+        "The Impossible Planet When"
+      ],
+      "metadata": {
+        "source_id": "2x8"
+      }
+    },
+    "PER:Ood": {
+      "id": "PER:Ood",
+      "label": "PER",
+      "aliases": [
+        "Ood"
+      ],
+      "metadata": {
+        "source_id": "4x3"
+      }
+    },
+    "PER:Devil": {
+      "id": "PER:Devil",
+      "label": "PER",
+      "aliases": [
+        "Devil"
+      ],
+      "metadata": {
+        "source_id": "2x8"
+      }
+    },
+    "PER:The Satan Pit The Doctor": {
+      "id": "PER:The Satan Pit The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Satan Pit The Doctor"
+      ],
+      "metadata": {
+        "source_id": "2x9"
+      }
+    },
+    "PER:Legion": {
+      "id": "PER:Legion",
+      "label": "PER",
+      "aliases": [
+        "Legion"
+      ],
+      "metadata": {
+        "source_id": "2x9"
+      }
+    },
+    "PER:Beast": {
+      "id": "PER:Beast",
+      "label": "PER",
+      "aliases": [
+        "Beast"
+      ],
+      "metadata": {
+        "source_id": "2x9"
+      }
+    },
+    "PER:Love": {
+      "id": "PER:Love",
+      "label": "PER",
+      "aliases": [
+        "Love"
+      ],
+      "metadata": {
+        "source_id": "2x10"
+      }
+    },
+    "PER:Monsters Elton Pope": {
+      "id": "PER:Monsters Elton Pope",
+      "label": "PER",
+      "aliases": [
+        "Monsters Elton Pope"
+      ],
+      "metadata": {
+        "source_id": "2x10"
+      }
+    },
+    "PER:When": {
+      "id": "PER:When",
+      "label": "PER",
+      "aliases": [
+        "When"
+      ],
+      "metadata": {
+        "source_id": "10x6"
+      }
+    },
+    "PER:Victor Kennedy": {
+      "id": "PER:Victor Kennedy",
+      "label": "PER",
+      "aliases": [
+        "Victor Kennedy"
+      ],
+      "metadata": {
+        "source_id": "2x10"
+      }
+    },
+    "PER:Fear Her When": {
+      "id": "PER:Fear Her When",
+      "label": "PER",
+      "aliases": [
+        "Fear Her When"
+      ],
+      "metadata": {
+        "source_id": "2x11"
+      }
+    },
+    "PER:Army": {
+      "id": "PER:Army",
+      "label": "PER",
+      "aliases": [
+        "Army"
+      ],
+      "metadata": {
+        "source_id": "2x12"
+      }
+    },
+    "PER:Ghosts When": {
+      "id": "PER:Ghosts When",
+      "label": "PER",
+      "aliases": [
+        "Ghosts When"
+      ],
+      "metadata": {
+        "source_id": "2x12"
+      }
+    },
+    "PER:Torchwood Tower": {
+      "id": "PER:Torchwood Tower",
+      "label": "PER",
+      "aliases": [
+        "Torchwood Tower"
+      ],
+      "metadata": {
+        "source_id": "2x12"
+      }
+    },
+    "TEXT:Army": {
+      "id": "TEXT:Army",
+      "label": "ENTITY",
+      "aliases": [
+        "Army"
+      ],
+      "metadata": {
+        "source_id": "2x12"
+      }
+    },
+    "TEXT:Ghosts When": {
+      "id": "TEXT:Ghosts When",
+      "label": "ENTITY",
+      "aliases": [
+        "Ghosts When"
+      ],
+      "metadata": {
+        "source_id": "2x12"
+      }
+    },
+    "PER:Doomsday Earth": {
+      "id": "PER:Doomsday Earth",
+      "label": "PER",
+      "aliases": [
+        "Doomsday Earth"
+      ],
+      "metadata": {
+        "source_id": "2x13"
+      }
+    },
+    "PER:Daleks": {
+      "id": "PER:Daleks",
+      "label": "PER",
+      "aliases": [
+        "Daleks"
+      ],
+      "metadata": {
+        "source_id": "7x1"
+      }
+    },
+    "PER:Cybermen": {
+      "id": "PER:Cybermen",
+      "label": "PER",
+      "aliases": [
+        "Cybermen"
+      ],
+      "metadata": {
+        "source_id": "10x12"
+      }
+    },
+    "PER:With": {
+      "id": "PER:With",
+      "label": "PER",
+      "aliases": [
+        "With"
+      ],
+      "metadata": {
+        "source_id": "9x4"
+      }
+    },
+    "PER:Genesis Ark": {
+      "id": "PER:Genesis Ark",
+      "label": "PER",
+      "aliases": [
+        "Genesis Ark"
+      ],
+      "metadata": {
+        "source_id": "2x13"
+      }
+    },
+    "PER:The Runaway Bride The Doctor": {
+      "id": "PER:The Runaway Bride The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Runaway Bride The Doctor"
+      ],
+      "metadata": {
+        "source_id": "3x0"
+      }
+    },
+    "PER:Smith": {
+      "id": "PER:Smith",
+      "label": "PER",
+      "aliases": [
+        "Smith"
+      ],
+      "metadata": {
+        "source_id": "3x1"
+      }
+    },
+    "PER:Jones When": {
+      "id": "PER:Jones When",
+      "label": "PER",
+      "aliases": [
+        "Jones When"
+      ],
+      "metadata": {
+        "source_id": "3x1"
+      }
+    },
+    "PER:Martha Jones": {
+      "id": "PER:Martha Jones",
+      "label": "PER",
+      "aliases": [
+        "Martha Jones"
+      ],
+      "metadata": {
+        "source_id": "4x4"
+      }
+    },
+    "PER:The Shakespeare Code The Doctor": {
+      "id": "PER:The Shakespeare Code The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Shakespeare Code The Doctor"
+      ],
+      "metadata": {
+        "source_id": "3x2"
+      }
+    },
+    "PER:Martha": {
+      "id": "PER:Martha",
+      "label": "PER",
+      "aliases": [
+        "Martha"
+      ],
+      "metadata": {
+        "source_id": "3x12"
+      }
+    },
+    "PER:William Shakespeare": {
+      "id": "PER:William Shakespeare",
+      "label": "PER",
+      "aliases": [
+        "William Shakespeare"
+      ],
+      "metadata": {
+        "source_id": "3x2"
+      }
+    },
+    "PER:Gridlock The Doctor": {
+      "id": "PER:Gridlock The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Gridlock The Doctor"
+      ],
+      "metadata": {
+        "source_id": "3x3"
+      }
+    },
+    "PER:Motorway": {
+      "id": "PER:Motorway",
+      "label": "PER",
+      "aliases": [
+        "Motorway"
+      ],
+      "metadata": {
+        "source_id": "3x3"
+      }
+    },
+    "PER:Manhattan The Doctor": {
+      "id": "PER:Manhattan The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Manhattan The Doctor"
+      ],
+      "metadata": {
+        "source_id": "3x4"
+      }
+    },
+    "PER:New York": {
+      "id": "PER:New York",
+      "label": "PER",
+      "aliases": [
+        "New York"
+      ],
+      "metadata": {
+        "source_id": "7x5"
+      }
+    },
+    "TEXT:Daleks": {
+      "id": "TEXT:Daleks",
+      "label": "ENTITY",
+      "aliases": [
+        "Daleks"
+      ],
+      "metadata": {
+        "source_id": "3x5"
+      }
+    },
+    "TEXT:Manhattan The Doctor": {
+      "id": "TEXT:Manhattan The Doctor",
+      "label": "ENTITY",
+      "aliases": [
+        "Manhattan The Doctor"
+      ],
+      "metadata": {
+        "source_id": "3x4"
+      }
+    },
+    "PER:Evolution": {
+      "id": "PER:Evolution",
+      "label": "PER",
+      "aliases": [
+        "Evolution"
+      ],
+      "metadata": {
+        "source_id": "3x5"
+      }
+    },
+    "PER:Daleks Concluding": {
+      "id": "PER:Daleks Concluding",
+      "label": "PER",
+      "aliases": [
+        "Daleks Concluding"
+      ],
+      "metadata": {
+        "source_id": "3x5"
+      }
+    },
+    "PER:Manhattan": {
+      "id": "PER:Manhattan",
+      "label": "PER",
+      "aliases": [
+        "Manhattan"
+      ],
+      "metadata": {
+        "source_id": "10x0"
+      }
+    },
+    "PER:In": {
+      "id": "PER:In",
+      "label": "PER",
+      "aliases": [
+        "In"
+      ],
+      "metadata": {
+        "source_id": "10x10"
+      }
+    },
+    "PER:Faced": {
+      "id": "PER:Faced",
+      "label": "PER",
+      "aliases": [
+        "Faced"
+      ],
+      "metadata": {
+        "source_id": "3x5"
+      }
+    },
+    "TEXT:Manhattan": {
+      "id": "TEXT:Manhattan",
+      "label": "ENTITY",
+      "aliases": [
+        "Manhattan"
+      ],
+      "metadata": {
+        "source_id": "3x5"
+      }
+    },
+    "PER:The Lazarus Experiment The": {
+      "id": "PER:The Lazarus Experiment The",
+      "label": "PER",
+      "aliases": [
+        "The Lazarus Experiment The"
+      ],
+      "metadata": {
+        "source_id": "3x6"
+      }
+    },
+    "PER:Dr Lazarus": {
+      "id": "PER:Dr Lazarus",
+      "label": "PER",
+      "aliases": [
+        "Dr Lazarus"
+      ],
+      "metadata": {
+        "source_id": "3x6"
+      }
+    },
+    "PER:On": {
+      "id": "PER:On",
+      "label": "PER",
+      "aliases": [
+        "On"
+      ],
+      "metadata": {
+        "source_id": "3x7"
+      }
+    },
+    "PER:Human Nature In": {
+      "id": "PER:Human Nature In",
+      "label": "PER",
+      "aliases": [
+        "Human Nature In"
+      ],
+      "metadata": {
+        "source_id": "3x8"
+      }
+    },
+    "PER:Joan Redfern": {
+      "id": "PER:Joan Redfern",
+      "label": "PER",
+      "aliases": [
+        "Joan Redfern"
+      ],
+      "metadata": {
+        "source_id": "3x8"
+      }
+    },
+    "PER:The Family": {
+      "id": "PER:The Family",
+      "label": "PER",
+      "aliases": [
+        "The Family"
+      ],
+      "metadata": {
+        "source_id": "3x9"
+      }
+    },
+    "PER:Blood The Doctor": {
+      "id": "PER:Blood The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Blood The Doctor"
+      ],
+      "metadata": {
+        "source_id": "3x9"
+      }
+    },
+    "PER:The Family Of Blood": {
+      "id": "PER:The Family Of Blood",
+      "label": "PER",
+      "aliases": [
+        "The Family Of Blood"
+      ],
+      "metadata": {
+        "source_id": "3x9"
+      }
+    },
+    "TEXT:The Family": {
+      "id": "TEXT:The Family",
+      "label": "ENTITY",
+      "aliases": [
+        "The Family"
+      ],
+      "metadata": {
+        "source_id": "3x9"
+      }
+    },
+    "TEXT:Blood The Doctor": {
+      "id": "TEXT:Blood The Doctor",
+      "label": "ENTITY",
+      "aliases": [
+        "Blood The Doctor"
+      ],
+      "metadata": {
+        "source_id": "3x9"
+      }
+    },
+    "PER:Blink Sally Sparrow": {
+      "id": "PER:Blink Sally Sparrow",
+      "label": "PER",
+      "aliases": [
+        "Blink Sally Sparrow"
+      ],
+      "metadata": {
+        "source_id": "3x10"
+      }
+    },
+    "PER:Utopia Soon": {
+      "id": "PER:Utopia Soon",
+      "label": "PER",
+      "aliases": [
+        "Utopia Soon"
+      ],
+      "metadata": {
+        "source_id": "3x11"
+      }
+    },
+    "PER:Jack Harkness": {
+      "id": "PER:Jack Harkness",
+      "label": "PER",
+      "aliases": [
+        "Jack Harkness"
+      ],
+      "metadata": {
+        "source_id": "3x11"
+      }
+    },
+    "PER:Malcassairo": {
+      "id": "PER:Malcassairo",
+      "label": "PER",
+      "aliases": [
+        "Malcassairo"
+      ],
+      "metadata": {
+        "source_id": "3x11"
+      }
+    },
+    "PER:The Sound": {
+      "id": "PER:The Sound",
+      "label": "PER",
+      "aliases": [
+        "The Sound"
+      ],
+      "metadata": {
+        "source_id": "3x12"
+      }
+    },
+    "PER:Drums The Doctor": {
+      "id": "PER:Drums The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Drums The Doctor"
+      ],
+      "metadata": {
+        "source_id": "3x12"
+      }
+    },
+    "PER:Century": {
+      "id": "PER:Century",
+      "label": "PER",
+      "aliases": [
+        "Century"
+      ],
+      "metadata": {
+        "source_id": "3x12"
+      }
+    },
+    "PER:Harold Saxon": {
+      "id": "PER:Harold Saxon",
+      "label": "PER",
+      "aliases": [
+        "Harold Saxon"
+      ],
+      "metadata": {
+        "source_id": "3x12"
+      }
+    },
+    "TEXT:The Sound": {
+      "id": "TEXT:The Sound",
+      "label": "ENTITY",
+      "aliases": [
+        "The Sound"
+      ],
+      "metadata": {
+        "source_id": "3x12"
+      }
+    },
+    "TEXT:Drums The Doctor": {
+      "id": "TEXT:Drums The Doctor",
+      "label": "ENTITY",
+      "aliases": [
+        "Drums The Doctor"
+      ],
+      "metadata": {
+        "source_id": "3x12"
+      }
+    },
+    "PER:Last": {
+      "id": "PER:Last",
+      "label": "PER",
+      "aliases": [
+        "Last"
+      ],
+      "metadata": {
+        "source_id": "3x13"
+      }
+    },
+    "PER:Time Lords It": {
+      "id": "PER:Time Lords It",
+      "label": "PER",
+      "aliases": [
+        "Time Lords It"
+      ],
+      "metadata": {
+        "source_id": "3x13"
+      }
+    },
+    "PER:The Master": {
+      "id": "PER:The Master",
+      "label": "PER",
+      "aliases": [
+        "The Master"
+      ],
+      "metadata": {
+        "source_id": "3x13"
+      }
+    },
+    "PER:Toclafane": {
+      "id": "PER:Toclafane",
+      "label": "PER",
+      "aliases": [
+        "Toclafane"
+      ],
+      "metadata": {
+        "source_id": "3x13"
+      }
+    },
+    "PER:Time Lord": {
+      "id": "PER:Time Lord",
+      "label": "PER",
+      "aliases": [
+        "Time Lord"
+      ],
+      "metadata": {
+        "source_id": "6x4"
+      }
+    },
+    "PER:Voyage": {
+      "id": "PER:Voyage",
+      "label": "PER",
+      "aliases": [
+        "Voyage"
+      ],
+      "metadata": {
+        "source_id": "4x0"
+      }
+    },
+    "PER:Damned": {
+      "id": "PER:Damned",
+      "label": "PER",
+      "aliases": [
+        "Damned"
+      ],
+      "metadata": {
+        "source_id": "4x0"
+      }
+    },
+    "PER:Christmas": {
+      "id": "PER:Christmas",
+      "label": "PER",
+      "aliases": [
+        "Christmas"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:Kylie Minogue": {
+      "id": "PER:Kylie Minogue",
+      "label": "PER",
+      "aliases": [
+        "Kylie Minogue"
+      ],
+      "metadata": {
+        "source_id": "4x0"
+      }
+    },
+    "PER:Partners": {
+      "id": "PER:Partners",
+      "label": "PER",
+      "aliases": [
+        "Partners"
+      ],
+      "metadata": {
+        "source_id": "4x1"
+      }
+    },
+    "PER:Crime With": {
+      "id": "PER:Crime With",
+      "label": "PER",
+      "aliases": [
+        "Crime With"
+      ],
+      "metadata": {
+        "source_id": "4x1"
+      }
+    },
+    "PER:Adipose Industries": {
+      "id": "PER:Adipose Industries",
+      "label": "PER",
+      "aliases": [
+        "Adipose Industries"
+      ],
+      "metadata": {
+        "source_id": "4x1"
+      }
+    },
+    "PER:Donna Noble": {
+      "id": "PER:Donna Noble",
+      "label": "PER",
+      "aliases": [
+        "Donna Noble"
+      ],
+      "metadata": {
+        "source_id": "4x7"
+      }
+    },
+    "TEXT:Partners": {
+      "id": "TEXT:Partners",
+      "label": "ENTITY",
+      "aliases": [
+        "Partners"
+      ],
+      "metadata": {
+        "source_id": "4x1"
+      }
+    },
+    "TEXT:Crime With": {
+      "id": "TEXT:Crime With",
+      "label": "ENTITY",
+      "aliases": [
+        "Crime With"
+      ],
+      "metadata": {
+        "source_id": "4x1"
+      }
+    },
+    "PER:The Fires": {
+      "id": "PER:The Fires",
+      "label": "PER",
+      "aliases": [
+        "The Fires"
+      ],
+      "metadata": {
+        "source_id": "4x2"
+      }
+    },
+    "PER:Pompeii Instead": {
+      "id": "PER:Pompeii Instead",
+      "label": "PER",
+      "aliases": [
+        "Pompeii Instead"
+      ],
+      "metadata": {
+        "source_id": "4x2"
+      }
+    },
+    "PER:Rome": {
+      "id": "PER:Rome",
+      "label": "PER",
+      "aliases": [
+        "Rome"
+      ],
+      "metadata": {
+        "source_id": "4x2"
+      }
+    },
+    "PER:Pompeii": {
+      "id": "PER:Pompeii",
+      "label": "PER",
+      "aliases": [
+        "Pompeii"
+      ],
+      "metadata": {
+        "source_id": "4x2"
+      }
+    },
+    "PER:Mount Vesuvius": {
+      "id": "PER:Mount Vesuvius",
+      "label": "PER",
+      "aliases": [
+        "Mount Vesuvius"
+      ],
+      "metadata": {
+        "source_id": "4x2"
+      }
+    },
+    "PER:The": {
+      "id": "PER:The",
+      "label": "PER",
+      "aliases": [
+        "The"
+      ],
+      "metadata": {
+        "source_id": "10x4"
+      }
+    },
+    "TEXT:The Fires": {
+      "id": "TEXT:The Fires",
+      "label": "ENTITY",
+      "aliases": [
+        "The Fires"
+      ],
+      "metadata": {
+        "source_id": "4x2"
+      }
+    },
+    "TEXT:Pompeii Instead": {
+      "id": "TEXT:Pompeii Instead",
+      "label": "ENTITY",
+      "aliases": [
+        "Pompeii Instead"
+      ],
+      "metadata": {
+        "source_id": "4x2"
+      }
+    },
+    "PER:Planet": {
+      "id": "PER:Planet",
+      "label": "PER",
+      "aliases": [
+        "Planet"
+      ],
+      "metadata": {
+        "source_id": "4x3"
+      }
+    },
+    "PER:Ood Finding": {
+      "id": "PER:Ood Finding",
+      "label": "PER",
+      "aliases": [
+        "Ood Finding"
+      ],
+      "metadata": {
+        "source_id": "4x3"
+      }
+    },
+    "PER:Sphere": {
+      "id": "PER:Sphere",
+      "label": "PER",
+      "aliases": [
+        "Sphere"
+      ],
+      "metadata": {
+        "source_id": "4x3"
+      }
+    },
+    "PER:Donna": {
+      "id": "PER:Donna",
+      "label": "PER",
+      "aliases": [
+        "Donna"
+      ],
+      "metadata": {
+        "source_id": "4x12"
+      }
+    },
+    "PER:The Sontaran Stratagem": {
+      "id": "PER:The Sontaran Stratagem",
+      "label": "PER",
+      "aliases": [
+        "The Sontaran Stratagem"
+      ],
+      "metadata": {
+        "source_id": "4x4"
+      }
+    },
+    "PER:Luke Rattigan": {
+      "id": "PER:Luke Rattigan",
+      "label": "PER",
+      "aliases": [
+        "Luke Rattigan"
+      ],
+      "metadata": {
+        "source_id": "4x4"
+      }
+    },
+    "PER:The Poison Sky With": {
+      "id": "PER:The Poison Sky With",
+      "label": "PER",
+      "aliases": [
+        "The Poison Sky With"
+      ],
+      "metadata": {
+        "source_id": "4x5"
+      }
+    },
+    "PER:Sontarans": {
+      "id": "PER:Sontarans",
+      "label": "PER",
+      "aliases": [
+        "Sontarans"
+      ],
+      "metadata": {
+        "source_id": "4x11"
+      }
+    },
+    "PER:Daughter Caught": {
+      "id": "PER:Daughter Caught",
+      "label": "PER",
+      "aliases": [
+        "Daughter Caught"
+      ],
+      "metadata": {
+        "source_id": "4x6"
+      }
+    },
+    "PER:Humans": {
+      "id": "PER:Humans",
+      "label": "PER",
+      "aliases": [
+        "Humans"
+      ],
+      "metadata": {
+        "source_id": "9x7"
+      }
+    },
+    "PER:Hath": {
+      "id": "PER:Hath",
+      "label": "PER",
+      "aliases": [
+        "Hath"
+      ],
+      "metadata": {
+        "source_id": "4x6"
+      }
+    },
+    "PER:Messaline": {
+      "id": "PER:Messaline",
+      "label": "PER",
+      "aliases": [
+        "Messaline"
+      ],
+      "metadata": {
+        "source_id": "4x6"
+      }
+    },
+    "PER:The Unicorn": {
+      "id": "PER:The Unicorn",
+      "label": "PER",
+      "aliases": [
+        "The Unicorn"
+      ],
+      "metadata": {
+        "source_id": "4x7"
+      }
+    },
+    "PER:Wasp With": {
+      "id": "PER:Wasp With",
+      "label": "PER",
+      "aliases": [
+        "Wasp With"
+      ],
+      "metadata": {
+        "source_id": "4x7"
+      }
+    },
+    "PER:Agatha Christie": {
+      "id": "PER:Agatha Christie",
+      "label": "PER",
+      "aliases": [
+        "Agatha Christie"
+      ],
+      "metadata": {
+        "source_id": "4x7"
+      }
+    },
+    "PER:Silence": {
+      "id": "PER:Silence",
+      "label": "PER",
+      "aliases": [
+        "Silence"
+      ],
+      "metadata": {
+        "source_id": "4x8"
+      }
+    },
+    "PER:Library The Doctor": {
+      "id": "PER:Library The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Library The Doctor"
+      ],
+      "metadata": {
+        "source_id": "4x8"
+      }
+    },
+    "PER:Nodes": {
+      "id": "PER:Nodes",
+      "label": "PER",
+      "aliases": [
+        "Nodes"
+      ],
+      "metadata": {
+        "source_id": "4x8"
+      }
+    },
+    "PER:And": {
+      "id": "PER:And",
+      "label": "PER",
+      "aliases": [
+        "And"
+      ],
+      "metadata": {
+        "source_id": "10x0"
+      }
+    },
+    "PER:All": {
+      "id": "PER:All",
+      "label": "PER",
+      "aliases": [
+        "All"
+      ],
+      "metadata": {
+        "source_id": "4x8"
+      }
+    },
+    "PER:Forest": {
+      "id": "PER:Forest",
+      "label": "PER",
+      "aliases": [
+        "Forest"
+      ],
+      "metadata": {
+        "source_id": "8x10"
+      }
+    },
+    "PER:Dead With": {
+      "id": "PER:Dead With",
+      "label": "PER",
+      "aliases": [
+        "Dead With"
+      ],
+      "metadata": {
+        "source_id": "4x9"
+      }
+    },
+    "PER:Vashta Nerada": {
+      "id": "PER:Vashta Nerada",
+      "label": "PER",
+      "aliases": [
+        "Vashta Nerada"
+      ],
+      "metadata": {
+        "source_id": "4x9"
+      }
+    },
+    "PER:River Song": {
+      "id": "PER:River Song",
+      "label": "PER",
+      "aliases": [
+        "River Song"
+      ],
+      "metadata": {
+        "source_id": "9x13"
+      }
+    },
+    "PER:Meanwhile": {
+      "id": "PER:Meanwhile",
+      "label": "PER",
+      "aliases": [
+        "Meanwhile"
+      ],
+      "metadata": {
+        "source_id": "4x9"
+      }
+    },
+    "PER:Dr": {
+      "id": "PER:Dr",
+      "label": "PER",
+      "aliases": [
+        "Dr"
+      ],
+      "metadata": {
+        "source_id": "5x5"
+      }
+    },
+    "PER:Moon": {
+      "id": "PER:Moon",
+      "label": "PER",
+      "aliases": [
+        "Moon"
+      ],
+      "metadata": {
+        "source_id": "8x7"
+      }
+    },
+    "PER:Girl": {
+      "id": "PER:Girl",
+      "label": "PER",
+      "aliases": [
+        "Girl"
+      ],
+      "metadata": {
+        "source_id": "4x9"
+      }
+    },
+    "PER:Midnight As": {
+      "id": "PER:Midnight As",
+      "label": "PER",
+      "aliases": [
+        "Midnight As"
+      ],
+      "metadata": {
+        "source_id": "4x10"
+      }
+    },
+    "PER:Midnight": {
+      "id": "PER:Midnight",
+      "label": "PER",
+      "aliases": [
+        "Midnight"
+      ],
+      "metadata": {
+        "source_id": "4x10"
+      }
+    },
+    "PER:Little": {
+      "id": "PER:Little",
+      "label": "PER",
+      "aliases": [
+        "Little"
+      ],
+      "metadata": {
+        "source_id": "4x10"
+      }
+    },
+    "PER:Soon": {
+      "id": "PER:Soon",
+      "label": "PER",
+      "aliases": [
+        "Soon"
+      ],
+      "metadata": {
+        "source_id": "4x10"
+      }
+    },
+    "PER:Turn Left What": {
+      "id": "PER:Turn Left What",
+      "label": "PER",
+      "aliases": [
+        "Turn Left What"
+      ],
+      "metadata": {
+        "source_id": "4x11"
+      }
+    },
+    "PER:How": {
+      "id": "PER:How",
+      "label": "PER",
+      "aliases": [
+        "How"
+      ],
+      "metadata": {
+        "source_id": "4x11"
+      }
+    },
+    "PER:Racnoss": {
+      "id": "PER:Racnoss",
+      "label": "PER",
+      "aliases": [
+        "Racnoss"
+      ],
+      "metadata": {
+        "source_id": "4x11"
+      }
+    },
+    "PER:Titanic": {
+      "id": "PER:Titanic",
+      "label": "PER",
+      "aliases": [
+        "Titanic"
+      ],
+      "metadata": {
+        "source_id": "4x11"
+      }
+    },
+    "PER:Aided": {
+      "id": "PER:Aided",
+      "label": "PER",
+      "aliases": [
+        "Aided"
+      ],
+      "metadata": {
+        "source_id": "4x11"
+      }
+    },
+    "PER:The Stolen Earth The": {
+      "id": "PER:The Stolen Earth The",
+      "label": "PER",
+      "aliases": [
+        "The Stolen Earth The"
+      ],
+      "metadata": {
+        "source_id": "4x12"
+      }
+    },
+    "PER:As": {
+      "id": "PER:As",
+      "label": "PER",
+      "aliases": [
+        "As"
+      ],
+      "metadata": {
+        "source_id": "9x9"
+      }
+    },
+    "PER:Dalek Empire": {
+      "id": "PER:Dalek Empire",
+      "label": "PER",
+      "aliases": [
+        "Dalek Empire"
+      ],
+      "metadata": {
+        "source_id": "4x12"
+      }
+    },
+    "PER:Journey": {
+      "id": "PER:Journey",
+      "label": "PER",
+      "aliases": [
+        "Journey"
+      ],
+      "metadata": {
+        "source_id": "7x11"
+      }
+    },
+    "PER:End In": {
+      "id": "PER:End In",
+      "label": "PER",
+      "aliases": [
+        "End In"
+      ],
+      "metadata": {
+        "source_id": "4x13"
+      }
+    },
+    "PER:Davros": {
+      "id": "PER:Davros",
+      "label": "PER",
+      "aliases": [
+        "Davros"
+      ],
+      "metadata": {
+        "source_id": "4x13"
+      }
+    },
+    "PER:Universe": {
+      "id": "PER:Universe",
+      "label": "PER",
+      "aliases": [
+        "Universe"
+      ],
+      "metadata": {
+        "source_id": "6x4"
+      }
+    },
+    "PER:Which": {
+      "id": "PER:Which",
+      "label": "PER",
+      "aliases": [
+        "Which"
+      ],
+      "metadata": {
+        "source_id": "7x1"
+      }
+    },
+    "PER:The Eleventh Hour With": {
+      "id": "PER:The Eleventh Hour With",
+      "label": "PER",
+      "aliases": [
+        "The Eleventh Hour With"
+      ],
+      "metadata": {
+        "source_id": "5x1"
+      }
+    },
+    "PER:Amy Pond": {
+      "id": "PER:Amy Pond",
+      "label": "PER",
+      "aliases": [
+        "Amy Pond"
+      ],
+      "metadata": {
+        "source_id": "5x1"
+      }
+    },
+    "PER:Atraxi": {
+      "id": "PER:Atraxi",
+      "label": "PER",
+      "aliases": [
+        "Atraxi"
+      ],
+      "metadata": {
+        "source_id": "5x1"
+      }
+    },
+    "PER:The Beast Below The Doctor": {
+      "id": "PER:The Beast Below The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Beast Below The Doctor"
+      ],
+      "metadata": {
+        "source_id": "5x2"
+      }
+    },
+    "PER:Amy": {
+      "id": "PER:Amy",
+      "label": "PER",
+      "aliases": [
+        "Amy"
+      ],
+      "metadata": {
+        "source_id": "7x5"
+      }
+    },
+    "PER:Starship": {
+      "id": "PER:Starship",
+      "label": "PER",
+      "aliases": [
+        "Starship"
+      ],
+      "metadata": {
+        "source_id": "5x2"
+      }
+    },
+    "PER:British": {
+      "id": "PER:British",
+      "label": "PER",
+      "aliases": [
+        "British"
+      ],
+      "metadata": {
+        "source_id": "5x2"
+      }
+    },
+    "PER:Smilers": {
+      "id": "PER:Smilers",
+      "label": "PER",
+      "aliases": [
+        "Smilers"
+      ],
+      "metadata": {
+        "source_id": "5x2"
+      }
+    },
+    "PER:Victory": {
+      "id": "PER:Victory",
+      "label": "PER",
+      "aliases": [
+        "Victory"
+      ],
+      "metadata": {
+        "source_id": "5x3"
+      }
+    },
+    "PER:Daleks The": {
+      "id": "PER:Daleks The",
+      "label": "PER",
+      "aliases": [
+        "Daleks The"
+      ],
+      "metadata": {
+        "source_id": "5x3"
+      }
+    },
+    "PER:Britain": {
+      "id": "PER:Britain",
+      "label": "PER",
+      "aliases": [
+        "Britain"
+      ],
+      "metadata": {
+        "source_id": "10x8"
+      }
+    },
+    "PER:World War Two": {
+      "id": "PER:World War Two",
+      "label": "PER",
+      "aliases": [
+        "World War Two"
+      ],
+      "metadata": {
+        "source_id": "5x3"
+      }
+    },
+    "PER:Not": {
+      "id": "PER:Not",
+      "label": "PER",
+      "aliases": [
+        "Not"
+      ],
+      "metadata": {
+        "source_id": "5x3"
+      }
+    },
+    "PER:Winston Churchill": {
+      "id": "PER:Winston Churchill",
+      "label": "PER",
+      "aliases": [
+        "Winston Churchill"
+      ],
+      "metadata": {
+        "source_id": "5x3"
+      }
+    },
+    "PER:The Time": {
+      "id": "PER:The Time",
+      "label": "PER",
+      "aliases": [
+        "The Time"
+      ],
+      "metadata": {
+        "source_id": "5x4"
+      }
+    },
+    "PER:Angels The Doctor": {
+      "id": "PER:Angels The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Angels The Doctor"
+      ],
+      "metadata": {
+        "source_id": "5x4"
+      }
+    },
+    "PER:Byzantium": {
+      "id": "PER:Byzantium",
+      "label": "PER",
+      "aliases": [
+        "Byzantium"
+      ],
+      "metadata": {
+        "source_id": "5x4"
+      }
+    },
+    "PER:Down": {
+      "id": "PER:Down",
+      "label": "PER",
+      "aliases": [
+        "Down"
+      ],
+      "metadata": {
+        "source_id": "5x4"
+      }
+    },
+    "PER:Weeping Angels": {
+      "id": "PER:Weeping Angels",
+      "label": "PER",
+      "aliases": [
+        "Weeping Angels"
+      ],
+      "metadata": {
+        "source_id": "7x5"
+      }
+    },
+    "PER:Professor River Song": {
+      "id": "PER:Professor River Song",
+      "label": "PER",
+      "aliases": [
+        "Professor River Song"
+      ],
+      "metadata": {
+        "source_id": "5x4"
+      }
+    },
+    "TEXT:The Time": {
+      "id": "TEXT:The Time",
+      "label": "ENTITY",
+      "aliases": [
+        "The Time"
+      ],
+      "metadata": {
+        "source_id": "5x4"
+      }
+    },
+    "TEXT:Angels The Doctor": {
+      "id": "TEXT:Angels The Doctor",
+      "label": "ENTITY",
+      "aliases": [
+        "Angels The Doctor"
+      ],
+      "metadata": {
+        "source_id": "5x4"
+      }
+    },
+    "PER:Flesh": {
+      "id": "PER:Flesh",
+      "label": "PER",
+      "aliases": [
+        "Flesh"
+      ],
+      "metadata": {
+        "source_id": "5x5"
+      }
+    },
+    "PER:Stone The Doctor": {
+      "id": "PER:Stone The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Stone The Doctor"
+      ],
+      "metadata": {
+        "source_id": "5x5"
+      }
+    },
+    "PER:Song": {
+      "id": "PER:Song",
+      "label": "PER",
+      "aliases": [
+        "Song"
+      ],
+      "metadata": {
+        "source_id": "5x5"
+      }
+    },
+    "PER:The Angels": {
+      "id": "PER:The Angels",
+      "label": "PER",
+      "aliases": [
+        "The Angels"
+      ],
+      "metadata": {
+        "source_id": "5x5"
+      }
+    },
+    "PER:Angel": {
+      "id": "PER:Angel",
+      "label": "PER",
+      "aliases": [
+        "Angel"
+      ],
+      "metadata": {
+        "source_id": "5x5"
+      }
+    },
+    "PER:The Vampires": {
+      "id": "PER:The Vampires",
+      "label": "PER",
+      "aliases": [
+        "The Vampires"
+      ],
+      "metadata": {
+        "source_id": "5x6"
+      }
+    },
+    "PER:Venice The Doctor": {
+      "id": "PER:Venice The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Venice The Doctor"
+      ],
+      "metadata": {
+        "source_id": "5x6"
+      }
+    },
+    "PER:Venice": {
+      "id": "PER:Venice",
+      "label": "PER",
+      "aliases": [
+        "Venice"
+      ],
+      "metadata": {
+        "source_id": "5x6"
+      }
+    },
+    "TEXT:The Vampires": {
+      "id": "TEXT:The Vampires",
+      "label": "ENTITY",
+      "aliases": [
+        "The Vampires"
+      ],
+      "metadata": {
+        "source_id": "5x6"
+      }
+    },
+    "TEXT:Venice The Doctor": {
+      "id": "TEXT:Venice The Doctor",
+      "label": "ENTITY",
+      "aliases": [
+        "Venice The Doctor"
+      ],
+      "metadata": {
+        "source_id": "5x6"
+      }
+    },
+    "PER:Choice Five": {
+      "id": "PER:Choice Five",
+      "label": "PER",
+      "aliases": [
+        "Choice Five"
+      ],
+      "metadata": {
+        "source_id": "5x7"
+      }
+    },
+    "PER:Rory": {
+      "id": "PER:Rory",
+      "label": "PER",
+      "aliases": [
+        "Rory"
+      ],
+      "metadata": {
+        "source_id": "7x5"
+      }
+    },
+    "PER:Leadworth": {
+      "id": "PER:Leadworth",
+      "label": "PER",
+      "aliases": [
+        "Leadworth"
+      ],
+      "metadata": {
+        "source_id": "5x7"
+      }
+    },
+    "PER:The Hungry Earth The Doctor": {
+      "id": "PER:The Hungry Earth The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Hungry Earth The Doctor"
+      ],
+      "metadata": {
+        "source_id": "5x8"
+      }
+    },
+    "PER:Rio": {
+      "id": "PER:Rio",
+      "label": "PER",
+      "aliases": [
+        "Rio"
+      ],
+      "metadata": {
+        "source_id": "5x8"
+      }
+    },
+    "PER:Welsh": {
+      "id": "PER:Welsh",
+      "label": "PER",
+      "aliases": [
+        "Welsh"
+      ],
+      "metadata": {
+        "source_id": "5x8"
+      }
+    },
+    "PER:There": {
+      "id": "PER:There",
+      "label": "PER",
+      "aliases": [
+        "There"
+      ],
+      "metadata": {
+        "source_id": "9x6"
+      }
+    },
+    "PER:Cold Blood The Doctor": {
+      "id": "PER:Cold Blood The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Cold Blood The Doctor"
+      ],
+      "metadata": {
+        "source_id": "5x9"
+      }
+    },
+    "PER:Nasreen Chaudry": {
+      "id": "PER:Nasreen Chaudry",
+      "label": "PER",
+      "aliases": [
+        "Nasreen Chaudry"
+      ],
+      "metadata": {
+        "source_id": "5x9"
+      }
+    },
+    "PER:Restac": {
+      "id": "PER:Restac",
+      "label": "PER",
+      "aliases": [
+        "Restac"
+      ],
+      "metadata": {
+        "source_id": "5x9"
+      }
+    },
+    "PER:Calmer": {
+      "id": "PER:Calmer",
+      "label": "PER",
+      "aliases": [
+        "Calmer"
+      ],
+      "metadata": {
+        "source_id": "5x9"
+      }
+    },
+    "PER:Alaya": {
+      "id": "PER:Alaya",
+      "label": "PER",
+      "aliases": [
+        "Alaya"
+      ],
+      "metadata": {
+        "source_id": "5x9"
+      }
+    },
+    "PER:Vincent": {
+      "id": "PER:Vincent",
+      "label": "PER",
+      "aliases": [
+        "Vincent"
+      ],
+      "metadata": {
+        "source_id": "5x10"
+      }
+    },
+    "PER:Doctor The Doctor": {
+      "id": "PER:Doctor The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Doctor The Doctor"
+      ],
+      "metadata": {
+        "source_id": "7x14"
+      }
+    },
+    "PER:Vincent Van Gogh": {
+      "id": "PER:Vincent Van Gogh",
+      "label": "PER",
+      "aliases": [
+        "Vincent Van Gogh"
+      ],
+      "metadata": {
+        "source_id": "5x10"
+      }
+    },
+    "PER:The Lodger No": {
+      "id": "PER:The Lodger No",
+      "label": "PER",
+      "aliases": [
+        "The Lodger No"
+      ],
+      "metadata": {
+        "source_id": "5x11"
+      }
+    },
+    "PER:Craig Owens": {
+      "id": "PER:Craig Owens",
+      "label": "PER",
+      "aliases": [
+        "Craig Owens"
+      ],
+      "metadata": {
+        "source_id": "5x11"
+      }
+    },
+    "PER:Craig": {
+      "id": "PER:Craig",
+      "label": "PER",
+      "aliases": [
+        "Craig"
+      ],
+      "metadata": {
+        "source_id": "5x11"
+      }
+    },
+    "PER:Sophie": {
+      "id": "PER:Sophie",
+      "label": "PER",
+      "aliases": [
+        "Sophie"
+      ],
+      "metadata": {
+        "source_id": "5x11"
+      }
+    },
+    "PER:The Pandorica Opens River Song": {
+      "id": "PER:The Pandorica Opens River Song",
+      "label": "PER",
+      "aliases": [
+        "The Pandorica Opens River Song"
+      ],
+      "metadata": {
+        "source_id": "5x12"
+      }
+    },
+    "PER:Pandorica": {
+      "id": "PER:Pandorica",
+      "label": "PER",
+      "aliases": [
+        "Pandorica"
+      ],
+      "metadata": {
+        "source_id": "5x12"
+      }
+    },
+    "PER:The Big Bang The Pandorica": {
+      "id": "PER:The Big Bang The Pandorica",
+      "label": "PER",
+      "aliases": [
+        "The Big Bang The Pandorica"
+      ],
+      "metadata": {
+        "source_id": "5x13"
+      }
+    },
+    "PER:Jumping": {
+      "id": "PER:Jumping",
+      "label": "PER",
+      "aliases": [
+        "Jumping"
+      ],
+      "metadata": {
+        "source_id": "5x13"
+      }
+    },
+    "PER:Christmas Carol": {
+      "id": "PER:Christmas Carol",
+      "label": "PER",
+      "aliases": [
+        "Christmas Carol"
+      ],
+      "metadata": {
+        "source_id": "6x0"
+      }
+    },
+    "PER:However": {
+      "id": "PER:However",
+      "label": "PER",
+      "aliases": [
+        "However"
+      ],
+      "metadata": {
+        "source_id": "6x0"
+      }
+    },
+    "PER:Scrooge": {
+      "id": "PER:Scrooge",
+      "label": "PER",
+      "aliases": [
+        "Scrooge"
+      ],
+      "metadata": {
+        "source_id": "6x0"
+      }
+    },
+    "PER:Kazran Sardick": {
+      "id": "PER:Kazran Sardick",
+      "label": "PER",
+      "aliases": [
+        "Kazran Sardick"
+      ],
+      "metadata": {
+        "source_id": "6x0"
+      }
+    },
+    "PER:Spacecraft": {
+      "id": "PER:Spacecraft",
+      "label": "PER",
+      "aliases": [
+        "Spacecraft"
+      ],
+      "metadata": {
+        "source_id": "6x0"
+      }
+    },
+    "PER:The Impossible Astronaut The Doctor": {
+      "id": "PER:The Impossible Astronaut The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Impossible Astronaut The Doctor"
+      ],
+      "metadata": {
+        "source_id": "6x1"
+      }
+    },
+    "PER:Day": {
+      "id": "PER:Day",
+      "label": "PER",
+      "aliases": [
+        "Day"
+      ],
+      "metadata": {
+        "source_id": "6x2"
+      }
+    },
+    "PER:Moon The Doctor": {
+      "id": "PER:Moon The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Moon The Doctor"
+      ],
+      "metadata": {
+        "source_id": "6x2"
+      }
+    },
+    "PER:The Curse": {
+      "id": "PER:The Curse",
+      "label": "PER",
+      "aliases": [
+        "The Curse"
+      ],
+      "metadata": {
+        "source_id": "6x3"
+      }
+    },
+    "PER:Black Spot The Doctor": {
+      "id": "PER:Black Spot The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Black Spot The Doctor"
+      ],
+      "metadata": {
+        "source_id": "6x3"
+      }
+    },
+    "PER:Siren": {
+      "id": "PER:Siren",
+      "label": "PER",
+      "aliases": [
+        "Siren"
+      ],
+      "metadata": {
+        "source_id": "6x3"
+      }
+    },
+    "PER:Wife The Doctor": {
+      "id": "PER:Wife The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Wife The Doctor"
+      ],
+      "metadata": {
+        "source_id": "6x4"
+      }
+    },
+    "PER:The Rebel Flesh": {
+      "id": "PER:The Rebel Flesh",
+      "label": "PER",
+      "aliases": [
+        "The Rebel Flesh"
+      ],
+      "metadata": {
+        "source_id": "6x5"
+      }
+    },
+    "PER:The Almost People The": {
+      "id": "PER:The Almost People The",
+      "label": "PER",
+      "aliases": [
+        "The Almost People The"
+      ],
+      "metadata": {
+        "source_id": "6x6"
+      }
+    },
+    "PER:Good Man Goes": {
+      "id": "PER:Good Man Goes",
+      "label": "PER",
+      "aliases": [
+        "Good Man Goes"
+      ],
+      "metadata": {
+        "source_id": "6x7"
+      }
+    },
+    "PER:War": {
+      "id": "PER:War",
+      "label": "PER",
+      "aliases": [
+        "War"
+      ],
+      "metadata": {
+        "source_id": "6x7"
+      }
+    },
+    "PER:Let": {
+      "id": "PER:Let",
+      "label": "PER",
+      "aliases": [
+        "Let"
+      ],
+      "metadata": {
+        "source_id": "6x8"
+      }
+    },
+    "PER:Kill Hitler The": {
+      "id": "PER:Kill Hitler The",
+      "label": "PER",
+      "aliases": [
+        "Kill Hitler The"
+      ],
+      "metadata": {
+        "source_id": "6x8"
+      }
+    },
+    "PER:Melody Pond": {
+      "id": "PER:Melody Pond",
+      "label": "PER",
+      "aliases": [
+        "Melody Pond"
+      ],
+      "metadata": {
+        "source_id": "6x8"
+      }
+    },
+    "PER:Berlin": {
+      "id": "PER:Berlin",
+      "label": "PER",
+      "aliases": [
+        "Berlin"
+      ],
+      "metadata": {
+        "source_id": "6x8"
+      }
+    },
+    "PER:Adolf Hitler": {
+      "id": "PER:Adolf Hitler",
+      "label": "PER",
+      "aliases": [
+        "Adolf Hitler"
+      ],
+      "metadata": {
+        "source_id": "6x8"
+      }
+    },
+    "PER:Night Terrors Receiving": {
+      "id": "PER:Night Terrors Receiving",
+      "label": "PER",
+      "aliases": [
+        "Night Terrors Receiving"
+      ],
+      "metadata": {
+        "source_id": "6x9"
+      }
+    },
+    "PER:The Girl Who Waited Amy": {
+      "id": "PER:The Girl Who Waited Amy",
+      "label": "PER",
+      "aliases": [
+        "The Girl Who Waited Amy"
+      ],
+      "metadata": {
+        "source_id": "6x10"
+      }
+    },
+    "PER:Can Rory": {
+      "id": "PER:Can Rory",
+      "label": "PER",
+      "aliases": [
+        "Can Rory"
+      ],
+      "metadata": {
+        "source_id": "6x10"
+      }
+    },
+    "PER:The God Complex The Doctor": {
+      "id": "PER:The God Complex The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The God Complex The Doctor"
+      ],
+      "metadata": {
+        "source_id": "6x11"
+      }
+    },
+    "PER:Closing Time The Doctor": {
+      "id": "PER:Closing Time The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Closing Time The Doctor"
+      ],
+      "metadata": {
+        "source_id": "6x12"
+      }
+    },
+    "PER:The Wedding": {
+      "id": "PER:The Wedding",
+      "label": "PER",
+      "aliases": [
+        "The Wedding"
+      ],
+      "metadata": {
+        "source_id": "6x13"
+      }
+    },
+    "PER:River Song April": {
+      "id": "PER:River Song April",
+      "label": "PER",
+      "aliases": [
+        "River Song April"
+      ],
+      "metadata": {
+        "source_id": "6x13"
+      }
+    },
+    "PER:Having": {
+      "id": "PER:Having",
+      "label": "PER",
+      "aliases": [
+        "Having"
+      ],
+      "metadata": {
+        "source_id": "6x13"
+      }
+    },
+    "PER:Lake Silencio": {
+      "id": "PER:Lake Silencio",
+      "label": "PER",
+      "aliases": [
+        "Lake Silencio"
+      ],
+      "metadata": {
+        "source_id": "6x13"
+      }
+    },
+    "TEXT:The Wedding": {
+      "id": "TEXT:The Wedding",
+      "label": "ENTITY",
+      "aliases": [
+        "The Wedding"
+      ],
+      "metadata": {
+        "source_id": "6x13"
+      }
+    },
+    "TEXT:River Song April": {
+      "id": "TEXT:River Song April",
+      "label": "ENTITY",
+      "aliases": [
+        "River Song April"
+      ],
+      "metadata": {
+        "source_id": "6x13"
+      }
+    },
+    "PER:Widow": {
+      "id": "PER:Widow",
+      "label": "PER",
+      "aliases": [
+        "Widow"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:Wardrobe It": {
+      "id": "PER:Wardrobe It",
+      "label": "PER",
+      "aliases": [
+        "Wardrobe It"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:Madge Arwell": {
+      "id": "PER:Madge Arwell",
+      "label": "PER",
+      "aliases": [
+        "Madge Arwell"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:Spaceman Angel": {
+      "id": "PER:Spaceman Angel",
+      "label": "PER",
+      "aliases": [
+        "Spaceman Angel"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:Three": {
+      "id": "PER:Three",
+      "label": "PER",
+      "aliases": [
+        "Three"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:Madge": {
+      "id": "PER:Madge",
+      "label": "PER",
+      "aliases": [
+        "Madge"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:Dorset": {
+      "id": "PER:Dorset",
+      "label": "PER",
+      "aliases": [
+        "Dorset"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:Lily": {
+      "id": "PER:Lily",
+      "label": "PER",
+      "aliases": [
+        "Lily"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:Cyril": {
+      "id": "PER:Cyril",
+      "label": "PER",
+      "aliases": [
+        "Cyril"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:The Arwells": {
+      "id": "PER:The Arwells",
+      "label": "PER",
+      "aliases": [
+        "The Arwells"
+      ],
+      "metadata": {
+        "source_id": "7x0"
+      }
+    },
+    "PER:Asylum": {
+      "id": "PER:Asylum",
+      "label": "PER",
+      "aliases": [
+        "Asylum"
+      ],
+      "metadata": {
+        "source_id": "7x1"
+      }
+    },
+    "PER:Daleks The Doctor": {
+      "id": "PER:Daleks The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Daleks The Doctor"
+      ],
+      "metadata": {
+        "source_id": "7x1"
+      }
+    },
+    "PER:Dalek Parliament": {
+      "id": "PER:Dalek Parliament",
+      "label": "PER",
+      "aliases": [
+        "Dalek Parliament"
+      ],
+      "metadata": {
+        "source_id": "7x1"
+      }
+    },
+    "PER:Once": {
+      "id": "PER:Once",
+      "label": "PER",
+      "aliases": [
+        "Once"
+      ],
+      "metadata": {
+        "source_id": "7x1"
+      }
+    },
+    "PER:Oswin": {
+      "id": "PER:Oswin",
+      "label": "PER",
+      "aliases": [
+        "Oswin"
+      ],
+      "metadata": {
+        "source_id": "7x1"
+      }
+    },
+    "PER:Dinosaurs": {
+      "id": "PER:Dinosaurs",
+      "label": "PER",
+      "aliases": [
+        "Dinosaurs"
+      ],
+      "metadata": {
+        "source_id": "7x2"
+      }
+    },
+    "PER:Spaceship After": {
+      "id": "PER:Spaceship After",
+      "label": "PER",
+      "aliases": [
+        "Spaceship After"
+      ],
+      "metadata": {
+        "source_id": "7x2"
+      }
+    },
+    "PER:Brian Williams": {
+      "id": "PER:Brian Williams",
+      "label": "PER",
+      "aliases": [
+        "Brian Williams"
+      ],
+      "metadata": {
+        "source_id": "7x2"
+      }
+    },
+    "PER:Those": {
+      "id": "PER:Those",
+      "label": "PER",
+      "aliases": [
+        "Those"
+      ],
+      "metadata": {
+        "source_id": "7x2"
+      }
+    },
+    "PER:Queen Nefertiti": {
+      "id": "PER:Queen Nefertiti",
+      "label": "PER",
+      "aliases": [
+        "Queen Nefertiti"
+      ],
+      "metadata": {
+        "source_id": "7x2"
+      }
+    },
+    "PER:John Riddell": {
+      "id": "PER:John Riddell",
+      "label": "PER",
+      "aliases": [
+        "John Riddell"
+      ],
+      "metadata": {
+        "source_id": "7x2"
+      }
+    },
+    "PER:Using": {
+      "id": "PER:Using",
+      "label": "PER",
+      "aliases": [
+        "Using"
+      ],
+      "metadata": {
+        "source_id": "7x2"
+      }
+    },
+    "PER:Town Called Mercy The Doctor": {
+      "id": "PER:Town Called Mercy The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Town Called Mercy The Doctor"
+      ],
+      "metadata": {
+        "source_id": "7x3"
+      }
+    },
+    "PER:Stetson": {
+      "id": "PER:Stetson",
+      "label": "PER",
+      "aliases": [
+        "Stetson"
+      ],
+      "metadata": {
+        "source_id": "7x3"
+      }
+    },
+    "PER:Sheriff": {
+      "id": "PER:Sheriff",
+      "label": "PER",
+      "aliases": [
+        "Sheriff"
+      ],
+      "metadata": {
+        "source_id": "7x3"
+      }
+    },
+    "PER:Western": {
+      "id": "PER:Western",
+      "label": "PER",
+      "aliases": [
+        "Western"
+      ],
+      "metadata": {
+        "source_id": "7x3"
+      }
+    },
+    "PER:The Gunslinger": {
+      "id": "PER:The Gunslinger",
+      "label": "PER",
+      "aliases": [
+        "The Gunslinger"
+      ],
+      "metadata": {
+        "source_id": "7x3"
+      }
+    },
+    "PER:The Power": {
+      "id": "PER:The Power",
+      "label": "PER",
+      "aliases": [
+        "The Power"
+      ],
+      "metadata": {
+        "source_id": "7x4"
+      }
+    },
+    "PER:Three Earth": {
+      "id": "PER:Three Earth",
+      "label": "PER",
+      "aliases": [
+        "Three Earth"
+      ],
+      "metadata": {
+        "source_id": "7x4"
+      }
+    },
+    "PER:Brian": {
+      "id": "PER:Brian",
+      "label": "PER",
+      "aliases": [
+        "Brian"
+      ],
+      "metadata": {
+        "source_id": "7x4"
+      }
+    },
+    "TEXT:The Power": {
+      "id": "TEXT:The Power",
+      "label": "ENTITY",
+      "aliases": [
+        "The Power"
+      ],
+      "metadata": {
+        "source_id": "7x4"
+      }
+    },
+    "TEXT:Three Earth": {
+      "id": "TEXT:Three Earth",
+      "label": "ENTITY",
+      "aliases": [
+        "Three Earth"
+      ],
+      "metadata": {
+        "source_id": "7x4"
+      }
+    },
+    "PER:The Angels Take Manhattan The Doctor": {
+      "id": "PER:The Angels Take Manhattan The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Angels Take Manhattan The Doctor"
+      ],
+      "metadata": {
+        "source_id": "7x5"
+      }
+    },
+    "PER:The Snowmen London": {
+      "id": "PER:The Snowmen London",
+      "label": "PER",
+      "aliases": [
+        "The Snowmen London"
+      ],
+      "metadata": {
+        "source_id": "7x6"
+      }
+    },
+    "PER:Snow": {
+      "id": "PER:Snow",
+      "label": "PER",
+      "aliases": [
+        "Snow"
+      ],
+      "metadata": {
+        "source_id": "7x6"
+      }
+    },
+    "PER:It": {
+      "id": "PER:It",
+      "label": "PER",
+      "aliases": [
+        "It"
+      ],
+      "metadata": {
+        "source_id": "7x9"
+      }
+    },
+    "PER:Clara": {
+      "id": "PER:Clara",
+      "label": "PER",
+      "aliases": [
+        "Clara"
+      ],
+      "metadata": {
+        "source_id": "9x10"
+      }
+    },
+    "PER:The Bells": {
+      "id": "PER:The Bells",
+      "label": "PER",
+      "aliases": [
+        "The Bells"
+      ],
+      "metadata": {
+        "source_id": "7x7"
+      }
+    },
+    "PER:Saint John": {
+      "id": "PER:Saint John",
+      "label": "PER",
+      "aliases": [
+        "Saint John"
+      ],
+      "metadata": {
+        "source_id": "7x7"
+      }
+    },
+    "PER:Miss Kizlet": {
+      "id": "PER:Miss Kizlet",
+      "label": "PER",
+      "aliases": [
+        "Miss Kizlet"
+      ],
+      "metadata": {
+        "source_id": "7x7"
+      }
+    },
+    "PER:Spoonheads": {
+      "id": "PER:Spoonheads",
+      "label": "PER",
+      "aliases": [
+        "Spoonheads"
+      ],
+      "metadata": {
+        "source_id": "7x7"
+      }
+    },
+    "TEXT:The Bells": {
+      "id": "TEXT:The Bells",
+      "label": "ENTITY",
+      "aliases": [
+        "The Bells"
+      ],
+      "metadata": {
+        "source_id": "7x7"
+      }
+    },
+    "TEXT:Saint John": {
+      "id": "TEXT:Saint John",
+      "label": "ENTITY",
+      "aliases": [
+        "Saint John"
+      ],
+      "metadata": {
+        "source_id": "7x7"
+      }
+    },
+    "PER:The Rings": {
+      "id": "PER:The Rings",
+      "label": "PER",
+      "aliases": [
+        "The Rings"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "PER:Akhaten Still": {
+      "id": "PER:Akhaten Still",
+      "label": "PER",
+      "aliases": [
+        "Akhaten Still"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "PER:Rings": {
+      "id": "PER:Rings",
+      "label": "PER",
+      "aliases": [
+        "Rings"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "PER:Akhaten": {
+      "id": "PER:Akhaten",
+      "label": "PER",
+      "aliases": [
+        "Akhaten"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "PER:Festival": {
+      "id": "PER:Festival",
+      "label": "PER",
+      "aliases": [
+        "Festival"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "PER:Offering": {
+      "id": "PER:Offering",
+      "label": "PER",
+      "aliases": [
+        "Offering"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "PER:Merry": {
+      "id": "PER:Merry",
+      "label": "PER",
+      "aliases": [
+        "Merry"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "PER:Old God": {
+      "id": "PER:Old God",
+      "label": "PER",
+      "aliases": [
+        "Old God"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "PER:When Merry": {
+      "id": "PER:When Merry",
+      "label": "PER",
+      "aliases": [
+        "When Merry"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "TEXT:The Rings": {
+      "id": "TEXT:The Rings",
+      "label": "ENTITY",
+      "aliases": [
+        "The Rings"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "TEXT:Akhaten Still": {
+      "id": "TEXT:Akhaten Still",
+      "label": "ENTITY",
+      "aliases": [
+        "Akhaten Still"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "TEXT:Rings": {
+      "id": "TEXT:Rings",
+      "label": "ENTITY",
+      "aliases": [
+        "Rings"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "TEXT:Akhaten": {
+      "id": "TEXT:Akhaten",
+      "label": "ENTITY",
+      "aliases": [
+        "Akhaten"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "TEXT:Festival": {
+      "id": "TEXT:Festival",
+      "label": "ENTITY",
+      "aliases": [
+        "Festival"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "TEXT:Offering": {
+      "id": "TEXT:Offering",
+      "label": "ENTITY",
+      "aliases": [
+        "Offering"
+      ],
+      "metadata": {
+        "source_id": "7x8"
+      }
+    },
+    "PER:Cold War The Doctor": {
+      "id": "PER:Cold War The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Cold War The Doctor"
+      ],
+      "metadata": {
+        "source_id": "7x9"
+      }
+    },
+    "PER:Cold War": {
+      "id": "PER:Cold War",
+      "label": "PER",
+      "aliases": [
+        "Cold War"
+      ],
+      "metadata": {
+        "source_id": "7x9"
+      }
+    },
+    "PER:Soviet": {
+      "id": "PER:Soviet",
+      "label": "PER",
+      "aliases": [
+        "Soviet"
+      ],
+      "metadata": {
+        "source_id": "7x9"
+      }
+    },
+    "PER:Professor Grisenko": {
+      "id": "PER:Professor Grisenko",
+      "label": "PER",
+      "aliases": [
+        "Professor Grisenko"
+      ],
+      "metadata": {
+        "source_id": "7x9"
+      }
+    },
+    "PER:Ice Warrior": {
+      "id": "PER:Ice Warrior",
+      "label": "PER",
+      "aliases": [
+        "Ice Warrior"
+      ],
+      "metadata": {
+        "source_id": "7x9"
+      }
+    },
+    "PER:Grand Marshal Skaldak": {
+      "id": "PER:Grand Marshal Skaldak",
+      "label": "PER",
+      "aliases": [
+        "Grand Marshal Skaldak"
+      ],
+      "metadata": {
+        "source_id": "7x9"
+      }
+    },
+    "PER:Hide The Doctor": {
+      "id": "PER:Hide The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Hide The Doctor"
+      ],
+      "metadata": {
+        "source_id": "7x10"
+      }
+    },
+    "PER:Alec Palmer": {
+      "id": "PER:Alec Palmer",
+      "label": "PER",
+      "aliases": [
+        "Alec Palmer"
+      ],
+      "metadata": {
+        "source_id": "7x10"
+      }
+    },
+    "PER:Emma Grayling": {
+      "id": "PER:Emma Grayling",
+      "label": "PER",
+      "aliases": [
+        "Emma Grayling"
+      ],
+      "metadata": {
+        "source_id": "7x10"
+      }
+    },
+    "PER:Alec": {
+      "id": "PER:Alec",
+      "label": "PER",
+      "aliases": [
+        "Alec"
+      ],
+      "metadata": {
+        "source_id": "7x10"
+      }
+    },
+    "PER:Major": {
+      "id": "PER:Major",
+      "label": "PER",
+      "aliases": [
+        "Major"
+      ],
+      "metadata": {
+        "source_id": "7x10"
+      }
+    },
+    "PER:Emma": {
+      "id": "PER:Emma",
+      "label": "PER",
+      "aliases": [
+        "Emma"
+      ],
+      "metadata": {
+        "source_id": "7x10"
+      }
+    },
+    "PER:Palmer": {
+      "id": "PER:Palmer",
+      "label": "PER",
+      "aliases": [
+        "Palmer"
+      ],
+      "metadata": {
+        "source_id": "7x10"
+      }
+    },
+    "PER:Centre": {
+      "id": "PER:Centre",
+      "label": "PER",
+      "aliases": [
+        "Centre"
+      ],
+      "metadata": {
+        "source_id": "7x11"
+      }
+    },
+    "PER:While": {
+      "id": "PER:While",
+      "label": "PER",
+      "aliases": [
+        "While"
+      ],
+      "metadata": {
+        "source_id": "7x11"
+      }
+    },
+    "PER:The Crimson Horror The Doctor": {
+      "id": "PER:The Crimson Horror The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Crimson Horror The Doctor"
+      ],
+      "metadata": {
+        "source_id": "7x12"
+      }
+    },
+    "PER:Yorkshire": {
+      "id": "PER:Yorkshire",
+      "label": "PER",
+      "aliases": [
+        "Yorkshire"
+      ],
+      "metadata": {
+        "source_id": "7x12"
+      }
+    },
+    "PER:Mrs Gillyflower": {
+      "id": "PER:Mrs Gillyflower",
+      "label": "PER",
+      "aliases": [
+        "Mrs Gillyflower"
+      ],
+      "metadata": {
+        "source_id": "7x12"
+      }
+    },
+    "PER:At": {
+      "id": "PER:At",
+      "label": "PER",
+      "aliases": [
+        "At"
+      ],
+      "metadata": {
+        "source_id": "7x12"
+      }
+    },
+    "PER:Madame Vastra": {
+      "id": "PER:Madame Vastra",
+      "label": "PER",
+      "aliases": [
+        "Madame Vastra"
+      ],
+      "metadata": {
+        "source_id": "7x12"
+      }
+    },
+    "PER:Doctor Who": {
+      "id": "PER:Doctor Who",
+      "label": "PER",
+      "aliases": [
+        "Doctor Who"
+      ],
+      "metadata": {
+        "source_id": "7x12"
+      }
+    },
+    "PER:Ada": {
+      "id": "PER:Ada",
+      "label": "PER",
+      "aliases": [
+        "Ada"
+      ],
+      "metadata": {
+        "source_id": "7x12"
+      }
+    },
+    "PER:Nightmare": {
+      "id": "PER:Nightmare",
+      "label": "PER",
+      "aliases": [
+        "Nightmare"
+      ],
+      "metadata": {
+        "source_id": "7x13"
+      }
+    },
+    "PER:Silver Hedgewick": {
+      "id": "PER:Silver Hedgewick",
+      "label": "PER",
+      "aliases": [
+        "Silver Hedgewick"
+      ],
+      "metadata": {
+        "source_id": "7x13"
+      }
+    },
+    "PER:World": {
+      "id": "PER:World",
+      "label": "PER",
+      "aliases": [
+        "World"
+      ],
+      "metadata": {
+        "source_id": "10x7"
+      }
+    },
+    "PER:Wonders": {
+      "id": "PER:Wonders",
+      "label": "PER",
+      "aliases": [
+        "Wonders"
+      ],
+      "metadata": {
+        "source_id": "7x13"
+      }
+    },
+    "PER:Artie": {
+      "id": "PER:Artie",
+      "label": "PER",
+      "aliases": [
+        "Artie"
+      ],
+      "metadata": {
+        "source_id": "7x13"
+      }
+    },
+    "PER:Angie": {
+      "id": "PER:Angie",
+      "label": "PER",
+      "aliases": [
+        "Angie"
+      ],
+      "metadata": {
+        "source_id": "7x13"
+      }
+    },
+    "PER:The Cybermen": {
+      "id": "PER:The Cybermen",
+      "label": "PER",
+      "aliases": [
+        "The Cybermen"
+      ],
+      "metadata": {
+        "source_id": "7x13"
+      }
+    },
+    "TEXT:Nightmare": {
+      "id": "TEXT:Nightmare",
+      "label": "ENTITY",
+      "aliases": [
+        "Nightmare"
+      ],
+      "metadata": {
+        "source_id": "7x13"
+      }
+    },
+    "TEXT:Silver Hedgewick": {
+      "id": "TEXT:Silver Hedgewick",
+      "label": "ENTITY",
+      "aliases": [
+        "Silver Hedgewick"
+      ],
+      "metadata": {
+        "source_id": "7x13"
+      }
+    },
+    "TEXT:World": {
+      "id": "TEXT:World",
+      "label": "ENTITY",
+      "aliases": [
+        "World"
+      ],
+      "metadata": {
+        "source_id": "7x13"
+      }
+    },
+    "TEXT:Wonders": {
+      "id": "TEXT:Wonders",
+      "label": "ENTITY",
+      "aliases": [
+        "Wonders"
+      ],
+      "metadata": {
+        "source_id": "7x13"
+      }
+    },
+    "PER:The Name": {
+      "id": "PER:The Name",
+      "label": "PER",
+      "aliases": [
+        "The Name"
+      ],
+      "metadata": {
+        "source_id": "7x14"
+      }
+    },
+    "PER:Trenzalore": {
+      "id": "PER:Trenzalore",
+      "label": "PER",
+      "aliases": [
+        "Trenzalore"
+      ],
+      "metadata": {
+        "source_id": "7x14"
+      }
+    },
+    "PER:Deep Breath When": {
+      "id": "PER:Deep Breath When",
+      "label": "PER",
+      "aliases": [
+        "Deep Breath When"
+      ],
+      "metadata": {
+        "source_id": "8x1"
+      }
+    },
+    "PER:Victorian London": {
+      "id": "PER:Victorian London",
+      "label": "PER",
+      "aliases": [
+        "Victorian London"
+      ],
+      "metadata": {
+        "source_id": "8x1"
+      }
+    },
+    "PER:Thames": {
+      "id": "PER:Thames",
+      "label": "PER",
+      "aliases": [
+        "Thames"
+      ],
+      "metadata": {
+        "source_id": "8x1"
+      }
+    },
+    "PER:Into": {
+      "id": "PER:Into",
+      "label": "PER",
+      "aliases": [
+        "Into"
+      ],
+      "metadata": {
+        "source_id": "8x2"
+      }
+    },
+    "PER:Dalek The Doctor": {
+      "id": "PER:Dalek The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Dalek The Doctor"
+      ],
+      "metadata": {
+        "source_id": "8x2"
+      }
+    },
+    "PER:Robot": {
+      "id": "PER:Robot",
+      "label": "PER",
+      "aliases": [
+        "Robot"
+      ],
+      "metadata": {
+        "source_id": "8x3"
+      }
+    },
+    "PER:Sherwood In Sherwood Forest": {
+      "id": "PER:Sherwood In Sherwood Forest",
+      "label": "PER",
+      "aliases": [
+        "Sherwood In Sherwood Forest"
+      ],
+      "metadata": {
+        "source_id": "8x3"
+      }
+    },
+    "PER:Robin Hood": {
+      "id": "PER:Robin Hood",
+      "label": "PER",
+      "aliases": [
+        "Robin Hood"
+      ],
+      "metadata": {
+        "source_id": "8x3"
+      }
+    },
+    "PER:With Nottingham": {
+      "id": "PER:With Nottingham",
+      "label": "PER",
+      "aliases": [
+        "With Nottingham"
+      ],
+      "metadata": {
+        "source_id": "8x3"
+      }
+    },
+    "TEXT:Robot": {
+      "id": "TEXT:Robot",
+      "label": "ENTITY",
+      "aliases": [
+        "Robot"
+      ],
+      "metadata": {
+        "source_id": "8x3"
+      }
+    },
+    "TEXT:Sherwood In Sherwood Forest": {
+      "id": "TEXT:Sherwood In Sherwood Forest",
+      "label": "ENTITY",
+      "aliases": [
+        "Sherwood In Sherwood Forest"
+      ],
+      "metadata": {
+        "source_id": "8x3"
+      }
+    },
+    "PER:Listen When": {
+      "id": "PER:Listen When",
+      "label": "PER",
+      "aliases": [
+        "Listen When"
+      ],
+      "metadata": {
+        "source_id": "8x4"
+      }
+    },
+    "PER:Time Heist The Doctor": {
+      "id": "PER:Time Heist The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Time Heist The Doctor"
+      ],
+      "metadata": {
+        "source_id": "8x5"
+      }
+    },
+    "PER:The Caretaker The": {
+      "id": "PER:The Caretaker The",
+      "label": "PER",
+      "aliases": [
+        "The Caretaker The"
+      ],
+      "metadata": {
+        "source_id": "8x6"
+      }
+    },
+    "PER:Skovox Blitzer": {
+      "id": "PER:Skovox Blitzer",
+      "label": "PER",
+      "aliases": [
+        "Skovox Blitzer"
+      ],
+      "metadata": {
+        "source_id": "8x6"
+      }
+    },
+    "PER:Danny Pink": {
+      "id": "PER:Danny Pink",
+      "label": "PER",
+      "aliases": [
+        "Danny Pink"
+      ],
+      "metadata": {
+        "source_id": "8x6"
+      }
+    },
+    "PER:Kill": {
+      "id": "PER:Kill",
+      "label": "PER",
+      "aliases": [
+        "Kill"
+      ],
+      "metadata": {
+        "source_id": "8x7"
+      }
+    },
+    "PER:Moon In": {
+      "id": "PER:Moon In",
+      "label": "PER",
+      "aliases": [
+        "Moon In"
+      ],
+      "metadata": {
+        "source_id": "8x7"
+      }
+    },
+    "PER:Crash": {
+      "id": "PER:Crash",
+      "label": "PER",
+      "aliases": [
+        "Crash"
+      ],
+      "metadata": {
+        "source_id": "8x7"
+      }
+    },
+    "PER:Mummy": {
+      "id": "PER:Mummy",
+      "label": "PER",
+      "aliases": [
+        "Mummy"
+      ],
+      "metadata": {
+        "source_id": "8x8"
+      }
+    },
+    "PER:Orient Express On": {
+      "id": "PER:Orient Express On",
+      "label": "PER",
+      "aliases": [
+        "Orient Express On"
+      ],
+      "metadata": {
+        "source_id": "8x8"
+      }
+    },
+    "PER:Flatline": {
+      "id": "PER:Flatline",
+      "label": "PER",
+      "aliases": [
+        "Flatline"
+      ],
+      "metadata": {
+        "source_id": "8x9"
+      }
+    },
+    "PER:Tardis": {
+      "id": "PER:Tardis",
+      "label": "PER",
+      "aliases": [
+        "Tardis"
+      ],
+      "metadata": {
+        "source_id": "8x9"
+      }
+    },
+    "PER:Night One": {
+      "id": "PER:Night One",
+      "label": "PER",
+      "aliases": [
+        "Night One"
+      ],
+      "metadata": {
+        "source_id": "8x10"
+      }
+    },
+    "PER:Everywhere": {
+      "id": "PER:Everywhere",
+      "label": "PER",
+      "aliases": [
+        "Everywhere"
+      ],
+      "metadata": {
+        "source_id": "8x10"
+      }
+    },
+    "PER:Dark Water In": {
+      "id": "PER:Dark Water In",
+      "label": "PER",
+      "aliases": [
+        "Dark Water In"
+      ],
+      "metadata": {
+        "source_id": "8x11"
+      }
+    },
+    "PER:Nethersphere": {
+      "id": "PER:Nethersphere",
+      "label": "PER",
+      "aliases": [
+        "Nethersphere"
+      ],
+      "metadata": {
+        "source_id": "8x11"
+      }
+    },
+    "PER:Old": {
+      "id": "PER:Old",
+      "label": "PER",
+      "aliases": [
+        "Old"
+      ],
+      "metadata": {
+        "source_id": "8x11"
+      }
+    },
+    "PER:Death": {
+      "id": "PER:Death",
+      "label": "PER",
+      "aliases": [
+        "Death"
+      ],
+      "metadata": {
+        "source_id": "8x12"
+      }
+    },
+    "PER:Heaven With Cybermen": {
+      "id": "PER:Heaven With Cybermen",
+      "label": "PER",
+      "aliases": [
+        "Heaven With Cybermen"
+      ],
+      "metadata": {
+        "source_id": "8x12"
+      }
+    },
+    "TEXT:Death": {
+      "id": "TEXT:Death",
+      "label": "ENTITY",
+      "aliases": [
+        "Death"
+      ],
+      "metadata": {
+        "source_id": "8x12"
+      }
+    },
+    "TEXT:Heaven With Cybermen": {
+      "id": "TEXT:Heaven With Cybermen",
+      "label": "ENTITY",
+      "aliases": [
+        "Heaven With Cybermen"
+      ],
+      "metadata": {
+        "source_id": "8x12"
+      }
+    },
+    "PER:Last Christmas The Doctor": {
+      "id": "PER:Last Christmas The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Last Christmas The Doctor"
+      ],
+      "metadata": {
+        "source_id": "9x0"
+      }
+    },
+    "PER:Last Christmas": {
+      "id": "PER:Last Christmas",
+      "label": "PER",
+      "aliases": [
+        "Last Christmas"
+      ],
+      "metadata": {
+        "source_id": "9x0"
+      }
+    },
+    "PER:Trapped": {
+      "id": "PER:Trapped",
+      "label": "PER",
+      "aliases": [
+        "Trapped"
+      ],
+      "metadata": {
+        "source_id": "9x0"
+      }
+    },
+    "PER:Arctic": {
+      "id": "PER:Arctic",
+      "label": "PER",
+      "aliases": [
+        "Arctic"
+      ],
+      "metadata": {
+        "source_id": "9x0"
+      }
+    },
+    "PER:Santa Claus": {
+      "id": "PER:Santa Claus",
+      "label": "PER",
+      "aliases": [
+        "Santa Claus"
+      ],
+      "metadata": {
+        "source_id": "9x0"
+      }
+    },
+    "PER:The Magician": {
+      "id": "PER:The Magician",
+      "label": "PER",
+      "aliases": [
+        "The Magician"
+      ],
+      "metadata": {
+        "source_id": "9x1"
+      }
+    },
+    "PER:Apprentice When": {
+      "id": "PER:Apprentice When",
+      "label": "PER",
+      "aliases": [
+        "Apprentice When"
+      ],
+      "metadata": {
+        "source_id": "9x1"
+      }
+    },
+    "PER:The Witch": {
+      "id": "PER:The Witch",
+      "label": "PER",
+      "aliases": [
+        "The Witch"
+      ],
+      "metadata": {
+        "source_id": "9x2"
+      }
+    },
+    "PER:Familiar Trapped": {
+      "id": "PER:Familiar Trapped",
+      "label": "PER",
+      "aliases": [
+        "Familiar Trapped"
+      ],
+      "metadata": {
+        "source_id": "9x2"
+      }
+    },
+    "PER:Empire": {
+      "id": "PER:Empire",
+      "label": "PER",
+      "aliases": [
+        "Empire"
+      ],
+      "metadata": {
+        "source_id": "9x2"
+      }
+    },
+    "PER:Under": {
+      "id": "PER:Under",
+      "label": "PER",
+      "aliases": [
+        "Under"
+      ],
+      "metadata": {
+        "source_id": "9x3"
+      }
+    },
+    "PER:Lake Under": {
+      "id": "PER:Lake Under",
+      "label": "PER",
+      "aliases": [
+        "Lake Under"
+      ],
+      "metadata": {
+        "source_id": "9x3"
+      }
+    },
+    "PER:Before": {
+      "id": "PER:Before",
+      "label": "PER",
+      "aliases": [
+        "Before"
+      ],
+      "metadata": {
+        "source_id": "9x4"
+      }
+    },
+    "PER:Flood In": {
+      "id": "PER:Flood In",
+      "label": "PER",
+      "aliases": [
+        "Flood In"
+      ],
+      "metadata": {
+        "source_id": "9x4"
+      }
+    },
+    "PER:Fisher King": {
+      "id": "PER:Fisher King",
+      "label": "PER",
+      "aliases": [
+        "Fisher King"
+      ],
+      "metadata": {
+        "source_id": "9x4"
+      }
+    },
+    "PER:Beethoven": {
+      "id": "PER:Beethoven",
+      "label": "PER",
+      "aliases": [
+        "Beethoven"
+      ],
+      "metadata": {
+        "source_id": "9x4"
+      }
+    },
+    "PER:The Girl Who Died In": {
+      "id": "PER:The Girl Who Died In",
+      "label": "PER",
+      "aliases": [
+        "The Girl Who Died In"
+      ],
+      "metadata": {
+        "source_id": "9x5"
+      }
+    },
+    "PER:Viking": {
+      "id": "PER:Viking",
+      "label": "PER",
+      "aliases": [
+        "Viking"
+      ],
+      "metadata": {
+        "source_id": "9x5"
+      }
+    },
+    "PER:Ashildr": {
+      "id": "PER:Ashildr",
+      "label": "PER",
+      "aliases": [
+        "Ashildr"
+      ],
+      "metadata": {
+        "source_id": "9x5"
+      }
+    },
+    "PER:The Mire": {
+      "id": "PER:The Mire",
+      "label": "PER",
+      "aliases": [
+        "The Mire"
+      ],
+      "metadata": {
+        "source_id": "9x5"
+      }
+    },
+    "PER:Mire": {
+      "id": "PER:Mire",
+      "label": "PER",
+      "aliases": [
+        "Mire"
+      ],
+      "metadata": {
+        "source_id": "9x5"
+      }
+    },
+    "PER:The Woman Who Lived England": {
+      "id": "PER:The Woman Who Lived England",
+      "label": "PER",
+      "aliases": [
+        "The Woman Who Lived England"
+      ],
+      "metadata": {
+        "source_id": "9x6"
+      }
+    },
+    "PER:The Knightmare": {
+      "id": "PER:The Knightmare",
+      "label": "PER",
+      "aliases": [
+        "The Knightmare"
+      ],
+      "metadata": {
+        "source_id": "9x6"
+      }
+    },
+    "PER:Who": {
+      "id": "PER:Who",
+      "label": "PER",
+      "aliases": [
+        "Who"
+      ],
+      "metadata": {
+        "source_id": "9x12"
+      }
+    },
+    "PER:The Zygon Invasion The": {
+      "id": "PER:The Zygon Invasion The",
+      "label": "PER",
+      "aliases": [
+        "The Zygon Invasion The"
+      ],
+      "metadata": {
+        "source_id": "9x7"
+      }
+    },
+    "PER:Zygons": {
+      "id": "PER:Zygons",
+      "label": "PER",
+      "aliases": [
+        "Zygons"
+      ],
+      "metadata": {
+        "source_id": "9x8"
+      }
+    },
+    "PER:Tensions": {
+      "id": "PER:Tensions",
+      "label": "PER",
+      "aliases": [
+        "Tensions"
+      ],
+      "metadata": {
+        "source_id": "9x7"
+      }
+    },
+    "PER:Zygon": {
+      "id": "PER:Zygon",
+      "label": "PER",
+      "aliases": [
+        "Zygon"
+      ],
+      "metadata": {
+        "source_id": "9x7"
+      }
+    },
+    "PER:Called": {
+      "id": "PER:Called",
+      "label": "PER",
+      "aliases": [
+        "Called"
+      ],
+      "metadata": {
+        "source_id": "9x7"
+      }
+    },
+    "PER:Where": {
+      "id": "PER:Where",
+      "label": "PER",
+      "aliases": [
+        "Where"
+      ],
+      "metadata": {
+        "source_id": "9x7"
+      }
+    },
+    "PER:Osgood": {
+      "id": "PER:Osgood",
+      "label": "PER",
+      "aliases": [
+        "Osgood"
+      ],
+      "metadata": {
+        "source_id": "9x7"
+      }
+    },
+    "TEXT:Earth": {
+      "id": "TEXT:Earth",
+      "label": "ENTITY",
+      "aliases": [
+        "Earth"
+      ],
+      "metadata": {
+        "source_id": "9x7"
+      }
+    },
+    "TEXT:Osgood": {
+      "id": "TEXT:Osgood",
+      "label": "ENTITY",
+      "aliases": [
+        "Osgood"
+      ],
+      "metadata": {
+        "source_id": "9x7"
+      }
+    },
+    "PER:The Zygon Inversion With": {
+      "id": "PER:The Zygon Inversion With",
+      "label": "PER",
+      "aliases": [
+        "The Zygon Inversion With"
+      ],
+      "metadata": {
+        "source_id": "9x8"
+      }
+    },
+    "PER:England": {
+      "id": "PER:England",
+      "label": "PER",
+      "aliases": [
+        "England"
+      ],
+      "metadata": {
+        "source_id": "9x8"
+      }
+    },
+    "PER:Sleep No More Vision": {
+      "id": "PER:Sleep No More Vision",
+      "label": "PER",
+      "aliases": [
+        "Sleep No More Vision"
+      ],
+      "metadata": {
+        "source_id": "9x9"
+      }
+    },
+    "PER:Le Verrier Space Station": {
+      "id": "PER:Le Verrier Space Station",
+      "label": "PER",
+      "aliases": [
+        "Le Verrier Space Station"
+      ],
+      "metadata": {
+        "source_id": "9x9"
+      }
+    },
+    "PER:Face": {
+      "id": "PER:Face",
+      "label": "PER",
+      "aliases": [
+        "Face"
+      ],
+      "metadata": {
+        "source_id": "9x10"
+      }
+    },
+    "PER:Raven The Doctor": {
+      "id": "PER:Raven The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Raven The Doctor"
+      ],
+      "metadata": {
+        "source_id": "9x10"
+      }
+    },
+    "PER:Rigsy": {
+      "id": "PER:Rigsy",
+      "label": "PER",
+      "aliases": [
+        "Rigsy"
+      ],
+      "metadata": {
+        "source_id": "9x10"
+      }
+    },
+    "PER:Their": {
+      "id": "PER:Their",
+      "label": "PER",
+      "aliases": [
+        "Their"
+      ],
+      "metadata": {
+        "source_id": "9x10"
+      }
+    },
+    "PER:Raven": {
+      "id": "PER:Raven",
+      "label": "PER",
+      "aliases": [
+        "Raven"
+      ],
+      "metadata": {
+        "source_id": "9x10"
+      }
+    },
+    "PER:Heaven Sent Trapped": {
+      "id": "PER:Heaven Sent Trapped",
+      "label": "PER",
+      "aliases": [
+        "Heaven Sent Trapped"
+      ],
+      "metadata": {
+        "source_id": "9x11"
+      }
+    },
+    "PER:One": {
+      "id": "PER:One",
+      "label": "PER",
+      "aliases": [
+        "One"
+      ],
+      "metadata": {
+        "source_id": "9x11"
+      }
+    },
+    "PER:Hell Bent If": {
+      "id": "PER:Hell Bent If",
+      "label": "PER",
+      "aliases": [
+        "Hell Bent If"
+      ],
+      "metadata": {
+        "source_id": "9x12"
+      }
+    },
+    "PER:Returning": {
+      "id": "PER:Returning",
+      "label": "PER",
+      "aliases": [
+        "Returning"
+      ],
+      "metadata": {
+        "source_id": "9x12"
+      }
+    },
+    "PER:Gallifrey": {
+      "id": "PER:Gallifrey",
+      "label": "PER",
+      "aliases": [
+        "Gallifrey"
+      ],
+      "metadata": {
+        "source_id": "9x12"
+      }
+    },
+    "PER:Time Lords": {
+      "id": "PER:Time Lords",
+      "label": "PER",
+      "aliases": [
+        "Time Lords"
+      ],
+      "metadata": {
+        "source_id": "9x12"
+      }
+    },
+    "PER:Hybrid": {
+      "id": "PER:Hybrid",
+      "label": "PER",
+      "aliases": [
+        "Hybrid"
+      ],
+      "metadata": {
+        "source_id": "9x12"
+      }
+    },
+    "PER:The Husbands": {
+      "id": "PER:The Husbands",
+      "label": "PER",
+      "aliases": [
+        "The Husbands"
+      ],
+      "metadata": {
+        "source_id": "9x13"
+      }
+    },
+    "PER:River Song When": {
+      "id": "PER:River Song When",
+      "label": "PER",
+      "aliases": [
+        "River Song When"
+      ],
+      "metadata": {
+        "source_id": "9x13"
+      }
+    },
+    "TEXT:The Husbands": {
+      "id": "TEXT:The Husbands",
+      "label": "ENTITY",
+      "aliases": [
+        "The Husbands"
+      ],
+      "metadata": {
+        "source_id": "9x13"
+      }
+    },
+    "TEXT:River Song When": {
+      "id": "TEXT:River Song When",
+      "label": "ENTITY",
+      "aliases": [
+        "River Song When"
+      ],
+      "metadata": {
+        "source_id": "9x13"
+      }
+    },
+    "PER:The Return": {
+      "id": "PER:The Return",
+      "label": "PER",
+      "aliases": [
+        "The Return"
+      ],
+      "metadata": {
+        "source_id": "10x0"
+      }
+    },
+    "PER:Doctor Mysterio In New York": {
+      "id": "PER:Doctor Mysterio In New York",
+      "label": "PER",
+      "aliases": [
+        "Doctor Mysterio In New York"
+      ],
+      "metadata": {
+        "source_id": "10x0"
+      }
+    },
+    "PER:Nardole": {
+      "id": "PER:Nardole",
+      "label": "PER",
+      "aliases": [
+        "Nardole"
+      ],
+      "metadata": {
+        "source_id": "10x9"
+      }
+    },
+    "PER:Ghost": {
+      "id": "PER:Ghost",
+      "label": "PER",
+      "aliases": [
+        "Ghost"
+      ],
+      "metadata": {
+        "source_id": "10x0"
+      }
+    },
+    "PER:Can": {
+      "id": "PER:Can",
+      "label": "PER",
+      "aliases": [
+        "Can"
+      ],
+      "metadata": {
+        "source_id": "10x0"
+      }
+    },
+    "TEXT:The Return": {
+      "id": "TEXT:The Return",
+      "label": "ENTITY",
+      "aliases": [
+        "The Return"
+      ],
+      "metadata": {
+        "source_id": "10x0"
+      }
+    },
+    "TEXT:Doctor Mysterio In New York": {
+      "id": "TEXT:Doctor Mysterio In New York",
+      "label": "ENTITY",
+      "aliases": [
+        "Doctor Mysterio In New York"
+      ],
+      "metadata": {
+        "source_id": "10x0"
+      }
+    },
+    "PER:The Pilot The Doctor": {
+      "id": "PER:The Pilot The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Pilot The Doctor"
+      ],
+      "metadata": {
+        "source_id": "10x1"
+      }
+    },
+    "PER:Smile In": {
+      "id": "PER:Smile In",
+      "label": "PER",
+      "aliases": [
+        "Smile In"
+      ],
+      "metadata": {
+        "source_id": "10x2"
+      }
+    },
+    "PER:This": {
+      "id": "PER:This",
+      "label": "PER",
+      "aliases": [
+        "This"
+      ],
+      "metadata": {
+        "source_id": "10x2"
+      }
+    },
+    "PER:Bill": {
+      "id": "PER:Bill",
+      "label": "PER",
+      "aliases": [
+        "Bill"
+      ],
+      "metadata": {
+        "source_id": "10x10"
+      }
+    },
+    "PER:Something": {
+      "id": "PER:Something",
+      "label": "PER",
+      "aliases": [
+        "Something"
+      ],
+      "metadata": {
+        "source_id": "10x2"
+      }
+    },
+    "PER:Thin Ice The Doctor": {
+      "id": "PER:Thin Ice The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Thin Ice The Doctor"
+      ],
+      "metadata": {
+        "source_id": "10x3"
+      }
+    },
+    "PER:River Thames": {
+      "id": "PER:River Thames",
+      "label": "PER",
+      "aliases": [
+        "River Thames"
+      ],
+      "metadata": {
+        "source_id": "10x3"
+      }
+    },
+    "PER:February": {
+      "id": "PER:February",
+      "label": "PER",
+      "aliases": [
+        "February"
+      ],
+      "metadata": {
+        "source_id": "10x3"
+      }
+    },
+    "PER:Knock Knock Bill": {
+      "id": "PER:Knock Knock Bill",
+      "label": "PER",
+      "aliases": [
+        "Knock Knock Bill"
+      ],
+      "metadata": {
+        "source_id": "10x4"
+      }
+    },
+    "PER:Oxygen When": {
+      "id": "PER:Oxygen When",
+      "label": "PER",
+      "aliases": [
+        "Oxygen When"
+      ],
+      "metadata": {
+        "source_id": "10x5"
+      }
+    },
+    "PER:Extremis The Haereticum": {
+      "id": "PER:Extremis The Haereticum",
+      "label": "PER",
+      "aliases": [
+        "Extremis The Haereticum"
+      ],
+      "metadata": {
+        "source_id": "10x6"
+      }
+    },
+    "PER:The Veritas": {
+      "id": "PER:The Veritas",
+      "label": "PER",
+      "aliases": [
+        "The Veritas"
+      ],
+      "metadata": {
+        "source_id": "10x6"
+      }
+    },
+    "PER:Throughout": {
+      "id": "PER:Throughout",
+      "label": "PER",
+      "aliases": [
+        "Throughout"
+      ],
+      "metadata": {
+        "source_id": "10x6"
+      }
+    },
+    "PER:Vatican": {
+      "id": "PER:Vatican",
+      "label": "PER",
+      "aliases": [
+        "Vatican"
+      ],
+      "metadata": {
+        "source_id": "10x6"
+      }
+    },
+    "PER:Will": {
+      "id": "PER:Will",
+      "label": "PER",
+      "aliases": [
+        "Will"
+      ],
+      "metadata": {
+        "source_id": "10x6"
+      }
+    },
+    "PER:The Pyramid": {
+      "id": "PER:The Pyramid",
+      "label": "PER",
+      "aliases": [
+        "The Pyramid"
+      ],
+      "metadata": {
+        "source_id": "10x7"
+      }
+    },
+    "PER:End": {
+      "id": "PER:End",
+      "label": "PER",
+      "aliases": [
+        "End"
+      ],
+      "metadata": {
+        "source_id": "10x7"
+      }
+    },
+    "PER:The Lie": {
+      "id": "PER:The Lie",
+      "label": "PER",
+      "aliases": [
+        "The Lie"
+      ],
+      "metadata": {
+        "source_id": "10x8"
+      }
+    },
+    "PER:Land Earth": {
+      "id": "PER:Land Earth",
+      "label": "PER",
+      "aliases": [
+        "Land Earth"
+      ],
+      "metadata": {
+        "source_id": "10x8"
+      }
+    },
+    "PER:Empress": {
+      "id": "PER:Empress",
+      "label": "PER",
+      "aliases": [
+        "Empress"
+      ],
+      "metadata": {
+        "source_id": "10x9"
+      }
+    },
+    "PER:Mars The Doctor": {
+      "id": "PER:Mars The Doctor",
+      "label": "PER",
+      "aliases": [
+        "Mars The Doctor"
+      ],
+      "metadata": {
+        "source_id": "10x9"
+      }
+    },
+    "PER:Queen": {
+      "id": "PER:Queen",
+      "label": "PER",
+      "aliases": [
+        "Queen"
+      ],
+      "metadata": {
+        "source_id": "10x9"
+      }
+    },
+    "PER:Ice Warriors": {
+      "id": "PER:Ice Warriors",
+      "label": "PER",
+      "aliases": [
+        "Ice Warriors"
+      ],
+      "metadata": {
+        "source_id": "10x9"
+      }
+    },
+    "PER:Mars": {
+      "id": "PER:Mars",
+      "label": "PER",
+      "aliases": [
+        "Mars"
+      ],
+      "metadata": {
+        "source_id": "10x9"
+      }
+    },
+    "TEXT:Empress": {
+      "id": "TEXT:Empress",
+      "label": "ENTITY",
+      "aliases": [
+        "Empress"
+      ],
+      "metadata": {
+        "source_id": "10x9"
+      }
+    },
+    "TEXT:Mars The Doctor": {
+      "id": "TEXT:Mars The Doctor",
+      "label": "ENTITY",
+      "aliases": [
+        "Mars The Doctor"
+      ],
+      "metadata": {
+        "source_id": "10x9"
+      }
+    },
+    "PER:The Eaters": {
+      "id": "PER:The Eaters",
+      "label": "PER",
+      "aliases": [
+        "The Eaters"
+      ],
+      "metadata": {
+        "source_id": "10x10"
+      }
+    },
+    "PER:Light": {
+      "id": "PER:Light",
+      "label": "PER",
+      "aliases": [
+        "Light"
+      ],
+      "metadata": {
+        "source_id": "10x10"
+      }
+    },
+    "PER:Roman": {
+      "id": "PER:Roman",
+      "label": "PER",
+      "aliases": [
+        "Roman"
+      ],
+      "metadata": {
+        "source_id": "10x10"
+      }
+    },
+    "PER:Scotland": {
+      "id": "PER:Scotland",
+      "label": "PER",
+      "aliases": [
+        "Scotland"
+      ],
+      "metadata": {
+        "source_id": "10x10"
+      }
+    },
+    "PER:Aberdeenshire": {
+      "id": "PER:Aberdeenshire",
+      "label": "PER",
+      "aliases": [
+        "Aberdeenshire"
+      ],
+      "metadata": {
+        "source_id": "10x10"
+      }
+    },
+    "TEXT:The Eaters": {
+      "id": "TEXT:The Eaters",
+      "label": "ENTITY",
+      "aliases": [
+        "The Eaters"
+      ],
+      "metadata": {
+        "source_id": "10x10"
+      }
+    },
+    "TEXT:Light": {
+      "id": "TEXT:Light",
+      "label": "ENTITY",
+      "aliases": [
+        "Light"
+      ],
+      "metadata": {
+        "source_id": "10x10"
+      }
+    },
+    "PER:World Enough": {
+      "id": "PER:World Enough",
+      "label": "PER",
+      "aliases": [
+        "World Enough"
+      ],
+      "metadata": {
+        "source_id": "10x11"
+      }
+    },
+    "PER:Time Trapped": {
+      "id": "PER:Time Trapped",
+      "label": "PER",
+      "aliases": [
+        "Time Trapped"
+      ],
+      "metadata": {
+        "source_id": "10x11"
+      }
+    },
+    "PER:Are": {
+      "id": "PER:Are",
+      "label": "PER",
+      "aliases": [
+        "Are"
+      ],
+      "metadata": {
+        "source_id": "10x11"
+      }
+    },
+    "PER:The Doctor Falls The Doctor": {
+      "id": "PER:The Doctor Falls The Doctor",
+      "label": "PER",
+      "aliases": [
+        "The Doctor Falls The Doctor"
+      ],
+      "metadata": {
+        "source_id": "10x12"
+      }
+    }
+  },
+  "edges": [
+    {
+      "subject": "TEXT:Aliens",
+      "relation": "related_to",
+      "object": "TEXT:London The Doctor",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "1x4",
+        "subject_text": "Aliens",
+        "object_text": "London The Doctor"
+      }
+    },
+    {
+      "subject": "TEXT:The Age",
+      "relation": "related_to",
+      "object": "TEXT:Steel The Cybermen",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "2x6",
+        "subject_text": "The Age",
+        "object_text": "Steel The Cybermen"
+      }
+    },
+    {
+      "subject": "TEXT:Army",
+      "relation": "related_to",
+      "object": "TEXT:Ghosts When",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "2x12",
+        "subject_text": "Army",
+        "object_text": "Ghosts When"
+      }
+    },
+    {
+      "subject": "TEXT:Daleks",
+      "relation": "related_to",
+      "object": "TEXT:Manhattan The Doctor",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "3x4",
+        "subject_text": "Daleks",
+        "object_text": "Manhattan The Doctor"
+      }
+    },
+    {
+      "subject": "TEXT:Daleks",
+      "relation": "related_to",
+      "object": "TEXT:Manhattan",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "3x5",
+        "subject_text": "Daleks",
+        "object_text": "Manhattan"
+      }
+    },
+    {
+      "subject": "TEXT:The Family",
+      "relation": "related_to",
+      "object": "TEXT:Blood The Doctor",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "3x9",
+        "subject_text": "The Family",
+        "object_text": "Blood The Doctor"
+      }
+    },
+    {
+      "subject": "TEXT:The Sound",
+      "relation": "related_to",
+      "object": "TEXT:Drums The Doctor",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "3x12",
+        "subject_text": "The Sound",
+        "object_text": "Drums The Doctor"
+      }
+    },
+    {
+      "subject": "TEXT:Partners",
+      "relation": "related_to",
+      "object": "TEXT:Crime With",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "4x1",
+        "subject_text": "Partners",
+        "object_text": "Crime With"
+      }
+    },
+    {
+      "subject": "TEXT:The Fires",
+      "relation": "related_to",
+      "object": "TEXT:Pompeii Instead",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "4x2",
+        "subject_text": "The Fires",
+        "object_text": "Pompeii Instead"
+      }
+    },
+    {
+      "subject": "TEXT:The Time",
+      "relation": "related_to",
+      "object": "TEXT:Angels The Doctor",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "5x4",
+        "subject_text": "The Time",
+        "object_text": "Angels The Doctor"
+      }
+    },
+    {
+      "subject": "TEXT:The Vampires",
+      "relation": "related_to",
+      "object": "TEXT:Venice The Doctor",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "5x6",
+        "subject_text": "The Vampires",
+        "object_text": "Venice The Doctor"
+      }
+    },
+    {
+      "subject": "TEXT:The Wedding",
+      "relation": "related_to",
+      "object": "TEXT:River Song April",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "6x13",
+        "subject_text": "The Wedding",
+        "object_text": "River Song April"
+      }
+    },
+    {
+      "subject": "TEXT:The Power",
+      "relation": "related_to",
+      "object": "TEXT:Three Earth",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "7x4",
+        "subject_text": "The Power",
+        "object_text": "Three Earth"
+      }
+    },
+    {
+      "subject": "TEXT:The Bells",
+      "relation": "related_to",
+      "object": "TEXT:Saint John",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "7x7",
+        "subject_text": "The Bells",
+        "object_text": "Saint John"
+      }
+    },
+    {
+      "subject": "TEXT:The Rings",
+      "relation": "related_to",
+      "object": "TEXT:Akhaten Still",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "7x8",
+        "subject_text": "The Rings",
+        "object_text": "Akhaten Still"
+      }
+    },
+    {
+      "subject": "TEXT:Rings",
+      "relation": "related_to",
+      "object": "TEXT:Akhaten",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "7x8",
+        "subject_text": "Rings",
+        "object_text": "Akhaten"
+      }
+    },
+    {
+      "subject": "TEXT:Festival",
+      "relation": "related_to",
+      "object": "TEXT:Offering",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "7x8",
+        "subject_text": "Festival",
+        "object_text": "Offering"
+      }
+    },
+    {
+      "subject": "TEXT:Nightmare",
+      "relation": "related_to",
+      "object": "TEXT:Silver Hedgewick",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "7x13",
+        "subject_text": "Nightmare",
+        "object_text": "Silver Hedgewick"
+      }
+    },
+    {
+      "subject": "TEXT:World",
+      "relation": "related_to",
+      "object": "TEXT:Wonders",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "7x13",
+        "subject_text": "World",
+        "object_text": "Wonders"
+      }
+    },
+    {
+      "subject": "TEXT:Robot",
+      "relation": "related_to",
+      "object": "TEXT:Sherwood In Sherwood Forest",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "8x3",
+        "subject_text": "Robot",
+        "object_text": "Sherwood In Sherwood Forest"
+      }
+    },
+    {
+      "subject": "TEXT:Death",
+      "relation": "related_to",
+      "object": "TEXT:Heaven With Cybermen",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "8x12",
+        "subject_text": "Death",
+        "object_text": "Heaven With Cybermen"
+      }
+    },
+    {
+      "subject": "TEXT:Earth",
+      "relation": "related_to",
+      "object": "TEXT:Osgood",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "9x7",
+        "subject_text": "Earth",
+        "object_text": "Osgood"
+      }
+    },
+    {
+      "subject": "TEXT:The Husbands",
+      "relation": "related_to",
+      "object": "TEXT:River Song When",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "9x13",
+        "subject_text": "The Husbands",
+        "object_text": "River Song When"
+      }
+    },
+    {
+      "subject": "TEXT:The Return",
+      "relation": "related_to",
+      "object": "TEXT:Doctor Mysterio In New York",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "10x0",
+        "subject_text": "The Return",
+        "object_text": "Doctor Mysterio In New York"
+      }
+    },
+    {
+      "subject": "TEXT:Empress",
+      "relation": "related_to",
+      "object": "TEXT:Mars The Doctor",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "10x9",
+        "subject_text": "Empress",
+        "object_text": "Mars The Doctor"
+      }
+    },
+    {
+      "subject": "TEXT:The Eaters",
+      "relation": "related_to",
+      "object": "TEXT:Light",
+      "metadata": {
+        "confidence": 0.8,
+        "source_id": "10x10",
+        "subject_text": "The Eaters",
+        "object_text": "Light"
+      }
+    }
+  ]
+}
