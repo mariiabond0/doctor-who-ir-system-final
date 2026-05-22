@@ -9,62 +9,71 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
     strategy:
       matrix:
-        python-version: ['3.8', '3.9', '3.10', '3.11']
+        python-version: ['3.12']
 
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v4
-      with:
-        python-version: ${{ matrix.python-version }}
-    
-    - name: Install uv
-      run: curl -LsSf https://astral.sh/uv/install.sh | sh
-    
-    - name: Install dependencies
-      run: uv sync --all-extras
-    
-    - name: Lint with flake8
-      run: |
-        # Stop the build if there are Python syntax errors or undefined names
-        flake8 src/ main.py --count --select=E9,F63,F7,F82 --show-source --statistics
-        # Exit-zero treats all errors as warnings
-        flake8 src/ main.py --count --exit-zero --max-complexity=10 --max-line-length=100 --statistics
-    
-    - name: Type check with mypy
-      run: |
-        mypy src/ --ignore-missing-imports --no-error-summary || true
-    
-    - name: Run tests with pytest
-      run: pytest tests.py -v --cov=src --cov-report=xml
-    
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        files: ./coverage.xml
-        flags: unittests
-        name: codecov-umbrella
-        fail_ci_if_error: false
+      - uses: actions/checkout@v3
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: uv sync --all-extras
+
+      - name: Lint with flake8
+        run: |
+          flake8 src/ main.py \
+            --count --select=E9,F63,F7,F82 \
+            --show-source --statistics
+
+          flake8 src/ main.py \
+            --count --exit-zero \
+            --max-complexity=10 \
+            --max-line-length=100 \
+            --statistics
+
+      - name: Type check with mypy
+        run: mypy src/ --ignore-missing-imports --no-error-summary || true
+
+      - name: Run tests with pytest
+        run: pytest tests.py -v --cov=src --cov-report=xml
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage.xml
+          flags: unittests
+          name: codecov-umbrella
+          fail_ci_if_error: false
 
   format-check:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
-    
-    - name: Install uv
-      run: curl -LsSf https://astral.sh/uv/install.sh | sh
-    
-    - name: Install Black
-      run: uv pip install black
-    
-    - name: Check code formatting with black
-      run: black --check src/ main.py || true
+      - uses: actions/checkout@v3
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Check code formatting with black
+        run: uv run black --check src/ main.py
