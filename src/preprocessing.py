@@ -1,14 +1,16 @@
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
-#from nltk.stem import PorterStemmer
+
+# from nltk.stem import PorterStemmer
 import string
 import pandas as pd
 
-nltk.download('punkt', quiet=True)
-nltk.download('stopwords', quiet=True)
-STOPWORDS = set(stopwords.words('english'))
-#STEMMER = PorterStemmer()
+nltk.download("punkt", quiet=True)
+nltk.download("stopwords", quiet=True)
+STOPWORDS = set(stopwords.words("english"))
+# STEMMER = PorterStemmer()
+
 
 def preprocess_text(text):
     """Lowercase text, remove punctuation and stopwords, apply stemming"""

@@ -40,7 +40,9 @@ def load_faiss_mapping(mapping_path):
 
 
 def faiss_query(query, index, mapping, model, top_k=config.DEFAULT_TOP_K):
-    query_emb = model.encode(query, convert_to_numpy=True, normalize_embeddings=True).astype("float32")
+    query_emb = model.encode(query, convert_to_numpy=True, normalize_embeddings=True).astype(
+        "float32"
+    )
     distances, indices = index.search(query_emb.reshape(1, -1), top_k)
     return [mapping[i] for i in indices[0] if int(i) in mapping]
 
@@ -53,7 +55,7 @@ def fused_query(query, conn, top_k=config.DEFAULT_TOP_K, k=60, candidate_k=50):
     # Create rank dictionaries
     bm25_ranks = {doc: rank + 1 for rank, doc in enumerate(bm25_results)}
     semantic_ranks = {doc: rank + 1 for rank, doc in enumerate(semantic_results)}
-    
+
     # Combine using Reciprocal Rank Fusion (RRF)
     fused_scores = {}
     all_docs = set(bm25_results) | set(semantic_results)
@@ -61,7 +63,7 @@ def fused_query(query, conn, top_k=config.DEFAULT_TOP_K, k=60, candidate_k=50):
         rrf_sparse = 1 / (k + bm25_ranks.get(doc, candidate_k + 1))
         rrf_dense = 1 / (k + semantic_ranks.get(doc, candidate_k + 1))
         fused_scores[doc] = rrf_sparse + rrf_dense
-    
+
     # Sort by fused score descending
     sorted_docs = sorted(fused_scores, key=fused_scores.get, reverse=True)
     return sorted_docs[:top_k]
@@ -85,7 +87,9 @@ def evaluate_method(name, query_fn):
     mean_ap = sum(m["AP"] for m in metrics) / len(metrics)
     mean_mrr = sum(m["MRR"] for m in metrics) / len(metrics)
     mean_ndcg = sum(m.get("nDCG", 0.0) for m in metrics) / len(metrics)
-    print(f"Mean P@5: {mean_p5:.2f}, Mean R@5: {mean_r5:.2f}, MAP: {mean_ap:.2f}, MRR: {mean_mrr:.2f}, Mean nDCG: {mean_ndcg:.3f}")
+    print(
+        f"Mean P@5: {mean_p5:.2f}, Mean R@5: {mean_r5:.2f}, MAP: {mean_ap:.2f}, MRR: {mean_mrr:.2f}, Mean nDCG: {mean_ndcg:.3f}"
+    )
     return metrics
 
 
@@ -116,7 +120,12 @@ def main():
         ("Boolean Search", lambda q: boolean_search_sqlite(q, conn, top_n=config.DEFAULT_TOP_K)),
         ("BM25 Search", lambda q: bm25_search_sqlite(q, conn, top_n=config.DEFAULT_TOP_K)),
         ("Semantic Search", lambda q: semantic_search_sqlite(q, conn, top_n=config.DEFAULT_TOP_K)),
-        ("FAISS Semantic Search", lambda q: faiss_query(q, faiss_index, faiss_mapping, faiss_model, top_k=config.DEFAULT_TOP_K)),
+        (
+            "FAISS Semantic Search",
+            lambda q: faiss_query(
+                q, faiss_index, faiss_mapping, faiss_model, top_k=config.DEFAULT_TOP_K
+            ),
+        ),
         ("Fused Search", lambda q: fused_query(q, conn, top_k=config.DEFAULT_TOP_K)),
     ]
 
@@ -153,7 +162,9 @@ def bm25_param_sweep(conn, k1_values, b_values, top_k=config.DEFAULT_TOP_K, out_
     for k1 in k1_values:
         for b in b_values:
             name = f"BM25 k1={k1} b={b}"
-            method_metrics = evaluate_method(name, lambda q: bm25_search_sqlite(q, conn, top_n=top_k, k1=k1, b=b))
+            method_metrics = evaluate_method(
+                name, lambda q: bm25_search_sqlite(q, conn, top_n=top_k, k1=k1, b=b)
+            )
 
             mean_p5 = sum(m["P@5"] for m in method_metrics) / len(method_metrics)
             mean_r5 = sum(m["R@5"] for m in method_metrics) / len(method_metrics)
@@ -161,17 +172,19 @@ def bm25_param_sweep(conn, k1_values, b_values, top_k=config.DEFAULT_TOP_K, out_
             mean_mrr = sum(m["MRR"] for m in method_metrics) / len(method_metrics)
             mean_ndcg = sum(m.get("nDCG", 0.0) for m in method_metrics) / len(method_metrics)
 
-            sweep_rows.append({
-                "method": name,
-                "k1": k1,
-                "b": b,
-                "mean_P@5": mean_p5,
-                "mean_R@5": mean_r5,
-                "MAR": mean_r5,
-                "MAP": mean_ap,
-                "mean_MRR": mean_mrr,
-                "mean_nDCG": mean_ndcg,
-            })
+            sweep_rows.append(
+                {
+                    "method": name,
+                    "k1": k1,
+                    "b": b,
+                    "mean_P@5": mean_p5,
+                    "mean_R@5": mean_r5,
+                    "MAR": mean_r5,
+                    "MAP": mean_ap,
+                    "mean_MRR": mean_mrr,
+                    "mean_nDCG": mean_ndcg,
+                }
+            )
 
     df = pd.DataFrame(sweep_rows)
     if out_path is None:

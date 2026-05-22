@@ -18,14 +18,7 @@ nlp.add_pipe("sentencizer")
 
 model = GLiNER.from_pretrained("urchade/gliner_base")
 
-GLINER_LABELS = [
-    "PERSON",
-    "LOCATION",
-    "TIME",
-    "ORGANIZATION",
-    "DATE",
-    "ALIEN"
-]
+GLINER_LABELS = ["PERSON", "LOCATION", "TIME", "ORGANIZATION", "DATE", "ALIEN"]
 
 # -------------------------
 # Normalization
@@ -53,19 +46,19 @@ ALIASES = {
     "martha": "martha jones",
     "donna": "donna noble",
     "the master": "master",
-    'the daleks': 'daleks',
-    'the cybermen': 'cybermen',
-    'the weeping angels': 'weeping angels',
-    'angel': 'weeping angels',
+    "the daleks": "daleks",
+    "the cybermen": "cybermen",
+    "the weeping angels": "weeping angels",
+    "angel": "weeping angels",
     "angels": "weeping angels",
     "the silence": "silence",
     "river": "river song",
-    'professor river song': 'river song',
+    "professor river song": "river song",
     "amelia pond": "amy pond",
     "amelia": "amy pond",
-    'pond': "amy pond", 
+    "pond": "amy pond",
     "the doctor": "doctor",
-    'vincent': "vincent van gogh",
+    "vincent": "vincent van gogh",
     "clara": "clara oswald",
     "oswald": "clara oswald",
     "oswin": "clara oswald",
@@ -98,17 +91,11 @@ STOP_ENTITIES = {
     "which",
     "it",
     "something",
-    "anything"
+    "anything",
 }
 
-BAD_RELATIONS = {
-    "be",
-    "have",
-    "do",
-    "say",
-    "go",
-    "get"
-}
+BAD_RELATIONS = {"be", "have", "do", "say", "go", "get"}
+
 
 # -------------------------
 # Helpers
@@ -116,9 +103,11 @@ BAD_RELATIONS = {
 def normalize_label(label):
     return STANDARD_LABELS.get(label, label)
 
+
 def canonical(text):
     text = " ".join(text.lower().split())
     return ALIASES.get(text, text)
+
 
 # -------------------------
 # Entity extraction
@@ -154,6 +143,7 @@ def extract_entities(doc, gliner_entities):
 
     return entity_dict
 
+
 # -------------------------
 # Relation extraction
 # -------------------------
@@ -175,15 +165,9 @@ def extract_relations(doc, entity_dict):
             if verb in BAD_RELATIONS:
                 continue
 
-            subjects = [
-                w for w in token.lefts
-                if w.dep_ in ("nsubj", "nsubjpass")
-            ]
+            subjects = [w for w in token.lefts if w.dep_ in ("nsubj", "nsubjpass")]
 
-            objects = [
-                w for w in token.rights
-                if w.dep_ in ("dobj", "pobj", "attr")
-            ]
+            objects = [w for w in token.rights if w.dep_ in ("dobj", "pobj", "attr")]
 
             for subj in subjects:
                 for obj in objects:
@@ -200,11 +184,10 @@ def extract_relations(doc, entity_dict):
                     if subj_text == obj_text:
                         continue
 
-                    relations.append(
-                        (subj_text, verb, obj_text)
-                    )
+                    relations.append((subj_text, verb, obj_text))
 
     return relations
+
 
 # -------------------------
 # Build graph
@@ -214,10 +197,10 @@ G = nx.MultiDiGraph()
 # -------------------------
 # Small subset for testing
 # -------------------------
-#subset = {
+# subset = {
 #    k: v for k, v in corpus.items()
 #    if v["season"] == 5 and v["number"] <= 5
-#}
+# }
 
 # -------------------------
 # Main loop
@@ -228,10 +211,7 @@ for episode_id, episode in corpus.items():
 
     doc = nlp(text)
 
-    gliner_entities = model.predict_entities(
-        text,
-        GLINER_LABELS
-    )
+    gliner_entities = model.predict_entities(text, GLINER_LABELS)
 
     entity_dict = extract_entities(doc, gliner_entities)
 
@@ -242,22 +222,14 @@ for episode_id, episode in corpus.items():
     # -------------------------
     for entity, labels in entity_dict.items():
 
-        G.add_node(
-            entity,
-            labels=",".join(labels)
-        )
+        G.add_node(entity, labels=",".join(labels))
 
     # -------------------------
     # Add edges
     # -------------------------
     for subj, rel, obj in relations:
 
-        G.add_edge(
-            subj,
-            obj,
-            relation=rel,
-            episode=episode_id
-        )
+        G.add_edge(subj, obj, relation=rel, episode=episode_id)
 
 # -------------------------
 # Stats
@@ -269,13 +241,7 @@ print("Edges:", G.number_of_edges())
 # -------------------------
 # Visualization
 # -------------------------
-net = Network(
-    height="900px",
-    width="100%",
-    bgcolor="#111111",
-    font_color="white",
-    directed=True
-)
+net = Network(height="900px", width="100%", bgcolor="#111111", font_color="white", directed=True)
 
 # physics layout
 net.barnes_hut()
@@ -302,12 +268,7 @@ for node, data in G.nodes(data=True):
     elif "ALIEN" in labels:
         color = "#cc66ff"
 
-    net.add_node(
-        node,
-        label=node,
-        title=f"{node}<br>{labels}",
-        color=color
-    )
+    net.add_node(node, label=node, title=f"{node}<br>{labels}", color=color)
 
 # -------------------------
 # Add edges
@@ -316,12 +277,7 @@ for source, target, data in G.edges(data=True):
 
     relation = data.get("relation", "")
 
-    net.add_edge(
-        source,
-        target,
-        title=relation,
-        label=relation
-    )
+    net.add_edge(source, target, title=relation, label=relation)
 
 # -------------------------
 # Save outputs

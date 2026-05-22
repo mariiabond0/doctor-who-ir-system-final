@@ -27,10 +27,7 @@ def load_embeddings_from_db(conn: sqlite3.Connection) -> Dict[str, np.ndarray]:
     cur = conn.cursor()
     cur.execute("SELECT doc_id, embedding FROM embeddings")
     rows = cur.fetchall()
-    return {
-    row[0]: np.frombuffer(row[1], dtype=np.float32)
-    for row in rows
-}
+    return {row[0]: np.frombuffer(row[1], dtype=np.float32) for row in rows}
 
 
 def semantic_search_sqlite(query: str, conn: sqlite3.Connection, top_n: int = 5):
@@ -45,11 +42,11 @@ def semantic_search_sqlite(query: str, conn: sqlite3.Connection, top_n: int = 5)
     doc_ids = list(embeddings_dict.keys())
     corpus_embeddings = np.stack(list(embeddings_dict.values()))
 
-    query_embedding = get_model().encode(
-        query, convert_to_numpy=True, normalize_embeddings=True
-    )
+    query_embedding = get_model().encode(query, convert_to_numpy=True, normalize_embeddings=True)
     cosine_scores = util.cos_sim(query_embedding.reshape(1, -1), corpus_embeddings)[0]
-    cosine_scores = cosine_scores.cpu().numpy() if hasattr(cosine_scores, "cpu") else np.array(cosine_scores)
+    cosine_scores = (
+        cosine_scores.cpu().numpy() if hasattr(cosine_scores, "cpu") else np.array(cosine_scores)
+    )
 
     top_indices = np.argsort(cosine_scores)[::-1][:top_n]
     return [doc_ids[i] for i in top_indices]
@@ -66,11 +63,11 @@ def semantic_search(query: str, document_corpus, corpus_embeddings, top_n: int =
     if corpus_embeddings is None or len(corpus_embeddings) == 0:
         return []
 
-    query_embedding = get_model().encode(
-        query, convert_to_numpy=True, normalize_embeddings=True
-    )
+    query_embedding = get_model().encode(query, convert_to_numpy=True, normalize_embeddings=True)
     cosine_scores = util.cos_sim(query_embedding.reshape(1, -1), corpus_embeddings)[0]
-    cosine_scores = cosine_scores.cpu().numpy() if hasattr(cosine_scores, "cpu") else np.array(cosine_scores)
+    cosine_scores = (
+        cosine_scores.cpu().numpy() if hasattr(cosine_scores, "cpu") else np.array(cosine_scores)
+    )
     top_indices = np.argsort(cosine_scores)[::-1][:top_n]
     doc_ids = list(document_corpus.keys())
     return [doc_ids[i] for i in top_indices]

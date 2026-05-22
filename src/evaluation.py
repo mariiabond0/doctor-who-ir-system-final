@@ -39,13 +39,13 @@ def compute_metrics(retrieved: Iterable[str], relevant: Iterable[str], top_k: in
     for rank, doc_id in enumerate(retrieved, start=1):
         rel = graded_relevance.get(doc_id, 0)
         if rel > 0:
-            dcg += (2 ** rel - 1) / math.log2(rank + 1)
+            dcg += (2**rel - 1) / math.log2(rank + 1)
 
     # Ideal DCG: sorted by descending graded relevance
     ideal_rels = sorted(graded_relevance.values(), reverse=True)[:top_k]
     idcg = 0.0
     for rank, rel in enumerate(ideal_rels, start=1):
-        idcg += (2 ** rel - 1) / math.log2(rank + 1)
+        idcg += (2**rel - 1) / math.log2(rank + 1)
 
     ndcg = dcg / idcg if idcg > 0 else 0.0
 

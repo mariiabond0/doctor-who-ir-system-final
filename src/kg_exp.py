@@ -38,11 +38,14 @@ STANDARD_LABELS = {
 # Helpers
 # -------------------------
 
+
 def normalize_label(label: str) -> str:
     return STANDARD_LABELS.get(label, label)
 
+
 def canonical(text: str) -> str:
     return " ".join(text.lower().split())
+
 
 # -------------------------
 # entity builder
@@ -64,11 +67,12 @@ def build_entities(doc, gliner_entities):
 
     return entity_dict
 
+
 # -------------------------
 # Relation extraction
 # -------------------------
 def extract_relations(doc, entity_dict):
-    
+
     relations = []
 
     for sent in doc.sents:
@@ -94,13 +98,11 @@ def extract_relations(doc, entity_dict):
                     relations.append((ent1.text, verb, ent2.text))
     return relations
 
+
 # -------------------------
 # Filter corpus
 # -------------------------
-short_corpus = {
-    k: v for k, v in corpus.items()
-    if (v["season"] == 3 and v["number"] <= 3)
-}
+short_corpus = {k: v for k, v in corpus.items() if (v["season"] == 3 and v["number"] <= 3)}
 
 # -------------------------
 # Main loop

@@ -28,7 +28,13 @@ jobs:
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Install dependencies
-        run: uv sync --all-extras --dev
+        run: |
+          uv sync --all-extras
+          uv pip install black flake8 mypy pytest pytest-cov
+
+      - name: Download NLTK data
+        run: |
+          uv run python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"
 
       - name: Lint with flake8
         run: |
@@ -73,7 +79,9 @@ jobs:
           echo "$HOME/.cargo/bin" >> $GITHUB_PATH
 
       - name: Install dependencies
-        run: uv sync --all-extras --dev
+        run: |
+          uv sync --all-extras
+          uv pip install black
 
       - name: Check code formatting with black
         run: uv run black --check src/ main.py

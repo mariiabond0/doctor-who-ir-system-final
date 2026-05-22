@@ -2,6 +2,8 @@ from collections import Counter
 from src.preprocessing import preprocess_text
 
 """Simple Boolean search using inverted index (term frequency ranking)"""
+
+
 def boolean_search(query: str, index: dict, top_n=5):
     query_tokens = preprocess_text(query)
     if not query_tokens:
@@ -17,6 +19,7 @@ def boolean_search(query: str, index: dict, top_n=5):
     ranked_docs = sorted(doc_scores.items(), key=lambda x: x[1], reverse=True)
 
     return [doc_id for doc_id, _ in ranked_docs[:top_n]]
+
 
 import sqlite3
 
@@ -47,6 +50,7 @@ import sqlite3
 #     ranked_docs = sorted(result_docs)
 
 #     return ranked_docs[:top_n]
+
 
 def boolean_search_sqlite(query: str, conn: sqlite3.Connection, top_n=5):
     """

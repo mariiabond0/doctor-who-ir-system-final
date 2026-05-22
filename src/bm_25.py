@@ -12,6 +12,8 @@ _bm25_cache = {}
 #     return str(config.DB_PATH)
 
 """Return tokenized texts and corresponding doc IDs"""
+
+
 def build_bm25_corpus(document_corpus):
     texts = []
     doc_ids = []
@@ -20,13 +22,17 @@ def build_bm25_corpus(document_corpus):
         doc_ids.append(doc_id)
     return texts, doc_ids
 
+
 """Return top_n document IDs ranked by BM25"""
+
+
 def bm25_search(query: str, texts, doc_ids, top_n=5):
     bm25 = BM25Okapi(texts)
     query_tokens = preprocess_text(query)
     scores = bm25.get_scores(query_tokens)
     top_indices = np.argsort(scores)[::-1][:top_n]
     return [doc_ids[i] for i in top_indices]
+
 
 # class BM25Searcher:
 #     def __init__(self, texts, doc_ids):
@@ -40,6 +46,7 @@ def bm25_search(query: str, texts, doc_ids, top_n=5):
 #         top_indices = np.argsort(scores)[::-1][:top_n]
 #         return [self.doc_ids[i] for i in top_indices]
 
+
 def build_bm25_corpus_sqlite(conn):
     """
     Gets preprocessed texts from SQLite and returns texts and doc_ids.
@@ -47,12 +54,12 @@ def build_bm25_corpus_sqlite(conn):
     cur = conn.cursor()
     cur.execute("SELECT doc_id, preprocessed_combined FROM episodes")
     rows = cur.fetchall()
-    
+
     # preprocessed_combined was saved as a JSON array (e.g. ["token1", "token2"]).
     # Parse the JSON to get token lists for BM25.
     texts = [json.loads(row[1]) if row[1] else [] for row in rows]
     doc_ids = [row[0] for row in rows]
-    
+
     return texts, doc_ids
 
 
@@ -69,11 +76,11 @@ def bm25_search_sqlite(query: str, conn, top_n=5, k1: float = 0.4, b: float = 1.
         _bm25_cache[cache_key] = (BM25Okapi(texts, k1=k1, b=b), doc_ids)
 
     bm25, doc_ids = _bm25_cache[cache_key]
-    
+
     query_tokens = preprocess_text(query)
     if not query_tokens:
         return []
-    
+
     scores = bm25.get_scores(query_tokens)
     top_indices = np.argsort(scores)[::-1][:top_n]
     return [doc_ids[i] for i in top_indices]

@@ -1,5 +1,6 @@
 import json
 import os
+
 # import pickle
 import logging
 import sqlite3
@@ -71,7 +72,7 @@ def build_corpus(df: pd.DataFrame):
     embeddings_dict = {}
     model = SentenceTransformer(MODEL_NAME)
 
-    #for _, row in df.iterrows():
+    # for _, row in df.iterrows():
     #    doc_id = document_id(int(row["season"]), int(row["number"]))
     #    title = str(row.get("title", "")).strip()
     #    description = str(row.get("description", "")).strip()
@@ -107,7 +108,9 @@ def build_corpus(df: pd.DataFrame):
         for token in preprocessed:
             inverted_index[token].add(doc_id)
 
-        embeddings_dict[doc_id] = model.encode(text, convert_to_numpy=True, normalize_embeddings=True)
+        embeddings_dict[doc_id] = model.encode(
+            text, convert_to_numpy=True, normalize_embeddings=True
+        )
 
     return document_corpus, inverted_index, embeddings_dict
 
@@ -218,8 +221,7 @@ def save_database(document_corpus, inverted_index, embeddings_dict):
     cur.execute("PRAGMA foreign_keys = ON;")
 
     # --- Schema ---
-    cur.executescript(
-        """
+    cur.executescript("""
         DROP TABLE IF EXISTS episodes;
         DROP TABLE IF EXISTS inverted_index;
         DROP TABLE IF EXISTS embeddings;
@@ -249,8 +251,7 @@ def save_database(document_corpus, inverted_index, embeddings_dict):
 
         CREATE INDEX idx_token ON inverted_index(token);
         CREATE INDEX idx_doc_id ON inverted_index(doc_id);
-        """
-    )
+        """)
 
     # --- Prepare episodes batch ---
     episodes_rows = []
@@ -262,19 +263,18 @@ def save_database(document_corpus, inverted_index, embeddings_dict):
 
         preprocessed = preprocess_text(f"{title} {description}")
 
-        episodes_rows.append((
-            doc_id,
-            season,
-            number,
-            title,
-            description,
-            json.dumps(preprocessed, ensure_ascii=False)
-        ))
+        episodes_rows.append(
+            (
+                doc_id,
+                season,
+                number,
+                title,
+                description,
+                json.dumps(preprocessed, ensure_ascii=False),
+            )
+        )
 
-    cur.executemany(
-        "INSERT INTO episodes VALUES (?, ?, ?, ?, ?, ?)",
-        episodes_rows
-    )
+    cur.executemany("INSERT INTO episodes VALUES (?, ?, ?, ?, ?, ?)", episodes_rows)
 
     # --- Prepare inverted index batch ---
     inverted_rows = []
@@ -282,10 +282,7 @@ def save_database(document_corpus, inverted_index, embeddings_dict):
         for doc_id in doc_ids:  # without sorted for speed
             inverted_rows.append((token, doc_id))
 
-    cur.executemany(
-        "INSERT INTO inverted_index VALUES (?, ?)",
-        inverted_rows
-    )
+    cur.executemany("INSERT INTO inverted_index VALUES (?, ?)", inverted_rows)
 
     # --- Prepare embeddings batch ---
     embedding_rows = []
@@ -297,10 +294,7 @@ def save_database(document_corpus, inverted_index, embeddings_dict):
 
         embedding_rows.append((doc_id, sqlite3.Binary(emb_bytes)))
 
-    cur.executemany(
-        "INSERT INTO embeddings VALUES (?, ?)",
-        embedding_rows
-    )
+    cur.executemany("INSERT INTO embeddings VALUES (?, ?)", embedding_rows)
 
     conn.commit()
     conn.close()
