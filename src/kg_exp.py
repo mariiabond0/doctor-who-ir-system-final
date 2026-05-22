@@ -34,6 +34,10 @@ STANDARD_LABELS = {
     "ALIEN": "ALIEN",
 }
 
+# -------------------------
+# Helpers
+# -------------------------
+
 def normalize_label(label: str) -> str:
     return STANDARD_LABELS.get(label, label)
 
@@ -50,9 +54,11 @@ def build_entities(doc, gliner_entities):
         k = canonical(text)
         entity_dict.setdefault(k, set()).add(normalize_label(label))
 
+    # spaCy entities
     for ent in doc.ents:
         add(ent.text, ent.label_)
 
+    # GLiNER entities
     for ent in gliner_entities:
         add(ent["text"], ent["label"])
 
@@ -62,7 +68,9 @@ def build_entities(doc, gliner_entities):
 # Relation extraction
 # -------------------------
 def extract_relations(doc, entity_dict):
+    
     relations = []
+
     for sent in doc.sents:
         ents = list(sent.ents)
         for ent1 in ents:
