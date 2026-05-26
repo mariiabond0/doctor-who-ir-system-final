@@ -17,6 +17,11 @@ A comprehensive information retrieval system for the **Doctor Who** TV series. T
   * **FAISS Semantic Search** - Fast approximate nearest neighbor search using HNSW index
   * **Fused Search** - Combines BM25 and semantic results using Reciprocal Rank Fusion (RRF)
 
+* **RAG (Retrieval Augmented Generation)**
+  * Integrates local **Ollama LLM** for generating contextual answers
+  * Retrieves relevant episodes and uses them as context for answer generation
+  * Requires `llama2` model or compatible Ollama model running locally
+
 * **Evaluation Metrics**
   * Computes **P@5** (Precision@5), **R@5** (Recall@5), **AP** (Average Precision)
   * Calculates **MRR** (Mean Reciprocal Rank) and **nDCG** (normalized Discounted Cumulative Gain)
@@ -47,6 +52,7 @@ doctor-who-ir-project/
 │   ├─ boolean_search.py         # Inverted index-based exact matching
 │   ├─ bm_25.py                  # BM25 probabilistic ranking
 │   ├─ semantic_search.py        # Dense embeddings from SQLite
+│   ├─ rag.py                    # RAG with Ollama LLM integration
 │   ├─ evaluation.py             # Metrics computation (P@5, R@5, AP, MRR, nDCG)
 │   ├─ kg_exp.py                 # Knowledge graph experiments
 │   └─ kg_exp_chatgpt.py         # KG utilities
@@ -159,7 +165,59 @@ uv run python compare_methods.py
 
 Creates `dw_data/method_comparison.png` with bar charts for P@5, R@5, AP, MRR, and nDCG.
 
-### 5. Run Tests
+### 5. Use RAG for Answer Generation
+
+Generate AI-powered answers using local Ollama LLM:
+
+**Prerequisites:**
+1. Install Ollama: https://ollama.ai
+2. Pull the model: `ollama pull llama2` (or your preferred model)
+3. Start Ollama server: `ollama serve`
+
+**Generate answers:**
+
+```bash
+python main.py --mode rag --query "Who is the Doctor?"
+```
+
+The system will:
+- Retrieve the 5 most relevant Doctor Who episodes
+- Pass them as context to Ollama's llama2 model
+- Generate a contextual answer based on the retrieved episodes
+
+**Example output:**
+```
+================================================================================
+RAG ANSWER
+================================================================================
+
+Question: Who is the Doctor?
+
+Retrieved 5 documents:
+  1. 1x1 (score: 0.800)
+  2. 2x4 (score: 0.750)
+  3. 1x9 (score: 0.725)
+  4. 5x1 (score: 0.700)
+  5. 7x5 (score: 0.675)
+
+────────────────────────────────────────────────────────────────────────────────
+Generated Answer:
+────────────────────────────────────────────────────────────────────────────────
+
+The Doctor is a mysterious time traveler from the planet Gallifrey who...
+```
+
+### 6. Interactive Search Mode
+
+Perform single searches with any method:
+
+```bash
+python main.py --mode search --query "Daleks" --search-method boolean
+python main.py --mode search --query "Rose Tyler" --search-method semantic
+python main.py --mode search --query "Time Travel" --search-method fused
+```
+
+### 7. Run Tests
 
 Execute unit tests for preprocessing, search methods, and evaluation:
 
@@ -185,6 +243,12 @@ All settings are centralized in `config.py`:
 | `FAISS_M` | `32` | HNSW parameter (max connections) |
 | `FAISS_EF_SEARCH` | `50` | HNSW search-time parameter |
 | `EXCLUDE_SEASONS` | `["11"]` | Seasons to exclude from corpus |
+| `RAG_ENABLED` | `True` | Enable RAG mode |
+| `OLLAMA_BASE_URL` | `http://localhost:11434` | Ollama server endpoint |
+| `OLLAMA_MODEL` | `llama2` | Ollama model to use |
+| `RAG_CONTEXT_SIZE` | `5` | Number of retrieved documents for context |
+| `RAG_TEMPERATURE` | `0.7` | LLM generation temperature (0.0-1.0) |
+| `RAG_MAX_TOKENS` | `500` | Maximum tokens in generated answer |
 
 Modify `config.py` to customize preprocessing, search behavior, or model selection.
 
@@ -223,6 +287,18 @@ Modify `config.py` to customize preprocessing, search behavior, or model selecti
   - **AP**: Average Precision
   - **MRR**: Mean Reciprocal Rank
   - **nDCG**: Normalized Discounted Cumulative Gain with graded relevance
+
+### src/rag.py
+- **`rag_query(query)`**: End-to-end RAG pipeline
+  - Retrieves top-K episodes using Boolean Search
+  - Builds context from retrieved documents
+  - Queries Ollama LLM with context
+  - Returns structured result with answer and source documents
+- **`check_ollama_health()`**: Checks if Ollama server is running
+- **`retrieve_context(query, top_k=5)`**: Retrieves and formats episode context
+- **`build_prompt(query, context)`**: Constructs LLM prompt with context
+- **`query_ollama(prompt, temperature, max_tokens)`**: Sends prompt to Ollama
+- **`format_rag_output(result)`**: Formats RAG result for display
 
 ### main.py
 - **`evaluate_method(name, query_fn)`**: Evaluates a search method
