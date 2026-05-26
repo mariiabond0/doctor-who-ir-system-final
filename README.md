@@ -128,9 +128,32 @@ This will:
 - Build `doctor_who.db` with episodes and embeddings
 - Generate FAISS index (`faiss.index`) for semantic search
 
-### 2. Run Full Evaluation
+### 2. Launch Web UI (Recommended)
 
-Evaluate all search methods on the test queries:
+Start the Flask web application with a beautiful, responsive interface:
+
+```bash
+uv run python app.py
+```
+
+Then open your browser to **http://localhost:5000**
+
+**Features:**
+- 🎯 Unified search interface with method selector
+- 🤖 RAG mode for AI-generated answers (requires Ollama)
+- 📊 Real-time results with episode cards
+- 📱 Fully responsive design (desktop, tablet, mobile)
+- ⚡ Fast, clean, modern UI
+
+**Screenshots:**
+- Query box at top with search method dropdown
+- Results display as episode cards with ranking
+- RAG mode shows retrieved documents + AI answer
+- Method information panel with performance metrics
+
+### 3. Run Evaluation Mode
+
+Evaluate all search methods on the test queries (CLI mode):
 
 ```bash
 uv run python main.py
@@ -145,7 +168,19 @@ Evaluates:
 
 Results are saved to `dw_data/search_results_summary.csv` with metrics for each query and method.
 
-### 3. Optimize BM25 Parameters
+### 4. Run CLI Modes
+
+**Search with specific method:**
+```bash
+uv run python main.py --mode search --query "Daleks" --search-method boolean
+```
+
+**RAG mode (CLI):**
+```bash
+uv run python main.py --mode rag --query "Who is the Doctor?"
+```
+
+### 5. Optimize BM25 Parameters
 
 Run a grid search over BM25 `k1` and `b` parameters:
 
@@ -155,7 +190,7 @@ uv run python main.py --sweep-bm25 --k1-values 0.3 0.4 0.5 0.6 0.7 --b-values 0.
 
 Saves aggregated metrics (mean P@5, R@5, MAP, MRR, nDCG) for each parameter combination.
 
-### 4. Compare Search Methods
+### 6. Compare Search Methods
 
 Generate a visualization comparing all methods:
 
@@ -165,19 +200,26 @@ uv run python compare_methods.py
 
 Creates `dw_data/method_comparison.png` with bar charts for P@5, R@5, AP, MRR, and nDCG.
 
-### 5. Use RAG for Answer Generation
+### 7. Use RAG for Answer Generation
 
-Generate AI-powered answers using local Ollama LLM:
+Generate AI-powered answers using local Ollama LLM (via web UI or CLI):
 
 **Prerequisites:**
 1. Install Ollama: https://ollama.ai
 2. Pull the model: `ollama pull llama2` (or your preferred model)
 3. Start Ollama server: `ollama serve`
 
-**Generate answers:**
+**Via Web UI (Recommended):**
+1. Start: `uv run python app.py`
+2. Go to http://localhost:5000
+3. Select method: "RAG - AI Generated Answer"
+4. Enter query: "Who is the Doctor?"
+5. View AI answer with source documents
+
+**Via CLI:**
 
 ```bash
-python main.py --mode rag --query "Who is the Doctor?"
+uv run python main.py --mode rag --query "Who is the Doctor?"
 ```
 
 The system will:
@@ -207,17 +249,7 @@ Generated Answer:
 The Doctor is a mysterious time traveler from the planet Gallifrey who...
 ```
 
-### 6. Interactive Search Mode
-
-Perform single searches with any method:
-
-```bash
-python main.py --mode search --query "Daleks" --search-method boolean
-python main.py --mode search --query "Rose Tyler" --search-method semantic
-python main.py --mode search --query "Time Travel" --search-method fused
-```
-
-### 7. Run Tests
+### 8. Run Tests
 
 Execute unit tests for preprocessing, search methods, and evaluation:
 
@@ -299,6 +331,45 @@ Modify `config.py` to customize preprocessing, search behavior, or model selecti
 - **`build_prompt(query, context)`**: Constructs LLM prompt with context
 - **`query_ollama(prompt, temperature, max_tokens)`**: Sends prompt to Ollama
 - **`format_rag_output(result)`**: Formats RAG result for display
+
+### app.py (Flask Web Application)
+- **`GET /`**: Serves the main web UI (index.html)
+- **`GET /api/methods`**: Returns available search methods with descriptions and performance metrics
+- **`POST /api/search`**: Performs search with specified method
+  - Parameters: `query` (string), `method` (boolean|bm25|semantic|faiss|fused)
+  - Returns: `results` (list of episode IDs), `count`, `method`
+- **`POST /api/rag`**: Performs RAG query
+  - Parameters: `query` (string)
+  - Returns: `answer` (generated text), `retrieved_docs` (source episodes), `error` (if any)
+- **`GET /static/<path>`**: Serves static files (CSS, JavaScript)
+
+### Web UI Files
+- **`templates/index.html`**: Main page with query interface and results display
+- **`static/js/app.js`**: Client-side form handling, API calls, results rendering
+- **`static/css/style.css`**: Responsive design with Bootstrap 5 integration
+
+## Web API
+
+The Flask application provides a REST API for programmatic access:
+
+### Health Check
+```bash
+curl http://localhost:5000/api/methods
+```
+
+### Search
+```bash
+curl -X POST http://localhost:5000/api/search \
+  -H "Content-Type: application/json" \
+  -d '{"query": "Daleks", "method": "boolean"}'
+```
+
+### RAG Query
+```bash
+curl -X POST http://localhost:5000/api/rag \
+  -H "Content-Type: application/json" \
+  -d '{"query": "Who is the Doctor?"}'
+```
 
 ### main.py
 - **`evaluate_method(name, query_fn)`**: Evaluates a search method

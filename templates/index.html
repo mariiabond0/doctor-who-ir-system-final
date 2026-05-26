@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Who - Information Retrieval System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('send_static', path='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">🎬 Doctor Who - Information Retrieval</span>
+            <span class="navbar-text text-muted">Search & RAG System</span>
+        </div>
+    </nav>
+
+    <div class="container-fluid py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <!-- Main Query Card -->
+                <div class="card shadow-lg mb-4 query-card">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">Search Doctor Who Episodes</h2>
+                        
+                        <!-- Query Input -->
+                        <div class="mb-3">
+                            <label for="queryInput" class="form-label">Enter your query:</label>
+                            <input 
+                                type="text" 
+                                class="form-control form-control-lg" 
+                                id="queryInput" 
+                                placeholder="e.g., 'Daleks', 'Rose Tyler', 'Time Travel'"
+                                autocomplete="off"
+                            >
+                        </div>
+
+                        <!-- Method Selection Row -->
+                        <div class="row mb-3">
+                            <div class="col-md-8">
+                                <label for="methodSelect" class="form-label">Search Method:</label>
+                                <select class="form-select" id="methodSelect">
+                                    <option value="boolean">Boolean Search (Exact Match)</option>
+                                    <option value="bm25">BM25 (Term-based)</option>
+                                    <option value="semantic">Semantic (Meaning-based)</option>
+                                    <option value="faiss">FAISS (Fast)</option>
+                                    <option value="fused">Fused (Combined)</option>
+                                    <option value="rag">RAG - AI Generated Answer</option>
+                                </select>
+                                <small class="form-text text-muted" id="methodHint"></small>
+                            </div>
+                            <div class="col-md-4 d-flex align-items-end">
+                                <button 
+                                    class="btn btn-primary btn-lg w-100" 
+                                    id="searchBtn"
+                                    onclick="performSearch()"
+                                >
+                                    🔍 Search
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Info Text -->
+                        <div class="alert alert-info alert-sm" role="alert">
+                            <small>
+                                <strong>Tip:</strong> 
+                                Use specific keywords for Boolean Search, natural language for Semantic/RAG. 
+                                RAG requires Ollama running locally.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results Section -->
+                <div id="resultsSection" style="display: none;">
+                    <!-- Loading Spinner -->
+                    <div id="loadingSpinner" class="text-center mb-4" style="display: none;">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <p class="mt-2 text-muted">Searching...</p>
+                    </div>
+
+                    <!-- Results Container -->
+                    <div id="resultsContainer">
+                        <!-- Search Results -->
+                        <div id="searchResults" style="display: none;">
+                            <div class="card shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5 class="mb-0">
+                                        Search Results 
+                                        <span id="resultCount" class="badge bg-light text-dark">0</span>
+                                    </h5>
+                                    <small id="resultMethod" class="text-white-50"></small>
+                                </div>
+                                <div class="card-body" id="searchResultsBody">
+                                    <!-- Results will be populated here -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RAG Results -->
+                        <div id="ragResults" style="display: none;">
+                            <div class="card shadow mb-3">
+                                <div class="card-header bg-success text-white">
+                                    <h5 class="mb-0">🤖 AI Generated Answer (RAG)</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p id="ragAnswer" class="lead"></p>
+                                </div>
+                            </div>
+
+                            <div class="card shadow">
+                                <div class="card-header bg-info text-white">
+                                    <h5 class="mb-0">Retrieved Source Documents</h5>
+                                </div>
+                                <div class="card-body" id="ragSourcesBody">
+                                    <!-- Source documents will be populated here -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Error Message -->
+                        <div id="errorMessage" class="alert alert-danger" role="alert" style="display: none;">
+                            <strong>Error:</strong> <span id="errorText"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Method Information Panel -->
+                <div class="card mt-5 bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title mb-3">📚 Search Method Information</h5>
+                        <div id="methodInfo">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <h6>Boolean Search</h6>
+                                    <small>Exact token matching. Best for specific terms. P@5: <strong>0.27</strong></small>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h6>BM25</h6>
+                                    <small>Probabilistic ranking. Good balance. P@5: <strong>0.23</strong></small>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h6>Semantic</h6>
+                                    <small>Meaning-based similarity. Conceptual matching. P@5: <strong>0.25</strong></small>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h6>FAISS</h6>
+                                    <small>Fast approximate search. Same results as Semantic. P@5: <strong>0.25</strong></small>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h6>Fused</h6>
+                                    <small>Combines multiple methods. Balanced approach. P@5: <strong>0.24</strong></small>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <h6>RAG (AI Generated)</h6>
+                                    <small>Retrieves + Generates. Requires Ollama. Natural language answers.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-1">Doctor Who Information Retrieval System</p>
+        <small>Corpus: 136 episodes | 5 Search Methods + RAG | Models: Boolean, BM25, Semantic, FAISS, Fused</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('send_static', path='js/app.js') }}"></script>
+</body>
+</html>
