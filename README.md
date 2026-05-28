@@ -216,6 +216,8 @@ Generate AI-powered answers using local Ollama LLM (via web UI or CLI):
 4. Enter query: "Who is the Doctor?"
 5. View AI answer with source documents
 
+> Tip: If running via uv on a different host/port, replace the URL accordingly (e.g., http://127.0.0.1:5000).
+
 **Via CLI:**
 
 ```bash
