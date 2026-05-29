@@ -1,6 +1,6 @@
 # Doctor Who Information Retrieval System
 
-A comprehensive information retrieval system for the **Doctor Who** TV series. This project implements and compares multiple search methods including **Boolean search**, **BM25**, **semantic search with Sentence Transformers**, **FAISS-based nearest neighbor search**, and a **fused search approach** combining sparse and dense retrieval.
+A comprehensive information retrieval system for the **Doctor Who** TV series. This project implements and compares multiple search methods including **Boolean search**, **BM25**, **semantic search with Sentence Transformers**, **FAISS-based nearest neighbor search**, **fused search approach**, and **RAG** combining sparse and dense retrieval.
 
 ## Features
 
@@ -20,7 +20,7 @@ A comprehensive information retrieval system for the **Doctor Who** TV series. T
 * **RAG (Retrieval Augmented Generation)**
   * Integrates local **Ollama LLM** for generating contextual answers
   * Retrieves relevant episodes and uses them as context for answer generation
-  * Requires `llama2` model or compatible Ollama model running locally
+  * Requires `llama3` model or compatible Ollama model running locally
 
 * **Evaluation Metrics**
   * Computes **P@5** (Precision@5), **R@5** (Recall@5), **AP** (Average Precision)
@@ -54,30 +54,46 @@ doctor-who-ir-project/
 │   ├─ semantic_search.py        # Dense embeddings from SQLite
 │   ├─ rag.py                    # RAG with Ollama LLM integration
 │   ├─ evaluation.py             # Metrics computation (P@5, R@5, AP, MRR, nDCG)
-│   ├─ kg_exp.py                 # Knowledge graph experiments
-│   └─ kg_exp_chatgpt.py         # KG utilities
+│   └─ kg_builders/              # Knowledge graph experiments
+│       ├─ kg_exp.py             # by myself
+│       ├─ kg_exp_chatgpt.py     # by chatgpt
+│       └─ kg_exp_claude.py      # by Claude
 │
-├─ dw_data/                       # Data directory (auto-created)
+├─ dw_data/                      # Data directory
 │   ├─ all-detailsepisodes.csv   # Episode details
-│   ├─ imdb_details.csv          # IMDB episode data
-│   ├─ dwguide.csv               # DW guide data
-│   ├─ merged_dataset.csv        # Pre-merged episode data
+│   ├─ all-scripts.csv           # Episode scripts details
+│   ├─ bm25_testing.csv          # BM25 parameter sweep results
 │   ├─ doctor_who.db             # SQLite database (episodes, index, embeddings)
 │   ├─ document_corpus_dw.json   # Serialized document corpus
-│   ├─ inverted_index.json       # Inverted index for boolean search
-│   ├─ faiss.index               # FAISS HNSW index
+│   ├─ dwguide.csv               # DW guide data
 │   ├─ faiss_mapping.json        # Maps FAISS indices to document IDs
+│   ├─ faiss.index               # FAISS HNSW index
+│   ├─ first_example_10_queries  # initial test queries
+│   ├─ imdb_details.csv          # IMDB episode data
+│   ├─ inverted_index.json       # Inverted index for boolean search
+│   ├─ merged_dataset.csv        # Pre-merged episode data
+│   ├─ method_comparison.png     
+│   ├─ method_ranking.csv
 │   ├─ search_results_summary.csv# Evaluation results across all methods
-│   ├─ bm25_testing.csv          # BM25 parameter sweep results
 │   └─ second_example_20_queries.json # Test queries and gold answers
 │
+├─ graph_depo/                   # Knowledge Graphs visualizations
+│   ├─ doctor_who_kg_claude.graphml
+│   ├─ doctor_who_kg_claude.html
+│   ├─ doctor_who_kg.graphml
+│   └─ doctor_who_kg.html
+│
+├─ evaluations_testings/          # Tests and comparisons
+│   ├─ compare_methods.py         # Visualization of search method comparison
+│   └─ tests.py                   # Unit tests
+│
 ├─ main.py                        # Main evaluation script
-├─ compare_methods.py             # Visualization of search method comparison
 ├─ config.py                      # Centralized configuration
-├─ tests.py                       # Unit tests
+├─ app.py                         # UI start
 ├─ pyproject.toml                 # Project metadata & dependencies
 ├─ requirements.txt               # pip dependencies
 ├─ README.md                      # This file
+├─ app.log
 └─ uv.lock                        # Locked dependency versions
 ```
 
@@ -136,7 +152,7 @@ Start the Flask web application with a beautiful, responsive interface:
 uv run python app.py
 ```
 
-Then open your browser to **http://localhost:5000**
+Then open your browser to **http://localhost:5001**
 
 **Features:**
 - 🎯 Unified search interface with method selector
@@ -206,17 +222,17 @@ Generate AI-powered answers using local Ollama LLM (via web UI or CLI):
 
 **Prerequisites:**
 1. Install Ollama: https://ollama.ai
-2. Pull the model: `ollama pull llama2` (or your preferred model)
+2. Pull the model: `ollama pull llama3` (or your preferred model)
 3. Start Ollama server: `ollama serve`
 
 **Via Web UI (Recommended):**
 1. Start: `uv run python app.py`
-2. Go to http://localhost:5000
+2. Go to http://localhost:5001
 3. Select method: "RAG - AI Generated Answer"
 4. Enter query: "Who is the Doctor?"
 5. View AI answer with source documents
 
-> Tip: If running via uv on a different host/port, replace the URL accordingly (e.g., http://127.0.0.1:5000).
+> Tip: If running via uv on a different host/port, replace the URL accordingly (e.g., http://127.0.0.1:5001).
 
 **Via CLI:**
 
@@ -226,7 +242,7 @@ uv run python main.py --mode rag --query "Who is the Doctor?"
 
 The system will:
 - Retrieve the 5 most relevant Doctor Who episodes
-- Pass them as context to Ollama's llama2 model
+- Pass them as context to Ollama's llama3 model
 - Generate a contextual answer based on the retrieved episodes
 
 **Example output:**
@@ -279,7 +295,7 @@ All settings are centralized in `config.py`:
 | `EXCLUDE_SEASONS` | `["11"]` | Seasons to exclude from corpus |
 | `RAG_ENABLED` | `True` | Enable RAG mode |
 | `OLLAMA_BASE_URL` | `http://localhost:11434` | Ollama server endpoint |
-| `OLLAMA_MODEL` | `llama2` | Ollama model to use |
+| `OLLAMA_MODEL` | `llama3` | Ollama model to use |
 | `RAG_CONTEXT_SIZE` | `5` | Number of retrieved documents for context |
 | `RAG_TEMPERATURE` | `0.7` | LLM generation temperature (0.0-1.0) |
 | `RAG_MAX_TOKENS` | `500` | Maximum tokens in generated answer |

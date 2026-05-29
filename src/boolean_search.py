@@ -70,7 +70,7 @@ def boolean_search_sqlite(query: str, conn: sqlite3.Connection, top_n=5):
         for (doc_id,) in rows:
             doc_scores[doc_id] += 1
 
-    # Сортировка по количеству совпадений
+    # Sort documents by the number of matching tokens
     ranked_docs = sorted(doc_scores.items(), key=lambda x: x[1], reverse=True)
 
     return [doc_id for doc_id, _ in ranked_docs[:top_n]]

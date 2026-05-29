@@ -4,951 +4,1087 @@
     "season": 1,
     "number": 1,
     "title": "Rose",
-    "description": "When ordinary shop-worker Rose Tyler meets a mysterious stranger called the Doctor she is drawn into his strange and dangerous world; her life will never be the same again."
+    "description": "When ordinary shop-worker Rose Tyler meets a mysterious stranger called the Doctor she is drawn into his strange and dangerous world; her life will never be the same again.",
+    "summary": "nan"
   },
   "1x2": {
     "id": "1x2",
     "season": 1,
     "number": 2,
     "title": "The End of the World",
-    "description": "The Doctor takes Rose to the year 5 billion to witness the destruction of the Earth."
+    "description": "The Doctor takes Rose to the year 5 billion to witness the destruction of the Earth.",
+    "summary": "nan"
   },
   "1x3": {
     "id": "1x3",
     "season": 1,
     "number": 3,
     "title": "The Unquiet Dead",
-    "description": "The Doctor has great expectations for his latest adventure when he and Rose join forces with Charles Dickens to investigate a mysterious plague of zombies."
+    "description": "The Doctor has great expectations for his latest adventure when he and Rose join forces with Charles Dickens to investigate a mysterious plague of zombies.",
+    "summary": "nan"
   },
   "1x4": {
     "id": "1x4",
     "season": 1,
     "number": 4,
     "title": "Aliens of London",
-    "description": "The Doctor returns Rose to her own time - well, sort of - but her family reunion is ruined when a spaceship crashes in the middle of London. What is the origin of the spaceship, and where has the Prime Minister gone in this time of crisis?"
+    "description": "The Doctor returns Rose to her own time - well, sort of - but her family reunion is ruined when a spaceship crashes in the middle of London. What is the origin of the spaceship, and where has the Prime Minister gone in this time of crisis?",
+    "summary": "nan"
   },
   "1x5": {
     "id": "1x5",
     "season": 1,
     "number": 5,
     "title": "World War Three",
-    "description": "The Slitheen have infiltrated Parliament and have the Doctor and his friends trapped as the Doctor works to prevent them from starting World War Three."
+    "description": "The Slitheen have infiltrated Parliament and have the Doctor and his friends trapped as the Doctor works to prevent them from starting World War Three.",
+    "summary": "nan"
   },
   "1x6": {
     "id": "1x6",
     "season": 1,
     "number": 6,
     "title": "Dalek",
-    "description": "The TARDIS is drawn to an alien museum deep below the Utah desert, where a ruthless billionaire keeps prisoner the last of the Doctor's most fearsome enemies."
+    "description": "The TARDIS is drawn to an alien museum deep below the Utah desert, where a ruthless billionaire keeps prisoner the last of the Doctor's most fearsome enemies.",
+    "summary": "nan"
   },
   "1x7": {
     "id": "1x7",
     "season": 1,
     "number": 7,
     "title": "The Long Game",
-    "description": "In the year 200,000 the Doctor discovers that a satellite with a dark secret is controlling humanity and slowing its development."
+    "description": "In the year 200,000 the Doctor discovers that a satellite with a dark secret is controlling humanity and slowing its development.",
+    "summary": "nan"
   },
   "1x8": {
     "id": "1x8",
     "season": 1,
     "number": 8,
     "title": "Father's Day",
-    "description": "All of her life, Rose's mother told how great a man her father Pete was. He was killed by a hit and run driver when Rose was just a baby and among her many regrets was that her father died alone, just lying on the street. Rose asks the Doctor to take her back to that day. Rather than just be with him when he dies, she actually saves him and later admits that this was her plan all along. She soon realizes that her parents' marriage was not exactly the golden relationship she had claimed it to be. Far worse however, is that by saving her father, Rose has created a tear ..."
+    "description": "All of her life, Rose's mother told how great a man her father Pete was. He was killed by a hit and run driver when Rose was just a baby and among her many regrets was that her father died alone, just lying on the street. Rose asks the Doctor to take her back to that day. Rather than just be with him when he dies, she actually saves him and later admits that this was her plan all along. She soon realizes that her parents' marriage was not exactly the golden relationship she had claimed it to be. Far worse however, is that by saving her father, Rose has created a tear ...",
+    "summary": "When Rose travels back to the day of her father's death, her meddling in the course of events has terrible consequences for the human race - in the form of the fiendish Reapers.\n\nSynopsis Source: Radio Times"
   },
   "1x9": {
     "id": "1x9",
     "season": 1,
     "number": 9,
     "title": "The Empty Child",
-    "description": "When a spaceship crashes in the middle of the London Blitz the Doctor, Rose and the enigmatic Captain Jack Harkness find themselves investigating a plague of physical injuries and a little boy in a gas mask."
+    "description": "When a spaceship crashes in the middle of the London Blitz the Doctor, Rose and the enigmatic Captain Jack Harkness find themselves investigating a plague of physical injuries and a little boy in a gas mask.",
+    "summary": "nan"
   },
   "1x10": {
     "id": "1x10",
     "season": 1,
     "number": 10,
     "title": "The Doctor Dances",
-    "description": "The gas mask zombies are on the rise as the plague spreads across war-torn London."
+    "description": "The gas mask zombies are on the rise as the plague spreads across war-torn London.",
+    "summary": "nan"
   },
   "1x11": {
     "id": "1x11",
     "season": 1,
     "number": 11,
     "title": "Boom Town",
-    "description": "Stopping off in present-day Cardiff to recharge the TARDIS, The Doctor, Rose and Jack encounter an old foe in the midst of hatching a scheme that could destroy the entire planet."
+    "description": "Stopping off in present-day Cardiff to recharge the TARDIS, The Doctor, Rose and Jack encounter an old foe in the midst of hatching a scheme that could destroy the entire planet.",
+    "summary": "nan"
   },
   "1x12": {
     "id": "1x12",
     "season": 1,
     "number": 12,
     "title": "Bad Wolf",
-    "description": "The TARDIS team is separated and forced to compete in twisted and deadly games on the Game Station."
+    "description": "The TARDIS team is separated and forced to compete in twisted and deadly games on the Game Station.",
+    "summary": "nan"
   },
   "1x13": {
     "id": "1x13",
     "season": 1,
     "number": 13,
     "title": "The Parting of the Ways",
-    "description": "As the Dalek fleet begin their attack on the Earth, the Doctor and his allies make one final stand against his greatest foes and not everyone will make it out alive."
+    "description": "As the Dalek fleet begin their attack on the Earth, the Doctor and his allies make one final stand against his greatest foes and not everyone will make it out alive.",
+    "summary": "nan"
   },
   "2x0": {
     "id": "2x0",
     "season": 2,
     "number": 0,
     "title": "The Christmas Invasion",
-    "description": "It's Christmas Eve, but this is to be a far from silent night - the cruel Sycorax have come to Earth to enslave mankind and, as ever, only The Doctor can stop them. Unfortunately, he's lying in a coma in Jackie's home..."
+    "description": "It's Christmas Eve, but this is to be a far from silent night - the cruel Sycorax have come to Earth to enslave mankind and, as ever, only The Doctor can stop them. Unfortunately, he's lying in a coma in Jackie's home...",
+    "summary": "The newly regenerated Doctor takes Rose home for the festive season, but\n the transition process has tired him and he falls unconscious - just as\n the planet comes under threat from evil alien race the Sycorax, who \nhave employed sinister Santas and murderous trees to do their bidding."
   },
   "2x1": {
     "id": "2x1",
     "season": 2,
     "number": 1,
     "title": "New Earth",
-    "description": "The Doctor and Rose arrive on New Earth and meet old friends and enemies in a hospital which can cure every disease. But the cures come at a terrible cost."
+    "description": "The Doctor and Rose arrive on New Earth and meet old friends and enemies in a hospital which can cure every disease. But the cures come at a terrible cost.",
+    "summary": "nan"
   },
   "2x2": {
     "id": "2x2",
     "season": 2,
     "number": 2,
     "title": "Tooth and Claw",
-    "description": "The Doctor and Rose are transported to 19th Century Scotland, where they meet Queen Victoria, and try to protect her from a ravenous werewolf and a band of assassinating warrior-monks"
+    "description": "The Doctor and Rose are transported to 19th Century Scotland, where they meet Queen Victoria, and try to protect her from a ravenous werewolf and a band of assassinating warrior-monks",
+    "summary": "nan"
   },
   "2x3": {
     "id": "2x3",
     "season": 2,
     "number": 3,
     "title": "School Reunion",
-    "description": "The Krillitanes - aliens with a mix-and-match physiology - are trying to crack the 'God-Maker', a paradigm to give them ultimate power. They are using children as a computer, and only the Doctor and Rose, re-united with Sarah Jane Smith and K9 can prevent them from becoming masters of time and space."
+    "description": "The Krillitanes - aliens with a mix-and-match physiology - are trying to crack the 'God-Maker', a paradigm to give them ultimate power. They are using children as a computer, and only the Doctor and Rose, re-united with Sarah Jane Smith and K9 can prevent them from becoming masters of time and space.",
+    "summary": "nan"
   },
   "2x4": {
     "id": "2x4",
     "season": 2,
     "number": 4,
     "title": "The Girl in the Fireplace",
-    "description": "The Doctor, Mickey and Rose land on a spaceship in the 51st century only to find 18th century Versailles on board, the time of Madame De Pompadour! To find out what's going on the Doctor must enter Versailles and save Madame De Popmpadour but it turns into an emotional roller coaster for the Doctor."
+    "description": "The Doctor, Mickey and Rose land on a spaceship in the 51st century only to find 18th century Versailles on board, the time of Madame De Pompadour! To find out what's going on the Doctor must enter Versailles and save Madame De Popmpadour but it turns into an emotional roller coaster for the Doctor.",
+    "summary": "nan"
   },
   "2x5": {
     "id": "2x5",
     "season": 2,
     "number": 5,
     "title": "Rise of the Cybermen",
-    "description": "The TARDIS crash lands in London on a parallel world, where Rose's dad is still alive, people are disappearing off the streets and one of the Doctor's deadliest enemies is about to be reborn."
+    "description": "The TARDIS crash lands in London on a parallel world, where Rose's dad is still alive, people are disappearing off the streets and one of the Doctor's deadliest enemies is about to be reborn.",
+    "summary": "On a parallel Earth where Rose's parents remained together, the Doctor sees a terrifying enemy reborn... The Cybermen are coming!"
   },
   "2x6": {
     "id": "2x6",
     "season": 2,
     "number": 6,
     "title": "The Age of Steel",
-    "description": "The Cybermen take control of London as the population is enslaved and the Doctor and his friends become fugitives."
+    "description": "The Cybermen take control of London as the population is enslaved and the Doctor and his friends become fugitives.",
+    "summary": "The Cybermen take control of London and start converting the populace. It looks like even the Doctor is beaten..."
   },
   "2x7": {
     "id": "2x7",
     "season": 2,
     "number": 7,
     "title": "The Idiot's Lantern",
-    "description": "As the coronation of Elizabeth II nears, the streets of London live in fear. Faceless people are stolen from their homes in the night and something evil is lurking in the television."
+    "description": "As the coronation of Elizabeth II nears, the streets of London live in fear. Faceless people are stolen from their homes in the night and something evil is lurking in the television.",
+    "summary": "nan"
   },
   "2x8": {
     "id": "2x8",
     "season": 2,
     "number": 8,
     "title": "The Impossible Planet",
-    "description": "When the Doctor and Rose become stranded on a planet orbiting a black hole, they find a human expedition crew and their servants, the Ood, being terrorised by the Devil."
+    "description": "When the Doctor and Rose become stranded on a planet orbiting a black hole, they find a human expedition crew and their servants, the Ood, being terrorised by the Devil.",
+    "summary": "The Doctor and Rose land in a base on an 'impossible planet'. But the TARDIS is missing, there's a killer in the base, and who are the Ood?"
   },
   "2x9": {
     "id": "2x9",
     "season": 2,
     "number": 9,
     "title": "The Satan Pit",
-    "description": "The Doctor risks his life to investigate the pit and is forced to make a terrible decision, while Rose and the crew fend for their lives against the Legion of the Beast."
+    "description": "The Doctor risks his life to investigate the pit and is forced to make a terrible decision, while Rose and the crew fend for their lives against the Legion of the Beast.",
+    "summary": "As Rose battles the murderous Ood, the Doctor must grapple with a monster that challenges his every belief: the Beast."
   },
   "2x10": {
     "id": "2x10",
     "season": 2,
     "number": 10,
     "title": "Love & Monsters",
-    "description": "Elton Pope is an ordinary man intrigued by the world of the Doctor. When he and fellow enthusiasts - L.I.N.D.A. - meet the mysterious Victor Kennedy, their lives will never be the same again."
+    "description": "Elton Pope is an ordinary man intrigued by the world of the Doctor. When he and fellow enthusiasts - L.I.N.D.A. - meet the mysterious Victor Kennedy, their lives will never be the same again.",
+    "summary": "nan"
   },
   "2x11": {
     "id": "2x11",
     "season": 2,
     "number": 11,
     "title": "Fear Her",
-    "description": "When children vanish into thin air in 2012 London, the Doctor and Rose find the answers in a seemingly ordinary household and a girl whose drawings can come to life."
+    "description": "When children vanish into thin air in 2012 London, the Doctor and Rose find the answers in a seemingly ordinary household and a girl whose drawings can come to life.",
+    "summary": "nan"
   },
   "2x12": {
     "id": "2x12",
     "season": 2,
     "number": 12,
     "title": "Army of Ghosts",
-    "description": "When ghosts of loved ones appear all over the world the Doctor traces the phenomena to the Torchwood Tower, where some old friends and enemies are waiting."
+    "description": "When ghosts of loved ones appear all over the world the Doctor traces the phenomena to the Torchwood Tower, where some old friends and enemies are waiting.",
+    "summary": "The Cybermen have invaded Earth, but the Doctor and Torchwood are about to confront an even greater threat."
   },
   "2x13": {
     "id": "2x13",
     "season": 2,
     "number": 13,
     "title": "Doomsday",
-    "description": "Earth becomes a battleground for the Daleks and the Cybermen. With the whole planet at stake and the Genesis Ark activated, how much will the Doctor sacrifice in order to end the war?"
+    "description": "Earth becomes a battleground for the Daleks and the Cybermen. With the whole planet at stake and the Genesis Ark activated, how much will the Doctor sacrifice in order to end the war?",
+    "summary": "As the human race is caught in a war between Daleks and Cybermen, the Doctor faces losing Rose."
   },
   "3x0": {
     "id": "3x0",
     "season": 3,
     "number": 0,
     "title": "The Runaway Bride",
-    "description": "The Doctor is baffled when a young woman is transported to the TARDIS on her wedding day, and attempts to find out how she is connected to an alien plot to destroy Earth."
+    "description": "The Doctor is baffled when a young woman is transported to the TARDIS on her wedding day, and attempts to find out how she is connected to an alien plot to destroy Earth.",
+    "summary": "nan"
   },
   "3x1": {
     "id": "3x1",
     "season": 3,
     "number": 1,
     "title": "Smith and Jones",
-    "description": "When the hospital she works at is transported to the moon, medical student Martha Jones joins forces with The Doctor to hunt down an alien fugitive before the oxygen runs out."
+    "description": "When the hospital she works at is transported to the moon, medical student Martha Jones joins forces with The Doctor to hunt down an alien fugitive before the oxygen runs out.",
+    "summary": "The script is available to read from the BBC Writers Room."
   },
   "3x2": {
     "id": "3x2",
     "season": 3,
     "number": 2,
     "title": "The Shakespeare Code",
-    "description": "The Doctor takes Martha to London in 1599, where William Shakespeare's new play is being used by three witches in an evil plan."
+    "description": "The Doctor takes Martha to London in 1599, where William Shakespeare's new play is being used by three witches in an evil plan.",
+    "summary": "nan"
   },
   "3x3": {
     "id": "3x3",
     "season": 3,
     "number": 3,
     "title": "Gridlock",
-    "description": "The Doctor takes Martha to New Earth, where she is kidnapped by two carjackers and taken to an underground Motorway, where the remainder of humanity on the planet live in perpetual gridlock."
+    "description": "The Doctor takes Martha to New Earth, where she is kidnapped by two carjackers and taken to an underground Motorway, where the remainder of humanity on the planet live in perpetual gridlock.",
+    "summary": "nan"
   },
   "3x4": {
     "id": "3x4",
     "season": 3,
     "number": 4,
     "title": "Daleks in Manhattan",
-    "description": "The Doctor and Martha travel to New York in 1930, where people have been mysteriously vanishing from the streets, and an old enemy resurfaces."
+    "description": "The Doctor and Martha travel to New York in 1930, where people have been mysteriously vanishing from the streets, and an old enemy resurfaces.",
+    "summary": "The Doctor finds his oldest enemies at work on top of the Empire State Building when he and Martha travel to 1930s New York."
   },
   "3x5": {
     "id": "3x5",
     "season": 3,
     "number": 5,
     "title": "Evolution of the Daleks",
-    "description": "Concluding part to Daleks in Manhattan. In 1930s New York, the Daleks' plan is in full force. Faced with the cyborgs' most evil and dangerous scheme yet, will the Doctor and Martha be able to defeat their greatest opponents?"
+    "description": "Concluding part to Daleks in Manhattan. In 1930s New York, the Daleks' plan is in full force. Faced with the cyborgs' most evil and dangerous scheme yet, will the Doctor and Martha be able to defeat their greatest opponents?",
+    "summary": "As a new Dalek Empire rises in 1930s New York, the Doctor must enter an unholy alliance."
   },
   "3x6": {
     "id": "3x6",
     "season": 3,
     "number": 6,
     "title": "The Lazarus Experiment",
-    "description": "The famous Dr Lazarus has appeared to discover the secret of eternal youth - but do his experiments hide a sinister secret?"
+    "description": "The famous Dr Lazarus has appeared to discover the secret of eternal youth - but do his experiments hide a sinister secret?",
+    "summary": "nan"
   },
   "3x7": {
     "id": "3x7",
     "season": 3,
     "number": 7,
     "title": "42",
-    "description": "On a spaceship headed straight for the centre of the sun, the Doctor only has 42 minutes to save Martha and the ship's crew from an inevitable doom."
+    "description": "On a spaceship headed straight for the centre of the sun, the Doctor only has 42 minutes to save Martha and the ship's crew from an inevitable doom.",
+    "summary": "As a spaceship hurtles towards the sun, the Doctor and Martha have only 42 minutes to save the day!"
   },
   "3x8": {
     "id": "3x8",
     "season": 3,
     "number": 8,
     "title": "Human Nature",
-    "description": "In 1913, Martha watches in jealousy from afar as The Doctor learns what it is to be human and to fall in love with the local school nurse, Joan Redfern."
+    "description": "In 1913, Martha watches in jealousy from afar as The Doctor learns what it is to be human and to fall in love with the local school nurse, Joan Redfern.",
+    "summary": "nan"
   },
   "3x9": {
     "id": "3x9",
     "season": 3,
     "number": 9,
     "title": "The Family of Blood",
-    "description": "The Doctor must deal with the repercussions of his decision to become human, as The Family Of Blood unveil themselves..."
+    "description": "The Doctor must deal with the repercussions of his decision to become human, as The Family Of Blood unveil themselves...",
+    "summary": "nan"
   },
   "3x10": {
     "id": "3x10",
     "season": 3,
     "number": 10,
     "title": "Blink",
-    "description": "Sally Sparrow receives a cryptic message from the Doctor about a mysterious new enemy species that is after the TARDIS."
+    "description": "Sally Sparrow receives a cryptic message from the Doctor about a mysterious new enemy species that is after the TARDIS.",
+    "summary": "nan"
   },
   "3x11": {
     "id": "3x11",
     "season": 3,
     "number": 11,
     "title": "Utopia",
-    "description": "Soon after bumping into old friend Jack Harkness, Martha and The Doctor head off to Malcassairo, a distant planet where an old professor will do anything he can to keep his people alive..."
+    "description": "Soon after bumping into old friend Jack Harkness, Martha and The Doctor head off to Malcassairo, a distant planet where an old professor will do anything he can to keep his people alive...",
+    "summary": "nan"
   },
   "3x12": {
     "id": "3x12",
     "season": 3,
     "number": 12,
     "title": "The Sound of Drums",
-    "description": "The Doctor, Martha and Jack return to the 21st Century eighteen months after the Doctor and Martha left. They find they've missed the election, and the new Prime Minister, Harold Saxon, is someone they've met before by another name."
+    "description": "The Doctor, Martha and Jack return to the 21st Century eighteen months after the Doctor and Martha left. They find they've missed the election, and the new Prime Minister, Harold Saxon, is someone they've met before by another name.",
+    "summary": "nan"
   },
   "3x13": {
     "id": "3x13",
     "season": 3,
     "number": 13,
     "title": "Last of the Time Lords",
-    "description": "It's been a year since The Master unleashed the mysterious Toclafane onto Earth. With the human race and The Doctor enslaved under The Master's control, Martha Jones is the only person that can help stop the evil Time Lord."
+    "description": "It's been a year since The Master unleashed the mysterious Toclafane onto Earth. With the human race and The Doctor enslaved under The Master's control, Martha Jones is the only person that can help stop the evil Time Lord.",
+    "summary": "nan"
   },
   "4x0": {
     "id": "4x0",
     "season": 4,
     "number": 0,
     "title": "Voyage of the Damned",
-    "description": "A spacecraft set on an apocalyptic collision course with Earth, a host of killer robot angels and an evil severed headed mastermind - it's just another Christmas for the Doctor... 2007 Christmas special guest starring Kylie Minogue."
+    "description": "A spacecraft set on an apocalyptic collision course with Earth, a host of killer robot angels and an evil severed headed mastermind - it's just another Christmas for the Doctor... 2007 Christmas special guest starring Kylie Minogue.",
+    "summary": "nan"
   },
   "4x1": {
     "id": "4x1",
     "season": 4,
     "number": 1,
     "title": "Partners in Crime",
-    "description": "With a new weight-loss pill tested in London by Adipose Industries, The Doctor goes to investigate the sinister truth behind the product, only to find out that his old friend Donna Noble is investigating as well."
+    "description": "With a new weight-loss pill tested in London by Adipose Industries, The Doctor goes to investigate the sinister truth behind the product, only to find out that his old friend Donna Noble is investigating as well.",
+    "summary": "nan"
   },
   "4x2": {
     "id": "4x2",
     "season": 4,
     "number": 2,
     "title": "The Fires of Pompeii",
-    "description": "Instead in Rome, The Doctor and Donna Noble end up visiting Pompeii in AD 79, on the eve of the catastrophic eruption of Mount Vesuvius, before anyone even knew it was actually a volcano.The entire city is doomed for destruction."
+    "description": "Instead in Rome, The Doctor and Donna Noble end up visiting Pompeii in AD 79, on the eve of the catastrophic eruption of Mount Vesuvius, before anyone even knew it was actually a volcano.The entire city is doomed for destruction.",
+    "summary": "nan"
   },
   "4x3": {
     "id": "4x3",
     "season": 4,
     "number": 3,
     "title": "Planet of the Ood",
-    "description": "Finding themselves on the Ood-Sphere planet in the 42nd century, The Doctor and Donna discover the truth over the Ood's willingness to serve humankind."
+    "description": "Finding themselves on the Ood-Sphere planet in the 42nd century, The Doctor and Donna discover the truth over the Ood's willingness to serve humankind.",
+    "summary": "nan"
   },
   "4x4": {
     "id": "4x4",
     "season": 4,
     "number": 4,
     "title": "The Sontaran Stratagem",
-    "description": "UNIT's newest recruit Martha Jones enlists The Doctor's help to investigate kid genius Luke Rattigan and his ATMOS system that is used in every car on Earth."
+    "description": "UNIT's newest recruit Martha Jones enlists The Doctor's help to investigate kid genius Luke Rattigan and his ATMOS system that is used in every car on Earth.",
+    "summary": "nan"
   },
   "4x5": {
     "id": "4x5",
     "season": 4,
     "number": 5,
     "title": "The Poison Sky",
-    "description": "With planet Earth choking under the poison sky, the Doctor must stop the Sontarans' threat to the planet."
+    "description": "With planet Earth choking under the poison sky, the Doctor must stop the Sontarans' threat to the planet.",
+    "summary": "nan"
   },
   "4x6": {
     "id": "4x6",
     "season": 4,
     "number": 6,
     "title": "The Doctor's Daughter",
-    "description": "Caught in the middle of a war between the Humans and the Hath in the planet Messaline, the Doctor finds himself once again a father."
+    "description": "Caught in the middle of a war between the Humans and the Hath in the planet Messaline, the Doctor finds himself once again a father.",
+    "summary": "nan"
   },
   "4x7": {
     "id": "4x7",
     "season": 4,
     "number": 7,
     "title": "The Unicorn and the Wasp",
-    "description": "With a 1926 dinner party turning into a murder mystery, The Doctor and Donna Noble get the chance to meet Agatha Christie on the eve of her well-known 9-days disappearance."
+    "description": "With a 1926 dinner party turning into a murder mystery, The Doctor and Donna Noble get the chance to meet Agatha Christie on the eve of her well-known 9-days disappearance.",
+    "summary": "nan"
   },
   "4x8": {
     "id": "4x8",
     "season": 4,
     "number": 8,
     "title": "Silence in the Library",
-    "description": "The Doctor and Donna join a group of archaeologists at a 51st century library. What caused the library to become abandoned? What are the Nodes? And what links the library to one little girl? All they have is one warning - count the shadows."
+    "description": "The Doctor and Donna join a group of archaeologists at a 51st century library. What caused the library to become abandoned? What are the Nodes? And what links the library to one little girl? All they have is one warning - count the shadows.",
+    "summary": "nan"
   },
   "4x9": {
     "id": "4x9",
     "season": 4,
     "number": 9,
     "title": "Forest of the Dead",
-    "description": "With the library darkening, the Doctor takes on the Vashta Nerada while figuring out what links River Song to his future. Meanwhile, Donna finds out the mystery of Dr. Moon and the Girl."
+    "description": "With the library darkening, the Doctor takes on the Vashta Nerada while figuring out what links River Song to his future. Meanwhile, Donna finds out the mystery of Dr. Moon and the Girl.",
+    "summary": "nan"
   },
   "4x10": {
     "id": "4x10",
     "season": 4,
     "number": 10,
     "title": "Midnight",
-    "description": "As part of a well-deserved holiday, the Doctor takes a tour on a planet called Midnight. Little does he know that something is knocking on the walls, although the planet shouldn't be inhabited. Soon the passengers begin to panic when one of them is possessed."
+    "description": "As part of a well-deserved holiday, the Doctor takes a tour on a planet called Midnight. Little does he know that something is knocking on the walls, although the planet shouldn't be inhabited. Soon the passengers begin to panic when one of them is possessed.",
+    "summary": "nan"
   },
   "4x11": {
     "id": "4x11",
     "season": 4,
     "number": 11,
     "title": "Turn Left",
-    "description": "What would happen if Donna never met the Doctor? How would Earth handle the Racnoss, the falling Titanic or the Sontarans? Aided by a familiar blonde time traveler, Donna corrects the alternate time line from happening."
+    "description": "What would happen if Donna never met the Doctor? How would Earth handle the Racnoss, the falling Titanic or the Sontarans? Aided by a familiar blonde time traveler, Donna corrects the alternate time line from happening.",
+    "summary": "nan"
   },
   "4x12": {
     "id": "4x12",
     "season": 4,
     "number": 12,
     "title": "The Stolen Earth",
-    "description": "The return of an old enemy leaves Earth along with 26 other planets stolen from their places. As the Doctor and Donna look for the whereabouts of Earth, former companions of the Doctor assemble a resistance against the new Dalek Empire."
+    "description": "The return of an old enemy leaves Earth along with 26 other planets stolen from their places. As the Doctor and Donna look for the whereabouts of Earth, former companions of the Doctor assemble a resistance against the new Dalek Empire.",
+    "summary": "nan"
   },
   "4x13": {
     "id": "4x13",
     "season": 4,
     "number": 13,
     "title": "Journey's End",
-    "description": "In the wake of Davros' threat to destroy the existence of the Universe itself, the Doctor's companions unite to stop the Dalek empire. Which one will die by the prophecies and what will the fate be for the Doctor?"
+    "description": "In the wake of Davros' threat to destroy the existence of the Universe itself, the Doctor's companions unite to stop the Dalek empire. Which one will die by the prophecies and what will the fate be for the Doctor?",
+    "summary": "nan"
   },
   "5x1": {
     "id": "5x1",
     "season": 5,
     "number": 1,
     "title": "The Eleventh Hour",
-    "description": "With his TARDIS in ruins, the newly-regenerated Doctor with the help of Amy Pond must save the world in less than twenty minutes from galactic policemen known as the Atraxi."
+    "description": "With his TARDIS in ruins, the newly-regenerated Doctor with the help of Amy Pond must save the world in less than twenty minutes from galactic policemen known as the Atraxi.",
+    "summary": "nan"
   },
   "5x2": {
     "id": "5x2",
     "season": 5,
     "number": 2,
     "title": "The Beast Below",
-    "description": "The Doctor takes Amy to the future inside Starship UK, which contains in addition to British explorers, an intimidating race known as the Smilers."
+    "description": "The Doctor takes Amy to the future inside Starship UK, which contains in addition to British explorers, an intimidating race known as the Smilers.",
+    "summary": "nan"
   },
   "5x3": {
     "id": "5x3",
     "season": 5,
     "number": 3,
     "title": "Victory of the Daleks",
-    "description": "The TARDIS takes The Doctor and Amy to war-torn Britain in the middle of World War Two. Not only do they meet Winston Churchill himself, but the Doctor comes face to face once again with his greatest enemy of all."
+    "description": "The TARDIS takes The Doctor and Amy to war-torn Britain in the middle of World War Two. Not only do they meet Winston Churchill himself, but the Doctor comes face to face once again with his greatest enemy of all.",
+    "summary": "nan"
   },
   "5x4": {
     "id": "5x4",
     "season": 5,
     "number": 4,
     "title": "The Time of Angels",
-    "description": "The Doctor and Amy emerge from the TARDIS to find the wreck of the Byzantium spaceship. Down below the Weeping Angels are stirring, but the Doctor has someone else to contend with; none other than the mysterious Professor River Song."
+    "description": "The Doctor and Amy emerge from the TARDIS to find the wreck of the Byzantium spaceship. Down below the Weeping Angels are stirring, but the Doctor has someone else to contend with; none other than the mysterious Professor River Song.",
+    "summary": "nan"
   },
   "5x5": {
     "id": "5x5",
     "season": 5,
     "number": 5,
     "title": "Flesh and Stone",
-    "description": "The Doctor, Amy, Dr. Song and the remaining soldiers manage to escape from the crashed ship and into the forest. The Angels attempt to create a rift in time and space much as the Doctor had found in Amy's room when they first met. Amy meanwhile is counting down from 10 minutes and the Doctor has determined that an Angel has taken over her mind."
+    "description": "The Doctor, Amy, Dr. Song and the remaining soldiers manage to escape from the crashed ship and into the forest. The Angels attempt to create a rift in time and space much as the Doctor had found in Amy's room when they first met. Amy meanwhile is counting down from 10 minutes and the Doctor has determined that an Angel has taken over her mind.",
+    "summary": "nan"
   },
   "5x6": {
     "id": "5x6",
     "season": 5,
     "number": 6,
     "title": "The Vampires of Venice",
-    "description": "The Doctor and Amy cross swords in more ways than one with a horde of blood-sucking vampires in 16th century Venice."
+    "description": "The Doctor and Amy cross swords in more ways than one with a horde of blood-sucking vampires in 16th century Venice.",
+    "summary": "nan"
   },
   "5x7": {
     "id": "5x7",
     "season": 5,
     "number": 7,
     "title": "Amy's Choice",
-    "description": "Five years after finally leaving the TARDIS Amy and Rory now married, live in the quiet little village of Leadworth. But everything is not what it would seem."
+    "description": "Five years after finally leaving the TARDIS Amy and Rory now married, live in the quiet little village of Leadworth. But everything is not what it would seem.",
+    "summary": "nan"
   },
   "5x8": {
     "id": "5x8",
     "season": 5,
     "number": 8,
     "title": "The Hungry Earth",
-    "description": "The Doctor tries to get everyone to Rio, but nothing quite goes as planned. They arrive in a small Welsh village where the Doctor immediately senses that the ground isn't quite right. There is a drilling rig nearby that has reached a depth of 21 kilometers when odd things begin to happen. A local village man has disappeared and soon after Amy is swallowed into the ground. The Doctor realizes that the drilling has disturbed an ancient reptilian race that has lived deep underground for thousands upon thousands of years and who are determined to protect themselves ..."
+    "description": "The Doctor tries to get everyone to Rio, but nothing quite goes as planned. They arrive in a small Welsh village where the Doctor immediately senses that the ground isn't quite right. There is a drilling rig nearby that has reached a depth of 21 kilometers when odd things begin to happen. A local village man has disappeared and soon after Amy is swallowed into the ground. The Doctor realizes that the drilling has disturbed an ancient reptilian race that has lived deep underground for thousands upon thousands of years and who are determined to protect themselves ...",
+    "summary": "The reptilian Silurians are the former rulers of Earth. A drilling project awakens them - and now they want their planet back!"
   },
   "5x9": {
     "id": "5x9",
     "season": 5,
     "number": 9,
     "title": "Cold Blood",
-    "description": "The Doctor and Nasreen Chaudry go deep underground and find an ancient society that has been disturbed by the drilling. They are gassed and taken prisoner just as Amy manages to free herself. The military commander of the underground reptilians, Restac, is convinced that the \"apes' - their term for humans - are an invading force. Calmer heads prevail and the Doctor manages to negotiate a truce pending the transfer of prisoners which he, and some of the more pacifist members of the reptilians, hopes will lead to a lasting peace. The only problem is that Alaya, the ..."
+    "description": "The Doctor and Nasreen Chaudry go deep underground and find an ancient society that has been disturbed by the drilling. They are gassed and taken prisoner just as Amy manages to free herself. The military commander of the underground reptilians, Restac, is convinced that the \"apes' - their term for humans - are an invading force. Calmer heads prevail and the Doctor manages to negotiate a truce pending the transfer of prisoners which he, and some of the more pacifist members of the reptilians, hopes will lead to a lasting peace. The only problem is that Alaya, the ...",
+    "summary": "Mankind and the Silurians teeter on the brink of all-out war. Can the Doctor ensure the two species' survival?"
   },
   "5x10": {
     "id": "5x10",
     "season": 5,
     "number": 10,
     "title": "Vincent and the Doctor",
-    "description": "The Doctor and Amy travel back in time to meet Vincent Van Gogh and face an invisible monster that only the painter can see."
+    "description": "The Doctor and Amy travel back in time to meet Vincent Van Gogh and face an invisible monster that only the painter can see.",
+    "summary": "nan"
   },
   "5x11": {
     "id": "5x11",
     "season": 5,
     "number": 11,
     "title": "The Lodger",
-    "description": "No sooner does the TARDIS land on Earth that it leaves again - but without the Doctor who had just stepped outside. The Doctor soon finds himself at the home of Craig Owens, who has been advertising for a lodger. There's clearly something odd in the house with people being lured to the upstairs room, but never reappearing. The Doctor is having a good time of it and is having a bit of fun; he proves to be a rather good football player. Craig the landlord is very much in love with Sophie but can't quite bring himself to tell her. The Doctor tries to help them out. But ..."
+    "description": "No sooner does the TARDIS land on Earth that it leaves again - but without the Doctor who had just stepped outside. The Doctor soon finds himself at the home of Craig Owens, who has been advertising for a lodger. There's clearly something odd in the house with people being lured to the upstairs room, but never reappearing. The Doctor is having a good time of it and is having a bit of fun; he proves to be a rather good football player. Craig the landlord is very much in love with Sophie but can't quite bring himself to tell her. The Doctor tries to help them out. But ...",
+    "summary": "nan"
   },
   "5x12": {
     "id": "5x12",
     "season": 5,
     "number": 12,
     "title": "The Pandorica Opens",
-    "description": "River Song returns to deliver The Doctor a serious warning from his allies: the mythical Pandorica, said to contain the most feared creature in the entire Universe, is opening."
+    "description": "River Song returns to deliver The Doctor a serious warning from his allies: the mythical Pandorica, said to contain the most feared creature in the entire Universe, is opening.",
+    "summary": "The Doctor confronts an army of old enemies, and Amy battles a Cyberman. And then the Pandorica opens..."
   },
   "5x13": {
     "id": "5x13",
     "season": 5,
     "number": 13,
     "title": "The Big Bang",
-    "description": "The Pandorica opened, silence fell, and now planet Earth is left alone in the universe. Jumping through time, the doctor must figure out a way to bring back those who never were and save his friends from the collapse of reality."
+    "description": "The Pandorica opened, silence fell, and now planet Earth is left alone in the universe. Jumping through time, the doctor must figure out a way to bring back those who never were and save his friends from the collapse of reality.",
+    "summary": "The Stone Dalek closes in on the Doctor, and reality's last hope is a little girl who still believes in stars."
   },
   "6x0": {
     "id": "6x0",
     "season": 6,
     "number": 0,
     "title": "A Christmas Carol",
-    "description": "A space liner, with a large number of passengers aboard, is in difficulties while flying through the atmosphere of an unknown planet. Amy and Rory have been spending some time on board in the honeymoon suite and they quickly appear on deck. Amy calls the doctor for help and the TARDIS soon appears ahead of the ship. However the Doctor cannot save them and the only other option is to land on the planet below. There the Doctor meets a Scrooge like figure by the name of Kazran Sardick, the only person that can save Amy, Rory and all the other lives on the Spacecraft. The..."
+    "description": "A space liner, with a large number of passengers aboard, is in difficulties while flying through the atmosphere of an unknown planet. Amy and Rory have been spending some time on board in the honeymoon suite and they quickly appear on deck. Amy calls the doctor for help and the TARDIS soon appears ahead of the ship. However the Doctor cannot save them and the only other option is to land on the planet below. There the Doctor meets a Scrooge like figure by the name of Kazran Sardick, the only person that can save Amy, Rory and all the other lives on the Spacecraft. The...",
+    "summary": "The Doctor has one hour to save a crashing spaceship and a miser's soul - but what lurks in the fog?"
   },
   "6x1": {
     "id": "6x1",
     "season": 6,
     "number": 1,
     "title": "The Impossible Astronaut",
-    "description": "The Doctor, Amy, Rory and River Song are reunited in the Utah desert."
+    "description": "The Doctor, Amy, Rory and River Song are reunited in the Utah desert.",
+    "summary": "nan"
   },
   "6x2": {
     "id": "6x2",
     "season": 6,
     "number": 2,
     "title": "Day of the Moon",
-    "description": "The Doctor and his allies mount a rebellion against invaders who have been controlling humanity from the very beginning."
+    "description": "The Doctor and his allies mount a rebellion against invaders who have been controlling humanity from the very beginning.",
+    "summary": "nan"
   },
   "6x3": {
     "id": "6x3",
     "season": 6,
     "number": 3,
     "title": "The Curse of the Black Spot",
-    "description": "The Doctor, Amy and Rory find themselves aboard a marooned pirate ship whose crew is being picked off one by one by a beautiful - and deadly - Siren."
+    "description": "The Doctor, Amy and Rory find themselves aboard a marooned pirate ship whose crew is being picked off one by one by a beautiful - and deadly - Siren.",
+    "summary": "nan"
   },
   "6x4": {
     "id": "6x4",
     "season": 6,
     "number": 4,
     "title": "The Doctor's Wife",
-    "description": "The Doctor is lured to a sentient asteroid outside of the Universe by a Time Lord distress signal and soon realises his TARDIS is in grave danger."
+    "description": "The Doctor is lured to a sentient asteroid outside of the Universe by a Time Lord distress signal and soon realises his TARDIS is in grave danger.",
+    "summary": "nan"
   },
   "6x5": {
     "id": "6x5",
     "season": 6,
     "number": 5,
     "title": "The Rebel Flesh",
-    "description": "A solar tsunami sends the TARDIS crew to an acid mining factory in the 22nd century, where a small team of workers come under attack from their doppelgangers."
+    "description": "A solar tsunami sends the TARDIS crew to an acid mining factory in the 22nd century, where a small team of workers come under attack from their doppelgangers.",
+    "summary": "nan"
   },
   "6x6": {
     "id": "6x6",
     "season": 6,
     "number": 6,
     "title": "The Almost People",
-    "description": "The gangers and humans battle for their lives as the factory crumbles and the Doctor tries to keep the peace - can everyone make it off the island alive?"
+    "description": "The gangers and humans battle for their lives as the factory crumbles and the Doctor tries to keep the peace - can everyone make it off the island alive?",
+    "summary": "nan"
   },
   "6x7": {
     "id": "6x7",
     "season": 6,
     "number": 7,
     "title": "A Good Man Goes to War",
-    "description": "A member of The Doctor's team has been abducted and he will call in every favor and maybe even go to war to get them back."
+    "description": "A member of The Doctor's team has been abducted and he will call in every favor and maybe even go to war to get them back.",
+    "summary": "nan"
   },
   "6x8": {
     "id": "6x8",
     "season": 6,
     "number": 8,
     "title": "Let's Kill Hitler",
-    "description": "The search for Melody Pond brings the Doctor and his friends to Berlin in 1938, face-to-face with Adolf Hitler, River Song and a justice-serving, shapeshifting robot."
+    "description": "The search for Melody Pond brings the Doctor and his friends to Berlin in 1938, face-to-face with Adolf Hitler, River Song and a justice-serving, shapeshifting robot.",
+    "summary": "nan"
   },
   "6x9": {
     "id": "6x9",
     "season": 6,
     "number": 9,
     "title": "Night Terrors",
-    "description": "Receiving a powerful distress call from a terrified little boy, the Doctor and his friends soon find that the monsters in his cupboard are real - and deadly."
+    "description": "Receiving a powerful distress call from a terrified little boy, the Doctor and his friends soon find that the monsters in his cupboard are real - and deadly.",
+    "summary": "nan"
   },
   "6x10": {
     "id": "6x10",
     "season": 6,
     "number": 10,
     "title": "The Girl Who Waited",
-    "description": "Amy is trapped in a quarantine facility where time moves faster than in reality, while the Doctor is confined to the TARDIS. Can Rory save his wife in time?"
+    "description": "Amy is trapped in a quarantine facility where time moves faster than in reality, while the Doctor is confined to the TARDIS. Can Rory save his wife in time?",
+    "summary": "nan"
   },
   "6x11": {
     "id": "6x11",
     "season": 6,
     "number": 11,
     "title": "The God Complex",
-    "description": "The Doctor, Amy and Rory become trapped in a hotel of horrors unable to escape and unable to find the TARDIS. The Doctor must save as many people as he can taking many twists and seeing his own worst fear."
+    "description": "The Doctor, Amy and Rory become trapped in a hotel of horrors unable to escape and unable to find the TARDIS. The Doctor must save as many people as he can taking many twists and seeing his own worst fear.",
+    "summary": "nan"
   },
   "6x12": {
     "id": "6x12",
     "season": 6,
     "number": 12,
     "title": "Closing Time",
-    "description": "The Doctor makes one last stop before his death to see an old friend. But people are disappearing, there are reports of a silver rat and metal men are lurking in the shadows."
+    "description": "The Doctor makes one last stop before his death to see an old friend. But people are disappearing, there are reports of a silver rat and metal men are lurking in the shadows.",
+    "summary": "nan"
   },
   "6x13": {
     "id": "6x13",
     "season": 6,
     "number": 13,
     "title": "The Wedding of River Song",
-    "description": "April 22nd, 2011; 5:02pm. Having finally accepted his fate the Doctor travels to Lake Silencio for his final day. But one woman refuses to let time take its course."
+    "description": "April 22nd, 2011; 5:02pm. Having finally accepted his fate the Doctor travels to Lake Silencio for his final day. But one woman refuses to let time take its course.",
+    "summary": "nan"
   },
   "7x0": {
     "id": "7x0",
     "season": 7,
     "number": 0,
     "title": "The Doctor, the Widow and the Wardrobe",
-    "description": "It's Christmas Eve, 1938, when Madge Arwell comes to the aid of an injured Spaceman Angel as she cycles home. He promises to repay her kindness - all she has to do is make a wish. Three years later, a devastated Madge escapes war-torn London with her two children for a dilapidated house in Dorset. She is crippled with grief at the news her husband has been lost over the channel, but determined to give Lily and Cyril the best Christmas ever. The Arwells are surprised to be greeted by a madcap caretaker whose mysterious Christmas gift leads them into a magical wintry ..."
+    "description": "It's Christmas Eve, 1938, when Madge Arwell comes to the aid of an injured Spaceman Angel as she cycles home. He promises to repay her kindness - all she has to do is make a wish. Three years later, a devastated Madge escapes war-torn London with her two children for a dilapidated house in Dorset. She is crippled with grief at the news her husband has been lost over the channel, but determined to give Lily and Cyril the best Christmas ever. The Arwells are surprised to be greeted by a madcap caretaker whose mysterious Christmas gift leads them into a magical wintry ...",
+    "summary": "nan"
   },
   "7x1": {
     "id": "7x1",
     "season": 7,
     "number": 1,
     "title": "Asylum of the Daleks",
-    "description": "The Doctor, along with Amy and Rory who are headed for divorce, are kidnapped by the Daleks. They find themselves before the Dalek Parliament and the Doctor is quite surprised when he learns why: they want him to save them. A ship has crashed on the one place they will not go - the Asylum, where mad Daleks are sent to spend the rest of their days. Once there, they are assisted by the only survivor of the crash, Oswin, who has been there for a year awaiting rescue and making soufflés to pass the time. Which leads the Doctor to ask the most important question of all: ..."
+    "description": "The Doctor, along with Amy and Rory who are headed for divorce, are kidnapped by the Daleks. They find themselves before the Dalek Parliament and the Doctor is quite surprised when he learns why: they want him to save them. A ship has crashed on the one place they will not go - the Asylum, where mad Daleks are sent to spend the rest of their days. Once there, they are assisted by the only survivor of the crash, Oswin, who has been there for a year awaiting rescue and making soufflés to pass the time. Which leads the Doctor to ask the most important question of all: ...",
+    "summary": "nan"
   },
   "7x2": {
     "id": "7x2",
     "season": 7,
     "number": 2,
     "title": "Dinosaurs on a Spaceship",
-    "description": "After a lengthy absence, the Doctor returns to Earth and scoops up up Amy and Rory for yet another adventure. He also manages somehow to include Rory's dad, Brian Williams. Those aren't the only travelers however as Queen Nefertiti and big-game hunter John Riddell are also on board. The TARDIS next reappears on board a large ship and the Doctor is delighted to find a cargo of prehistoric dinosaurs on board. Using the ship's computers, Amy determines that the ship's crew is nowhere to be found. There is someone on board however who has no intention of giving up his ..."
+    "description": "After a lengthy absence, the Doctor returns to Earth and scoops up up Amy and Rory for yet another adventure. He also manages somehow to include Rory's dad, Brian Williams. Those aren't the only travelers however as Queen Nefertiti and big-game hunter John Riddell are also on board. The TARDIS next reappears on board a large ship and the Doctor is delighted to find a cargo of prehistoric dinosaurs on board. Using the ship's computers, Amy determines that the ship's crew is nowhere to be found. There is someone on board however who has no intention of giving up his ...",
+    "summary": "nan"
   },
   "7x3": {
     "id": "7x3",
     "season": 7,
     "number": 3,
     "title": "A Town Called Mercy",
-    "description": "The Doctor gets a Stetson and a gun, and finds himself the reluctant Sheriff of a Western town under siege by a relentless cyborg who goes by the name of The Gunslinger. But who is he and what does he want?"
+    "description": "The Doctor gets a Stetson and a gun, and finds himself the reluctant Sheriff of a Western town under siege by a relentless cyborg who goes by the name of The Gunslinger. But who is he and what does he want?",
+    "summary": "nan"
   },
   "7x4": {
     "id": "7x4",
     "season": 7,
     "number": 4,
     "title": "The Power of Three",
-    "description": "Earth is suddenly visited by millions of small black cubes of unknown origin. The Doctor joins Amy, Rory and Rory's father, Brian, to help discover what these cubes bring for humanity."
+    "description": "Earth is suddenly visited by millions of small black cubes of unknown origin. The Doctor joins Amy, Rory and Rory's father, Brian, to help discover what these cubes bring for humanity.",
+    "summary": "nan"
   },
   "7x5": {
     "id": "7x5",
     "season": 7,
     "number": 5,
     "title": "The Angels Take Manhattan",
-    "description": "The Doctor takes Amy and Rory to New York, where the Weeping Angels are waiting for them. River Song returns."
+    "description": "The Doctor takes Amy and Rory to New York, where the Weeping Angels are waiting for them. River Song returns.",
+    "summary": "nan"
   },
   "7x6": {
     "id": "7x6",
     "season": 7,
     "number": 6,
     "title": "The Snowmen",
-    "description": "London, 1892. Snow is trying to evolve, feeding off of the nightmares of a little girl. But the Doctor has given up on saving the world. It is up to a young governess named Clara to convince him, with just one word, to save the day."
+    "description": "London, 1892. Snow is trying to evolve, feeding off of the nightmares of a little girl. But the Doctor has given up on saving the world. It is up to a young governess named Clara to convince him, with just one word, to save the day.",
+    "summary": "Christmas special. The Doctor turns his back on the universe after \nlosing Amy and Rory, and lives a reclusive life in Victorian London. As \nChristmas approaches, he is drawn back into action by a trio of old \nfriends and a plucky governess, and discovers an icy new threat to the \nworld. Starring Matt Smith and Jenna Coleman, and guest starring Richard\n E Grant, with the voice of Ian McKellen."
   },
   "7x7": {
     "id": "7x7",
     "season": 7,
     "number": 7,
     "title": "The Bells of Saint John",
-    "description": "A chance phone call reunites the Doctor with Clara in the present day. A mysterious organization, lead by the evil Miss Kizlet, sends robots known as \"Spoonheads\" to steal the minds of people who use the company's WiFi. The Doctor and Clara must work together to find the location of the organization and destroy it before the whole world is trapped by the WiFi."
+    "description": "A chance phone call reunites the Doctor with Clara in the present day. A mysterious organization, lead by the evil Miss Kizlet, sends robots known as \"Spoonheads\" to steal the minds of people who use the company's WiFi. The Doctor and Clara must work together to find the location of the organization and destroy it before the whole world is trapped by the WiFi.",
+    "summary": "nan"
   },
   "7x8": {
     "id": "7x8",
     "season": 7,
     "number": 8,
     "title": "The Rings of Akhaten",
-    "description": "Still not quite able to explain just who she is, the Doctor and Clara set off on their first adventure. He takes her to see the Rings of Akhaten and its famous pyramid. The residents of the 7 planets rotating around the same sun all believe the pyramid is the source of all life in the universe. There are quite a few visitors there for the Festival of Offering and Clara and helps a young girl, Merry, to have the confidence to perform an important ceremony to sooth and keep the Old God asleep. When Merry is drawn into the pyramid the Doctor and Clara go after her. When ..."
+    "description": "Still not quite able to explain just who she is, the Doctor and Clara set off on their first adventure. He takes her to see the Rings of Akhaten and its famous pyramid. The residents of the 7 planets rotating around the same sun all believe the pyramid is the source of all life in the universe. There are quite a few visitors there for the Festival of Offering and Clara and helps a young girl, Merry, to have the confidence to perform an important ceremony to sooth and keep the Old God asleep. When Merry is drawn into the pyramid the Doctor and Clara go after her. When ...",
+    "summary": "nan"
   },
   "7x9": {
     "id": "7x9",
     "season": 7,
     "number": 9,
     "title": "Cold War",
-    "description": "The Doctor and Clara find themselves dealing with Cold War tensions when the TARDIS lands aboard a disabled Soviet ballistic submarine. The Doctor isn't the only alien being on board however - while engaged in undersea drilling, Professor Grisenko thought he'd found a mammoth and brought the creature on the boat encased in ice. It isn't a mammoth but an Ice Warrior, who has been lying dormant for 5000 years. He identifies himself as Grand Marshal Skaldak but when he cannot contact others of his kind, he assumes he is the last of his race. He now has every intention of..."
+    "description": "The Doctor and Clara find themselves dealing with Cold War tensions when the TARDIS lands aboard a disabled Soviet ballistic submarine. The Doctor isn't the only alien being on board however - while engaged in undersea drilling, Professor Grisenko thought he'd found a mammoth and brought the creature on the boat encased in ice. It isn't a mammoth but an Ice Warrior, who has been lying dormant for 5000 years. He identifies himself as Grand Marshal Skaldak but when he cannot contact others of his kind, he assumes he is the last of his race. He now has every intention of...",
+    "summary": "nan"
   },
   "7x10": {
     "id": "7x10",
     "season": 7,
     "number": 10,
     "title": "Hide",
-    "description": "The Doctor and Clara arrive at an old manor house in 1974 where Alec Palmer and Emma Grayling are investigating the existence of a ghost. Alec is a former army Major, now a psychologist, whilst Emma is an empathic psychic who can not only sense the presence of paranormal beings, but can sense their feelings as well. Palmer explains the house has been haunted for hundreds of years, and the ghost - a woman - is likely much older. Emma senses the ghost is very lonely, but the Doctor realises she's not a ghost at all, but a creature trapped in a zone where time moves much..."
+    "description": "The Doctor and Clara arrive at an old manor house in 1974 where Alec Palmer and Emma Grayling are investigating the existence of a ghost. Alec is a former army Major, now a psychologist, whilst Emma is an empathic psychic who can not only sense the presence of paranormal beings, but can sense their feelings as well. Palmer explains the house has been haunted for hundreds of years, and the ghost - a woman - is likely much older. Emma senses the ghost is very lonely, but the Doctor realises she's not a ghost at all, but a creature trapped in a zone where time moves much...",
+    "summary": "nan"
   },
   "7x11": {
     "id": "7x11",
     "season": 7,
     "number": 11,
     "title": "Journey to the Centre of the TARDIS",
-    "description": "The Doctor and Clara find themselves aboard a space freighter that has taken the TARDIS on-board as salvage. While the Doctor is ejected, Clara finds herself wandering through the vehicle exploring it's many - seemingly infinite - rooms. The Doctor re-enters the TARDIS accompanied by three workers from the salvage ship and they have but 30 minutes to find her. There are creatures in the depths of the TARDIS and the time travel machine will do whatever it takes to protect itself. There is a rupture in time however and the TARDIS is leaking recent history....which the ..."
+    "description": "The Doctor and Clara find themselves aboard a space freighter that has taken the TARDIS on-board as salvage. While the Doctor is ejected, Clara finds herself wandering through the vehicle exploring it's many - seemingly infinite - rooms. The Doctor re-enters the TARDIS accompanied by three workers from the salvage ship and they have but 30 minutes to find her. There are creatures in the depths of the TARDIS and the time travel machine will do whatever it takes to protect itself. There is a rupture in time however and the TARDIS is leaking recent history....which the ...",
+    "summary": "The TARDIS has crashed, Clara is lost inside, and the Doctor has 30 minutes before his ship explodes!"
   },
   "7x12": {
     "id": "7x12",
     "season": 7,
     "number": 12,
     "title": "The Crimson Horror",
-    "description": "The Doctor and Clara arrive in 19th century Yorkshire where moral crusader Mrs Gillyflower is recruiting beautiful people for her idyllic garden city. At the same time rigid corpses dyed red are piling up and the brother of one of the victims seeks help from Madame Vastra. She and her party travel to Yorkshire where they rescue Doctor Who and Clara from the clutches of Mrs Gillyflower. They discover that the woman is a fanatical exponent of ethnic cleansing who plans to do away with those who do not meet her standards - even her daughter Ada. The Doctor and his allies..."
+    "description": "The Doctor and Clara arrive in 19th century Yorkshire where moral crusader Mrs Gillyflower is recruiting beautiful people for her idyllic garden city. At the same time rigid corpses dyed red are piling up and the brother of one of the victims seeks help from Madame Vastra. She and her party travel to Yorkshire where they rescue Doctor Who and Clara from the clutches of Mrs Gillyflower. They discover that the woman is a fanatical exponent of ethnic cleansing who plans to do away with those who do not meet her standards - even her daughter Ada. The Doctor and his allies...",
+    "summary": "nan"
   },
   "7x13": {
     "id": "7x13",
     "season": 7,
     "number": 13,
     "title": "Nightmare in Silver",
-    "description": "Hedgewick's World of Wonders was once the greatest theme park in the galaxy, but it's now the dilapidated home to a shabby showman, a chess playing dwarf and a dysfunctional army platoon. When the Doctor, Clara, Artie and Angie arrive, the last thing they expect is the re-emergence of one of the Doctor's oldest foes. The Cybermen are back!"
+    "description": "Hedgewick's World of Wonders was once the greatest theme park in the galaxy, but it's now the dilapidated home to a shabby showman, a chess playing dwarf and a dysfunctional army platoon. When the Doctor, Clara, Artie and Angie arrive, the last thing they expect is the re-emergence of one of the Doctor's oldest foes. The Cybermen are back!",
+    "summary": "nan"
   },
   "7x14": {
     "id": "7x14",
     "season": 7,
     "number": 14,
     "title": "The Name of the Doctor",
-    "description": "The Doctor's friends are being kidnapped, which leads him to the fields of Trenzalore, where his greatest secret will be revealed and Clara's mystery will be solved."
+    "description": "The Doctor's friends are being kidnapped, which leads him to the fields of Trenzalore, where his greatest secret will be revealed and Clara's mystery will be solved.",
+    "summary": "nan"
   },
   "8x1": {
     "id": "8x1",
     "season": 8,
     "number": 1,
     "title": "Deep Breath",
-    "description": "When the newly-regenerated doctor arrives in Victorian London, he finds a dinosaur rampant in the Thames and a spate of deadly spontaneous combustions."
+    "description": "When the newly-regenerated doctor arrives in Victorian London, he finds a dinosaur rampant in the Thames and a spate of deadly spontaneous combustions.",
+    "summary": "When the Doctor arrives in Victorian London, he finds a dinosaur rampant in the Thames and a spate of deadly spontaneous combustions.\n\nWho is the new Doctor and will Clara’s friendship survive as they embark on a terrifying mission into the heart of an alien conspiracy? The Doctor has changed. It’s time you knew him."
   },
   "8x2": {
     "id": "8x2",
     "season": 8,
     "number": 2,
     "title": "Into the Dalek",
-    "description": "The Doctor and Clara find themselves inside of a supposedly good Dalek."
+    "description": "The Doctor and Clara find themselves inside of a supposedly good Dalek.",
+    "summary": ""
   },
   "8x3": {
     "id": "8x3",
     "season": 8,
     "number": 3,
     "title": "Robot of Sherwood",
-    "description": "In Sherwood Forest, the Doctor uncovers a sinister alien plot and forms an alliance with Robin Hood. With Nottingham at stake, the Doctor must decide who is real and who is fake."
+    "description": "In Sherwood Forest, the Doctor uncovers a sinister alien plot and forms an alliance with Robin Hood. With Nottingham at stake, the Doctor must decide who is real and who is fake.",
+    "summary": "nan"
   },
   "8x4": {
     "id": "8x4",
     "season": 8,
     "number": 4,
     "title": "Listen",
-    "description": "When ghosts of past and future crowd into their lives, The Doctor and Clara are thrown into an adventure that takes them to the very end of the universe."
+    "description": "When ghosts of past and future crowd into their lives, The Doctor and Clara are thrown into an adventure that takes them to the very end of the universe.",
+    "summary": "nan"
   },
   "8x5": {
     "id": "8x5",
     "season": 8,
     "number": 5,
     "title": "Time Heist",
-    "description": "The Doctor and Clara must break into the most secure bank in the universe."
+    "description": "The Doctor and Clara must break into the most secure bank in the universe.",
+    "summary": "nan"
   },
   "8x6": {
     "id": "8x6",
     "season": 8,
     "number": 6,
     "title": "The Caretaker",
-    "description": "The terrifying Skovox Blitzer is ready to destroy all humanity - but worse, and any second now, Danny Pink and the Doctor are going to meet."
+    "description": "The terrifying Skovox Blitzer is ready to destroy all humanity - but worse, and any second now, Danny Pink and the Doctor are going to meet.",
+    "summary": "The terrifying Skovox Blitzer is ready to destroy all humanity - but worse, and any second now, Danny Pink and the Doctor are going to meet.\n\nWhen terrifying events threaten Coal Hill school, the Doctor decides to go undercover."
   },
   "8x7": {
     "id": "8x7",
     "season": 8,
     "number": 7,
     "title": "Kill the Moon",
-    "description": "In the near future, the Doctor and Clara find themselves on a space shuttle making a suicide mission to the Moon. Crash-landing on the lunar surface they find the most terrible things."
+    "description": "In the near future, the Doctor and Clara find themselves on a space shuttle making a suicide mission to the Moon. Crash-landing on the lunar surface they find the most terrible things.",
+    "summary": "nan"
   },
   "8x8": {
     "id": "8x8",
     "season": 8,
     "number": 8,
     "title": "Mummy on the Orient Express",
-    "description": "On the most beautiful train in history, speeding amongst the stars of the future, a deadly and immortal creature is stalking the passengers."
+    "description": "On the most beautiful train in history, speeding amongst the stars of the future, a deadly and immortal creature is stalking the passengers.",
+    "summary": "nan"
   },
   "8x9": {
     "id": "8x9",
     "season": 8,
     "number": 9,
     "title": "Flatline",
-    "description": "A problem happens with the Tardis, trapping the Doctor inside and leaving Clara to fend for herself against a two dimensional enemy."
+    "description": "A problem happens with the Tardis, trapping the Doctor inside and leaving Clara to fend for herself against a two dimensional enemy.",
+    "summary": "nan"
   },
   "8x10": {
     "id": "8x10",
     "season": 8,
     "number": 10,
     "title": "In the Forest of the Night",
-    "description": "One morning in London, and every city and town in the world, the human race wakes up to the most surprising invasion yet: the trees have moved back in. Everywhere, in every land, a forest has grown and taken back the Earth."
+    "description": "One morning in London, and every city and town in the world, the human race wakes up to the most surprising invasion yet: the trees have moved back in. Everywhere, in every land, a forest has grown and taken back the Earth.",
+    "summary": "nan"
   },
   "8x11": {
     "id": "8x11",
     "season": 8,
     "number": 11,
     "title": "Dark Water",
-    "description": "In the mysterious world of the Nethersphere, plans have been drawn. Old friends and old enemies manoeuvre around the Doctor, and an impossible choice is looming over him."
+    "description": "In the mysterious world of the Nethersphere, plans have been drawn. Old friends and old enemies manoeuvre around the Doctor, and an impossible choice is looming over him.",
+    "summary": "In the mysterious world of the Nethersphere, plans have been drawn up. Missy is about to come face to face with the Doctor, and an impossible choice is looming.“Death\n is not an end” promises the sinister organisation known only as 3W – \nbut, as the Doctor and Clara discover, you might wish it was."
   },
   "8x12": {
     "id": "8x12",
     "season": 8,
     "number": 12,
     "title": "Death in Heaven",
-    "description": "With Cybermen on the streets of London, old friends unite against old enemies and the Doctor takes to the air in a startling new role. As the Doctor faces his greatest challenge, sacrifices must be made before the day is won."
+    "description": "With Cybermen on the streets of London, old friends unite against old enemies and the Doctor takes to the air in a startling new role. As the Doctor faces his greatest challenge, sacrifices must be made before the day is won.",
+    "summary": "With Cybermen on the streets of London, old friends \nunite against old enemies and the Doctor takes to the air in a startling\n new role. Can the mighty UNIT contain Missy? As the Doctor faces his greatest challenge, sacrifices must be made before the day is won."
   },
   "9x0": {
     "id": "9x0",
     "season": 9,
     "number": 0,
     "title": "Last Christmas",
-    "description": "The Doctor and Clara face their Last Christmas. Trapped on an Arctic base, under attack from terrifying creatures, who are you going to call? Santa Claus!"
+    "description": "The Doctor and Clara face their Last Christmas. Trapped on an Arctic base, under attack from terrifying creatures, who are you going to call? Santa Claus!",
+    "summary": "The Doctor and Clara face their Last Christmas. Trapped on an arctic base and under attack from terrifying creatures, who are you going to call? Santa Claus!"
   },
   "9x1": {
     "id": "9x1",
     "season": 9,
     "number": 1,
     "title": "The Magician's Apprentice",
-    "description": "When the skies of Earth are frozen by a mysterious alien force, Clara needs her friend, the Doctor. But where is he and what is he hiding from?"
+    "description": "When the skies of Earth are frozen by a mysterious alien force, Clara needs her friend, the Doctor. But where is he and what is he hiding from?",
+    "summary": "Where is the Doctor? When the skies of Earth are frozen by a mysterious alien force, Clara needs her friend. But where is the Doctor, and what is he hiding from?\n\n\nAs past deeds come back to haunt him, old enemies will come face-to-face, and for the Doctor and Clara survival seems impossible."
   },
   "9x2": {
     "id": "9x2",
     "season": 9,
     "number": 2,
     "title": "The Witch's Familiar",
-    "description": "Trapped and alone in a terrifying Dalek city, the Doctor is at the heart of an evil Empire; no sonic, no TARDIS, nobody to help. With his greatest temptation before him, can the Doctor resist? And will there be mercy?"
+    "description": "Trapped and alone in a terrifying Dalek city, the Doctor is at the heart of an evil Empire; no sonic, no TARDIS, nobody to help. With his greatest temptation before him, can the Doctor resist? And will there be mercy?",
+    "summary": "Trapped and alone on the terrifying planet Skaro, the Doctor is at the heart of the evil Dalek Empire - no sonic, no TARDIS, nobody to help. With his greatest temptation before him, can the Doctor resist? And will there be mercy?"
   },
   "9x3": {
     "id": "9x3",
     "season": 9,
     "number": 3,
     "title": "Under the Lake",
-    "description": "Under a lake a gleaming black spaceship is recovered but there is nothing inside. When the base crew start dying, they discover that ghosts are real. The Doctor and Clara arrive to find the base under siege and the Doctor discovers that this is more than a ghost story."
+    "description": "Under a lake a gleaming black spaceship is recovered but there is nothing inside. When the base crew start dying, they discover that ghosts are real. The Doctor and Clara arrive to find the base under siege and the Doctor discovers that this is more than a ghost story.",
+    "summary": "When an Underwater Base comes under attack, the Doctor and Clara must save the frightened crew and defeat an impossible threat. But what is behind these terrifying events? And can they really be haunted by ghosts?"
   },
   "9x4": {
     "id": "9x4",
     "season": 9,
     "number": 4,
     "title": "Before the Flood",
-    "description": "In a town that never was, the Doctor and his friends are being stalked by a mysterious figure. With the past and future in the balance, can the Doctor stop the evil Fisher King? And more importantly, who composed Beethoven's 5th."
+    "description": "In a town that never was, the Doctor and his friends are being stalked by a mysterious figure. With the past and future in the balance, can the Doctor stop the evil Fisher King? And more importantly, who composed Beethoven's 5th.",
+    "summary": "nan"
   },
   "9x5": {
     "id": "9x5",
     "season": 9,
     "number": 5,
     "title": "The Girl Who Died",
-    "description": "In a Viking village, a girl named Ashildr is about to make a desperate mistake. The Mire are the deadliest mercenaries in the galaxy, famed for showing no mercy and Ashildr has just declared war on them. The Doctor and Clara have 12 hours to turn a peaceful village into strong fighters, ready for the deadly Mire."
+    "description": "In a Viking village, a girl named Ashildr is about to make a desperate mistake. The Mire are the deadliest mercenaries in the galaxy, famed for showing no mercy and Ashildr has just declared war on them. The Doctor and Clara have 12 hours to turn a peaceful village into strong fighters, ready for the deadly Mire.",
+    "summary": "Captured by Vikings, the Doctor and Clara must help protect their village from Space Warriors from the future: the Mire. Outnumbered and outgunned, their fate seems inevitable. So why is the Doctor preoccupied with a single Viking girl?"
   },
   "9x6": {
     "id": "9x6",
     "season": 9,
     "number": 6,
     "title": "The Woman Who Lived",
-    "description": "England, 1651. A deadly highwayman known only as 'The Knightmare' plagues the dark streets of London, his fire-breathing accomplice by his side. There's something clearly more than human here, and that includes the loot as much as the outlaws. Who are these creatures, and are they enemies to be fought, or friends who might possibly save the Doctor from certain doom on the gallows?"
+    "description": "England, 1651. A deadly highwayman known only as 'The Knightmare' plagues the dark streets of London, his fire-breathing accomplice by his side. There's something clearly more than human here, and that includes the loot as much as the outlaws. Who are these creatures, and are they enemies to be fought, or friends who might possibly save the Doctor from certain doom on the gallows?",
+    "summary": "England, 1651. The deadly Highwayman 'The Nightmare' and his sidekick stalk the dark streets of London. But when they find loot that's not of this world, they come face to face with The Doctor.\n\nWho is the Nightmare in league with? And can the Doctor avoid the hangman's noose and protect Earth from a devilish betrayal?"
   },
   "9x7": {
     "id": "9x7",
     "season": 9,
     "number": 7,
     "title": "The Zygon Invasion",
-    "description": "The fragile peace between the Humans and the Zygons is on a knife edge. Tensions run high as factions within the Zygon community seek to incite violent action against Humans. Called in by UNIT, the Doctor and Clara fight to bring the situation under control. But one question remains: Where on Earth is Osgood?"
+    "description": "The fragile peace between the Humans and the Zygons is on a knife edge. Tensions run high as factions within the Zygon community seek to incite violent action against Humans. Called in by UNIT, the Doctor and Clara fight to bring the situation under control. But one question remains: Where on Earth is Osgood?",
+    "summary": "The Zygons, a race of shapeshifting aliens, have been living in secret among us on Earth, unknown and unseen - until now!\n\n\nWhen Osgood is kidnapped by a rogue gang of Zygons, the Doctor, Clara and UNIT must scatter across the world in a bid to set her free. But will they reach her in time, and can they stop an uprising before it’s too late?"
   },
   "9x8": {
     "id": "9x8",
     "season": 9,
     "number": 8,
     "title": "The Zygon Inversion",
-    "description": "With the Zygons invading England, and UNIT neutralized, the Doctor stands alone to stop the Zygons from taking over the entire planet. But how can he stop the Zygons? And how can he save his friends?"
+    "description": "With the Zygons invading England, and UNIT neutralized, the Doctor stands alone to stop the Zygons from taking over the entire planet. But how can he stop the Zygons? And how can he save his friends?",
+    "summary": "Shapeshifting Zygons are everywhere in the UK, and there is no way of knowing who to trust. With UNIT neutralised, only the Doctor stands in their way. But how do you stop a war? And what can the Doctor do to save his friends?"
   },
   "9x9": {
     "id": "9x9",
     "season": 9,
     "number": 9,
     "title": "Sleep No More",
-    "description": "Vision recovered from the wreckage of Le Verrier Space Station shows how the Doctor and Clara became entangled in a rescue mission. As the footage plays out, a horrifying secret is uncovered."
+    "description": "Vision recovered from the wreckage of Le Verrier Space Station shows how the Doctor and Clara became entangled in a rescue mission. As the footage plays out, a horrifying secret is uncovered.",
+    "summary": "This terrifying story is assembled from footage discovered in the wreckage of Le Verrier Space Station."
   },
   "9x10": {
     "id": "9x10",
     "season": 9,
     "number": 10,
     "title": "Face the Raven",
-    "description": "The Doctor and Clara are called back to earth when Rigsy discovers a strange tattoo on the back of his neck that appears to be counting down to zero. Their investigation leads them to a hidden street in the middle of London, the discovery that Rigsy has been issued a death sentence, and one of them facing the choice of having to make the ultimate sacrifice; to face the Raven!"
+    "description": "The Doctor and Clara are called back to earth when Rigsy discovers a strange tattoo on the back of his neck that appears to be counting down to zero. Their investigation leads them to a hidden street in the middle of London, the discovery that Rigsy has been issued a death sentence, and one of them facing the choice of having to make the ultimate sacrifice; to face the Raven!",
+    "summary": "nan"
   },
   "9x11": {
     "id": "9x11",
     "season": 9,
     "number": 11,
     "title": "Heaven Sent",
-    "description": "Trapped in a world unlike any other he has seen, the Doctor faces the greatest challenge of his many lives. One final test. And he must face it alone..."
+    "description": "Trapped in a world unlike any other he has seen, the Doctor faces the greatest challenge of his many lives. One final test. And he must face it alone...",
+    "summary": "Trapped in a world unlike any other he has seen, the Doctor faces the greatest challenge of his many lives. One final test. And he must face it alone.\n\n\nPursued by the fearsome creature known only as the Veil, he must attempt the impossible. If he makes it through, Gallifrey is waiting…"
   },
   "9x12": {
     "id": "9x12",
     "season": 9,
     "number": 12,
     "title": "Hell Bent",
-    "description": "If you took everything from him, betrayed him, trapped him, and broke both his hearts... how far might the Doctor go? Returning to Gallifrey, the Doctor faces the Time Lords in a struggle that will take him to the end of time itself. Who is the Hybrid? And what is the Doctor's confession?"
+    "description": "If you took everything from him, betrayed him, trapped him, and broke both his hearts... how far might the Doctor go? Returning to Gallifrey, the Doctor faces the Time Lords in a struggle that will take him to the end of time itself. Who is the Hybrid? And what is the Doctor's confession?",
+    "summary": "If you took everything from him, betrayed him, trapped him, and broke both his hearts...how far might the Doctor go?\n\nReturning to Gallifrey, the Doctor faces the Time Lords in a struggle that will take him to the end of time itself. Who is the Hybrid? And what is the Doctor’s confession?"
   },
   "9x13": {
     "id": "9x13",
     "season": 9,
     "number": 13,
     "title": "The Husbands of River Song",
-    "description": "When a crashed spaceship calls upon the Doctor for help, he finds himself recruited into River Song's squad and hurled into a chase across the galaxy."
+    "description": "When a crashed spaceship calls upon the Doctor for help, he finds himself recruited into River Song's squad and hurled into a chase across the galaxy.",
+    "summary": "It’s Christmas Day on a remote human colony and the Doctor is hiding from Christmas Carols and Comedy Antlers. But when a crashed spaceship calls upon the Doctor for help, he finds himself recruited into River Song’s squad and hurled into a fast and frantic chase across the galaxy. King Hydroflax is furious, and his giant Robot bodyguard is out of control and coming for them all! Will Nardole survive? And when will River Song work out who the Doctor is?\n\nAll will be revealed on a starliner full of galactic super-villains and a destination the Doctor has been avoiding for a very long time."
   },
   "10x0": {
     "id": "10x0",
     "season": 10,
     "number": 0,
     "title": "The Return of Doctor Mysterio",
-    "description": "In New York, with brain-swapping aliens poised to attack, the Doctor and Nardole link up with an investigative reporter and a mysterious masked superhero known only as the Ghost. Can the Doctor save Manhattan? And what will be revealed when we see behind the mask?"
+    "description": "In New York, with brain-swapping aliens poised to attack, the Doctor and Nardole link up with an investigative reporter and a mysterious masked superhero known only as the Ghost. Can the Doctor save Manhattan? And what will be revealed when we see behind the mask?",
+    "summary": "nan"
   },
   "10x1": {
     "id": "10x1",
     "season": 10,
     "number": 1,
     "title": "The Pilot",
-    "description": "The Doctor and Nardole team up with a university student to take down a sinister life-mimicking alien."
+    "description": "The Doctor and Nardole team up with a university student to take down a sinister life-mimicking alien.",
+    "summary": "A chance encounter with a girl with a star in her eye leads to a terrifying chase across time and space. Bill’s mind is opened to a Universe that is bigger and more exciting than she could possibly have imagined - but who is the Doctor, and what is his secret mission with Nardole on Earth?"
   },
   "10x2": {
     "id": "10x2",
     "season": 10,
     "number": 2,
     "title": "Smile",
-    "description": "In the far future, at the edge of the galaxy, there is a gleaming, perfect city. This brand new human settlement is said to hold the secret of human happiness - but the only smiles the Doctor and Bill can find are on a pile of grinning skulls. Something is alive in the walls, and the emojibots are watching from the shadows, as the Doctor and Bill try to unravel a terrifying mystery..."
+    "description": "In the far future, at the edge of the galaxy, there is a gleaming, perfect city. This brand new human settlement is said to hold the secret of human happiness - but the only smiles the Doctor and Bill can find are on a pile of grinning skulls. Something is alive in the walls, and the emojibots are watching from the shadows, as the Doctor and Bill try to unravel a terrifying mystery...",
+    "summary": "The language of the future is emoji! The Doctor takes Bill to a spectacular city on a distant planet - but where are the colonists? A band of 'cute' droids hold the deadly answer."
   },
   "10x3": {
     "id": "10x3",
     "season": 10,
     "number": 3,
     "title": "Thin Ice",
-    "description": "The Doctor and Bill visit London during the last of the River Thames frost fairs in February 1814. They soon discover that there is something under the ice which is causing people to disappear."
+    "description": "The Doctor and Bill visit London during the last of the River Thames frost fairs in February 1814. They soon discover that there is something under the ice which is causing people to disappear.",
+    "summary": "The Doctor and Bill arrive at the last of the great frost fairs, and find themselves investigating a string of impossible disappearances - people have been vanishing on the ice! Bill is about to discover that the past is more like her world than she expected, and that not all monsters come from outer space..."
   },
   "10x4": {
     "id": "10x4",
     "season": 10,
     "number": 4,
     "title": "Knock Knock",
-    "description": "Bill is moving in with some friends and they've found the perfect house rented by the landlord. The wind blows, the floorboards creak and the Doctor thinks something is very wrong."
+    "description": "Bill is moving in with some friends and they've found the perfect house rented by the landlord. The wind blows, the floorboards creak and the Doctor thinks something is very wrong.",
+    "summary": "Bill is moving in with some friends and they’ve found the perfect house - so what if it’s strangely cheap to rent, and the landlord is a little creepy?\n\nThe wind blows, the floorboards creak, and the Doctor thinks something is very wrong. What lurks in the strange tower at the heart of the building - and why can’t they find any way to enter it?"
   },
   "10x5": {
     "id": "10x5",
     "season": 10,
     "number": 5,
     "title": "Oxygen",
-    "description": "When the Doctor, Bill and Nardole become trapped on a space station without oxygen, they discover the spacesuits are trying to kill them."
+    "description": "When the Doctor, Bill and Nardole become trapped on a space station without oxygen, they discover the spacesuits are trying to kill them.",
+    "summary": "The Doctor, Bill and Nardole answer a distress call in deep space, and find themselves trapped on board space station Chasm Forge. All but four of the crew have been murdered - and the dead are still walking!\n\nIn a future where oxygen is sold by the breath, and space suits are valued more highly than their occupants, the TARDIS crew battle for survival against the darkest evil of all…"
   },
   "10x6": {
     "id": "10x6",
     "season": 10,
     "number": 6,
     "title": "Extremis",
-    "description": "The Haereticum holds an ancient book known only as The Veritas. Throughout history, anyone who has ever read it has immediately taken their own life. When a new translation is online, spreading danger, the Vatican appeals to the Doctor for help. Will he read The Veritas? But can even the Doctor survive the ultimate truth?"
+    "description": "The Haereticum holds an ancient book known only as The Veritas. Throughout history, anyone who has ever read it has immediately taken their own life. When a new translation is online, spreading danger, the Vatican appeals to the Doctor for help. Will he read The Veritas? But can even the Doctor survive the ultimate truth?",
+    "summary": "In the Haereticum - the Vatican’s secret library of blasphemy - there is an ancient book known only as The Veritas. Throughout history, anyone who has ever read it has immediately taken their own life. Now a new translation is online, and the danger is spreading. The Vatican appeals to the Doctor. Will he read The Veritas? But can even the Doctor survive the ultimate truth?"
   },
   "10x7": {
     "id": "10x7",
     "season": 10,
     "number": 7,
     "title": "The Pyramid at the End of the World",
-    "description": "A 5,000-year-old pyramid appears overnight, baffling everyone including the Doctor."
+    "description": "A 5,000-year-old pyramid appears overnight, baffling everyone including the Doctor.",
+    "summary": "nan"
   },
   "10x8": {
     "id": "10x8",
     "season": 10,
     "number": 8,
     "title": "The Lie of the Land",
-    "description": "Earth is invaded and Bill is living alone in occupied Britain. The Doctor appears to be on the side of the enemy, flooding the airwaves with fake news. Bill and Nardole embark on a deadly mission to rescue the Doctor and lead the resistance against the new regime, whatever the cost."
+    "description": "Earth is invaded and Bill is living alone in occupied Britain. The Doctor appears to be on the side of the enemy, flooding the airwaves with fake news. Bill and Nardole embark on a deadly mission to rescue the Doctor and lead the resistance against the new regime, whatever the cost.",
+    "summary": "nan"
   },
   "10x9": {
     "id": "10x9",
     "season": 10,
     "number": 9,
     "title": "Empress of Mars",
-    "description": "The Doctor, Bill and Nardole discover a tomb of the Queen of the Ice Warriors on Mars in 1881."
+    "description": "The Doctor, Bill and Nardole discover a tomb of the Queen of the Ice Warriors on Mars in 1881.",
+    "summary": "nan"
   },
   "10x10": {
     "id": "10x10",
     "season": 10,
     "number": 10,
     "title": "The Eaters of Light",
-    "description": "A long time ago, the Roman legion of the ninth vanished into the mists of Scotland. Bill has a theory about what happened, and the Doctor has a time machine. But when they arrive in ancient Aberdeenshire, what they find is a far greater threat than any army. In a cairn, on a hillside, is a doorway leading to the end of the world."
+    "description": "A long time ago, the Roman legion of the ninth vanished into the mists of Scotland. Bill has a theory about what happened, and the Doctor has a time machine. But when they arrive in ancient Aberdeenshire, what they find is a far greater threat than any army. In a cairn, on a hillside, is a doorway leading to the end of the world.",
+    "summary": "A long time ago, the ninth legion of the Roman army vanished into the mists of Scotland. Bill has a theory about what happened, and the Doctor has a time machine. But when they arrive in ancient Aberdeenshire, what they find is a far greater threat than any army. In a cairn, on a hillside, is a doorway leading to the end of the world…"
   },
   "10x11": {
     "id": "10x11",
     "season": 10,
     "number": 11,
     "title": "World Enough and Time",
-    "description": "Trapped on a giant spaceship, caught in the event horizon of a black hole, he witnesses the death of someone he is pledged to protect. Are events already out of control?"
+    "description": "Trapped on a giant spaceship, caught in the event horizon of a black hole, he witnesses the death of someone he is pledged to protect. Are events already out of control?",
+    "summary": "nan"
   },
   "10x12": {
     "id": "10x12",
     "season": 10,
     "number": 12,
     "title": "The Doctor Falls",
-    "description": "The Doctor makes a final stand against an army of Cybermen to protect a tiny band of humans from destruction."
+    "description": "The Doctor makes a final stand against an army of Cybermen to protect a tiny band of humans from destruction.",
+    "summary": "The Mondasian Cybermen are on the rise. It’s time for the Doctor’s final battle…"
   }
 }

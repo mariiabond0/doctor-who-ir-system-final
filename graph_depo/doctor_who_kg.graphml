@@ -1,0 +1,2803 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d5" for="edge" attr.name="episodes" attr.type="string"/>
+<key id="d4" for="edge" attr.name="weight" attr.type="long"/>
+<key id="d3" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d2" for="node" attr.name="_seen" attr.type="string"/>
+<key id="d1" for="node" attr.name="episode_count" attr.type="long"/>
+<key id="d0" for="node" attr.name="labels" attr.type="string"/>
+<graph edgedefault="directed"><node id="rose tyler">
+  <data key="d0">PERSON</data>
+  <data key="d1">15</data>
+  <data key="d2">1x1,1x11,1x2,1x3,1x4,1x8,1x9,2x1,2x11,2x2,2x3,2x4,2x5,2x8,2x9</data>
+</node>
+<node id="doctor">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">120</data>
+  <data key="d2">10x0,10x1,10x10,10x12,10x2,10x3,10x4,10x5,10x6,10x7,10x8,10x9,1x1,1x11,1x13,1x2,1x3,1x5,1x6,1x7,1x8,1x9,2x0,2x1,2x11,2x12,2x13,2x4,2x5,2x6,2x8,2x9,3x0,3x1,3x10,3x11,3x12,3x13,3x2,3x3,3x4,3x5,3x7,3x8,3x9,4x0,4x1,4x10,4x11,4x12,4x13,4x2,4x3,4x4,4x5,4x6,4x7,4x8,4x9,5x1,5x10,5x11,5x12,5x13,5x2,5x3,5x4,5x5,5x6,5x8,5x9,6x0,6x1,6x10,6x11,6x12,6x13,6x2,6x3,6x4,6x6,6x7,6x9,7x0,7x1,7x10,7x11,7x12,7x13,7x14,7x2,7x3,7x4,7x5,7x6,7x7,7x8,7x9,8x11,8x12,8x2,8x3,8x4,8x5,8x6,8x7,8x9,9x0,9x1,9x10,9x11,9x12,9x13,9x2,9x3,9x4,9x6,9x7,9x8,9x9</data>
+</node>
+<node id="end of the world">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">1x2</data>
+</node>
+<node id="year 5 billion">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">1x2</data>
+</node>
+<node id="earth">
+  <data key="d0">LOCATION</data>
+  <data key="d1">20</data>
+  <data key="d2">10x8,1x13,1x2,2x0,2x13,3x0,3x13,4x0,4x11,4x12,4x4,4x5,5x11,5x13,7x2,7x4,8x10,9x1,9x10,9x7</data>
+</node>
+<node id="unquiet dead">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">1x3</data>
+</node>
+<node id="charles dickens">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">1x3</data>
+</node>
+<node id="london">
+  <data key="d0">LOCATION</data>
+  <data key="d1">16</data>
+  <data key="d2">10x3,1x10,1x4,2x11,2x5,2x6,2x7,3x2,4x1,7x0,7x6,8x1,8x10,8x12,9x10,9x6</data>
+</node>
+<node id="aliens">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">1x4</data>
+</node>
+<node id="spaceship">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">1x4</data>
+</node>
+<node id="prime minister">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">1x4</data>
+</node>
+<node id="world war three">
+  <data key="d0">EVENT,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">1x5</data>
+</node>
+<node id="slitheen">
+  <data key="d0">ALIEN,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">1x5</data>
+</node>
+<node id="parliament">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">1x5</data>
+</node>
+<node id="dalek">
+  <data key="d0">NORP,PERSON,VEHICLE</data>
+  <data key="d1">5</data>
+  <data key="d2">1x13,1x6,4x13,8x2,9x2</data>
+</node>
+<node id="tardis">
+  <data key="d0">ARTIFACT,PRODUCT,VEHICLE</data>
+  <data key="d1">21</data>
+  <data key="d2">1x11,1x12,1x6,2x5,3x0,3x10,5x1,5x11,5x3,5x4,5x7,6x0,6x10,6x11,6x4,6x5,7x11,7x2,7x9,8x9,9x2</data>
+</node>
+<node id="utah">
+  <data key="d0">LOCATION</data>
+  <data key="d1">2</data>
+  <data key="d2">1x6,6x1</data>
+</node>
+<node id="utah desert">
+  <data key="d0">LOCATION</data>
+  <data key="d1">2</data>
+  <data key="d2">1x6,6x1</data>
+</node>
+<node id="ruthless billionaire">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">1x6</data>
+</node>
+<node id="long game">
+  <data key="d0">WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">1x7</data>
+</node>
+<node id="year 200000">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">1x7</data>
+</node>
+<node id="humanity">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">1x7</data>
+</node>
+<node id="fathers day">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">1x8</data>
+</node>
+<node id="pete">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">1x8</data>
+</node>
+<node id="that day">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">1x8</data>
+</node>
+<node id="empty child">
+  <data key="d0">PERSON,VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">1x9</data>
+</node>
+<node id="london blitz">
+  <data key="d0">EVENT,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">1x9</data>
+</node>
+<node id="jack harkness">
+  <data key="d0">PERSON</data>
+  <data key="d1">2</data>
+  <data key="d2">1x9,3x11</data>
+</node>
+<node id="captain jack harkness">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">1x9</data>
+</node>
+<node id="gas mask">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">1x9</data>
+</node>
+<node id="doctor dances">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">1x10</data>
+</node>
+<node id="present-day">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">1x11</data>
+</node>
+<node id="cardiff">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">1x11</data>
+</node>
+<node id="jack">
+  <data key="d0">PERSON</data>
+  <data key="d1">2</data>
+  <data key="d2">1x11,3x12</data>
+</node>
+<node id="boom town">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">1x11</data>
+</node>
+<node id="entire planet">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">1x11</data>
+</node>
+<node id="bad wolf">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">1x12</data>
+</node>
+<node id="game station">
+  <data key="d0">FAC,LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">1x12</data>
+</node>
+<node id="tardis team">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">1x12</data>
+</node>
+<node id="parting of the ways">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">1x13</data>
+</node>
+<node id="dalek fleet">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">1x13</data>
+</node>
+<node id="christmas invasion">
+  <data key="d0">EVENT</data>
+  <data key="d1">1</data>
+  <data key="d2">2x0</data>
+</node>
+<node id="christmas eve">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">2x0</data>
+</node>
+<node id="night">
+  <data key="d0">TIME</data>
+  <data key="d1">2</data>
+  <data key="d2">2x0,2x7</data>
+</node>
+<node id="sycorax">
+  <data key="d0">ALIEN,PRODUCT</data>
+  <data key="d1">1</data>
+  <data key="d2">2x0</data>
+</node>
+<node id="jackie">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x0</data>
+</node>
+<node id="new earth">
+  <data key="d0">LOCATION</data>
+  <data key="d1">2</data>
+  <data key="d2">2x1,3x3</data>
+</node>
+<node id="19th century">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">2</data>
+  <data key="d2">2x2,7x12</data>
+</node>
+<node id="scotland">
+  <data key="d0">LOCATION</data>
+  <data key="d1">2</data>
+  <data key="d2">10x10,2x2</data>
+</node>
+<node id="victoria">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x2</data>
+</node>
+<node id="tooth and claw">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">2x2</data>
+</node>
+<node id="queen victoria">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x2</data>
+</node>
+<node id="ravenous werewolf">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x2</data>
+</node>
+<node id="krillitanes">
+  <data key="d0">ALIEN,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x3</data>
+</node>
+<node id="sarah jane smith">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x3</data>
+</node>
+<node id="k9">
+  <data key="d0">PERSON,PRODUCT</data>
+  <data key="d1">1</data>
+  <data key="d2">2x3</data>
+</node>
+<node id="god-maker">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">2x3</data>
+</node>
+<node id="doctor and rose">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x3</data>
+</node>
+<node id="girl in the fireplace">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x4</data>
+</node>
+<node id="mickey">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x4</data>
+</node>
+<node id="51st century">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">2</data>
+  <data key="d2">2x4,4x8</data>
+</node>
+<node id="18th century">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">2x4</data>
+</node>
+<node id="versailles">
+  <data key="d0">FAC,LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">2x4</data>
+</node>
+<node id="de pompadour">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x4</data>
+</node>
+<node id="de popmpadour">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x4</data>
+</node>
+<node id="madame de pompadour">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x4</data>
+</node>
+<node id="madame de popmpadour">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x4</data>
+</node>
+<node id="parallel world">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">2x5</data>
+</node>
+<node id="age of steel">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">2x6</data>
+</node>
+<node id="cybermen">
+  <data key="d0">ALIEN,NORP</data>
+  <data key="d1">5</data>
+  <data key="d2">10x12,2x13,2x6,7x13,8x12</data>
+</node>
+<node id="idiots lantern">
+  <data key="d0">WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">2x7</data>
+</node>
+<node id="elizabeth ii">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x7</data>
+</node>
+<node id="television">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">2x7</data>
+</node>
+<node id="ood">
+  <data key="d0">ALIEN,LOCATION,PERSON</data>
+  <data key="d1">2</data>
+  <data key="d2">2x8,4x3</data>
+</node>
+<node id="impossible planet">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">2x8</data>
+</node>
+<node id="human expedition crew">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">2x8</data>
+</node>
+<node id="satan pit">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">2x9</data>
+</node>
+<node id="legion of the beast">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">2x9</data>
+</node>
+<node id="love monsters">
+  <data key="d0">ORGANIZATION,WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">2x10</data>
+</node>
+<node id="elton pope">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x10</data>
+</node>
+<node id="victor kennedy">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x10</data>
+</node>
+<node id="linda">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">2x10</data>
+</node>
+<node id="2012">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">2x11</data>
+</node>
+<node id="girl">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">2x11</data>
+</node>
+<node id="army of ghosts">
+  <data key="d0">ORGANIZATION,WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">2x12</data>
+</node>
+<node id="torchwood tower">
+  <data key="d0">FAC,LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">2x12</data>
+</node>
+<node id="daleks">
+  <data key="d0">ALIEN,NORP,PERSON</data>
+  <data key="d1">5</data>
+  <data key="d2">2x13,3x4,3x5,5x3,7x1</data>
+</node>
+<node id="genesis ark">
+  <data key="d0">PRODUCT,VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">2x13</data>
+</node>
+<node id="runaway bride">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x0</data>
+</node>
+<node id="her wedding day">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">3x0</data>
+</node>
+<node id="young woman">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x0</data>
+</node>
+<node id="wedding day">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">3x0</data>
+</node>
+<node id="smith">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x1</data>
+</node>
+<node id="jones">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x1</data>
+</node>
+<node id="martha jones">
+  <data key="d0">PERSON</data>
+  <data key="d1">11</data>
+  <data key="d2">3x1,3x11,3x12,3x13,3x2,3x3,3x4,3x5,3x7,3x8,4x4</data>
+</node>
+<node id="smith and jones">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">3x1</data>
+</node>
+<node id="hospital">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">3x1</data>
+</node>
+<node id="moon">
+  <data key="d0">LOCATION,PERSON</data>
+  <data key="d1">3</data>
+  <data key="d2">3x1,4x9,8x7</data>
+</node>
+<node id="shakespeare code">
+  <data key="d0">ARTIFACT,WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">3x2</data>
+</node>
+<node id="1599">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">3x2</data>
+</node>
+<node id="william shakespeares">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x2</data>
+</node>
+<node id="three">
+  <data key="d0">CARDINAL</data>
+  <data key="d1">2</data>
+  <data key="d2">3x2,7x11</data>
+</node>
+<node id="william shakespeare">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x2</data>
+</node>
+<node id="three witches">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">3x2</data>
+</node>
+<node id="motorway">
+  <data key="d0">FAC</data>
+  <data key="d1">1</data>
+  <data key="d2">3x3</data>
+</node>
+<node id="underground motorway">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">3x3</data>
+</node>
+<node id="manhattan">
+  <data key="d0">LOCATION</data>
+  <data key="d1">4</data>
+  <data key="d2">10x0,3x4,3x5,7x5</data>
+</node>
+<node id="new york">
+  <data key="d0">LOCATION</data>
+  <data key="d1">4</data>
+  <data key="d2">10x0,3x4,3x5,7x5</data>
+</node>
+<node id="1930">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">3x4</data>
+</node>
+<node id="1930s">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">3x5</data>
+</node>
+<node id="lazarus experiment">
+  <data key="d0">ORGANIZATION,VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">3x6</data>
+</node>
+<node id="lazarus">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x6</data>
+</node>
+<node id="dr lazarus">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x6</data>
+</node>
+<node id="42">
+  <data key="d0">CARDINAL</data>
+  <data key="d1">1</data>
+  <data key="d2">3x7</data>
+</node>
+<node id="42 minutes">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">3x7</data>
+</node>
+<node id="1913">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">3x8</data>
+</node>
+<node id="joan redfern">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x8</data>
+</node>
+<node id="family of blood">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x9</data>
+</node>
+<node id="sally sparrow">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x10</data>
+</node>
+<node id="malcassairo">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">3x11</data>
+</node>
+<node id="sound of drums">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x12</data>
+</node>
+<node id="21st century">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">3x12</data>
+</node>
+<node id="eighteen months">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">3x12</data>
+</node>
+<node id="harold saxon">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x12</data>
+</node>
+<node id="a year">
+  <data key="d0">DATE</data>
+  <data key="d1">2</data>
+  <data key="d2">3x13,7x1</data>
+</node>
+<node id="toclafane">
+  <data key="d0">ALIEN,PRODUCT</data>
+  <data key="d1">1</data>
+  <data key="d2">3x13</data>
+</node>
+<node id="last of the time lords">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">3x13</data>
+</node>
+<node id="year">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">3x13</data>
+</node>
+<node id="master">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">3x13</data>
+</node>
+<node id="human race">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">2</data>
+  <data key="d2">3x13,8x10</data>
+</node>
+<node id="voyage of the damned">
+  <data key="d0">ALIEN,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">4x0</data>
+</node>
+<node id="christmas">
+  <data key="d0">DATE</data>
+  <data key="d1">2</data>
+  <data key="d2">4x0,7x0</data>
+</node>
+<node id="2007">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">4x0</data>
+</node>
+<node id="kylie minogue">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">4x0</data>
+</node>
+<node id="spacecraft">
+  <data key="d0">PRODUCT,VEHICLE</data>
+  <data key="d1">2</data>
+  <data key="d2">4x0,6x0</data>
+</node>
+<node id="adipose industries">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">4x1</data>
+</node>
+<node id="donna noble">
+  <data key="d0">PERSON</data>
+  <data key="d1">8</data>
+  <data key="d2">4x1,4x11,4x12,4x2,4x3,4x7,4x8,4x9</data>
+</node>
+<node id="fires of pompeii">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">4x2</data>
+</node>
+<node id="rome">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">4x2</data>
+</node>
+<node id="pompeii">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">4x2</data>
+</node>
+<node id="ad 79">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">4x2</data>
+</node>
+<node id="mount vesuvius">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">4x2</data>
+</node>
+<node id="ood-sphere">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">4x3</data>
+</node>
+<node id="42nd century">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">4x3</data>
+</node>
+<node id="ood-sphere planet">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">4x3</data>
+</node>
+<node id="sontaran stratagem">
+  <data key="d0">PRODUCT</data>
+  <data key="d1">1</data>
+  <data key="d2">4x4</data>
+</node>
+<node id="unit">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">3</data>
+  <data key="d2">4x4,9x7,9x8</data>
+</node>
+<node id="luke rattigan">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">4x4</data>
+</node>
+<node id="atmos system">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">4x4</data>
+</node>
+<node id="poison sky">
+  <data key="d0">WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">4x5</data>
+</node>
+<node id="sontarans">
+  <data key="d0">ALIEN,NORP,PERSON</data>
+  <data key="d1">2</data>
+  <data key="d2">4x11,4x5</data>
+</node>
+<node id="planet earth">
+  <data key="d0">LOCATION</data>
+  <data key="d1">2</data>
+  <data key="d2">4x5,5x13</data>
+</node>
+<node id="doctors">
+  <data key="d0">PERSON</data>
+  <data key="d1">2</data>
+  <data key="d2">4x6,6x4</data>
+</node>
+<node id="hath">
+  <data key="d0">ALIEN,NORP</data>
+  <data key="d1">1</data>
+  <data key="d2">4x6</data>
+</node>
+<node id="messaline">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">4x6</data>
+</node>
+<node id="unicorn and the wasp">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">4x7</data>
+</node>
+<node id="1926">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">4x7</data>
+</node>
+<node id="agatha christie">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">4x7</data>
+</node>
+<node id="9-days">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">4x7</data>
+</node>
+<node id="library">
+  <data key="d0">LOCATION</data>
+  <data key="d1">2</data>
+  <data key="d2">4x8,4x9</data>
+</node>
+<node id="archaeologists">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">4x8</data>
+</node>
+<node id="forest of the dead">
+  <data key="d0">LOCATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">4x9</data>
+</node>
+<node id="river song">
+  <data key="d0">PERSON,WORK_OF_ART</data>
+  <data key="d1">7</data>
+  <data key="d2">4x9,5x12,5x4,6x1,6x8,7x5,9x13</data>
+</node>
+<node id="vashta nerada">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">4x9</data>
+</node>
+<node id="dr moon">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">4x9</data>
+</node>
+<node id="midnight">
+  <data key="d0">LOCATION,WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">4x10</data>
+</node>
+<node id="racnoss">
+  <data key="d0">ALIEN,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">4x11</data>
+</node>
+<node id="titanic">
+  <data key="d0">PRODUCT,VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">4x11</data>
+</node>
+<node id="stolen earth">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">4x12</data>
+</node>
+<node id="26">
+  <data key="d0">CARDINAL</data>
+  <data key="d1">1</data>
+  <data key="d2">4x12</data>
+</node>
+<node id="dalek empire">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">2</data>
+  <data key="d2">4x12,4x13</data>
+</node>
+<node id="journeys end">
+  <data key="d0">WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">4x13</data>
+</node>
+<node id="davros">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">4x13</data>
+</node>
+<node id="universe">
+  <data key="d0">LOCATION</data>
+  <data key="d1">3</data>
+  <data key="d2">4x13,5x12,6x4</data>
+</node>
+<node id="eleventh hour">
+  <data key="d0">WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">5x1</data>
+</node>
+<node id="amy pond">
+  <data key="d0">PERSON</data>
+  <data key="d1">19</data>
+  <data key="d2">5x1,5x10,5x2,5x3,5x4,5x5,5x6,5x7,5x8,5x9,6x0,6x1,6x10,6x11,6x3,7x1,7x2,7x4,7x5</data>
+</node>
+<node id="less than twenty minutes">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">5x1</data>
+</node>
+<node id="twenty minutes">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">5x1</data>
+</node>
+<node id="galactic policemen">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">5x1</data>
+</node>
+<node id="atraxi">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">5x1</data>
+</node>
+<node id="beast below">
+  <data key="d0">PERSON,VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">5x2</data>
+</node>
+<node id="starship uk">
+  <data key="d0">ORGANIZATION,VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">5x2</data>
+</node>
+<node id="british">
+  <data key="d0">NORP</data>
+  <data key="d1">1</data>
+  <data key="d2">5x2</data>
+</node>
+<node id="smilers">
+  <data key="d0">ALIEN,PRODUCT</data>
+  <data key="d1">1</data>
+  <data key="d2">5x2</data>
+</node>
+<node id="future">
+  <data key="d0">TIME</data>
+  <data key="d1">2</data>
+  <data key="d2">5x2,8x8</data>
+</node>
+<node id="british explorers">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">5x2</data>
+</node>
+<node id="britain">
+  <data key="d0">LOCATION</data>
+  <data key="d1">2</data>
+  <data key="d2">10x8,5x3</data>
+</node>
+<node id="world war two">
+  <data key="d0">EVENT,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">5x3</data>
+</node>
+<node id="winston churchill">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x3</data>
+</node>
+<node id="war-torn britain">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">5x3</data>
+</node>
+<node id="time of angels">
+  <data key="d0">WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">5x4</data>
+</node>
+<node id="byzantium">
+  <data key="d0">PRODUCT</data>
+  <data key="d1">1</data>
+  <data key="d2">5x4</data>
+</node>
+<node id="weeping angels">
+  <data key="d0">ALIEN,ORGANIZATION,PRODUCT</data>
+  <data key="d1">2</data>
+  <data key="d2">5x4,7x5</data>
+</node>
+<node id="byzantium spaceship">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">5x4</data>
+</node>
+<node id="professor river song">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x4</data>
+</node>
+<node id="song">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x5</data>
+</node>
+<node id="first">
+  <data key="d0">ORDINAL</data>
+  <data key="d1">2</data>
+  <data key="d2">5x5,7x8</data>
+</node>
+<node id="10 minutes">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">5x5</data>
+</node>
+<node id="dr song">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x5</data>
+</node>
+<node id="crashed ship">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">5x5</data>
+</node>
+<node id="forest">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">5x5</data>
+</node>
+<node id="angels">
+  <data key="d0">ALIEN,ORGANIZATION</data>
+  <data key="d1">2</data>
+  <data key="d2">5x5,7x5</data>
+</node>
+<node id="vampires of venice">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x6</data>
+</node>
+<node id="16th century">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">5x6</data>
+</node>
+<node id="venice">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">5x6</data>
+</node>
+<node id="five years">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">5x7</data>
+</node>
+<node id="rory">
+  <data key="d0">PERSON</data>
+  <data key="d1">10</data>
+  <data key="d2">5x7,6x0,6x1,6x10,6x11,6x3,7x1,7x2,7x4,7x5</data>
+</node>
+<node id="leadworth">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">5x7</data>
+</node>
+<node id="hungry earth">
+  <data key="d0">LOCATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x8</data>
+</node>
+<node id="rio">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">5x8</data>
+</node>
+<node id="welsh">
+  <data key="d0">NORP</data>
+  <data key="d1">1</data>
+  <data key="d2">5x8</data>
+</node>
+<node id="21 kilometers">
+  <data key="d0">QUANTITY</data>
+  <data key="d1">1</data>
+  <data key="d2">5x8</data>
+</node>
+<node id="thousands upon thousands of years">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">5x8</data>
+</node>
+<node id="welsh village">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">5x8</data>
+</node>
+<node id="drilling rig">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">5x8</data>
+</node>
+<node id="ancient reptilian race">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">5x8</data>
+</node>
+<node id="cold blood">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x9</data>
+</node>
+<node id="nasreen chaudry">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x9</data>
+</node>
+<node id="restac">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x9</data>
+</node>
+<node id="alaya">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x9</data>
+</node>
+<node id="reptilians">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">5x9</data>
+</node>
+<node id="vincent">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x10</data>
+</node>
+<node id="vincent van gogh">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x10</data>
+</node>
+<node id="craig owens">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x11</data>
+</node>
+<node id="craig">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x11</data>
+</node>
+<node id="sophie">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x11</data>
+</node>
+<node id="lodger">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">5x11</data>
+</node>
+<node id="pandorica">
+  <data key="d0">ARTIFACT,LOCATION,PRODUCT</data>
+  <data key="d1">2</data>
+  <data key="d2">5x12,5x13</data>
+</node>
+<node id="big bang">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">5x13</data>
+</node>
+<node id="a christmas carol">
+  <data key="d0">WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">6x0</data>
+</node>
+<node id="scrooge">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">6x0</data>
+</node>
+<node id="kazran sardick">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">6x0</data>
+</node>
+<node id="unknown planet">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">6x0</data>
+</node>
+<node id="impossible astronaut">
+  <data key="d0">VEHICLE,WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">6x1</data>
+</node>
+<node id="day of the moon">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">6x2</data>
+</node>
+<node id="invaders">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">6x2</data>
+</node>
+<node id="curse of the black spot">
+  <data key="d0">PERSON,VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">6x3</data>
+</node>
+<node id="siren">
+  <data key="d0">ALIEN,PRODUCT</data>
+  <data key="d1">1</data>
+  <data key="d2">6x3</data>
+</node>
+<node id="pirate ship">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">6x3</data>
+</node>
+<node id="time lord">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">6x4</data>
+</node>
+<node id="sentient asteroid">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">6x4</data>
+</node>
+<node id="rebel flesh">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">6x5</data>
+</node>
+<node id="22nd century">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">6x5</data>
+</node>
+<node id="acid mining factory">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">6x5</data>
+</node>
+<node id="doppelgangers">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">6x5</data>
+</node>
+<node id="almost people">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">6x6</data>
+</node>
+<node id="factory">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">6x6</data>
+</node>
+<node id="hitler">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">6x8</data>
+</node>
+<node id="melody pond">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">6x8</data>
+</node>
+<node id="berlin">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">6x8</data>
+</node>
+<node id="1938">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">2</data>
+  <data key="d2">6x8,7x0</data>
+</node>
+<node id="adolf hitler">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">6x8</data>
+</node>
+<node id="terrified little boy">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">6x9</data>
+</node>
+<node id="girl who waited">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">6x10</data>
+</node>
+<node id="quarantine facility">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">6x10</data>
+</node>
+<node id="time">
+  <data key="d0">TIME</data>
+  <data key="d1">2</data>
+  <data key="d2">6x10,9x12</data>
+</node>
+<node id="hotel of horrors">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">6x11</data>
+</node>
+<node id="closing time">
+  <data key="d0">TIME,WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">6x12</data>
+</node>
+<node id="silver rat">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">6x12</data>
+</node>
+<node id="metal men">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">6x12</data>
+</node>
+<node id="wedding of river song">
+  <data key="d0">WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">6x13</data>
+</node>
+<node id="april 22nd 2011">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">6x13</data>
+</node>
+<node id="502pm">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">6x13</data>
+</node>
+<node id="lake silencio">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">6x13</data>
+</node>
+<node id="his final day">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">6x13</data>
+</node>
+<node id="christmas eve 1938">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">7x0</data>
+</node>
+<node id="madge arwell">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x0</data>
+</node>
+<node id="spaceman angel">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x0</data>
+</node>
+<node id="three years later">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">7x0</data>
+</node>
+<node id="madge">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x0</data>
+</node>
+<node id="dorset">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x0</data>
+</node>
+<node id="lily">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x0</data>
+</node>
+<node id="cyril">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x0</data>
+</node>
+<node id="arwells">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x0</data>
+</node>
+<node id="dalek parliament">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x1</data>
+</node>
+<node id="asylum">
+  <data key="d0">FAC,LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x1</data>
+</node>
+<node id="their days">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">7x1</data>
+</node>
+<node id="oswin">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x1</data>
+</node>
+<node id="ship">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">7x1</data>
+</node>
+<node id="brian williams">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x2</data>
+</node>
+<node id="nefertiti">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x2</data>
+</node>
+<node id="john riddell">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x2</data>
+</node>
+<node id="dinosaurs">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">7x2</data>
+</node>
+<node id="queen nefertiti">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x2</data>
+</node>
+<node id="prehistoric dinosaurs">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">7x2</data>
+</node>
+<node id="mercy">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x3</data>
+</node>
+<node id="stetson">
+  <data key="d0">ARTIFACT,PRODUCT</data>
+  <data key="d1">1</data>
+  <data key="d2">7x3</data>
+</node>
+<node id="gunslinger">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x3</data>
+</node>
+<node id="a town called mercy">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x3</data>
+</node>
+<node id="gun">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">7x3</data>
+</node>
+<node id="western town">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x3</data>
+</node>
+<node id="power of three">
+  <data key="d0">PERSON,VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">7x4</data>
+</node>
+<node id="millions">
+  <data key="d0">CARDINAL</data>
+  <data key="d1">1</data>
+  <data key="d2">7x4</data>
+</node>
+<node id="brian">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x4</data>
+</node>
+<node id="millions of small black cubes">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">7x4</data>
+</node>
+<node id="1892">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">7x6</data>
+</node>
+<node id="snow">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x6</data>
+</node>
+<node id="clara oswald">
+  <data key="d0">PERSON</data>
+  <data key="d1">21</data>
+  <data key="d2">7x10,7x11,7x12,7x13,7x14,7x6,7x7,7x8,7x9,8x2,8x4,8x5,8x7,8x9,9x0,9x1,9x10,9x3,9x5,9x7,9x9</data>
+</node>
+<node id="day">
+  <data key="d0">DATE</data>
+  <data key="d1">2</data>
+  <data key="d2">7x6,8x12</data>
+</node>
+<node id="snowmen">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x6</data>
+</node>
+<node id="bells of saint john">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x7</data>
+</node>
+<node id="present day">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">7x7</data>
+</node>
+<node id="kizlet">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x7</data>
+</node>
+<node id="spoonheads">
+  <data key="d0">PRODUCT</data>
+  <data key="d1">1</data>
+  <data key="d2">7x7</data>
+</node>
+<node id="mysterious organization">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x7</data>
+</node>
+<node id="miss kizlet">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x7</data>
+</node>
+<node id="rings of akhaten">
+  <data key="d0">ARTIFACT,WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">7x8</data>
+</node>
+<node id="festival of offering">
+  <data key="d0">EVENT</data>
+  <data key="d1">1</data>
+  <data key="d2">7x8</data>
+</node>
+<node id="merry">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x8</data>
+</node>
+<node id="pyramid">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">7x8</data>
+</node>
+<node id="7 planets">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x8</data>
+</node>
+<node id="cold war">
+  <data key="d0">EVENT</data>
+  <data key="d1">1</data>
+  <data key="d2">7x9</data>
+</node>
+<node id="soviet">
+  <data key="d0">NORP</data>
+  <data key="d1">1</data>
+  <data key="d2">7x9</data>
+</node>
+<node id="grisenko">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x9</data>
+</node>
+<node id="5000 years">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">7x9</data>
+</node>
+<node id="skaldak">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x9</data>
+</node>
+<node id="professor grisenko">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x9</data>
+</node>
+<node id="ice warrior">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">7x9</data>
+</node>
+<node id="grand marshal skaldak">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x9</data>
+</node>
+<node id="1974">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">7x10</data>
+</node>
+<node id="alec palmer">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x10</data>
+</node>
+<node id="emma grayling">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x10</data>
+</node>
+<node id="alec">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x10</data>
+</node>
+<node id="emma">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x10</data>
+</node>
+<node id="palmer">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x10</data>
+</node>
+<node id="hundreds of years">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">7x10</data>
+</node>
+<node id="old manor house">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x10</data>
+</node>
+<node id="30 minutes">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">7x11</data>
+</node>
+<node id="space freighter">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">7x11</data>
+</node>
+<node id="creatures">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">7x11</data>
+</node>
+<node id="recent history">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">7x11</data>
+</node>
+<node id="crimson horror">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x12</data>
+</node>
+<node id="yorkshire">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x12</data>
+</node>
+<node id="gillyflower">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x12</data>
+</node>
+<node id="vastra">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x12</data>
+</node>
+<node id="ada">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x12</data>
+</node>
+<node id="mrs gillyflower">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x12</data>
+</node>
+<node id="madame vastra">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x12</data>
+</node>
+<node id="nightmare in silver">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x13</data>
+</node>
+<node id="hedgewicks world of wonders">
+  <data key="d0">FAC</data>
+  <data key="d1">1</data>
+  <data key="d2">7x13</data>
+</node>
+<node id="artie">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x13</data>
+</node>
+<node id="angie">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">7x13</data>
+</node>
+<node id="hedgewick">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x13</data>
+</node>
+<node id="world of wonders">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x13</data>
+</node>
+<node id="trenzalore">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">7x14</data>
+</node>
+<node id="victorian">
+  <data key="d0">NORP</data>
+  <data key="d1">1</data>
+  <data key="d2">8x1</data>
+</node>
+<node id="thames">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">8x1</data>
+</node>
+<node id="newly-regenerated doctor">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">8x1</data>
+</node>
+<node id="victorian london">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">8x1</data>
+</node>
+<node id="robot of sherwood">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">8x3</data>
+</node>
+<node id="sherwood forest">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">8x3</data>
+</node>
+<node id="robin hood">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">8x3</data>
+</node>
+<node id="nottingham">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">8x3</data>
+</node>
+<node id="caretaker">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">8x6</data>
+</node>
+<node id="skovox blitzer">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">8x6</data>
+</node>
+<node id="any second">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">8x6</data>
+</node>
+<node id="danny pink">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">8x6</data>
+</node>
+<node id="any second now">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">8x6</data>
+</node>
+<node id="near future">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">8x7</data>
+</node>
+<node id="space shuttle">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">8x7</data>
+</node>
+<node id="orient express">
+  <data key="d0">PRODUCT,VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">8x8</data>
+</node>
+<node id="mummy">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">8x8</data>
+</node>
+<node id="passengers">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">8x8</data>
+</node>
+<node id="forest of the night">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">8x10</data>
+</node>
+<node id="one morning">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">8x10</data>
+</node>
+<node id="trees">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">8x10</data>
+</node>
+<node id="dark water">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">8x11</data>
+</node>
+<node id="nethersphere">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">8x11</data>
+</node>
+<node id="plans">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">8x11</data>
+</node>
+<node id="last christmas">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">9x0</data>
+</node>
+<node id="their last christmas">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">9x0</data>
+</node>
+<node id="arctic">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x0</data>
+</node>
+<node id="santa claus">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x0</data>
+</node>
+<node id="arctic base">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x0</data>
+</node>
+<node id="terrifying creatures">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">9x0</data>
+</node>
+<node id="magicians apprentice">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x1</data>
+</node>
+<node id="magician">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x1</data>
+</node>
+<node id="witchs familiar">
+  <data key="d0">WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">9x2</data>
+</node>
+<node id="empire">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x2</data>
+</node>
+<node id="dalek city">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x2</data>
+</node>
+<node id="evil empire">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x2</data>
+</node>
+<node id="sonic">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">9x2</data>
+</node>
+<node id="under the lake">
+  <data key="d0">LOCATION,WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">9x3</data>
+</node>
+<node id="under a lake">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x3</data>
+</node>
+<node id="gleaming black spaceship">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">9x3</data>
+</node>
+<node id="before the flood">
+  <data key="d0">WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">9x4</data>
+</node>
+<node id="fisher king">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x4</data>
+</node>
+<node id="beethoven">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x4</data>
+</node>
+<node id="5th">
+  <data key="d0">ORDINAL</data>
+  <data key="d1">1</data>
+  <data key="d2">9x4</data>
+</node>
+<node id="past">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">9x4</data>
+</node>
+<node id="girl who">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x5</data>
+</node>
+<node id="viking">
+  <data key="d0">NORP</data>
+  <data key="d1">1</data>
+  <data key="d2">9x5</data>
+</node>
+<node id="ashildr">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x5</data>
+</node>
+<node id="mire">
+  <data key="d0">ALIEN,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x5</data>
+</node>
+<node id="12 hours">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">9x5</data>
+</node>
+<node id="viking village">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x5</data>
+</node>
+<node id="woman who lived">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x6</data>
+</node>
+<node id="england">
+  <data key="d0">LOCATION</data>
+  <data key="d1">2</data>
+  <data key="d2">9x6,9x8</data>
+</node>
+<node id="1651">
+  <data key="d0">DATE,TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">9x6</data>
+</node>
+<node id="zygon invasion">
+  <data key="d0">EVENT</data>
+  <data key="d1">1</data>
+  <data key="d2">9x7</data>
+</node>
+<node id="zygons">
+  <data key="d0">ALIEN,NORP,PERSON</data>
+  <data key="d1">2</data>
+  <data key="d2">9x7,9x8</data>
+</node>
+<node id="zygon">
+  <data key="d0">ALIEN,ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x7</data>
+</node>
+<node id="osgood">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x7</data>
+</node>
+<node id="zygon inversion">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">9x8</data>
+</node>
+<node id="le verrier space station">
+  <data key="d0">FAC,LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x9</data>
+</node>
+<node id="raven">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x10</data>
+</node>
+<node id="rigsy">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x10</data>
+</node>
+<node id="zero">
+  <data key="d0">CARDINAL</data>
+  <data key="d1">1</data>
+  <data key="d2">9x10</data>
+</node>
+<node id="hell bent">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x12</data>
+</node>
+<node id="gallifrey">
+  <data key="d0">LOCATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x12</data>
+</node>
+<node id="time lords">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x12</data>
+</node>
+<node id="husbands of river song">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x13</data>
+</node>
+<node id="river songs">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">9x13</data>
+</node>
+<node id="crashed spaceship">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">9x13</data>
+</node>
+<node id="squad">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x13</data>
+</node>
+<node id="galaxy">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">9x13</data>
+</node>
+<node id="return of doctor mysterio">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">10x0</data>
+</node>
+<node id="nardole">
+  <data key="d0">PERSON</data>
+  <data key="d1">5</data>
+  <data key="d2">10x0,10x1,10x5,10x8,10x9</data>
+</node>
+<node id="ghost">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">10x0</data>
+</node>
+<node id="doctor mysterio">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">10x0</data>
+</node>
+<node id="brain-swapping aliens">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">10x0</data>
+</node>
+<node id="investigative reporter">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">10x0</data>
+</node>
+<node id="pilot">
+  <data key="d0">PERSON,VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">10x1</data>
+</node>
+<node id="university student">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">10x1</data>
+</node>
+<node id="bill">
+  <data key="d0">PERSON</data>
+  <data key="d1">7</data>
+  <data key="d2">10x10,10x2,10x3,10x4,10x5,10x8,10x9</data>
+</node>
+<node id="far future">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">10x2</data>
+</node>
+<node id="human settlement">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x2</data>
+</node>
+<node id="emojibots">
+  <data key="d0">ALIEN</data>
+  <data key="d1">1</data>
+  <data key="d2">10x2</data>
+</node>
+<node id="river thames">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x3</data>
+</node>
+<node id="february 1814">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">10x3</data>
+</node>
+<node id="space station">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x5</data>
+</node>
+<node id="spacesuits">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">10x5</data>
+</node>
+<node id="haereticum">
+  <data key="d0">VEHICLE,WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">10x6</data>
+</node>
+<node id="veritas">
+  <data key="d0">ARTIFACT,WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">10x6</data>
+</node>
+<node id="vatican">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x6</data>
+</node>
+<node id="5000-year-old">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">10x7</data>
+</node>
+<node id="pyramid at the end of the world">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x7</data>
+</node>
+<node id="overnight">
+  <data key="d0">TIME</data>
+  <data key="d1">1</data>
+  <data key="d2">10x7</data>
+</node>
+<node id="lie of the land">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">10x8</data>
+</node>
+<node id="occupied britain">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x8</data>
+</node>
+<node id="resistance">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x8</data>
+</node>
+<node id="new regime">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x8</data>
+</node>
+<node id="mars">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x9</data>
+</node>
+<node id="queen of the ice warriors">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">10x9</data>
+</node>
+<node id="1881">
+  <data key="d0">DATE</data>
+  <data key="d1">1</data>
+  <data key="d2">10x9</data>
+</node>
+<node id="eaters of light">
+  <data key="d0">ORGANIZATION,PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">10x10</data>
+</node>
+<node id="roman">
+  <data key="d0">NORP</data>
+  <data key="d1">1</data>
+  <data key="d2">10x10</data>
+</node>
+<node id="ninth">
+  <data key="d0">ORDINAL</data>
+  <data key="d1">1</data>
+  <data key="d2">10x10</data>
+</node>
+<node id="aberdeenshire">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x10</data>
+</node>
+<node id="roman legion of the ninth">
+  <data key="d0">ORGANIZATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x10</data>
+</node>
+<node id="time machine">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">10x10</data>
+</node>
+<node id="cairn">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">10x10</data>
+</node>
+<node id="hillside">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x10</data>
+</node>
+<node id="doorway">
+  <data key="d0">ARTIFACT</data>
+  <data key="d1">1</data>
+  <data key="d2">10x10</data>
+</node>
+<node id="world enough">
+  <data key="d0">ORGANIZATION,WORK_OF_ART</data>
+  <data key="d1">1</data>
+  <data key="d2">10x11</data>
+</node>
+<node id="giant spaceship">
+  <data key="d0">VEHICLE</data>
+  <data key="d1">1</data>
+  <data key="d2">10x11</data>
+</node>
+<node id="event horizon of a black hole">
+  <data key="d0">LOCATION</data>
+  <data key="d1">1</data>
+  <data key="d2">10x11</data>
+</node>
+<node id="he">
+  <data key="d0">PERSON</data>
+  <data key="d1">1</data>
+  <data key="d2">10x11</data>
+</node>
+<edge source="rose tyler" target="charles dickens" id="0">
+  <data key="d3">join</data>
+  <data key="d4">1</data>
+  <data key="d5">1x3</data>
+</edge>
+<edge source="rose tyler" target="doctor" id="0">
+  <data key="d3">ask</data>
+  <data key="d4">1</data>
+  <data key="d5">1x8</data>
+</edge>
+<edge source="rose tyler" target="new earth" id="0">
+  <data key="d3">arrive</data>
+  <data key="d4">1</data>
+  <data key="d5">2x1</data>
+</edge>
+<edge source="rose tyler" target="legion of the beast" id="0">
+  <data key="d3">fend</data>
+  <data key="d4">1</data>
+  <data key="d5">2x9</data>
+</edge>
+<edge source="rose tyler" target="girl" id="0">
+  <data key="d3">find</data>
+  <data key="d4">1</data>
+  <data key="d5">2x11</data>
+</edge>
+<edge source="doctor" target="year 200000" id="0">
+  <data key="d3">discover</data>
+  <data key="d4">1</data>
+  <data key="d5">1x7</data>
+</edge>
+<edge source="doctor" target="new earth" id="0">
+  <data key="d3">arrive</data>
+  <data key="d4">1</data>
+  <data key="d5">2x1</data>
+</edge>
+<edge source="doctor" target="versailles" id="0">
+  <data key="d3">enter</data>
+  <data key="d4">1</data>
+  <data key="d5">2x4</data>
+</edge>
+<edge source="doctor" target="51st century" id="0">
+  <data key="d3">land</data>
+  <data key="d4">1</data>
+  <data key="d5">2x4</data>
+</edge>
+<edge source="doctor" target="girl" id="0">
+  <data key="d3">find</data>
+  <data key="d4">1</data>
+  <data key="d5">2x11</data>
+</edge>
+<edge source="doctor" target="torchwood tower" id="0">
+  <data key="d3">trace</data>
+  <data key="d4">1</data>
+  <data key="d5">2x12</data>
+</edge>
+<edge source="doctor" target="new york" id="0">
+  <data key="d3">move</data>
+  <data key="d4">1</data>
+  <data key="d5">3x4</data>
+</edge>
+<edge source="doctor" target="new york" id="1">
+  <data key="d3">link</data>
+  <data key="d4">1</data>
+  <data key="d5">10x0</data>
+</edge>
+<edge source="doctor" target="1930" id="0">
+  <data key="d3">move</data>
+  <data key="d4">1</data>
+  <data key="d5">3x4</data>
+</edge>
+<edge source="doctor" target="malcassairo" id="0">
+  <data key="d3">head</data>
+  <data key="d4">1</data>
+  <data key="d5">3x11</data>
+</edge>
+<edge source="doctor" target="21st century" id="0">
+  <data key="d3">return</data>
+  <data key="d4">1</data>
+  <data key="d5">3x12</data>
+</edge>
+<edge source="doctor" target="rome" id="0">
+  <data key="d3">end</data>
+  <data key="d4">1</data>
+  <data key="d5">4x2</data>
+</edge>
+<edge source="doctor" target="library" id="0">
+  <data key="d3">join</data>
+  <data key="d4">1</data>
+  <data key="d5">4x8</data>
+</edge>
+<edge source="doctor" target="twenty minutes" id="0">
+  <data key="d3">save</data>
+  <data key="d4">1</data>
+  <data key="d5">5x1</data>
+</edge>
+<edge source="doctor" target="galactic policemen" id="0">
+  <data key="d3">save</data>
+  <data key="d4">1</data>
+  <data key="d5">5x1</data>
+</edge>
+<edge source="doctor" target="tardis" id="0">
+  <data key="d3">emerge</data>
+  <data key="d4">1</data>
+  <data key="d5">5x4</data>
+</edge>
+<edge source="doctor" target="venice" id="0">
+  <data key="d3">cross</data>
+  <data key="d4">1</data>
+  <data key="d5">5x6</data>
+</edge>
+<edge source="doctor" target="pirate ship" id="0">
+  <data key="d3">find</data>
+  <data key="d4">1</data>
+  <data key="d5">6x3</data>
+</edge>
+<edge source="doctor" target="his final day" id="0">
+  <data key="d3">move</data>
+  <data key="d4">1</data>
+  <data key="d5">6x13</data>
+</edge>
+<edge source="doctor" target="lake silencio" id="0">
+  <data key="d3">move</data>
+  <data key="d4">1</data>
+  <data key="d5">6x13</data>
+</edge>
+<edge source="doctor" target="earth" id="0">
+  <data key="d3">return</data>
+  <data key="d4">1</data>
+  <data key="d5">7x2</data>
+</edge>
+<edge source="doctor" target="amy pond" id="0">
+  <data key="d3">join</data>
+  <data key="d4">1</data>
+  <data key="d5">7x4</data>
+</edge>
+<edge source="doctor" target="rory" id="0">
+  <data key="d3">join</data>
+  <data key="d4">1</data>
+  <data key="d5">7x4</data>
+</edge>
+<edge source="doctor" target="1974" id="0">
+  <data key="d3">arrive</data>
+  <data key="d4">1</data>
+  <data key="d5">7x10</data>
+</edge>
+<edge source="doctor" target="old manor house" id="0">
+  <data key="d3">arrive</data>
+  <data key="d4">1</data>
+  <data key="d5">7x10</data>
+</edge>
+<edge source="doctor" target="space freighter" id="0">
+  <data key="d3">find</data>
+  <data key="d4">1</data>
+  <data key="d5">7x11</data>
+</edge>
+<edge source="doctor" target="yorkshire" id="0">
+  <data key="d3">arrive</data>
+  <data key="d4">1</data>
+  <data key="d5">7x12</data>
+</edge>
+<edge source="doctor" target="sherwood forest" id="0">
+  <data key="d3">uncover</data>
+  <data key="d4">1</data>
+  <data key="d5">8x3</data>
+</edge>
+<edge source="doctor" target="space shuttle" id="0">
+  <data key="d3">find</data>
+  <data key="d4">1</data>
+  <data key="d5">8x7</data>
+</edge>
+<edge source="doctor" target="near future" id="0">
+  <data key="d3">find</data>
+  <data key="d4">1</data>
+  <data key="d5">8x7</data>
+</edge>
+<edge source="doctor" target="their last christmas" id="0">
+  <data key="d3">face</data>
+  <data key="d4">1</data>
+  <data key="d5">9x0</data>
+</edge>
+<edge source="doctor" target="fisher king" id="0">
+  <data key="d3">stop</data>
+  <data key="d4">1</data>
+  <data key="d5">9x4</data>
+</edge>
+<edge source="doctor" target="time lords" id="0">
+  <data key="d3">face</data>
+  <data key="d4">1</data>
+  <data key="d5">9x12</data>
+</edge>
+<edge source="doctor" target="investigative reporter" id="0">
+  <data key="d3">link</data>
+  <data key="d4">1</data>
+  <data key="d5">10x0</data>
+</edge>
+<edge source="doctor" target="manhattan" id="0">
+  <data key="d3">save</data>
+  <data key="d4">1</data>
+  <data key="d5">10x0</data>
+</edge>
+<edge source="doctor" target="university student" id="0">
+  <data key="d3">team</data>
+  <data key="d4">1</data>
+  <data key="d5">10x1</data>
+</edge>
+<edge source="doctor" target="london" id="0">
+  <data key="d3">visit</data>
+  <data key="d4">1</data>
+  <data key="d5">10x3</data>
+</edge>
+<edge source="doctor" target="1881" id="0">
+  <data key="d3">discover</data>
+  <data key="d4">1</data>
+  <data key="d5">10x9</data>
+</edge>
+<edge source="doctor" target="mars" id="0">
+  <data key="d3">discover</data>
+  <data key="d4">1</data>
+  <data key="d5">10x9</data>
+</edge>
+<edge source="earth" target="titanic" id="0">
+  <data key="d3">handle</data>
+  <data key="d4">1</data>
+  <data key="d5">4x11</data>
+</edge>
+<edge source="earth" target="racnoss" id="0">
+  <data key="d3">handle</data>
+  <data key="d4">1</data>
+  <data key="d5">4x11</data>
+</edge>
+<edge source="slitheen" target="parliament" id="0">
+  <data key="d3">infiltrate</data>
+  <data key="d4">1</data>
+  <data key="d5">1x5</data>
+</edge>
+<edge source="tardis" target="parallel world" id="0">
+  <data key="d3">land</data>
+  <data key="d4">1</data>
+  <data key="d5">2x5</data>
+</edge>
+<edge source="tardis" target="london" id="0">
+  <data key="d3">land</data>
+  <data key="d4">1</data>
+  <data key="d5">2x5</data>
+</edge>
+<edge source="tardis" target="young woman" id="0">
+  <data key="d3">transport</data>
+  <data key="d4">1</data>
+  <data key="d5">3x0</data>
+</edge>
+<edge source="tardis" target="earth" id="0">
+  <data key="d3">land</data>
+  <data key="d4">1</data>
+  <data key="d5">5x11</data>
+</edge>
+<edge source="tardis" target="doctor" id="0">
+  <data key="d3">confine</data>
+  <data key="d4">1</data>
+  <data key="d5">6x10</data>
+</edge>
+<edge source="tardis" target="recent history" id="0">
+  <data key="d3">leak</data>
+  <data key="d4">1</data>
+  <data key="d5">7x11</data>
+</edge>
+<edge source="utah desert" target="doctor" id="0">
+  <data key="d3">reunite</data>
+  <data key="d4">1</data>
+  <data key="d5">6x1</data>
+</edge>
+<edge source="utah desert" target="amy pond" id="0">
+  <data key="d3">reunite</data>
+  <data key="d4">1</data>
+  <data key="d5">6x1</data>
+</edge>
+<edge source="sycorax" target="earth" id="0">
+  <data key="d3">come</data>
+  <data key="d4">1</data>
+  <data key="d5">2x0</data>
+</edge>
+<edge source="scotland" target="rose tyler" id="0">
+  <data key="d3">transport</data>
+  <data key="d4">1</data>
+  <data key="d5">2x2</data>
+</edge>
+<edge source="mickey" target="51st century" id="0">
+  <data key="d3">land</data>
+  <data key="d4">1</data>
+  <data key="d5">2x4</data>
+</edge>
+<edge source="wedding day" target="young woman" id="0">
+  <data key="d3">transport</data>
+  <data key="d4">1</data>
+  <data key="d5">3x0</data>
+</edge>
+<edge source="martha jones" target="doctor" id="0">
+  <data key="d3">join</data>
+  <data key="d4">1</data>
+  <data key="d5">3x1</data>
+</edge>
+<edge source="martha jones" target="new york" id="0">
+  <data key="d3">move</data>
+  <data key="d4">1</data>
+  <data key="d5">3x4</data>
+</edge>
+<edge source="martha jones" target="1930" id="0">
+  <data key="d3">move</data>
+  <data key="d4">1</data>
+  <data key="d5">3x4</data>
+</edge>
+<edge source="martha jones" target="1913" id="0">
+  <data key="d3">watch</data>
+  <data key="d4">1</data>
+  <data key="d5">3x8</data>
+</edge>
+<edge source="martha jones" target="malcassairo" id="0">
+  <data key="d3">head</data>
+  <data key="d4">1</data>
+  <data key="d5">3x11</data>
+</edge>
+<edge source="martha jones" target="21st century" id="0">
+  <data key="d3">return</data>
+  <data key="d4">1</data>
+  <data key="d5">3x12</data>
+</edge>
+<edge source="moon" target="hospital" id="0">
+  <data key="d3">transport</data>
+  <data key="d4">1</data>
+  <data key="d5">3x1</data>
+</edge>
+<edge source="sally sparrow" target="doctor" id="0">
+  <data key="d3">receive</data>
+  <data key="d4">1</data>
+  <data key="d5">3x10</data>
+</edge>
+<edge source="master" target="toclafane" id="0">
+  <data key="d3">unleash</data>
+  <data key="d4">1</data>
+  <data key="d5">3x13</data>
+</edge>
+<edge source="master" target="earth" id="0">
+  <data key="d3">unleash</data>
+  <data key="d4">1</data>
+  <data key="d5">3x13</data>
+</edge>
+<edge source="human race" target="london" id="0">
+  <data key="d3">wake</data>
+  <data key="d4">1</data>
+  <data key="d5">8x10</data>
+</edge>
+<edge source="donna noble" target="rome" id="0">
+  <data key="d3">end</data>
+  <data key="d4">1</data>
+  <data key="d5">4x2</data>
+</edge>
+<edge source="donna noble" target="library" id="0">
+  <data key="d3">join</data>
+  <data key="d4">1</data>
+  <data key="d5">4x8</data>
+</edge>
+<edge source="donna noble" target="doctor" id="0">
+  <data key="d3">meet</data>
+  <data key="d4">1</data>
+  <data key="d5">4x11</data>
+</edge>
+<edge source="amy pond" target="tardis" id="0">
+  <data key="d3">emerge</data>
+  <data key="d4">1</data>
+  <data key="d5">5x4</data>
+</edge>
+<edge source="amy pond" target="10 minutes" id="0">
+  <data key="d3">count</data>
+  <data key="d4">1</data>
+  <data key="d5">5x5</data>
+</edge>
+<edge source="amy pond" target="venice" id="0">
+  <data key="d3">cross</data>
+  <data key="d4">1</data>
+  <data key="d5">5x6</data>
+</edge>
+<edge source="amy pond" target="doctor" id="0">
+  <data key="d3">call</data>
+  <data key="d4">1</data>
+  <data key="d5">6x0</data>
+</edge>
+<edge source="amy pond" target="pirate ship" id="0">
+  <data key="d3">find</data>
+  <data key="d4">1</data>
+  <data key="d5">6x3</data>
+</edge>
+<edge source="rory" target="time" id="0">
+  <data key="d3">save</data>
+  <data key="d4">1</data>
+  <data key="d5">6x10</data>
+</edge>
+<edge source="sentient asteroid" target="doctor" id="0">
+  <data key="d3">lure</data>
+  <data key="d4">1</data>
+  <data key="d5">6x4</data>
+</edge>
+<edge source="quarantine facility" target="amy pond" id="0">
+  <data key="d3">trap</data>
+  <data key="d4">1</data>
+  <data key="d5">6x10</data>
+</edge>
+<edge source="madge" target="london" id="0">
+  <data key="d3">escape</data>
+  <data key="d4">1</data>
+  <data key="d5">7x0</data>
+</edge>
+<edge source="clara oswald" target="old manor house" id="0">
+  <data key="d3">arrive</data>
+  <data key="d4">1</data>
+  <data key="d5">7x10</data>
+</edge>
+<edge source="clara oswald" target="1974" id="0">
+  <data key="d3">arrive</data>
+  <data key="d4">1</data>
+  <data key="d5">7x10</data>
+</edge>
+<edge source="clara oswald" target="space freighter" id="0">
+  <data key="d3">find</data>
+  <data key="d4">1</data>
+  <data key="d5">7x11</data>
+</edge>
+<edge source="clara oswald" target="yorkshire" id="0">
+  <data key="d3">arrive</data>
+  <data key="d4">1</data>
+  <data key="d5">7x12</data>
+</edge>
+<edge source="clara oswald" target="space shuttle" id="0">
+  <data key="d3">find</data>
+  <data key="d4">1</data>
+  <data key="d5">8x7</data>
+</edge>
+<edge source="clara oswald" target="near future" id="0">
+  <data key="d3">find</data>
+  <data key="d4">1</data>
+  <data key="d5">8x7</data>
+</edge>
+<edge source="clara oswald" target="their last christmas" id="0">
+  <data key="d3">face</data>
+  <data key="d4">1</data>
+  <data key="d5">9x0</data>
+</edge>
+<edge source="newly-regenerated doctor" target="victorian london" id="0">
+  <data key="d3">arrive</data>
+  <data key="d4">1</data>
+  <data key="d5">8x1</data>
+</edge>
+<edge source="under a lake" target="gleaming black spaceship" id="0">
+  <data key="d3">recover</data>
+  <data key="d4">1</data>
+  <data key="d5">9x3</data>
+</edge>
+<edge source="zygons" target="england" id="0">
+  <data key="d3">invade</data>
+  <data key="d4">1</data>
+  <data key="d5">9x8</data>
+</edge>
+<edge source="crashed spaceship" target="doctor" id="0">
+  <data key="d3">call</data>
+  <data key="d4">1</data>
+  <data key="d5">9x13</data>
+</edge>
+<edge source="nardole" target="new york" id="0">
+  <data key="d3">link</data>
+  <data key="d4">1</data>
+  <data key="d5">10x0</data>
+</edge>
+<edge source="nardole" target="investigative reporter" id="0">
+  <data key="d3">link</data>
+  <data key="d4">1</data>
+  <data key="d5">10x0</data>
+</edge>
+<edge source="nardole" target="university student" id="0">
+  <data key="d3">team</data>
+  <data key="d4">1</data>
+  <data key="d5">10x1</data>
+</edge>
+<edge source="bill" target="london" id="0">
+  <data key="d3">visit</data>
+  <data key="d4">1</data>
+  <data key="d5">10x3</data>
+</edge>
+<edge source="bill" target="occupied britain" id="0">
+  <data key="d3">live</data>
+  <data key="d4">1</data>
+  <data key="d5">10x8</data>
+</edge>
+<edge source="bill" target="1881" id="0">
+  <data key="d3">discover</data>
+  <data key="d4">1</data>
+  <data key="d5">10x9</data>
+</edge>
+<edge source="bill" target="mars" id="0">
+  <data key="d3">discover</data>
+  <data key="d4">1</data>
+  <data key="d5">10x9</data>
+</edge>
+<edge source="vatican" target="doctor" id="0">
+  <data key="d3">appeal</data>
+  <data key="d4">1</data>
+  <data key="d5">10x6</data>
+</edge>
+</graph></graphml>

@@ -56,12 +56,21 @@ def retrieve_context(query: str, top_k: int = None) -> tuple[List[Dict], str]:
     
     context_parts = []
     for i, result in enumerate(results, 1):
+        text = str(result)
+
         context_parts.append(
-            f"Document {i}: {result}\n"
+            f"Document {i}: {text[:800]}\n"
         )
     
     context = "\n---\n".join(context_parts)
-    return [({"title": r, "score": 1.0}) for r in results], context
+    retrieved_docs = [
+        {
+        "title": str(r)[:100],
+        "score": 1.0
+        }
+        for r in results
+    ]
+    return retrieved_docs, context
 
 
 def build_prompt(query: str, context: str) -> str:
@@ -106,14 +115,21 @@ def query_ollama(prompt: str, temperature: float = None, max_tokens: int = None)
                 "temperature": temperature,
                 "num_predict": max_tokens,
             },
-            timeout=30
+            timeout=90
         )
         
         if response.status_code == 200:
             result = response.json()
             return result.get("response", "").strip()
+        elif response.status_code == 404:
+            error_data = response.json()
+            if "not found" in error_data.get("error", "").lower():
+                logger.error(f"Ollama model '{config.OLLAMA_MODEL}' not found. Pull it with: ollama pull {config.OLLAMA_MODEL}")
+            else:
+                logger.error(f"Ollama error (404): {error_data.get('error', 'Unknown')}")
+            return None
         else:
-            logger.error(f"Ollama API error: {response.status_code}")
+            logger.error(f"Ollama API error: {response.status_code} - {response.text}")
             return None
             
     except requests.Timeout:
@@ -177,12 +193,14 @@ def rag_query(query: str) -> Dict:
         answer = query_ollama(prompt)
         
         if not answer:
+            error_msg = 'Failed to generate answer from Ollama'
+            logger.error(f"RAG generation failed: {error_msg}")
             return {
                 'query': query,
                 'retrieved_docs': retrieved_docs,
                 'context': context,
                 'answer': '',
-                'error': 'Failed to generate answer from Ollama',
+                'error': f"{error_msg}. Run: ollama pull {config.OLLAMA_MODEL}",
                 'source': 'rag'
             }
         
@@ -218,14 +236,14 @@ def format_rag_output(rag_result: Dict) -> str:
         output.append(f"❌ Error: {rag_result['error']}\n")
         output.append("Setup instructions:")
         output.append("1. Install Ollama from https://ollama.ai")
-        output.append("2. Run: ollama pull llama2")
+        output.append(f"2. Run: ollama pull {config.OLLAMA_MODEL}")
         output.append("3. Run: ollama serve")
         return "\n".join(output)
     
     output.append(f"Question: {rag_result['query']}\n")
     output.append(f"Retrieved {len(rag_result['retrieved_docs'])} documents:\n")
     
-    for i, doc in enumerate(rag_result['retrieved_docs'], 1):
+    for i, doc in enumerate(rag_result['retrieved_docs'], 4):
         output.append(f"  {i}. {doc.get('title', 'Unknown')} (score: {doc.get('score', 0):.3f})")
     
     output.append(f"\n{'─'*80}")

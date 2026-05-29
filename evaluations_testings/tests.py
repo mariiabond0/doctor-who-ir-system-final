@@ -4,8 +4,6 @@ Unit tests for the Doctor Who IR project.
 Tests cover preprocessing, search methods, and evaluation metrics.
 """
 
-import pickle
-
 import pytest
 import sqlite3
 from src.preprocessing import preprocess_text
@@ -13,6 +11,7 @@ from src.boolean_search import boolean_search_sqlite
 from src.bm_25 import bm25_search_sqlite
 from src.evaluation import compute_metrics
 import config
+import json
 
 
 class TestPreprocessing:
@@ -55,7 +54,8 @@ class TestSearchMethods:
                 doc_id TEXT PRIMARY KEY,
                 title TEXT,
                 description TEXT,
-                preprocessed_combined BLOB
+                summary TEXT,
+                preprocessed_combined TEXT
             )
         """)
         cur.execute("""
@@ -72,15 +72,15 @@ class TestSearchMethods:
         """)
 
         sample_docs = [
-            ("1x1", "The Doctor", "The Doctor meets a strange being."),
-            ("1x2", "The Angels", "The Doctor fights the Weeping Angels."),
+            ("1x1", "The Doctor", "The Doctor meets a strange being.", "The Doctor explores a mysterious place."),
+            ("1x2", "The Angels", "The Doctor fights the Weeping Angels.", "The Doctor encounters the Weeping Angels."),
         ]
 
-        for doc_id, title, description in sample_docs:
-            preprocessed = preprocess_text(f"{title} {description}")
+        for doc_id, title, description, summary in sample_docs:
+            preprocessed = preprocess_text(f"{title} {description} {summary}")
             cur.execute(
-                "INSERT INTO episodes VALUES (?, ?, ?, ?)",
-                (doc_id, title, description, pickle.dumps(preprocessed)),
+                "INSERT INTO episodes VALUES (?, ?, ?, ?, ?)",
+                (doc_id, title, description, summary, json.dumps(preprocessed)),
             )
 
         cur.execute("INSERT INTO inverted_index VALUES (?, ?)", ("doctor", "1x1"))

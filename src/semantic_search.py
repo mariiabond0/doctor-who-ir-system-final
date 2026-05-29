@@ -54,7 +54,7 @@ def semantic_search_sqlite(query: str, conn: sqlite3.Connection, top_n: int = 5)
 
 def encode_corpus(document_corpus):
     """Encode a corpus of documents with a Sentence Transformer."""
-    texts = [f"{doc['title']} {doc.get('description', '')}" for doc in document_corpus.values()]
+    texts = [f"{doc['title']} {doc.get('description', '')} {doc.get('summary', '')}" for doc in document_corpus.values()]
     return get_model().encode(texts, convert_to_numpy=True, normalize_embeddings=True)
 
 

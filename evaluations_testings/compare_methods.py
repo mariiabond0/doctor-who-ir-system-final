@@ -1,17 +1,19 @@
 """Generate comparison visualizations of all IR methods."""
 
+import config
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from pathlib import Path
 
 # Set style
 sns.set_style("whitegrid")
 plt.rcParams['figure.figsize'] = (14, 8)
 
 # Load results
-data_dir = Path("dw_data")
-results_df = pd.read_csv(data_dir / "search_results_summary.csv")
+results_df = pd.read_csv(config.RESULTS_CSV_PATH)
+
+# Path to save comparison chart
+dw_data = config.DATA_DIR
 
 # Extract method name (without query number)
 results_df['method_clean'] = results_df['method'].str.rsplit(pat=' ', n=1).str[0]
@@ -67,7 +69,7 @@ for i, v in enumerate(overall_score):
     ax.text(v + 0.01, i, f'{v:.3f}', va='center', fontweight='bold', fontsize=9)
 
 plt.tight_layout()
-plt.savefig(data_dir / 'method_comparison.png', dpi=300, bbox_inches='tight')
+plt.savefig(dw_data/'method_comparison.png', dpi=300, bbox_inches='tight')
 print(f"✓ Comparison chart saved to: dw_data/method_comparison.png\n")
 
 # Create detailed ranking table
@@ -85,7 +87,7 @@ for idx, row in ranking.iterrows():
 print("-" * 80)
 
 # Save ranking to CSV
-ranking.to_csv(data_dir / 'method_ranking.csv', index=False)
+ranking.to_csv(dw_data / 'method_ranking.csv', index=False)
 print(f"✓ Ranking saved to: dw_data/method_ranking.csv\n")
 
 # Per-method statistics

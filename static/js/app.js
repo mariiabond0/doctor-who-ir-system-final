@@ -64,43 +64,25 @@ async function performSearch() {
     const query = document.getElementById('queryInput').value.trim();
     const method = document.getElementById('methodSelect').value;
 
-    // Validation
     if (!query) {
         showError('Please enter a query');
         return;
     }
 
-    if (query.length < 2) {
-        showError('Query must be at least 2 characters');
-        return;
-    }
-
-    // Show loading state
-    showLoading();
+    setLoading(true);
 
     try {
-        let response;
-        if (method === 'rag') {
-            response = await fetch('/api/rag', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ query })
-            });
-        } else {
-            response = await fetch('/api/search', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ query, method })
-            });
-        }
+        const url = method === 'rag' ? '/api/rag' : '/api/search';
+
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(method === 'rag' ? { query } : { query, method })
+        });
 
         if (!response.ok) {
-            const errorData = await response.json();
-            throw new Error(errorData.error || 'Search failed');
+            const err = await response.json();
+            throw new Error(err.error || 'Search failed');
         }
 
         const data = await response.json();
@@ -111,9 +93,10 @@ async function performSearch() {
             displaySearchResults(data);
         }
 
-    } catch (error) {
-        console.error('Error:', error);
-        showError(error.message);
+    } catch (err) {
+        showError(err.message || String(err));
+    } finally {
+        setLoading(false);
     }
 }
 
@@ -121,6 +104,8 @@ async function performSearch() {
  * Display search results
  */
 function displaySearchResults(data) {
+    document.getElementById('loadingSpinner').style.display = 'none';
+
     const resultsSection = document.getElementById('resultsSection');
     const searchResults = document.getElementById('searchResults');
     const searchResultsBody = document.getElementById('searchResultsBody');
@@ -136,19 +121,34 @@ function displaySearchResults(data) {
     resultMethod.textContent = `Method: ${methodInfo[data.method]?.name || data.method}`;
 
     // Build results HTML
+
+    // Build results HTML
+  // Build results HTML
     let resultsHTML = '';
     if (data.results.length === 0) {
         resultsHTML = '<p class="text-muted">No results found for this query.</p>';
     } else {
         data.results.forEach((result, index) => {
+            // Safely sanitize and escape the DB content to protect against XSS
+            const title = escapeHtml(result.title || "Untitled Episode");
+            const description = escapeHtml(result.description || "No description provided.");
+            const season = escapeHtml(String(result.season));
+            const number = escapeHtml(String(result.number));
+            const docId = escapeHtml(String(result.doc_id));
+
             resultsHTML += `
-                <div class="result-item mb-3">
+                <div class="result-item mb-4 p-3 border rounded bg-light shadow-sm">
                     <div class="d-flex justify-content-between align-items-start">
-                        <div>
-                            <h6 class="mb-1">${index + 1}. <strong>${result}</strong></h6>
-                            <small class="text-muted">Episode ID</small>
+                        <div style="max-width: 85%;">
+                            <h5 class="mb-1 text-primary">
+                                <strong>S${season}E${number}: ${title}</strong>
+                            </h5>
+                            <small class="text-muted d-block mb-2">System ID: <code>${docId}</code></small>
+                            <p class="mb-0 text-dark" style="font-size: 0.95rem; line-height: 1.4;">
+                                ${description}
+                            </p>
                         </div>
-                        <span class="badge bg-secondary">#${index + 1}</span>
+                        <span class="badge bg-dark px-2 py-1">Rank #${index + 1}</span>
                     </div>
                 </div>
             `;
@@ -164,6 +164,8 @@ function displaySearchResults(data) {
  * Display RAG results
  */
 function displayRagResults(data) {
+    document.getElementById('loadingSpinner').style.display = 'none';
+
     const resultsSection = document.getElementById('resultsSection');
     const ragResults = document.getElementById('ragResults');
     const ragAnswer = document.getElementById('ragAnswer');
@@ -181,19 +183,35 @@ function displayRagResults(data) {
     // Display answer
     ragAnswer.innerHTML = escapeHtml(data.answer);
 
-    // Display retrieved sources
+    // Display enriched source documents
     let sourcesHTML = '';
     if (data.retrieved_docs && data.retrieved_docs.length > 0) {
         data.retrieved_docs.forEach((doc, index) => {
+            // Safely sanitize and escape the metadata properties
+            const title = escapeHtml(doc.title || "Untitled Episode");
+            const description = escapeHtml(doc.description || "No content summary.");
+            const season = escapeHtml(String(doc.season));
+            const number = escapeHtml(String(doc.number));
+            const docId = escapeHtml(String(doc.doc_id));
+
             sourcesHTML += `
-                <div class="source-item mb-2">
-                    <span class="badge bg-info">${index + 1}</span>
-                    <strong>${escapeHtml(doc)}</strong>
+                <div class="source-item mb-3 p-3 border rounded bg-light shadow-sm">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div style="max-width: 90%;">
+                            <h6 class="mb-1 text-info">
+                                <strong>[Source #${index + 1}] S${season}E${number}: ${title}</strong>
+                            </h6>
+                            <small class="text-muted d-block mb-1">System ID: <code>${docId}</code></small>
+                            <p class="mb-0 text-secondary" style="font-size: 0.9rem; line-height: 1.4;">
+                                ${description}
+                            </p>
+                        </div>
+                    </div>
                 </div>
             `;
         });
     } else {
-        sourcesHTML = '<p class="text-muted">No source documents.</p>';
+        sourcesHTML = '<p class="text-muted">No source documents retrieved.</p>';
     }
 
     ragSourcesBody.innerHTML = sourcesHTML;
@@ -205,16 +223,21 @@ function displayRagResults(data) {
 /**
  * Show loading state
  */
-function showLoading() {
+function setLoading(isLoading) {
+    const spinner = document.getElementById('loadingSpinner');
+    const btn = document.getElementById('searchBtn');
     const resultsSection = document.getElementById('resultsSection');
-    const loadingSpinner = document.getElementById('loadingSpinner');
 
-    document.getElementById('searchResults').style.display = 'none';
-    document.getElementById('ragResults').style.display = 'none';
-    document.getElementById('errorMessage').style.display = 'none';
-
-    loadingSpinner.style.display = 'block';
-    resultsSection.style.display = 'block';
+    if (isLoading) {
+        resultsSection.style.display = 'block';
+        spinner.style.display = 'block';
+        btn.disabled = true;
+        btn.innerText = 'Searching...';
+    } else {
+        spinner.style.display = 'none';
+        btn.disabled = false;
+        btn.innerText = '🔍 Search';
+    }
 }
 
 /**

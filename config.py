@@ -3,7 +3,6 @@ Configuration file for the Doctor Who IR project.
 Centralizes all paths, settings, and configuration constants.
 """
 
-import os
 from pathlib import Path
 
 # Project root
@@ -47,7 +46,7 @@ MODEL_NAME = "all-MiniLM-L6-v2"
 # RAG settings (Retrieval Augmented Generation)
 RAG_ENABLED = True
 OLLAMA_BASE_URL = "http://localhost:11434"
-OLLAMA_MODEL = "llama2"
+OLLAMA_MODEL = "llama3"  # Ollama model name
 RAG_CONTEXT_SIZE = 5  # Number of retrieved documents for context
 RAG_TEMPERATURE = 0.7  # Generation temperature (0.0-1.0)
 RAG_MAX_TOKENS = 500  # Maximum tokens for answer generation

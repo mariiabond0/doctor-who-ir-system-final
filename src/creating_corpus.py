@@ -7,7 +7,8 @@ import sqlite3
 from collections import defaultdict
 
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
-os.environ.setdefault("OMP_NUM_THREADS", "1")
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 import faiss
 import numpy as np
@@ -41,13 +42,24 @@ def load_episode_data() -> pd.DataFrame:
         raise FileNotFoundError(
             f"Missing required CSV file: {exc.filename}.\nEither provide {config.MERGED_DATASET_PATH} or ensure {config.EPISODES_CSV}, {config.IMDB_CSV}, and {config.DW_GUIDE_CSV} exist."
         ) from exc
-
-    merged = pd.merge(
+    #merged = pd.merge(
         df_imdb[["number", "title", "description", "season"]],
-        df_details[["title", "description"]],
+        df_details["title"],
         df_guide[["title", "summary"]],
         on="title",
         how="left",
+    #)
+    base = df_imdb[["number", "title", "description", "season"]]
+    merged = base.merge(
+        df_details[["title"]],
+        on="title",
+        how="left",
+        suffixes=("", "_details")
+    )
+    merged = merged.merge(
+        df_guide[["title", "summary"]],
+        on="title",
+        how="left"
     )
     merged.to_csv(config.MERGED_DATASET_PATH, index=False)
     return merged
@@ -94,7 +106,8 @@ def build_corpus(df: pd.DataFrame):
 
         title = str(getattr(row, "title", "")).strip()
         description = str(getattr(row, "description", "")).strip()
-        text = f"{title} {description}".strip()
+        summary = str(getattr(row, "summary", "")).strip()
+        text = f"{title} {description} {summary}".strip()
 
         document_corpus[doc_id] = {
             "id": doc_id,
@@ -102,6 +115,7 @@ def build_corpus(df: pd.DataFrame):
             "number": number,
             "title": title,
             "description": description,
+            "summary": summary,
         }
 
         preprocessed = preprocess_text(text)
@@ -208,7 +222,7 @@ def save_json_corpus(document_corpus, inverted_index):
 #     LOGGER.info("SQLite database saved.")
 
 
-def save_database(document_corpus, inverted_index, embeddings_dict):
+def save_database(document_corpus, inverted_index, embeddings_dict, precomputed_tokens=None):
     """Efficiently write corpus, inverted index, and embeddings to SQLite."""
 
     conn = sqlite3.connect(str(config.DB_PATH))
@@ -232,6 +246,7 @@ def save_database(document_corpus, inverted_index, embeddings_dict):
             number INTEGER,
             title TEXT,
             description TEXT,
+            summary TEXT,
             preprocessed_combined TEXT
         );
 
@@ -260,8 +275,8 @@ def save_database(document_corpus, inverted_index, embeddings_dict):
         number = int(doc["number"])
         title = (doc.get("title") or "").strip()
         description = (doc.get("description") or "").strip()
-
-        preprocessed = preprocess_text(f"{title} {description}")
+        summary = (doc.get("summary") or "").strip()
+        preprocessed = preprocess_text(f"{title} {description} {summary}")
 
         episodes_rows.append(
             (
@@ -270,11 +285,12 @@ def save_database(document_corpus, inverted_index, embeddings_dict):
                 number,
                 title,
                 description,
+                summary,
                 json.dumps(preprocessed, ensure_ascii=False),
             )
         )
 
-    cur.executemany("INSERT INTO episodes VALUES (?, ?, ?, ?, ?, ?)", episodes_rows)
+    cur.executemany("INSERT INTO episodes VALUES (?, ?, ?, ?, ?, ?, ?)", episodes_rows)
 
     # --- Prepare inverted index batch ---
     inverted_rows = []
@@ -304,7 +320,7 @@ def save_database(document_corpus, inverted_index, embeddings_dict):
 
 def build_faiss_index(embeddings_dict):
     """Build and save a FAISS index for the corpus embeddings."""
-    doc_ids = sorted(embeddings_dict.keys())
+    doc_ids = list(embeddings_dict.keys())
     embedding_matrix = np.vstack([embeddings_dict[doc_id] for doc_id in doc_ids]).astype("float32")
 
     faiss.normalize_L2(embedding_matrix)
@@ -313,6 +329,7 @@ def build_faiss_index(embeddings_dict):
 
     index = faiss.IndexHNSWFlat(dimension, config.FAISS_M)
     index.hnsw.efConstruction = config.FAISS_EF_CONSTRUCTION
+    index.hnsw.efSearch = config.FAISS_EF_SEARCH
     index.add(embedding_matrix)
 
     faiss.write_index(index, str(config.FAISS_INDEX_PATH))

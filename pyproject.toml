@@ -34,6 +34,8 @@ dependencies = [
     "huggingface-hub>=0.36.2",
     "pyvis>=0.3.2",
     "lxml>=6.1.1",
+    "matplotlib>=3.7.5",
+    "seaborn>=0.13.2",
 ]
 
 [project.optional-dependencies]
