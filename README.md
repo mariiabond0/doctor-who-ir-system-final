@@ -62,7 +62,7 @@ doctor-who-ir-project/
 ├─ dw_data/                      # Data directory
 │   ├─ all-detailsepisodes.csv   # Episode details
 │   ├─ all-scripts.csv           # Episode scripts details
-│   ├─ bm25_testing.csv          # BM25 parameter sweep results
+│   ├─ bm25_param_tuning.csv     # BM25 parameter sweep results
 │   ├─ doctor_who.db             # SQLite database (episodes, index, embeddings)
 │   ├─ document_corpus_dw.json   # Serialized document corpus
 │   ├─ dwguide.csv               # DW guide data
@@ -372,19 +372,19 @@ The Flask application provides a REST API for programmatic access:
 
 ### Health Check
 ```bash
-curl http://localhost:5000/api/methods
+curl http://localhost:5001/api/methods
 ```
 
 ### Search
 ```bash
-curl -X POST http://localhost:5000/api/search \
+curl -X POST http://localhost:5001/api/search \
   -H "Content-Type: application/json" \
   -d '{"query": "Daleks", "method": "boolean"}'
 ```
 
 ### RAG Query
 ```bash
-curl -X POST http://localhost:5000/api/rag \
+curl -X POST http://localhost:5001/api/rag \
   -H "Content-Type: application/json" \
   -d '{"query": "Who is the Doctor?"}'
 ```
