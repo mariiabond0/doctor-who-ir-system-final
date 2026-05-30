@@ -4,6 +4,7 @@ Centralizes all paths, settings, and configuration constants.
 """
 
 from pathlib import Path
+import logging
 
 # Project root
 PROJECT_ROOT = Path(__file__).parent
@@ -12,13 +13,16 @@ DATA_DIR = PROJECT_ROOT / "dw_data"
 # Database paths
 DB_PATH = DATA_DIR / "doctor_who.db"
 
+# Outputs
+OUTPUTS_DIR = PROJECT_ROOT / "outputs"
+
 # Data file paths
-CORPUS_PATH = DATA_DIR / "document_corpus_dw.json"
-INDEX_PATH = DATA_DIR / "inverted_index.json"
+CORPUS_PATH = OUTPUTS_DIR / "document_corpus_dw.json"
+INDEX_PATH = OUTPUTS_DIR / "inverted_index.json"
 FAISS_INDEX_PATH = DATA_DIR / "faiss.index"
 FAISS_MAPPING_PATH = DATA_DIR / "faiss_mapping.json"
 MERGED_DATASET_PATH = DATA_DIR / "merged_dataset.csv"
-RESULTS_CSV_PATH = DATA_DIR / "search_results_summary.csv"
+RESULTS_CSV_PATH = OUTPUTS_DIR / "search_results_summary.csv"
 QUERIES_PATH = DATA_DIR / "second_example_20_queries.json"
 
 # Input data files
@@ -37,11 +41,12 @@ EXCLUDE_SEASONS = ["11"]  # Seasons to exclude from corpus
 DEFAULT_TOP_K = 5
 FAISS_EF_CONSTRUCTION = 400  # HNSW parameter (increased from 200)
 FAISS_M = 64  # HNSW parameter (increased from 32)
-FAISS_EF_SEARCH = 200  # HNSW search-time parameter (increased from 50)
+FAISS_EF_SEARCH = 100  # HNSW search-time parameter (increased from 50)
 
 # Model settings
-MODEL_NAME = "all-MiniLM-L6-v2"
-#MODEL_NAME = "multi-qa-MiniLM-L6-cos-v1"
+#MODEL_NAME = "all-MiniLM-L6-v2"
+#MODEL_NAME = "multi-qa-MiniLM-L6-cos-v1" #worst
+MODEL_NAME = 'BAAI/bge-base-en-v1.5' #best
 
 # RAG settings (Retrieval Augmented Generation)
 RAG_ENABLED = True
@@ -60,3 +65,13 @@ EVALUATION_TOP_K = 5
 
 # Ensure data directory exists
 DATA_DIR.mkdir(exist_ok=True)
+
+# Configure logging
+logging.basicConfig(
+    level=getattr(logging, LOG_LEVEL),
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler(LOG_FILE),
+    ],
+)

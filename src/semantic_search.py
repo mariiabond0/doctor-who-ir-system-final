@@ -1,5 +1,4 @@
 import os
-import pickle
 import sqlite3
 from typing import Dict
 
@@ -32,15 +31,32 @@ def load_embeddings_from_db(conn: sqlite3.Connection) -> Dict[str, np.ndarray]:
 
 def semantic_search_sqlite(query: str, conn: sqlite3.Connection, top_n: int = 5):
     """Vector search over stored embeddings in SQLite."""
+    #if conn not in _embeddings_cache:
+    #    _embeddings_cache[conn] = load_embeddings_from_db(conn)
+    #
+    #embeddings_dict = _embeddings_cache[conn]
+    #if not embeddings_dict:
+    #    return []
+    #
+    #doc_ids = list(embeddings_dict.keys())
+    #corpus_embeddings = np.stack(list(embeddings_dict.values()))
     if conn not in _embeddings_cache:
-        _embeddings_cache[conn] = load_embeddings_from_db(conn)
+        embeddings_dict = load_embeddings_from_db(conn)
 
-    embeddings_dict = _embeddings_cache[conn]
-    if not embeddings_dict:
+        doc_ids = list(embeddings_dict.keys())
+        corpus_embeddings = np.stack(list(embeddings_dict.values()))
+
+        _embeddings_cache[conn] = {
+            "doc_ids": doc_ids,
+            "matrix": corpus_embeddings
+        }
+
+    cache = _embeddings_cache[conn]
+    doc_ids = cache["doc_ids"]
+    corpus_embeddings = cache["matrix"]
+
+    if corpus_embeddings is None or len(corpus_embeddings) == 0:
         return []
-
-    doc_ids = list(embeddings_dict.keys())
-    corpus_embeddings = np.stack(list(embeddings_dict.values()))
 
     query_embedding = get_model().encode(query, convert_to_numpy=True, normalize_embeddings=True)
     cosine_scores = util.cos_sim(query_embedding.reshape(1, -1), corpus_embeddings)[0]
@@ -54,8 +70,24 @@ def semantic_search_sqlite(query: str, conn: sqlite3.Connection, top_n: int = 5)
 
 def encode_corpus(document_corpus):
     """Encode a corpus of documents with a Sentence Transformer."""
-    texts = [f"{doc['title']} {doc.get('description', '')} {doc.get('summary', '')}" for doc in document_corpus.values()]
-    return get_model().encode(texts, convert_to_numpy=True, normalize_embeddings=True)
+    texts = [
+        (
+            doc["title"] + " " + doc.get("title", "") + " " + doc.get("title", "") + " "
+            + doc.get("summary", "") + " "
+            + doc.get("summary", "") + " "
+            + doc.get("description", "")
+        )
+        for doc in document_corpus.values()
+    ]
+
+    return get_model().encode(
+        texts,
+        convert_to_numpy=True,
+        normalize_embeddings=True
+    )
+
+    #texts = [f"{doc['title']} {doc.get('description', '')} {doc.get('summary', '')}" for doc in document_corpus.values()]
+    #return get_model().encode(texts, convert_to_numpy=True, normalize_embeddings=True)
 
 
 def semantic_search(query: str, document_corpus, corpus_embeddings, top_n: int = 5):

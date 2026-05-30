@@ -1,13 +1,13 @@
 # Doctor Who Information Retrieval System
 
-A comprehensive information retrieval system for the **Doctor Who** TV series. This project implements and compares multiple search methods including **Boolean search**, **BM25**, **semantic search with Sentence Transformers**, **FAISS-based nearest neighbor search**, **fused search approach**, and **RAG** combining sparse and dense retrieval.
+A comprehensive information retrieval system for the **Doctor Who** TV series. This project implements and compares multiple search methods including **Boolean search**, **BM25**, **semantic search with Sentence Transformers**, **FAISS-based nearest neighbor search**, **fused search approach** combining sparse and dense retrieval and **RAG**.
 
 ## Features
 
 * **Corpus Creation**
   * Loads episode metadata from CSV files (`all-detailsepisodes.csv`, `imdb_details.csv`, `dwguide.csv`)
-  * Preprocesses text with tokenization, optional stopword removal, and stemming
-  * Builds a **document corpus**, **inverted index**, and **SQLite database**
+  * Preprocesses text with tokenization, optional stopword removal and stemming
+  * Builds a **document corpus**, **inverted index**, **FAISS index and mapping** and **SQLite database**
   * Creates embeddings using `SentenceTransformers` for semantic search
 
 * **Search Methods**
@@ -15,10 +15,10 @@ A comprehensive information retrieval system for the **Doctor Who** TV series. T
   * **BM25 Search** - Probabilistic ranking using `rank_bm25` with configurable k1 and b parameters
   * **Semantic Search** - Dense vector-based retrieval from SQLite embeddings
   * **FAISS Semantic Search** - Fast approximate nearest neighbor search using HNSW index
-  * **Fused Search** - Combines BM25 and semantic results using Reciprocal Rank Fusion (RRF)
+  * **Fused Search** - Combines BM25 and semantic results using Reciprocal Rank Fusion (RRF) followed by deep-learning neural reranking via a Cross-Encoder (cross-encoder/ms-marco-MiniLM-L-6-v2).
 
 * **RAG (Retrieval Augmented Generation)**
-  * Integrates local **Ollama LLM** for generating contextual answers
+  * Integrates local **Ollama LLM** for generating answers
   * Retrieves relevant episodes and uses them as context for answer generation
   * Requires `llama3` model or compatible Ollama model running locally
 
@@ -26,19 +26,16 @@ A comprehensive information retrieval system for the **Doctor Who** TV series. T
   * Computes **P@5** (Precision@5), **R@5** (Recall@5), **AP** (Average Precision)
   * Calculates **MRR** (Mean Reciprocal Rank) and **nDCG** (normalized Discounted Cumulative Gain)
   * Uses gold query-answer pairs for evaluation
-  * Supports grid search for BM25 parameter optimization
+  * Supports grid search for BM25 parameter optimization via a CLI sweep routine
 
 * **Storage & Persistence**
-  * **JSON Files**: `document_corpus_dw.json`, `inverted_index.json`
-  * **SQLite Database**: `doctor_who.db` stores episodes, inverted index, and embeddings
-  * **FAISS Index**: `faiss.index` with `faiss_mapping.json` for fast semantic retrieval
-  * **Results**: CSV outputs for evaluation metrics and parameter sweep results
+  * **Data Files (dw_data/)**: SQLite database ('doctor_who.db'), FAISS Index & Mapping ('faiss.index, faiss_mapping.json'), mapping rules, and baseline datasets
+  * **Outputs (outputs/)**: Generated structures ('document_corpus_dw.json', 'inverted_index.json'), parameter sweep results, metrics tables, and evaluation visualizations
 
 * **Development Tools**
-  * Unit tests for preprocessing, search methods, and evaluation
-  * Visualization script for comparing search method performance
-  * Parameter tuning capabilities
-  * `uv`-based dependency management for reproducibility
+  * Unit tests for preprocessing, search methods, and evaluation metrics
+  * Performance plotting script for comparing search methodology records
+  * uv-based dependency management for fast reproducibility
 
 ## Project Structure
 
@@ -47,54 +44,58 @@ doctor-who-ir-project/
 │
 ├─ src/
 │   ├─ __init__.py
-│   ├─ preprocessing.py          # Text tokenization, stemming, stopword removal
-│   ├─ creating_corpus.py        # Corpus & database building pipeline
-│   ├─ boolean_search.py         # Inverted index-based exact matching
 │   ├─ bm_25.py                  # BM25 probabilistic ranking
-│   ├─ semantic_search.py        # Dense embeddings from SQLite
+│   ├─ boolean_search.py         # Inverted index-based exact matching
+│   ├─ creating_corpus.py        # Corpus & database building pipeline
+│   ├─ evaluation.py             # Metrics computation infrastructure
+│   ├─ faiss_search.py           # Vector search implementation via FAISS
+│   ├─ fused_search.py           # Hybrid sparse/dense RRF retrieval 
+│   ├─ preprocessing.py          # Text tokenization, stemming, stopword removal
 │   ├─ rag.py                    # RAG with Ollama LLM integration
-│   ├─ evaluation.py             # Metrics computation (P@5, R@5, AP, MRR, nDCG)
-│   └─ kg_builders/              # Knowledge graph experiments
-│       ├─ kg_exp.py             # by myself
-│       ├─ kg_exp_chatgpt.py     # by chatgpt
-│       └─ kg_exp_claude.py      # by Claude
+│   ├─ semantic_search.py        # Dense embeddings from SQLite
+│   └─ kg_builders/              # Knowledge graph generation experiments
 │
-├─ dw_data/                      # Data directory
-│   ├─ all-detailsepisodes.csv   # Episode details
-│   ├─ all-scripts.csv           # Episode scripts details
-│   ├─ bm25_param_tuning.csv     # BM25 parameter sweep results
-│   ├─ doctor_who.db             # SQLite database (episodes, index, embeddings)
-│   ├─ document_corpus_dw.json   # Serialized document corpus
-│   ├─ dwguide.csv               # DW guide data
-│   ├─ faiss_mapping.json        # Maps FAISS indices to document IDs
-│   ├─ faiss.index               # FAISS HNSW index
-│   ├─ first_example_10_queries  # initial test queries
-│   ├─ imdb_details.csv          # IMDB episode data
-│   ├─ inverted_index.json       # Inverted index for boolean search
-│   ├─ merged_dataset.csv        # Pre-merged episode data
-│   ├─ method_comparison.png     
+├─ dw_data/                      # Source datasets & working DB
+│   ├─ all-detailsepisodes.csv
+│   ├─ all-scripts.csv
+│   ├─ doctor_who.db             # Main SQLite storage
+│   ├─ dwguide.csv
+│   ├─ faiss_mapping.json
+│   ├─ faiss.index
+│   ├─ imdb_details.csv
+│   ├─ merged_dataset.csv
+│   └─ second_example_20_queries.json
+│
+├─ outputs/                      # Generated evaluation artifacts
+│   ├─ bm25_param_tuning.csv
+│   ├─ document_corpus_dw.json
+│   ├─ inverted_index.json
+│   ├─ method_comparison.png
 │   ├─ method_ranking.csv
-│   ├─ search_results_summary.csv# Evaluation results across all methods
-│   └─ second_example_20_queries.json # Test queries and gold answers
+│   └─ search_results_summary.csv
 │
-├─ graph_depo/                   # Knowledge Graphs visualizations
-│   ├─ doctor_who_kg_claude.graphml
-│   ├─ doctor_who_kg_claude.html
-│   ├─ doctor_who_kg.graphml
-│   └─ doctor_who_kg.html
+├─ graph_depo/                   # Knowledge Graph files
 │
-├─ evaluations_testings/          # Tests and comparisons
-│   ├─ compare_methods.py         # Visualization of search method comparison
-│   └─ tests.py                   # Unit tests
+├─ static/                       # Web frontend styling/logic
+│   ├─ css/
+│   └─ js/
 │
-├─ main.py                        # Main evaluation script
-├─ config.py                      # Centralized configuration
-├─ app.py                         # UI start
-├─ pyproject.toml                 # Project metadata & dependencies
-├─ requirements.txt               # pip dependencies
-├─ README.md                      # This file
+├─ templates/
+│   └─ index.html                # Main interface template
+│
+├─ tests/                        # Application testing framework
+│   ├─ __init__.py
+│   └─ test_engine.py
+│
+├─ app.py                        # Flask Web Application entry point
 ├─ app.log
-└─ uv.lock                        # Locked dependency versions
+├─ compare_methods.py            # Search method visualization
+├─ config.py                     # Centralized configuration
+├─ main.py                       # CLI Evaluation and execution entry point
+├─ requirements.txt              # pip dependencies
+├─ pyproject.toml                # Project metadata & dependencies
+├─ README.md                     # This file
+└─ uv.lock                       # Locked dependency versions
 ```
 
 ## Installation
@@ -107,7 +108,7 @@ Install `uv` if you haven't already:
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-Then set up the project:
+Then set up the project and sync dependencies:
 
 ```bash
 uv sync
@@ -131,7 +132,7 @@ pip install -r requirements.txt
 
 ### 1. Build the Corpus and Database
 
-Create the document corpus, inverted index, SQLite database, and FAISS embeddings:
+Create the document corpus, inverted index, SQLite database tables, and FAISS embeddings:
 
 ```bash
 uv run python src/creating_corpus.py
@@ -146,7 +147,7 @@ This will:
 
 ### 2. Launch Web UI (Recommended)
 
-Start the Flask web application with a beautiful, responsive interface:
+Start the Flask web application on port 5001:
 
 ```bash
 uv run python app.py
@@ -158,21 +159,14 @@ Then open your browser to **http://localhost:5001**
 - 🎯 Unified search interface with method selector
 - 🤖 RAG mode for AI-generated answers (requires Ollama)
 - 📊 Real-time results with episode cards
-- 📱 Fully responsive design (desktop, tablet, mobile)
 - ⚡ Fast, clean, modern UI
-
-**Screenshots:**
-- Query box at top with search method dropdown
-- Results display as episode cards with ranking
-- RAG mode shows retrieved documents + AI answer
-- Method information panel with performance metrics
 
 ### 3. Run Evaluation Mode
 
-Evaluate all search methods on the test queries (CLI mode):
+Evaluate all search methods on your test queries via the CLI:
 
 ```bash
-uv run python main.py
+uv run python main.py --mode eval
 ```
 
 Evaluates:
@@ -182,115 +176,60 @@ Evaluates:
 - FAISS Semantic Search
 - Fused Search (BM25 + Semantic with RRF)
 
-Results are saved to `dw_data/search_results_summary.csv` with metrics for each query and method.
+Results are saved to `outputs/search_results_summary.csv`.
 
-### 4. Run CLI Modes
+ℹ️ Note: The first time you execute an evaluation or search query using the fused pipeline, the application will automatically pull the cross-encoder reranker model (cross-encoder/ms-marco-MiniLM-L-6-v2) from Hugging Face. This requires an active internet connection.
+
+### 4. Run CLISearch Modes
 
 **Search with specific method:**
 ```bash
 uv run python main.py --mode search --query "Daleks" --search-method boolean
 ```
+(Available choices: boolean, bm25, semantic, faiss, fused)
 
-**RAG mode (CLI):**
+**RAG mode (CLI answering):**
 ```bash
 uv run python main.py --mode rag --query "Who is the Doctor?"
 ```
 
-### 5. Optimize BM25 Parameters
+### 5. Optimize BM25 Parameters (Grid Search)
 
-Run a grid search over BM25 `k1` and `b` parameters:
+Run a parameter sweep grid directly across multiple values of k1 and b. This executes the optimization pipeline defined inside src/evaluation.py:
 
 ```bash
-uv run python main.py --sweep-bm25 --k1-values 0.3 0.4 0.5 0.6 0.7 --b-values 0.7 0.75 0.8 0.85 0.9 1.0 --output bm25_param_tuning.csv
+uv run python main.py --sweep-bm25 --output bm25_param_tuning.csv
 ```
-
-Saves aggregated metrics (mean P@5, R@5, MAP, MRR, nDCG) for each parameter combination.
 
 ### 6. Compare Search Methods
 
-Generate a visualization comparing all methods:
+Generate a visualization plot comparing all metrics across all methods:
 
 ```bash
 uv run python compare_methods.py
 ```
 
-Creates `dw_data/method_comparison.png` with bar charts for P@5, R@5, AP, MRR, and nDCG.
+Creates `outputs/method_comparison.png` with bar charts for P@5, R@5, AP, MRR, and nDCG.
 
-### 7. Use RAG for Answer Generation
+### 7. Run Verification Tests
 
-Generate AI-powered answers using local Ollama LLM (via web UI or CLI):
-
-**Prerequisites:**
-1. Install Ollama: https://ollama.ai
-2. Pull the model: `ollama pull llama3` (or your preferred model)
-3. Start Ollama server: `ollama serve`
-
-**Via Web UI (Recommended):**
-1. Start: `uv run python app.py`
-2. Go to http://localhost:5001
-3. Select method: "RAG - AI Generated Answer"
-4. Enter query: "Who is the Doctor?"
-5. View AI answer with source documents
-
-> Tip: If running via uv on a different host/port, replace the URL accordingly (e.g., http://127.0.0.1:5001).
-
-**Via CLI:**
+Run the full testing framework suite through pytest:
 
 ```bash
-uv run python main.py --mode rag --query "Who is the Doctor?"
+uv run pytest tests/test_engine.py -v
 ```
-
-The system will:
-- Retrieve the 5 most relevant Doctor Who episodes
-- Pass them as context to Ollama's llama3 model
-- Generate a contextual answer based on the retrieved episodes
-
-**Example output:**
-```
-================================================================================
-RAG ANSWER
-================================================================================
-
-Question: Who is the Doctor?
-
-Retrieved 5 documents:
-  1. 1x1 (score: 0.800)
-  2. 2x4 (score: 0.750)
-  3. 1x9 (score: 0.725)
-  4. 5x1 (score: 0.700)
-  5. 7x5 (score: 0.675)
-
-────────────────────────────────────────────────────────────────────────────────
-Generated Answer:
-────────────────────────────────────────────────────────────────────────────────
-
-The Doctor is a mysterious time traveler from the planet Gallifrey who...
-```
-
-### 8. Run Tests
-
-Execute unit tests for preprocessing, search methods, and evaluation:
-
-```bash
-pytest tests.py -v
-```
-
-Tests verify:
-- Text preprocessing (tokenization, stemming, stopword removal)
-- Boolean and BM25 search functionality
-- Evaluation metrics computation
 
 ## Configuration
 
-All settings are centralized in `config.py`:
+All configuration variables are centralized in `config.py`:
 
 | Setting | Default | Description |
 |---------|---------|-------------|
 | `ENABLE_STOPWORD_REMOVAL` | `True` | Remove common English stopwords |
 | `ENABLE_STEMMING` | `True` | Apply Porter stemming |
 | `DEFAULT_TOP_K` | `5` | Default number of results |
-| `MODEL_NAME` | `all-MiniLM-L6-v2` | Sentence Transformers model |
-| `FAISS_M` | `32` | HNSW parameter (max connections) |
+| `MODEL_NAME` | `BAAI/bge-base-en-v1.5` | Sentence Transformers model |
+| `FAISS_M` | `64` | HNSW parameter (max connections) |
 | `FAISS_EF_SEARCH` | `50` | HNSW search-time parameter |
 | `EXCLUDE_SEASONS` | `["11"]` | Seasons to exclude from corpus |
 | `RAG_ENABLED` | `True` | Enable RAG mode |
@@ -300,55 +239,11 @@ All settings are centralized in `config.py`:
 | `RAG_TEMPERATURE` | `0.7` | LLM generation temperature (0.0-1.0) |
 | `RAG_MAX_TOKENS` | `500` | Maximum tokens in generated answer |
 
-Modify `config.py` to customize preprocessing, search behavior, or model selection.
-
 ## Key Components
 
-### src/preprocessing.py
-- **`preprocess_text(text)`**: Tokenizes, stems, and removes stopwords
-- Handles `None` and empty inputs gracefully
-- Returns list of processed tokens
-
-### src/creating_corpus.py
-- **`load_episode_data()`**: Loads from merged CSV or individual source files
-- **`build_inverted_index()`**: Creates token→document mapping
-- **`build_corpus()`**: Constructs searchable document corpus
-- **`build_sqlite_db()`**: Stores episodes and embeddings
-- **`build_faiss_index()`**: Creates HNSW index for fast semantic search
-
-### src/bm_25.py
-- **`bm25_search_sqlite(query, conn, k1=1.5, b=0.75, top_n=5)`**: BM25 ranking
-- Configurable k1 and b parameters for tuning
-- Extracts results from SQLite
-
-### src/semantic_search.py
-- **`semantic_search_sqlite(query, conn, top_n=5)`**: Dense retrieval from embeddings
-- Loads embeddings from SQLite, computes similarities
-- Returns top-k by cosine similarity
-
-### src/boolean_search.py
-- **`boolean_search_sqlite(query, conn, top_n=5)`**: Exact token matching
-- Uses inverted index for fast retrieval
-
-### src/evaluation.py
-- **`compute_metrics(retrieved, relevant, top_k=5)`**: Computes:
-  - **P@k**: Precision at k
-  - **R@k**: Recall at k
-  - **AP**: Average Precision
-  - **MRR**: Mean Reciprocal Rank
-  - **nDCG**: Normalized Discounted Cumulative Gain with graded relevance
-
-### src/rag.py
-- **`rag_query(query)`**: End-to-end RAG pipeline
-  - Retrieves top-K episodes using Boolean Search
-  - Builds context from retrieved documents
-  - Queries Ollama LLM with context
-  - Returns structured result with answer and source documents
-- **`check_ollama_health()`**: Checks if Ollama server is running
-- **`retrieve_context(query, top_k=5)`**: Retrieves and formats episode context
-- **`build_prompt(query, context)`**: Constructs LLM prompt with context
-- **`query_ollama(prompt, temperature, max_tokens)`**: Sends prompt to Ollama
-- **`format_rag_output(result)`**: Formats RAG result for display
+### main.py
+- Core execution router managing parsing arguments for --mode eval, --mode search, --mode rag, and --sweep-bm25.
+- Manages runtime instantiation of index handlers and database connections.
 
 ### app.py (Flask Web Application)
 - **`GET /`**: Serves the main web UI (index.html)
@@ -356,10 +251,23 @@ Modify `config.py` to customize preprocessing, search behavior, or model selecti
 - **`POST /api/search`**: Performs search with specified method
   - Parameters: `query` (string), `method` (boolean|bm25|semantic|faiss|fused)
   - Returns: `results` (list of episode IDs), `count`, `method`
-- **`POST /api/rag`**: Performs RAG query
-  - Parameters: `query` (string)
-  - Returns: `answer` (generated text), `retrieved_docs` (source episodes), `error` (if any)
+- **`POST /api/rag`**: Performs RAG search by dynamically processing, fetching, and formatting structural metadata records from the SQLite database.
 - **`GET /static/<path>`**: Serves static files (CSS, JavaScript)
+
+### src/evaluation.py
+- **`compute_metrics`**: Computes:
+  - **P@k**: Precision at k
+  - **R@k**: Recall at k
+  - **AP**: Average Precision
+  - **MRR**: Mean Reciprocal Rank
+  - **nDCG**: Normalized Discounted Cumulative Gain with graded relevance
+- **`bm25_param_sweep()`**: Houses the processing logic for tracking metric shifts across experimental hyperparameter spaces.
+
+### src/faiss_search.py
+- **`faiss_query(query, index, mapping, model, top_k)`**: Converts incoming text into dense vector queries and extracts fast nearest-neighbors maps from HNSW indices.
+
+### src/fused_search.py
+- **`fused_query()`**: Runs multi-stage hybrid search workflows. Combines sparse tables (BM25) with dense indexes via Reciprocal Rank Fusion (RRF) and reranks the results using cross-encoders.
 
 ### Web UI Files
 - **`templates/index.html`**: Main page with query interface and results display
@@ -379,7 +287,7 @@ curl http://localhost:5001/api/methods
 ```bash
 curl -X POST http://localhost:5001/api/search \
   -H "Content-Type: application/json" \
-  -d '{"query": "Daleks", "method": "boolean"}'
+  -d '{"query": "Daleks", "method": "fused"}'
 ```
 
 ### RAG Query
@@ -388,16 +296,6 @@ curl -X POST http://localhost:5001/api/rag \
   -H "Content-Type: application/json" \
   -d '{"query": "Who is the Doctor?"}'
 ```
-
-### main.py
-- **`evaluate_method(name, query_fn)`**: Evaluates a search method
-- **`fused_query(...)`**: Combines BM25 and semantic with RRF (k=60)
-- **`bm25_param_sweep(...)`**: Grid search over k1 and b
-
-### compare_methods.py
-- Loads evaluation results from CSV
-- Generates comparison bar charts and metrics table
-- Saves visualization to PNG
 
 ## Dataset
 
@@ -412,17 +310,7 @@ Test queries and gold answers are in `dw_data/second_example_20_queries.json`.
 
 ## Performance Notes
 
-- **Boolean Search**: Exact matching, fastest but limited recall
-- **BM25**: Good balance of precision and recall; best for term-based queries
-- **Semantic Search**: Best for conceptual/meaning-based queries; slower than BM25
-- **FAISS**: Fastest semantic search (~HNSW approximate nearest neighbors)
-- **Fused Search**: Combines strengths of sparse and dense; highest overall performance
-
-Run `compare_methods.py` after evaluation to see detailed comparisons.
-
-## Development
-
-- **Tests**: `pytest tests.py -v` for comprehensive test suite
-- **Logging**: Check `app.log` for detailed execution logs
-- **Virtual Environment**: Use `uv` for reproducible dependency versions
-
+- **Fused Search (Hybrid RRF + Reranking)**: Highest overall performance (Normalized Score: 1.000). By combining the lexical precision of BM25 with the conceptual abstraction of dense vectors, it leads across every single metric—notably achieving a Mean MRR of 0.704 and a Mean nDCG of 0.362. Use this when accuracy is the absolute priority.
+- **BM25**: While slightly trailing semantic variants in broad coverage (Mean P@5: 0.260 vs 0.270), it significantly outperforms pure semantic search on position-weighted metrics, capturing a Mean MRR of 0.617 (compared to Semantic's 0.571). It remains the best baseline for exact keyword/entity queries (e.g., specific alien races or episode titles).
+- **FAISS Semantic Search vs. Vanilla Semantic**: Identical retrieval quality with massive speed gains. Both methods yield identical precision and recall profiles (Mean P@5: 0.270, Mean R@5: 0.277), but FAISS utilizes a localized HNSW approximate nearest-neighbor index to bypass exhaustive database cosine-similarity loops, offering significantly lower latency.
+- **Boolean Search**: Exact keyword intersection provides the lowest computational overhead but suffers from severe vocabulary mismatch, resulting in the lowest metrics across the board (Mean AP: 0.153).

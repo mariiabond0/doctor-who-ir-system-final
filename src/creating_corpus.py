@@ -42,13 +42,6 @@ def load_episode_data() -> pd.DataFrame:
         raise FileNotFoundError(
             f"Missing required CSV file: {exc.filename}.\nEither provide {config.MERGED_DATASET_PATH} or ensure {config.EPISODES_CSV}, {config.IMDB_CSV}, and {config.DW_GUIDE_CSV} exist."
         ) from exc
-    #merged = pd.merge(
-        df_imdb[["number", "title", "description", "season"]],
-        df_details["title"],
-        df_guide[["title", "summary"]],
-        on="title",
-        how="left",
-    #)
     base = df_imdb[["number", "title", "description", "season"]]
     merged = base.merge(
         df_details[["title"]],
@@ -84,20 +77,6 @@ def build_corpus(df: pd.DataFrame):
     embeddings_dict = {}
     model = SentenceTransformer(MODEL_NAME)
 
-    # for _, row in df.iterrows():
-    #    doc_id = document_id(int(row["season"]), int(row["number"]))
-    #    title = str(row.get("title", "")).strip()
-    #    description = str(row.get("description", "")).strip()
-    #    text = f"{title} {description}".strip()
-
-    #    document_corpus[doc_id] = {
-    #        "id": doc_id,
-    #        "season": int(row["season"]),
-    #        "number": int(row["number"]),
-    #        "title": title,
-    #        "description": description,
-    #    }
-
     for row in df.itertuples(index=False):
         season = int(row.season)
         number = int(row.number)
@@ -107,7 +86,12 @@ def build_corpus(df: pd.DataFrame):
         title = str(getattr(row, "title", "")).strip()
         description = str(getattr(row, "description", "")).strip()
         summary = str(getattr(row, "summary", "")).strip()
-        text = f"{title} {description} {summary}".strip()
+        #text = f"{title} {description} {summary}".strip()
+        text = (
+            title + " " + title + " " + title + " " +
+            summary + " " + summary + " " +
+            description
+        )
 
         document_corpus[doc_id] = {
             "id": doc_id,
@@ -151,76 +135,7 @@ def save_json_corpus(document_corpus, inverted_index):
         json.dump(inverted_index_json, output, ensure_ascii=False, indent=2)
 
     LOGGER.info("Corpus JSON and inverted index saved.")
-
-
-# def save_database(document_corpus, inverted_index, embeddings_dict):
-#     """Write the corpus, inverted index, and embeddings to SQLite."""
-#     conn = sqlite3.connect(str(config.DB_PATH))
-#     cur = conn.cursor()
-
-#     cur.execute(
-#         """
-#         CREATE TABLE IF NOT EXISTS episodes (
-#             doc_id TEXT PRIMARY KEY,
-#             season INTEGER,
-#             number INTEGER,
-#             title TEXT,
-#             description TEXT,
-#             preprocessed_combined BLOB
-#         )
-#         """
-#     )
-
-#     cur.execute(
-#         """
-#         CREATE TABLE IF NOT EXISTS inverted_index (
-#             token TEXT,
-#             doc_id TEXT
-#         )
-#         """
-#     )
-
-#     cur.execute(
-#         """
-#         CREATE TABLE IF NOT EXISTS embeddings (
-#             doc_id TEXT PRIMARY KEY,
-#             embedding BLOB
-#         )
-#         """
-#     )
-
-#     cur.execute("DELETE FROM episodes")
-#     cur.execute("DELETE FROM inverted_index")
-#     cur.execute("DELETE FROM embeddings")
-
-#     for doc_id, doc in document_corpus.items():
-#         preprocessed_document = preprocess_text(f"{doc['title']} {doc['description']}")
-#         cur.execute(
-#             "INSERT OR REPLACE INTO episodes VALUES (?, ?, ?, ?, ?, ?)",
-#             (
-#                 doc_id,
-#                 doc["season"],
-#                 doc["number"],
-#                 doc["title"],
-#                 doc["description"],
-#                 pickle.dumps(preprocessed_document),
-#             ),
-#         )
-
-#     for token, doc_ids in inverted_index.items():
-#         for doc_id in sorted(doc_ids):
-#             cur.execute("INSERT INTO inverted_index VALUES (?, ?)", (token, doc_id))
-
-#     for doc_id, embedding in embeddings_dict.items():
-#         cur.execute(
-#             "INSERT OR REPLACE INTO embeddings VALUES (?, ?)",
-#             (doc_id, sqlite3.Binary(pickle.dumps(embedding))),
-#         )
-
-#     conn.commit()
-#     conn.close()
-#     LOGGER.info("SQLite database saved.")
-
+    
 
 def save_database(document_corpus, inverted_index, embeddings_dict, precomputed_tokens=None):
     """Efficiently write corpus, inverted index, and embeddings to SQLite."""
@@ -328,6 +243,8 @@ def build_faiss_index(embeddings_dict):
     os.environ["OMP_NUM_THREADS"] = "1"
 
     index = faiss.IndexHNSWFlat(dimension, config.FAISS_M)
+    index.metric_type = faiss.METRIC_INNER_PRODUCT
+    #index = faiss.IndexFlatIP(dimension)
     index.hnsw.efConstruction = config.FAISS_EF_CONSTRUCTION
     index.hnsw.efSearch = config.FAISS_EF_SEARCH
     index.add(embedding_matrix)

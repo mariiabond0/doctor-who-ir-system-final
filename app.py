@@ -23,6 +23,7 @@ from src.bm_25 import bm25_search_sqlite
 from src.boolean_search import boolean_search_sqlite
 from src.semantic_search import semantic_search_sqlite
 from src.rag import rag_query
+from src.fused_search import fused_query
 
 # -------------------------
 # App setup
@@ -31,14 +32,6 @@ from src.rag import rag_query
 app = Flask(__name__, template_folder='templates', static_folder='static')
 app.config['JSON_SORT_KEYS'] = False
 
-logging.basicConfig(
-    level=getattr(logging, config.LOG_LEVEL),
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler(config.LOG_FILE),
-    ],
-)
 logger = logging.getLogger(__name__)
 
 # -------------------------
@@ -110,26 +103,7 @@ faiss_service = FaissService()
 # Search router
 # -------------------------
 
-SEARCH_METHODS = {"boolean", "bm25", "semantic", "faiss", "fused"}
-
-
-def fused_search(query: str, conn, top_k: int, candidate_k: int = 50, k_rrf: int = 60):
-    bm25 = bm25_search_sqlite(query, conn, top_n=candidate_k)
-    dense = semantic_search_sqlite(query, conn, top_n=candidate_k)
-
-    bm25_rank = {d: i + 1 for i, d in enumerate(bm25)}
-    dense_rank = {d: i + 1 for i, d in enumerate(dense)}
-
-    all_docs = set(bm25) | set(dense)
-
-    scores = {}
-    for doc in all_docs:
-        scores[doc] = (
-            1 / (k_rrf + bm25_rank.get(doc, candidate_k + 1)) +
-            1 / (k_rrf + dense_rank.get(doc, candidate_k + 1))
-        )
-
-    return sorted(scores, key=scores.get, reverse=True)[:top_k]
+SEARCH_METHODS = {"boolean", "bm25", "semantic", "faiss", "fused", "rag"}
 
 
 def run_search(method: str, query: str, conn, top_k: int):
@@ -146,7 +120,7 @@ def run_search(method: str, query: str, conn, top_k: int):
         return faiss_service.search(query, top_k)
 
     if method == "fused":
-        return fused_search(query, conn, top_k)
+        return fused_query(query, conn, top_k=top_k)
 
     raise ValueError(f"Unknown method: {method}")
 
@@ -323,7 +297,6 @@ def not_found(_):
 def server_error(_):
     return jsonify({"error": "server error"}), 500
 
-app.run(debug=True, host='0.0.0.0', port=5001)
 
 if __name__ == '__main__':
     logger.info("Starting IR system")

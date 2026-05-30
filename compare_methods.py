@@ -5,6 +5,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+COLOR_MAP = {
+    "Boolean Search": "#19415e",   
+    "BM25": "#30258f",          
+    "Semantic": "#34ade4",        
+    "FAISS Semantic": "#2ac2e1", 
+    "Fused": "#9467bd",           
+}
+
 # Set style
 sns.set_style("whitegrid")
 plt.rcParams['figure.figsize'] = (14, 8)
@@ -29,16 +37,19 @@ print("="*80 + "\n")
 
 # Create comparison plots
 fig, axes = plt.subplots(2, 3, figsize=(16, 10))
-fig.suptitle('Comparison of IR Search Methods (Optimized BM25: k1=0.4, b=1.0)', fontsize=16, fontweight='bold')
+fig.suptitle('Comparison of IR Search Methods (Optimized BM25: k1=1.25, b=0.6)', fontsize=16, fontweight='bold')
 
 metrics = ['P@5', 'R@5', 'AP', 'MRR', 'nDCG']
-colors = sns.color_palette("husl", len(method_stats))
 
 # Individual metric bar plots
 for idx, metric in enumerate(metrics):
     ax = axes.flat[idx]
+    sorted_series = method_stats[metric].sort_values(ascending=False)
+
+    plot_colors = [COLOR_MAP.get(m, "#999999") for m in sorted_series.index]
+
     method_stats[metric].sort_values(ascending=False).plot(
-        kind='bar', ax=ax, color=colors, edgecolor='black', linewidth=1.2
+        kind='bar', ax=ax, color=plot_colors, edgecolor='black', linewidth=1.2
     )
     ax.set_title(f'Mean {metric}', fontweight='bold', fontsize=12)
     ax.set_ylabel(metric, fontweight='bold')
@@ -59,7 +70,8 @@ for col in normalized.columns:
 
 # Calculate overall score as mean of normalized metrics
 overall_score = normalized.mean(axis=1).sort_values(ascending=False)
-overall_score.plot(kind='barh', ax=ax, color=colors[::-1], edgecolor='black', linewidth=1.2)
+plot_colors = [COLOR_MAP.get(m, "#999999") for m in overall_score.index]
+overall_score.plot(kind='barh', ax=ax, color=plot_colors, edgecolor='black', linewidth=1.2)
 ax.set_title('Overall Normalized Score', fontweight='bold', fontsize=12)
 ax.set_xlabel('Score', fontweight='bold')
 ax.grid(axis='x', alpha=0.3)

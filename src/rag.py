@@ -4,12 +4,11 @@ Combines retrieval with Ollama LLM for generating contextual answers.
 """
 
 import logging
-import json
 import requests
 import sqlite3
 from typing import Dict, List, Optional
 import config
-from src.boolean_search import boolean_search_sqlite
+from src.fused_search import fused_query
 
 logger = logging.getLogger(__name__)
 
@@ -45,7 +44,7 @@ def retrieve_context(query: str, top_k: int = None) -> tuple[List[Dict], str]:
     
     try:
         conn = sqlite3.connect(str(config.DB_PATH))
-        results = boolean_search_sqlite(query, conn, top_n=top_k)
+        results = fused_query(query, conn, top_k=top_k)
         conn.close()
     except Exception as e:
         logger.error(f"Error retrieving context: {e}")
@@ -243,9 +242,12 @@ def format_rag_output(rag_result: Dict) -> str:
     output.append(f"Question: {rag_result['query']}\n")
     output.append(f"Retrieved {len(rag_result['retrieved_docs'])} documents:\n")
     
-    for i, doc in enumerate(rag_result['retrieved_docs'], 4):
-        output.append(f"  {i}. {doc.get('title', 'Unknown')} (score: {doc.get('score', 0):.3f})")
+    #for i, doc in enumerate(rag_result['retrieved_docs'], 4):
+    #    output.append(f"  {i}. {doc.get('title', 'Unknown')} (score: {doc.get('score', 0):.3f})")
     
+    for i, doc in enumerate(rag_result['retrieved_docs'], 1):
+        output.append(f"  {i}. {doc.get('title', 'Unknown')} (score: {doc.get('score', 0):.3f})")
+
     output.append(f"\n{'─'*80}")
     output.append("Generated Answer:")
     output.append(f"{'─'*80}\n")

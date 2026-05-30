@@ -1,8 +1,17 @@
-# Python
-__pycache__/
+# ==============================================================================
+# Doctor Who IR Project - Optimized .gitignore
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
 *.py[cod]
 *$py.class
+*.pyc
+
+# C extensions
 *.so
+
+# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -23,7 +32,7 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# Virtual environments
+# Virtual environments (Always ignore local environments)
 venv/
 env/
 ENV/
@@ -31,39 +40,41 @@ env.bak/
 venv.bak/
 .venv/
 
-# uv
-.venv
-uv.lock
+# uv dependency management
+# CRITICAL: Do NOT ignore uv.lock! It must be committed for reproducibility.
+# .venv is ignored above
 
-# IDEs
+# IDEs and System Metadata
 .vscode/
 .idea/
+*.iml
+*.xml
+.DS_Store
+Thumbs.db
 *.swp
 *.swo
 *~
-.DS_Store
 
 # Jupyter Notebook
 .ipynb_checkpoints
 
-# Database files (optional - uncomment if you want to commit DB)
-# *.db
-# dw_data/doctor_who.db
+# Relational Databases & Core Vector Indices
+# We keep raw CSV inputs tracked, but ignore the compiled sqlite binary and heavy FAISS graphs
+dw_data/doctor_who.db
+dw_data/faiss.index
 
-# Large data files (optional - keep these if you want to commit)
-# dw_data/*.csv
-# dw_data/*.json
-
-# pytest
+# Testing & Coverage Caches
 .pytest_cache/
 .coverage
 htmlcov/
-
-# mypy
 .mypy_cache/
 .dmypy.json
 dmypy.json
 
-# Temporary files
-*.tmp
+# Local Runtime Application Logs
 *.log
+app.log
+
+# Dynamic Evaluation Outputs (Optional)
+# Uncomment the line below if you do NOT want your generated evaluation CSVs/PNGs committed
+# outputs/

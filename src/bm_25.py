@@ -15,7 +15,7 @@ def build_bm25_corpus(document_corpus):
     texts = []
     doc_ids = []
     for doc_id, doc in document_corpus.items():
-        texts.append(preprocess_text(f"{doc['title']} {doc['description']}"))
+        texts.append(preprocess_text(f"{doc['title']} {doc['description']} {doc['summary']} "))
         doc_ids.append(doc_id)
     return texts, doc_ids
 
@@ -50,7 +50,7 @@ def build_bm25_corpus_sqlite(conn):
     return texts, doc_ids
 
 
-def bm25_search_sqlite(query: str, conn, top_n=5, k1: float = 0.4, b: float = 1.0):
+def bm25_search_sqlite(query: str, conn, top_n=5, k1: float = 1.25, b: float = 0.6):
     """
     BM25 search over SQLite-backed corpus with caching.
     """
