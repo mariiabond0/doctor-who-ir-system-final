@@ -74,9 +74,29 @@ def retrieve_context(query: str, top_k: int = None) -> tuple[List[Dict], str]:
 
 def build_prompt(query: str, context: str) -> str:
     """Build a prompt for the LLM with retrieval context."""
-    prompt = f"""You are a knowledgeable assistant about Doctor Who episodes.
+    #prompt = f"""You are a knowledgeable assistant about Doctor Who episodes.
     
-Based on the following Doctor Who episode information, answer the user's question accurately and concisely.
+#Based on the following Doctor Who episode information, answer the user's question accurately and concisely.
+
+#CONTEXT:
+#{context}
+
+#QUESTION: {query}
+
+#ANSWER:"""
+#    
+    prompt = f"""You are an advanced information retrieval assistant specializing in the Doctor Who universe. 
+
+Your primary task is to answer the user's question using the factual metadata provided in the CONTEXT ARCHIVES block below.
+
+HYBRID BROWSING RULES:
+1. CONTEXT FIRST: Prioritize the provided CONTEXT to form your response. Always cite specific seasons and episodes (e.g., S3E8) when the data originates from the block.
+2. PERMITTED BROWSING: If the provided context is incomplete, too sparse, or lacks specific details to fully answer the question, you are PERMITTED to supplement the answer using your general knowledge of Doctor Who lore.
+3. MANDATORY DISCLOSURE: If you utilize your own general knowledge to fill gaps or expand on the answer, you MUST preface that specific portion or bullet point with an explicit label: "[Extrapolated Lore]". 
+
+STYLE AND STRUCTURE CONSTRAINTS:
+- Be concise and clear. Avoid verbose meta-commentary ("Based on the text provided...").
+- Use structured bullet points for multi-episode deep dives.
 
 CONTEXT:
 {context}

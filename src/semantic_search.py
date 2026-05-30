@@ -31,15 +31,6 @@ def load_embeddings_from_db(conn: sqlite3.Connection) -> Dict[str, np.ndarray]:
 
 def semantic_search_sqlite(query: str, conn: sqlite3.Connection, top_n: int = 5):
     """Vector search over stored embeddings in SQLite."""
-    #if conn not in _embeddings_cache:
-    #    _embeddings_cache[conn] = load_embeddings_from_db(conn)
-    #
-    #embeddings_dict = _embeddings_cache[conn]
-    #if not embeddings_dict:
-    #    return []
-    #
-    #doc_ids = list(embeddings_dict.keys())
-    #corpus_embeddings = np.stack(list(embeddings_dict.values()))
     if conn not in _embeddings_cache:
         embeddings_dict = load_embeddings_from_db(conn)
 
@@ -85,9 +76,6 @@ def encode_corpus(document_corpus):
         convert_to_numpy=True,
         normalize_embeddings=True
     )
-
-    #texts = [f"{doc['title']} {doc.get('description', '')} {doc.get('summary', '')}" for doc in document_corpus.values()]
-    #return get_model().encode(texts, convert_to_numpy=True, normalize_embeddings=True)
 
 
 def semantic_search(query: str, document_corpus, corpus_embeddings, top_n: int = 5):

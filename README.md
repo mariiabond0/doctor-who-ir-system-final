@@ -228,9 +228,10 @@ All configuration variables are centralized in `config.py`:
 | `ENABLE_STOPWORD_REMOVAL` | `True` | Remove common English stopwords |
 | `ENABLE_STEMMING` | `True` | Apply Porter stemming |
 | `DEFAULT_TOP_K` | `5` | Default number of results |
-| `MODEL_NAME` | `BAAI/bge-base-en-v1.5` | Sentence Transformers model |
+| `MODEL_NAME` | `BAAI/bge-base-en-v1.5` | Best performing Sentence Transformers model (benchmarked against all-MiniLM-L6-v2 and multi-qa-MiniLM-L6-cos-v1 ) |
+| `FAISS_EF_CONSTRUCTION` | `400` | HNSW graph construction search depth |
 | `FAISS_M` | `64` | HNSW parameter (max connections) |
-| `FAISS_EF_SEARCH` | `50` | HNSW search-time parameter |
+| `FAISS_EF_SEARCH` | `100` | HNSW runtime search depth parameter |
 | `EXCLUDE_SEASONS` | `["11"]` | Seasons to exclude from corpus |
 | `RAG_ENABLED` | `True` | Enable RAG mode |
 | `OLLAMA_BASE_URL` | `http://localhost:11434` | Ollama server endpoint |
