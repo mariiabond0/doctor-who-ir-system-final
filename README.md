@@ -29,8 +29,8 @@ A comprehensive information retrieval system for the **Doctor Who** TV series. T
   * Supports grid search for BM25 parameter optimization via a CLI sweep routine
 
 * **Storage & Persistence**
-  * **Data Files (dw_data/)**: SQLite database ('doctor_who.db'), FAISS Index & Mapping ('faiss.index, faiss_mapping.json'), mapping rules, and baseline datasets
-  * **Outputs (outputs/)**: Generated structures ('document_corpus_dw.json', 'inverted_index.json'), parameter sweep results, metrics tables, and evaluation visualizations
+  * **Data Files (dw_data/)**: SQLite database (`doctor_who.db`), FAISS Index & Mapping (`faiss.index`, `faiss.mapping`), mapping rules, and baseline datasets
+  * **Outputs (outputs/)**: Generated structures (`document_corpus_dw.json`, `inverted_index.json`), parameter sweep results, metrics tables, and evaluation visualizations
 
 * **Development Tools**
   * Unit tests for preprocessing, search methods, and evaluation metrics
@@ -256,7 +256,7 @@ All configuration variables are centralized in `config.py`:
 - **`GET /static/<path>`**: Serves static files (CSS, JavaScript)
 
 ### src/evaluation.py
-- **`compute_metrics`**: Computes:
+- **`compute_metrics()`**: Computes:
   - **P@k**: Precision at k
   - **R@k**: Recall at k
   - **AP**: Average Precision
