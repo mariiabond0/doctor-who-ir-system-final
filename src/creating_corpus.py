@@ -43,17 +43,8 @@ def load_episode_data() -> pd.DataFrame:
             f"Missing required CSV file: {exc.filename}.\nEither provide {config.MERGED_DATASET_PATH} or ensure {config.EPISODES_CSV}, {config.IMDB_CSV}, and {config.DW_GUIDE_CSV} exist."
         ) from exc
     base = df_imdb[["number", "title", "description", "season"]]
-    merged = base.merge(
-        df_details[["title"]],
-        on="title",
-        how="left",
-        suffixes=("", "_details")
-    )
-    merged = merged.merge(
-        df_guide[["title", "summary"]],
-        on="title",
-        how="left"
-    )
+    merged = base.merge(df_details[["title"]], on="title", how="left", suffixes=("", "_details"))
+    merged = merged.merge(df_guide[["title", "summary"]], on="title", how="left")
     merged.to_csv(config.MERGED_DATASET_PATH, index=False)
     return merged
 
@@ -86,12 +77,8 @@ def build_corpus(df: pd.DataFrame):
         title = str(getattr(row, "title", "")).strip()
         description = str(getattr(row, "description", "")).strip()
         summary = str(getattr(row, "summary", "")).strip()
-        #text = f"{title} {description} {summary}".strip()
-        text = (
-            title + " " + title + " " + title + " " +
-            summary + " " + summary + " " +
-            description
-        )
+        # text = f"{title} {description} {summary}".strip()
+        text = title + " " + title + " " + title + " " + summary + " " + summary + " " + description
 
         document_corpus[doc_id] = {
             "id": doc_id,
@@ -135,7 +122,7 @@ def save_json_corpus(document_corpus, inverted_index):
         json.dump(inverted_index_json, output, ensure_ascii=False, indent=2)
 
     LOGGER.info("Corpus JSON and inverted index saved.")
-    
+
 
 def save_database(document_corpus, inverted_index, embeddings_dict, precomputed_tokens=None):
     """Efficiently write corpus, inverted index, and embeddings to SQLite."""
@@ -244,7 +231,7 @@ def build_faiss_index(embeddings_dict):
 
     index = faiss.IndexHNSWFlat(dimension, config.FAISS_M)
     index.metric_type = faiss.METRIC_INNER_PRODUCT
-    #index = faiss.IndexFlatIP(dimension)
+    # index = faiss.IndexFlatIP(dimension)
     index.hnsw.efConstruction = config.FAISS_EF_CONSTRUCTION
     index.hnsw.efSearch = config.FAISS_EF_SEARCH
     index.add(embedding_matrix)

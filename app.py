@@ -29,14 +29,15 @@ from src.fused_search import fused_query
 # App setup
 # -------------------------
 
-app = Flask(__name__, template_folder='templates', static_folder='static')
-app.config['JSON_SORT_KEYS'] = False
+app = Flask(__name__, template_folder="templates", static_folder="static")
+app.config["JSON_SORT_KEYS"] = False
 
 logger = logging.getLogger(__name__)
 
 # -------------------------
 # Context-managed DB
 # -------------------------
+
 
 @contextmanager
 def get_db():
@@ -46,9 +47,11 @@ def get_db():
     finally:
         conn.close()
 
+
 # -------------------------
 # FAISS abstraction layer
 # -------------------------
+
 
 class FaissService:
     def __init__(self):
@@ -78,9 +81,7 @@ class FaissService:
 
         try:
             emb = self._model.encode(
-                query,
-                convert_to_numpy=True,
-                normalize_embeddings=True
+                query, convert_to_numpy=True, normalize_embeddings=True
             ).astype("float32")
 
             distances, indices = self._index.search(emb.reshape(1, -1), top_k)
@@ -124,28 +125,32 @@ def run_search(method: str, query: str, conn, top_k: int):
 
     raise ValueError(f"Unknown method: {method}")
 
+
 # -------------------------
 # API
 # -------------------------
 
-@app.route('/')
+
+@app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template("index.html")
 
 
-@app.route('/api/methods')
+@app.route("/api/methods")
 def methods():
-    return jsonify([
-        {"id": "boolean", "name": "Boolean", "speed": "Very Fast"},
-        {"id": "bm25", "name": "BM25", "speed": "Fast"},
-        {"id": "semantic", "name": "Semantic", "speed": "Medium"},
-        {"id": "faiss", "name": "FAISS", "speed": "Very Fast"},
-        {"id": "fused", "name": "Fused", "speed": "Medium"},
-        {"id": "rag", "name": "RAG", "speed": "Slow"},
-    ])
+    return jsonify(
+        [
+            {"id": "boolean", "name": "Boolean", "speed": "Very Fast"},
+            {"id": "bm25", "name": "BM25", "speed": "Fast"},
+            {"id": "semantic", "name": "Semantic", "speed": "Medium"},
+            {"id": "faiss", "name": "FAISS", "speed": "Very Fast"},
+            {"id": "fused", "name": "Fused", "speed": "Medium"},
+            {"id": "rag", "name": "RAG", "speed": "Slow"},
+        ]
+    )
 
 
-@app.route('/api/search', methods=['POST'])
+@app.route("/api/search", methods=["POST"])
 def search():
     data = request.get_json(silent=True) or {}
 
@@ -160,7 +165,7 @@ def search():
 
     if method not in SEARCH_METHODS:
         return jsonify({"error": "invalid method"}), 400
-    
+
     logger.info(f"Search request: method={method}, query='{query}'")
 
     if method == "rag":
@@ -174,51 +179,59 @@ def search():
             # 2. Enrich doc_ids with title and description from the 'episodes' table
             enriched_results = []
             cursor = conn.cursor()
-            
+
             for item in results:
-                # Some search methods might return dictionary elements or full objects; 
+                # Some search methods might return dictionary elements or full objects;
                 # extract the doc_id safely regardless of format.
-                doc_id = item["doc_id"] if isinstance(item, dict) and "doc_id" in item else str(item)
-                
+                doc_id = (
+                    item["doc_id"] if isinstance(item, dict) and "doc_id" in item else str(item)
+                )
+
                 cursor.execute(
-                    "SELECT season, number, title, description, summary FROM episodes WHERE doc_id = ?", 
-                    (doc_id,)
+                    "SELECT season, number, title, description, summary FROM episodes WHERE doc_id = ?",
+                    (doc_id,),
                 )
                 row = cursor.fetchone()
-                
+
                 if row:
-                    enriched_results.append({
-                        "doc_id": doc_id,
-                        "season": row[0],
-                        "number": row[1],
-                        "title": row[2],
-                        "description": row[3],
-                        "summary": row[4]
-                    })
+                    enriched_results.append(
+                        {
+                            "doc_id": doc_id,
+                            "season": row[0],
+                            "number": row[1],
+                            "title": row[2],
+                            "description": row[3],
+                            "summary": row[4],
+                        }
+                    )
                 else:
                     # Fallback structural object in case metadata is missing
-                    enriched_results.append({
-                        "doc_id": doc_id,
-                        "season": 0,
-                        "number": 0,
-                        "title": f"Document {doc_id}",
-                        "description": "Metadata missing from database corpus.",
-                        "summary": "Summary missing from database corpus."
-                    })
+                    enriched_results.append(
+                        {
+                            "doc_id": doc_id,
+                            "season": 0,
+                            "number": 0,
+                            "title": f"Document {doc_id}",
+                            "description": "Metadata missing from database corpus.",
+                            "summary": "Summary missing from database corpus.",
+                        }
+                    )
 
-        return jsonify({
-            "query": query,
-            "method": method,
-            "count": len(enriched_results),
-            "results": enriched_results
-        })
-    
+        return jsonify(
+            {
+                "query": query,
+                "method": method,
+                "count": len(enriched_results),
+                "results": enriched_results,
+            }
+        )
+
     except Exception as e:
         logger.exception("search failed")
         return jsonify({"error": "internal error"}), 500
 
 
-@app.route('/api/rag', methods=['POST'])
+@app.route("/api/rag", methods=["POST"])
 def rag():
     data = request.get_json(silent=True) or {}
     query = (data.get("query") or "").strip()
@@ -243,49 +256,55 @@ def rag():
                     doc_id = doc.get("doc_id") or doc.get("title")
                 else:
                     doc_id = str(doc)
-                
+
                 cursor.execute(
-                    "SELECT season, number, title, description, summary FROM episodes WHERE doc_id = ?", 
-                    (doc_id,)
+                    "SELECT season, number, title, description, summary FROM episodes WHERE doc_id = ?",
+                    (doc_id,),
                 )
                 row = cursor.fetchone()
-                
+
                 if row:
-                    enriched_docs.append({
-                        "doc_id": doc_id,
-                        "season": row[0],
-                        "number": row[1],
-                        "title": row[2],
-                        "description": row[3],
-                        "summary": row[4]
-                    })
+                    enriched_docs.append(
+                        {
+                            "doc_id": doc_id,
+                            "season": row[0],
+                            "number": row[1],
+                            "title": row[2],
+                            "description": row[3],
+                            "summary": row[4],
+                        }
+                    )
                 else:
                     # Fallback structurally if SQLite still can't find this doc_id
-                    enriched_docs.append({
-                        "doc_id": doc_id,
-                        "season": 0,
-                        "number": 0,
-                        "title": f"Document {doc_id}",
-                        "description": "Retrieved by RAG, but metadata missing from SQLite.",
-                        "summary": "Summary missing from database corpus."
-                    })
+                    enriched_docs.append(
+                        {
+                            "doc_id": doc_id,
+                            "season": 0,
+                            "number": 0,
+                            "title": f"Document {doc_id}",
+                            "description": "Retrieved by RAG, but metadata missing from SQLite.",
+                            "summary": "Summary missing from database corpus.",
+                        }
+                    )
 
-        return jsonify({
-            "query": query,
-            "answer": result.get("answer", ""),
-            "retrieved_docs": enriched_docs,
-            "error": result.get("error"),
-            "has_answer": bool(result.get("answer")) and not result.get("error")
-        })
+        return jsonify(
+            {
+                "query": query,
+                "answer": result.get("answer", ""),
+                "retrieved_docs": enriched_docs,
+                "error": result.get("error"),
+                "has_answer": bool(result.get("answer")) and not result.get("error"),
+            }
+        )
 
     except Exception:
         logger.exception("rag failed")
         return jsonify({"error": "internal error", "has_answer": False}), 500
 
 
-@app.route('/static/<path:path>')
+@app.route("/static/<path:path>")
 def static_files(path):
-    return send_from_directory('static', path)
+    return send_from_directory("static", path)
 
 
 @app.errorhandler(404)
@@ -298,6 +317,6 @@ def server_error(_):
     return jsonify({"error": "server error"}), 500
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     logger.info("Starting IR system")
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    app.run(host="0.0.0.0", port=5001, debug=True)

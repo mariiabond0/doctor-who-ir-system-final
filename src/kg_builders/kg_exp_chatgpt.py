@@ -78,14 +78,21 @@ ALIASES = {
 }
 
 STOP_ENTITIES = {
-    "one", "two", "they", "them", "him", "her", "it",
-    "something", "anything", "people", "human", "humans"
+    "one",
+    "two",
+    "they",
+    "them",
+    "him",
+    "her",
+    "it",
+    "something",
+    "anything",
+    "people",
+    "human",
+    "humans",
 }
 
-BAD_RELATIONS = {
-    "be", "have", "do", "say", "go", "get",
-    "make", "take", "want", "need", "try"
-}
+BAD_RELATIONS = {"be", "have", "do", "say", "go", "get", "make", "take", "want", "need", "try"}
 
 RELATION_MAP = {
     "fight": "attack",
@@ -93,24 +100,21 @@ RELATION_MAP = {
     "fighting": "attack",
     "attack": "attack",
     "attacked": "attack",
-
     "go": "move",
     "went": "move",
     "travel": "move",
     "travelled": "move",
-
     "see": "observe",
     "saw": "observe",
     "look": "observe",
-
     "say": "communicate",
     "said": "communicate",
     "tell": "communicate",
-
     "be": "is",
     "was": "is",
     "were": "is",
 }
+
 
 # -------------------------
 # Helpers
@@ -131,6 +135,7 @@ def normalize_relation(verb: str) -> str:
     verb = verb.lower().strip()
     verb = re.sub(r"[^a-z]", "", verb)
     return RELATION_MAP.get(verb, verb)
+
 
 # -------------------------
 # Entity extraction
@@ -170,6 +175,7 @@ def extract_entities(doc, gliner_entities):
 
     return entity_dict, token_lookup
 
+
 # -------------------------
 # Dependency helpers
 # -------------------------
@@ -181,6 +187,7 @@ def expand_conj(token):
 
 def find_entity(token, token_lookup):
     return token_lookup.get(token.i)
+
 
 # -------------------------
 # Relations (FIXED + PASSIVE HANDLING)
@@ -240,6 +247,7 @@ def extract_relations(doc, token_lookup):
 
     return list(relations)
 
+
 # -------------------------
 # Graph
 # -------------------------
@@ -253,11 +261,7 @@ for episode_id, episode in corpus.items():
     text = f"{episode['title']}. {episode['description']}"
     doc = nlp(text)
 
-    gliner_entities = model.predict_entities(
-        text,
-        GLINER_LABELS,
-        threshold=0.55
-    )
+    gliner_entities = model.predict_entities(text, GLINER_LABELS, threshold=0.55)
 
     entity_dict, token_lookup = extract_entities(doc, gliner_entities)
     relations = extract_relations(doc, token_lookup)
@@ -349,7 +353,7 @@ for s, o, d in G.edges(data=True):
         o,
         label=d.get("relation", ""),
         title=f"{d.get('relation','')} ({d.get('weight',1)})",
-        value=d.get("weight", 1)
+        value=d.get("weight", 1),
     )
 
 nx.write_graphml(G, "graph_depo/doctor_who_kg.graphml")

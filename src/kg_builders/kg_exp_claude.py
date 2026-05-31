@@ -9,7 +9,6 @@ from gliner import GLiNER
 from pyvis.network import Network
 from config import CORPUS_PATH
 
-
 # -------------------------
 # Load data & models
 # -------------------------
@@ -21,8 +20,16 @@ nlp.add_pipe("sentencizer")
 
 model = GLiNER.from_pretrained("urchade/gliner_medium-v2.1")
 
-GLINER_LABELS = ["person", "location", "organization", "date", "time",
-                 "alien species", "spaceship", "planet"]
+GLINER_LABELS = [
+    "person",
+    "location",
+    "organization",
+    "date",
+    "time",
+    "alien species",
+    "spaceship",
+    "planet",
+]
 
 
 # -------------------------
@@ -31,55 +38,92 @@ GLINER_LABELS = ["person", "location", "organization", "date", "time",
 
 LABEL_MAP = {
     "PERSON": "PERSON",
-    "ORG": "ORGANIZATION",        "ORGANIZATION": "ORGANIZATION",
-    "GPE": "LOCATION",            "LOC": "LOCATION",        "LOCATION": "LOCATION",
+    "ORG": "ORGANIZATION",
+    "ORGANIZATION": "ORGANIZATION",
+    "GPE": "LOCATION",
+    "LOC": "LOCATION",
+    "LOCATION": "LOCATION",
     "PLANET": "LOCATION",
-    "DATE": "DATE",               "TIME": "TIME",
-    "ALIEN SPECIES": "ALIEN",     "ALIEN": "ALIEN",
+    "DATE": "DATE",
+    "TIME": "TIME",
+    "ALIEN SPECIES": "ALIEN",
+    "ALIEN": "ALIEN",
     "SPACESHIP": "ORGANIZATION",
 }
 
 ALIASES = {
-    "the doctor": "doctor",       "doctor who": "doctor",
-    "amy": "amy pond",            "amelia": "amy pond",
-    "amelia pond": "amy pond",    "pond": "amy pond",
+    "the doctor": "doctor",
+    "doctor who": "doctor",
+    "amy": "amy pond",
+    "amelia": "amy pond",
+    "amelia pond": "amy pond",
+    "pond": "amy pond",
     "rory": "rory williams",
-    "clara": "clara oswald",      "oswald": "clara oswald",   "oswin": "clara oswald",
-    "rose": "rose tyler",         "rose's mother": "jackie tyler",
+    "clara": "clara oswald",
+    "oswald": "clara oswald",
+    "oswin": "clara oswald",
+    "rose": "rose tyler",
+    "rose's mother": "jackie tyler",
     "rose's father": "pete tyler",
     "jack": "captain jack harkness",
     "martha": "martha jones",
     "donna": "donna noble",
     "the master": "master",
-    "the daleks": "daleks",       "the cybermen": "cybermen",
+    "the daleks": "daleks",
+    "the cybermen": "cybermen",
     "the weeping angels": "weeping angels",
-    "angel": "weeping angels",    "angels": "weeping angels",
+    "angel": "weeping angels",
+    "angels": "weeping angels",
     "the silence": "silence",
-    "river": "river song",        "professor river song": "river song",
+    "river": "river song",
+    "professor river song": "river song",
     "vincent": "vincent van gogh",
     "jackie": "jackie tyler",
-    "mickey": "mickey smith",     "smith": "mickey smith",
+    "mickey": "mickey smith",
+    "smith": "mickey smith",
     "pete": "pete tyler",
     "bill": "bill potts",
     "the brigadier": "brigadier lethbridge-stewart",
     "lethbridge-stewart": "brigadier lethbridge-stewart",
-    "the sicarax": "sicarax",     "the zygon": "zygon",
-    "the judoon": "judoon",       "the ood": "ood",
-    "the silurian": "silurian",   "the autons": "autons",
+    "the sicarax": "sicarax",
+    "the zygon": "zygon",
+    "the judoon": "judoon",
+    "the ood": "ood",
+    "the silurian": "silurian",
+    "the autons": "autons",
     "auton": "autons",
 }
 
-STOP_ENTITIES = {"one", "two", "they", "them", "him", "her", "who",
-                 "which", "it", "something", "anything"}
+STOP_ENTITIES = {
+    "one",
+    "two",
+    "they",
+    "them",
+    "him",
+    "her",
+    "who",
+    "which",
+    "it",
+    "something",
+    "anything",
+}
 
 SKIP_VERBS = {"be", "have", "do", "say", "go", "get"}
 
 PREP_LABELS = {
-    "in": "located_in",      "on": "located_on",      "at": "located_at",
-    "from": "from",          "to": "travels_to",      "with": "with",
-    "against": "opposes",    "for": "acts_for",        "of": "part_of",
-    "into": "enters",        "through": "travels_through",
-    "across": "crosses",     "during": "occurs_during",
+    "in": "located_in",
+    "on": "located_on",
+    "at": "located_at",
+    "from": "from",
+    "to": "travels_to",
+    "with": "with",
+    "against": "opposes",
+    "for": "acts_for",
+    "of": "part_of",
+    "into": "enters",
+    "through": "travels_through",
+    "across": "crosses",
+    "during": "occurs_during",
 }
 
 NODE_COLORS = {
@@ -107,6 +151,7 @@ OUTPUT_PREFIX = "doctor_who_kg_claude"
 # -------------------------
 # Helper functions
 # -------------------------
+
 
 def to_canonical(text):
     text = " ".join(text.lower().split())
@@ -146,6 +191,7 @@ def get_conjunct_entities(token, span_lookup, last_person, last_org):
 # -------------------------
 # Main extraction functions
 # -------------------------
+
 
 def extract_entities(doc, gliner_entities):
     entity_dict = {}
@@ -197,7 +243,8 @@ def extract_relations(doc, span_lookup):
             for child in token.children:
                 if child.dep_ in ("nsubj", "nsubjpass"):
                     subjects += get_conjunct_entities(
-                        child, span_lookup, last_person[0], last_org[0])
+                        child, span_lookup, last_person[0], last_org[0]
+                    )
 
             if not subjects:
                 continue
@@ -205,7 +252,8 @@ def extract_relations(doc, span_lookup):
             for child in token.children:
                 if child.dep_ in ("dobj", "attr", "dative", "oprd"):
                     for obj in get_conjunct_entities(
-                            child, span_lookup, last_person[0], last_org[0]):
+                        child, span_lookup, last_person[0], last_org[0]
+                    ):
                         for subj in subjects:
                             if subj != obj:
                                 relations.append((subj, verb, obj))
@@ -213,11 +261,13 @@ def extract_relations(doc, span_lookup):
             for child in token.children:
                 if child.dep_ == "prep":
                     rel_label = PREP_LABELS.get(
-                        child.lemma_.lower(), f"{verb}_{child.lemma_.lower()}")
+                        child.lemma_.lower(), f"{verb}_{child.lemma_.lower()}"
+                    )
                     for pobj in child.children:
                         if pobj.dep_ == "pobj":
                             for obj in get_conjunct_entities(
-                                    pobj, span_lookup, last_person[0], last_org[0]):
+                                pobj, span_lookup, last_person[0], last_org[0]
+                            ):
                                 for subj in subjects:
                                     if subj != obj:
                                         relations.append((subj, rel_label, obj))
@@ -230,12 +280,13 @@ def extract_relations(doc, span_lookup):
             if e and e not in seen:
                 seen.append(e)
         for i, a in enumerate(seen):
-            for b in seen[i + 1:]:
+            for b in seen[i + 1 :]:
                 if (a, b) not in syntactic_pairs:
                     relations.append((a, "co_occurs_with", b))
                     relations.append((b, "co_occurs_with", a))
 
     return relations
+
 
 extract_relations._entity_dict = {}
 
@@ -245,7 +296,7 @@ def merge_near_duplicates(G):
     merge_map = {}
 
     for i, a in enumerate(nodes):
-        for b in nodes[i + 1:]:
+        for b in nodes[i + 1 :]:
             shorter, longer = sorted([a, b], key=len)
             is_prefix = longer.startswith(shorter) and len(shorter) >= 4
             is_similar = SequenceMatcher(None, a, b).ratio() >= 0.85
@@ -340,15 +391,16 @@ degree_map = dict(G.degree())
 keep_nodes = {n for n, d in degree_map.items() if d >= MIN_DEGREE}
 VIZ_G = G.subgraph(keep_nodes)
 
-print(f"\nVisualization: {VIZ_G.number_of_nodes()} nodes, "
-      f"{VIZ_G.number_of_edges()} edges "
-      f"(MIN_DEGREE={MIN_DEGREE}, co-occurrence={'on' if SHOW_COOCCURRENCE else 'off'})")
+print(
+    f"\nVisualization: {VIZ_G.number_of_nodes()} nodes, "
+    f"{VIZ_G.number_of_edges()} edges "
+    f"(MIN_DEGREE={MIN_DEGREE}, co-occurrence={'on' if SHOW_COOCCURRENCE else 'off'})"
+)
 
 # Build Pyvis network
 # NOTE: show_buttons is intentionally removed — it injects an iframe that
 # prevents the canvas from rendering in many browser/Pyvis combinations.
-net = Network(height="100vh", width="100%", bgcolor="#0d1117",
-              font_color="#e6edf3", directed=True)
+net = Network(height="100vh", width="100%", bgcolor="#0d1117", font_color="#e6edf3", directed=True)
 
 net.set_options("""{
   "physics": {
@@ -377,10 +429,8 @@ for node, data in VIZ_G.nodes(data=True):
     deg = degree_map.get(node, 1)
     size = int(10 + 40 * (deg / max_degree))
     color = next(
-        (NODE_COLORS[lbl.strip()]
-         for lbl in labels_str.split(",")
-         if lbl.strip() in NODE_COLORS),
-        "#adb5bd"
+        (NODE_COLORS[lbl.strip()] for lbl in labels_str.split(",") if lbl.strip() in NODE_COLORS),
+        "#adb5bd",
     )
     net.add_node(
         node,
@@ -400,7 +450,8 @@ for src, tgt, data in VIZ_G.edges(data=True):
     freq = edge_freq.get((src, rel, tgt), 1)
     is_weak = rel == "co_occurs_with"
     net.add_edge(
-        src, tgt,
+        src,
+        tgt,
         title=f"{rel} (×{freq})",
         label="",
         width=1.0 + 3.0 * (freq / max_freq),

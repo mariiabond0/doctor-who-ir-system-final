@@ -134,5 +134,3 @@ def bm25_param_sweep(conn, k1_values, b_values, top_k=config.DEFAULT_TOP_K, out_
         out_path = config.RESULTS_CSV_PATH.with_name("bm25_param_tuning.csv")
     df.to_csv(out_path, index=False)
     logger.info("Saved BM25 sweep results to %s", out_path)
-
-

@@ -14,12 +14,14 @@ logger = logging.getLogger(__name__)
 # Initialize the reranker lazily to save memory during startup
 _reranker = None
 
+
 def get_reranker():
     global _reranker
     if _reranker is None:
         logger.info("Loading CrossEncoder reranker model...")
         _reranker = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2")
     return _reranker
+
 
 def fused_query(query, conn, top_k=config.DEFAULT_TOP_K, k=10, candidate_k=50, rerank_k=20):
     """
@@ -58,10 +60,7 @@ def fused_query(query, conn, top_k=config.DEFAULT_TOP_K, k=10, candidate_k=50, r
     cur = conn.cursor()
     doc_texts = []
     for doc_id in top_candidates:
-        cur.execute(
-            "SELECT title, description, summary FROM episodes WHERE doc_id=?",
-            (doc_id,)
-        )
+        cur.execute("SELECT title, description, summary FROM episodes WHERE doc_id=?", (doc_id,))
         row = cur.fetchone()
         if row:
             text = " ".join([str(x) for x in row if x])

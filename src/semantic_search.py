@@ -37,10 +37,7 @@ def semantic_search_sqlite(query: str, conn: sqlite3.Connection, top_n: int = 5)
         doc_ids = list(embeddings_dict.keys())
         corpus_embeddings = np.stack(list(embeddings_dict.values()))
 
-        _embeddings_cache[conn] = {
-            "doc_ids": doc_ids,
-            "matrix": corpus_embeddings
-        }
+        _embeddings_cache[conn] = {"doc_ids": doc_ids, "matrix": corpus_embeddings}
 
     cache = _embeddings_cache[conn]
     doc_ids = cache["doc_ids"]
@@ -63,19 +60,22 @@ def encode_corpus(document_corpus):
     """Encode a corpus of documents with a Sentence Transformer."""
     texts = [
         (
-            doc["title"] + " " + doc.get("title", "") + " " + doc.get("title", "") + " "
-            + doc.get("summary", "") + " "
-            + doc.get("summary", "") + " "
+            doc["title"]
+            + " "
+            + doc.get("title", "")
+            + " "
+            + doc.get("title", "")
+            + " "
+            + doc.get("summary", "")
+            + " "
+            + doc.get("summary", "")
+            + " "
             + doc.get("description", "")
         )
         for doc in document_corpus.values()
     ]
 
-    return get_model().encode(
-        texts,
-        convert_to_numpy=True,
-        normalize_embeddings=True
-    )
+    return get_model().encode(texts, convert_to_numpy=True, normalize_embeddings=True)
 
 
 def semantic_search(query: str, document_corpus, corpus_embeddings, top_n: int = 5):
